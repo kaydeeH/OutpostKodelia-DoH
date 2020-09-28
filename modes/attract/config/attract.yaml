@@ -1,0 +1,75 @@
+#config_version=5
+
+show_player:
+   mode_attract_started: display_segment_displays
+
+shows:
+   display_segment_displays:
+     - duration: 1000s
+       slides:
+          segment_displays:
+            widgets:
+               - type: text
+                 text: 000000
+#        text: (player1|score)
+                 number_grouping: true
+                 min_digits: 2
+                 font_name: Ten_segment
+                 color: orange
+                 font_size: 24
+                 anchor_y: top
+                 anchor_x: top
+                 x: 100
+                 y: 550
+               - type: text
+                 text: 111111
+#        text: (player2|score)
+                 number_grouping: true
+                 min_digits: 2
+                 font_name: Ten_segment
+                 color: orange
+                 font_size: 24
+                 anchor_y: top
+                 anchor_x: top
+                 x: 100
+                 y: 450
+
+               - type: text
+                 text: 222222
+#        text: (player3|score)
+                 number_grouping: true
+                 min_digits: 2
+                 font_name: Ten_segment
+                 color: orange
+                 font_size: 24
+                 anchor_y: top
+                 anchor_x: top
+                 x: 100
+                 y: 350
+
+               - type: text
+                 text: 099099
+#        text: (credit/match/ball in play)
+                 number_grouping: true
+                 min_digits: 2
+                 font_name: Ten_segment
+                 color: orange
+                 font_size: 24
+                 anchor_y: top
+                 anchor_x: top
+                 x: 300
+                 y: 350
+
+               - type: text
+                 text: 333333
+#        text: (player4|score)
+                 number_grouping: true
+                 min_digits: 2
+                 font_name: Ten_segment
+                 color: orange
+                 font_size: 24
+                 anchor_y: top
+                 anchor_x: top
+                 x: 100
+                 y: 250
+

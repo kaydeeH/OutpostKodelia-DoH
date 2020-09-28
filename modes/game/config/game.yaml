@@ -1,0 +1,109 @@
+#config_version=5
+
+mode:
+  file_log: full
+
+slide_player:
+  game_started: score_display_slide
+  game_ending:
+     score_display_slide:
+         action: remove
+
+slides:
+  score_display_slide:
+     widgets:
+        - type: text
+          text: 099099
+#         text: (credit/match/ball in play)
+          number_grouping: true
+          min_digits: 2
+          font_name: Ten_segment
+          color: orange
+          font_size: 24
+          anchor_y: top
+          anchor_x: top
+          x: 300
+          y: 350
+
+
+widget_player:
+  player_added{num==1}:
+    player_1_only:
+      slide: score_display_slide
+  player_added{num==2}:
+    player_1_only:
+      slide: score_display_slide
+      action: remove
+    player_1:
+      slide: score_display_slide
+    player_2:
+      slide: score_display_slide
+  player_added{num==3}:
+    player_3:
+      slide: score_display_slide
+  player_added{num==4}:
+    player_4:
+      slide: score_display_slide
+
+widgets:
+  player_1_only:
+        - type: text
+          text: (score)
+          number_grouping: true
+          min_digits: 2
+          font_name: Ten_segment
+          color: orange
+          font_size: 24
+          anchor_y: top
+          anchor_x: top
+          x: 100
+          y: 550
+  player_1:
+        - type: text
+          text: (player1|score)
+          number_grouping: true
+          min_digits: 2
+          font_name: Ten_segment
+          color: orange
+          font_size: 24
+          anchor_y: top
+          anchor_x: top
+          x: 100
+          y: 550
+  player_2:
+        - type: text
+          text: (player2|score)
+          number_grouping: true
+          min_digits: 2
+          font_name: Ten_segment
+          color: orange
+          font_size: 24
+          anchor_y: top
+          anchor_x: top
+          x: 100
+          y: 450
+  player_3:
+        - type: text
+          text: (player3|score)
+          number_grouping: true
+          min_digits: 2
+          font_name: Ten_segment
+          color: orange
+          font_size: 24
+          anchor_y: top
+          anchor_x: top
+          x: 100
+          y: 350
+  player_4:
+        - type: text
+          text: (player4|score)
+          number_grouping: true
+          min_digits: 2
+          font_name: Ten_segment
+          color: orange
+          font_size: 24
+          anchor_y: top
+          anchor_x: top
+          x: 100
+          y: 250
+

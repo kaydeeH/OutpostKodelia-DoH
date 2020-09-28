@@ -19,49 +19,49 @@ sound_system:
           type: standard
           simultaneous_sounds: 32
           volume: 0.8
-
-sounds:
-    # Generic SFX
-    soft_laser:
-        file: silencedlaser.wav
-        track: sfx
-        volume: .5
-
-    # Music
-    bobandvincent:
-        file: BobandVINCent.wav
-        track: music
-        fade_out: 1s
-
-    #Voice clips
-    alex_01:
-        file: a_glorious-pilgramage.wav
-        track: voice
-    player_one_up:
-        file: first_player_up.wav
-        track: voice
-        ducking:
-          target: music
-          delay: 0ms
-          attack: 100ms
-          attenuation: .1
-          release_point: 1.7s
-          release: 500ms
-
-sound_pools:
-  atract_voice:
-    type: random_force_all
-    track: voice
-    sounds:
-      - alex_01
-      - alex_02
-  ball_end_clips:
-    type: random_force_all
-    track: voice
-    sounds:
-      - bob_02
-      - hans_02
-      - kate_01
-      - vincent_02
-      - hans_05
-
+#
+#sounds:
+#    # Generic SFX
+#    soft_laser:
+#        file: silencedlaser.wav
+#        track: sfx
+#        volume: .5
+#
+#    # Music
+#    bobandvincent:
+#        file: BobandVINCent.wav
+#        track: music
+#        fade_out: 1s
+#
+#    #Voice clips
+#    alex_01:
+#        file: a_glorious-pilgramage.wav
+#        track: voice
+#    player_one_up:
+#        file: first_player_up.wav
+#        track: voice
+#        ducking:
+#          target: music
+#          delay: 0ms
+#          attack: 100ms
+#          attenuation: .1
+#          release_point: 1.7s
+#          release: 500ms
+#
+#sound_pools:
+#  atract_voice:
+#    type: random_force_all
+#    track: voice
+#    sounds:
+#      - alex_01
+#      - alex_02
+#  ball_end_clips:
+#    type: random_force_all
+#    track: voice
+#    sounds:
+#      - bob_02
+#      - hans_02
+#      - kate_01
+#      - vincent_02
+#      - hans_05
+#

@@ -29,3 +29,75 @@ player_vars:
 ## Normal Game Settings
 
 keyboard:
+  q:
+     switch: s_drop_inline_a
+  w:
+     switch: s_drop_inline_b
+  e:
+     switch: s_drop_inline_c
+  r:
+     switch: s_drop_inline_d
+  s:
+     switch: s_credit_button
+  d:
+     switch: s_outhole
+  t:
+     switch: s_tilt
+  1:
+     switch: s_coin_1
+  2:
+     switch: s_coin_2
+  3:
+     switch: s_coin_3
+  8:
+     switch: s_slam
+  9:
+     switch: s_service_1
+  0:
+     switch: s_service_2
+  y:
+     switch: s_drop_right_a
+  u:
+     switch: s_drop_right_b
+  i:
+     switch: s_drop_right_c
+  z:
+     switch: s_flipper_left
+  /:
+     switch: s_flipper_right
+  x:
+     switch: s_slingshot_left
+  .:
+     switch: s_slingshot_right
+  4:
+     switch: s_thumper_center
+  5:
+     switch: s_thumper_right
+  6:
+     switch: s_thumper_left
+  7:
+     switch: s_thumper_bottom
+  j:
+     switch: s_saucer_paragon
+  k:
+     switch: s_saucer_golden_cliffs
+  l:
+     switch: s_saucer_treasure_chamber
+  f:
+     switch: s_top_center_target
+  g:
+     switch: s_center_target
+  h:
+     switch: s_rebound_500pt
+  ",":
+     switch: s_right_flip_feeder_lane
+  m:
+     switch: s_right_outlane
+  p:
+     switch: s_spinner
+  v:
+     switch: s_top_center_rollover
+  b:
+     switch: s_waterfall_rollover
+  n:
+     switch: s_golden_cliffs_rollover

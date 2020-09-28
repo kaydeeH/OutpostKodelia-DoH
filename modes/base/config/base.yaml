@@ -1,0 +1,10 @@
+#config_version=5
+
+mode:
+  start_events: ball_starting
+  priority: 100
+  file_log: full
+
+variable_player:
+  s_drop_inline_a_active:
+    score: 100
