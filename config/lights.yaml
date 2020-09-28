@@ -1,0 +1,1107 @@
+#config_version=5
+lights:
+
+  l_yellowTargetLeft: #needs to be drilled
+    number: 4-48-49-50
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_yellowTargetRight: #needs to be drilled
+    number: 4-51-52-53
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+
+
+#-----------------------------------------------------------------------
+#LED BOARD 1
+#-----------------------------------------------------------------------
+#J5   0..11
+  l_jetUpperRight:
+    number: 1-0-1-2
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_jetUpperLeft:
+    number: 1-3-4-5
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_GIScoopLR:
+    number: 1-6-7-8
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIScoopMR:
+    number: 1-9-10-11
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+#J9  12..23
+  l_GIAboveScoopLower:
+    number: 1-12-13-14
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GILane0:
+    number: 1-15-16-17
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIScoopUC:
+    number: 1-18-19-20
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+#J6  24..35
+  l_GILane4:
+    number: 1-24-25-26
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GILane3:
+    number: 1-27-28-29
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GILane2:
+    number: 1-30-31-32
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GILane1:
+    number: 1-33-34-35
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+#J10 36..47
+  l_GIAboveScoopUpper:
+    number: 1-36-37-38
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIUpperL:
+    number: 1-39-40-41
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_lane0:
+    number: 1-42-43-44
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_GIUpperCL:
+    number: 1-45-46-47
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+#J7  48..59
+  l_lane1:
+    number: 1-48-49-50
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_lane2:
+    number: 1-51-52-53
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_lane3:
+    number: 1-54-55-56
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_lane4:
+    number: 1-57-58-59
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+
+#J11 60..71
+  l_GILane5:
+    number: 1-60-61-62
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIAboveSpinnerUpper:
+    number: 1-63-64-65
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIUpperCR:
+    number: 1-66-67-68
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIUpperR:
+    number: 1-69-70-71
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+
+#J8  72..83
+  l_GIAboveSpinnerLower:
+    number: 1-72-73-74
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_spinner:
+    number: 1-75-76-77
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_GIDropRight0:
+    number: 1-78-79-80
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIDropRight1:
+    number: 1-81-82-83
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+#-----------------------------------------------------------------------
+#LED BOARD 2
+#-----------------------------------------------------------------------
+#J5   0..11
+  l_GIDropCenterLeft:
+    number: 2-0-1-2
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIDropCenterRight:
+    number: 2-3-4-5
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_jetLowerCenter:
+    number: 2-6-7-8
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+
+#J9  12..23
+  l_dropRight3:
+    number: 2-12-13-14
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+  l_dropRight2:
+    number: 2-15-16-17
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+  l_dropRight1:
+    number: 2-18-19-20
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+  l_dropRight0:
+    number: 2-21-22-23
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+
+#J6  24..35
+  l_bonusBig1:
+    number: 2-24-25-26
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus_big0
+    platform_settings:
+      polarity: true
+  l_bonus7:
+    number: 2-27-28-29
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus7
+    platform_settings:
+      polarity: true
+  l_bonus8:
+    number: 2-30-31-32
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus8
+    platform_settings:
+      polarity: true
+  l_dropCenterRight:
+    number: 2-33-34-35
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+
+#J10 36..47
+  l_bonus4:
+    number: 2-36-37-38
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus4
+    platform_settings:
+      polarity: true
+  l_bonus5:
+    number: 2-39-40-41
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus5
+    platform_settings:
+      polarity: true
+  l_bonus6:
+    number: 2-42-43-44
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus6
+    platform_settings:
+      polarity: true
+  l_bonusBig0:
+    number: 2-45-46-47
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus_big0
+    platform_settings:
+      polarity: true
+
+#J7  48..59
+  l_dropLeft0:
+    number: 2-48-49-50
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+  l_dropLeft1:
+    number: 2-51-52-53
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+  l_dropLeft2:
+    number: 2-54-55-56
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+  l_dropLeft3:
+    number: 2-57-58-59
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+
+#J11 60..71
+  l_mode4:
+    number: 2-60-61-62
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_mode5:
+    number: 2-63-64-65
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_mode6:
+    number: 2-66-67-68
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_dropCenterLeft:
+    number: 2-69-70-71
+    subtype: led
+    fade_ms: 50ms
+    tags: gallery
+    platform_settings:
+      polarity: true
+
+#J8  72..83
+  l_scoop:
+    number: 2-72-73-74
+    subtype: led
+    fade_ms: 50ms
+    tags: scoop_light
+    platform_settings:
+      polarity: true
+  l_GIScoopLL:
+    number: 2-75-76-77
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIScoopML:
+    number: 2-78-79-80
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+#-----------------------------------------------------------------------
+#LED BOARD 3
+#-----------------------------------------------------------------------
+#J5 0..11
+  l_GISlingLeft1:
+    number: 3-0-1-2
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GILowLeft:
+    number: 3-3-4-5
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIDropLeft0:
+    number: 3-6-7-8
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GIDropLeft1:
+    number: 3-9-10-11
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+#J9 12..23
+  l_mode0:
+    number: 3-12-13-14
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_mode1:
+    number: 3-15-16-17
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_mode2:
+    number: 3-18-19-20
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_mode3:
+    number: 3-21-22-23
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+
+#J6 24..35
+  l_bonus3:
+    number: 3-24-25-26
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus3
+    platform_settings:
+      polarity: true
+  l_bonus2:
+    number: 3-27-28-29
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus2
+    platform_settings:
+      polarity: true
+  l_bonus1:
+    number: 3-30-31-32
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus1
+    platform_settings:
+      polarity: true
+  l_bonus0:
+    number: 3-33-34-35
+    subtype: led
+    fade_ms: 50ms
+    default_on_color: 1E90FF
+    tags: bonus_light, bonus0
+    platform_settings:
+      polarity: true
+
+#J10 36..47
+  l_giLeftLaneGuide0:
+    number: 3-36-37-38
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_giLeftLaneGuide1:
+    number: 3-39-40-41
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_giRightLaneGuide1:
+    number: 3-42-43-44
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_giRightLaneGuide0:
+    number: 3-45-46-47
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+#J7 48..59
+  l_specialRight:
+    number: 3-48-49-50
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_GISlingRight0:
+    number: 3-51-52-53
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GISlingRight1:
+    number: 3-54-55-56
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_GILowRight:
+    number: 3-57-58-59
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+#J11 60..71
+  l_5x:
+    number: 3-60-61-62
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_4x:
+    number: 3-63-64-65
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_3x:
+    number: 3-66-67-68
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_2x:
+    number: 3-69-70-71
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+
+
+#J8 72..83
+  l_shootAgain:
+    number: 3-72-73-74
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_GISlingLeft0:
+    number: 3-75-76-77
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+  l_specialLeft:
+    number: 3-78-79-80
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_GICreditsIn:
+    number: 3-81-82-83
+    subtype: led
+    fade_ms: 50ms
+    tags: gi
+    platform_settings:
+      polarity: true
+
+
+#-----------------------------------------------------------------------
+#LED BOARD 4 (Backbox + Start Button)
+#-----------------------------------------------------------------------
+#J5 00..11
+  l_bb_bh_a1:
+    channels:
+      white:
+        number: 4-0
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_a2:
+    channels:
+      white:
+        number: 4-1
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_a3:
+    channels:
+      white:
+        number: 4-2
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_a4:
+    channels:
+      white:
+        number: 4-3
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_b1:
+    channels:
+      white:
+        number: 4-4
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_b2:
+    channels:
+      white:
+        number: 4-5
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_b3:
+    channels:
+      white:
+        number: 4-6
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_b4:
+    channels:
+      white:
+        number: 4-7
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_c1:
+    channels:
+      white:
+        number: 4-8
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+#J9 12..23
+  l_bb_bh_c2:
+    channels:
+      white:
+        number: 4-12
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_c3:
+    channels:
+      white:
+        number: 4-13
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_c4:
+    channels:
+      white:
+        number: 4-14
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_d1:
+    channels:
+      white:
+        number: 4-15
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_d2:
+    channels:
+      white:
+        number: 4-16
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_d3:
+    channels:
+      white:
+        number: 4-17
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_d4:
+    channels:
+      white:
+        number: 4-18
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+#J6 24...35
+  l_bb_cy_bridge:
+    channels:
+      white:
+        number: 4-24
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_6ea:
+    channels:
+      white:
+        number: 4-25
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_6eb:
+    channels:
+      white:
+        number: 4-26
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_6a:
+    channels:
+      white:
+        number: 4-27
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_6b:
+    channels:
+      white:
+        number: 4-28
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_5a:
+    channels:
+      white:
+        number: 4-29
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_5b:
+    channels:
+      white:
+        number: 4-30
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_4a:
+    channels:
+      white:
+        number: 4-31
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_3a:
+    channels:
+      white:
+        number: 4-32
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+#J10 36...47
+  l_bb_cy_3b:
+    channels:
+      white:
+        number: 4-36
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_2a:
+    channels:
+      white:
+        number: 4-37
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_2b:
+    channels:
+      white:
+        number: 4-38
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_1b:
+    channels:
+      white:
+        number: 4-39
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_1dome:
+    channels:
+      white:
+        number: 4-40
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_1c:
+    channels:
+      white:
+        number: 4-41
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_1a:
+    channels:
+      white:
+        number: 4-42
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+#J8 72..83
+  l_startButton:
+    channels:
+      white:
+        number: 4-72
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+  l_top_max_1:
+    channels:
+      white:
+        number: 4-75
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+  l_top_max_2:
+    channels:
+      white:
+        number: 4-76
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+  l_top_vin_blaster1:
+    channels:
+      white:
+        number: 4-78
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+  l_top_vin_blaster2:
+    channels:
+      white:
+        number: 4-79
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+  l_top_vin_tv:
+    channels:
+      white:
+        number: 4-80
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+
+
+  l_bb_star1:
+    channels:
+      white:
+        number: 4-83
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_star2:
+    channels:
+      white:
+        number: 4-82
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_star3:
+    channels:
+      white:
+        number: 4-81
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+#J11 60..71 - "The Black Hole"
+  l_bb_the:
+    channels:
+      white:
+        number: 4-60
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0b:
+    channels:
+      white:
+        number: 4-61
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0l:
+    channels:
+      white:
+        number: 4-62
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0a:
+    channels:
+      white:
+        number: 4-63
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0c:
+    channels:
+      white:
+        number: 4-64
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0k:
+    channels:
+      white:
+        number: 4-65
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_1h:
+    channels:
+      white:
+        number: 4-66
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_1o:
+    channels:
+      white:
+        number: 4-67
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_1l:
+    channels:
+      white:
+        number: 4-68
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_1e:
+    channels:
+      white:
+        number: 4-69
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms

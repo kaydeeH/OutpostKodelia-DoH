@@ -1,0 +1,12 @@
+#config_version=5
+
+assets:
+    sounds:
+        default:
+            track: sfx
+        music:
+            track: music
+        sfx:
+            track: sfx
+        voice:
+            track: voice
