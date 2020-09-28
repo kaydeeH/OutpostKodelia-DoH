@@ -1,4 +1,75 @@
 #config_version=5
+
+# PARAGON - Feature Lights
+# Note - Light Matrix documentation not present, data is from Lamp Driver Schematic
+# Total of 60 controlled lights identified on Schematic
+#
+# J1 Header - To Playfield
+# 18 1K Bonus
+# 19 5K Bonus
+# 17 9K Bonus
+# 23 40K Super Bonus
+# 14 25K Drop Target
+# 15 2X Bonus
+# 16 Saucer "P"
+# 28 Saucer "G"
+# 24 Center "P"
+# 25 Center "G"
+# 27 2K Golden Cliff
+# 01 2k Bonus
+# 09 6k Bonus
+# 08 10k Bonus
+# 03 10k Drop Target
+# 02 Water Lane Special
+# 10 3X Bonus
+# 07 Saucer "A" (Left)
+# 06 Saucer "O"
+# 05 Center "A" (Left)
+# 11 Center "O"
+# 13 Saucer "N"
+# 12 4k Golden Cliff
+#
+# J2 Header - To backbox
+# 21 Shoot Again
+# 22 Ball in Play
+# 16 Spinner (1) Bottom
+# 14 10K Waterlane
+# 08 Match
+# 23 High Score To Date
+# 20 Spinner (2)
+# 15 5K Waterlane
+# 11 Game Over
+# 06 Spinner (3)
+# 02 10K Golden Cliff
+# 10 Tilt
+# 07 Spinner (4) Top
+# 01 20K Golden Cliff
+#
+# J3 Header - To Playfield
+# 26 3k Bonus
+# 25 7k Bonus
+# 19 20k Super Bonus
+# 17 15k Drop Target
+# 16 Paragon Saucer Special
+# 23 5x Bonus
+# 27 Saucer "R"
+# 21 Center "R"
+# 20 Center "N"
+# 22 Same Player S.A.
+# 24 6K Golden Cliff
+# 01 4k Bonus
+# 12 8k Bonus
+# 15 30k Super Bonus
+# 11 20k Drop Target
+# 09 5x Treasure Saucer
+# 03 Extra Ball Treasure Saucer
+# 04 Saucer "A" (Right)
+# 02 Special Treasure Saucer
+# 10 Center "A" Right
+# 18 Special Drop Target
+# 13 Credit Indicator
+# 14 8K golden cliff
+
 lights:
 
   l_yellowTargetLeft: #needs to be drilled

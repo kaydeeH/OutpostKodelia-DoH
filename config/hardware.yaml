@@ -8,6 +8,24 @@ p_roc:
   use_watchdog: true
   watchdog_time: 1s
 
+# PARAGON - Base Solenoid Identification Table
+#
+# 01 Outhole Kicker
+# 02 Knocker
+# 03 Treasure Chamber Saucer
+# 04 Paragon Saucer
+# 05 Golden Cliffs Saucer
+# 06 Left Slingshot
+# 07 Right Slingshot
+# 08 Left Thumper Bumper
+# 09 Right Thumper Bumper
+# 10 Bottom Thumper Bumper
+# 11 Center Thumper Bumper
+# 12 Drop Target (In line)
+# 13 Drop Target
+# 14 Coin Lockout Door
+# 15 K1 relay (flipper enable)
+
 coils:
   c_flipper_right_main:
     number: A0-B0-0
