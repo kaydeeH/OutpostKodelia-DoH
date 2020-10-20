@@ -1,38 +1,35 @@
 #config_version=5
 
 sound_system:
-    buffer: 1024
-    channels: 1
-    enabled: True
-    frequency: 44100
-    master_volume: 0.75
-    tracks:
-       music:
-          type: standard
-          simultaneous_sounds: 1
-          volume: .5
-       voice:
-          type: standard
-          simultaneous_sounds: 10
-          volume: 0.8
-       sfx:
-          type: standard
-          simultaneous_sounds: 32
-          volume: 0.8
+  buffer: 1024
+  channels: 1
+  enabled: True
+  frequency: 44100
+  master_volume: 0.75
+  tracks:
+    music:
+      type: standard
+      simultaneous_sounds: 1
+      volume: .5
+    voice:
+      type: standard
+      simultaneous_sounds: 10
+      volume: 0.8
+    sfx:
+      type: standard
+      simultaneous_sounds: 32
+      volume: 0.8
 
-#
-#sounds:
+sounds:
+  # Music
+  bonuscountdownmusic:
+    file: bonus_countdown.ogg
+    track: music
 #    # Generic SFX
 #    soft_laser:
 #        file: silencedlaser.wav
 #        track: sfx
 #        volume: .5
-#
-#    # Music
-#    bobandvincent:
-#        file: BobandVINCent.wav
-#        track: music
-#        fade_out: 1s
 #
 #    #Voice clips
 #    alex_01:
