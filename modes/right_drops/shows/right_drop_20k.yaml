@@ -1,0 +1,8 @@
+#show_version=5
+- time: 0
+  lights:
+    l_droptarget_20k: white
+- time: +1
+  lights:
+    l_droptarget_20k: off
+- time: +1

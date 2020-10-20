@@ -1,0 +1,7 @@
+#config_version=5
+
+# Overall Game Settings File
+
+game:
+  balls_per_game: settings.balls_per_game
+  max_players: settings.max_players

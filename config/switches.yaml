@@ -73,8 +73,11 @@ switches:
     number: 0/1/2
   s_service_1:
     number: 2/0/2
-  s_service_2:
+    tags: service_enter
+  s_service_2:    # this switch won't exist, probably needs to be added to make this all work.
     number: 2/0/3
+    tags: service_esc
+
 
   # Drop Targets - Right Side - C = Bottom
   s_drop_right_a:
@@ -87,10 +90,10 @@ switches:
   # Slingshots, Pops and Flippers
   s_flipper_left:
     number: 0/1/6
-    tags: left_flipper
+    tags: left_flipper, service_up
   s_flipper_right:
     number: 0/1/7
-    tags: right_flipper
+    tags: right_flipper, service_down
   s_slingshot_right:
     number: 1/0/0
   s_slingshot_left:
@@ -128,6 +131,7 @@ switches:
 
   # Rollovers
   # Note that golden cliffs is also tied to drop rebound
+  # SWITCH 34:
   s_top_center_rollover:
     number: 1/1/4
     tags: playfield_active

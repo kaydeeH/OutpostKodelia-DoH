@@ -1,0 +1,11 @@
+#config_version=5
+
+# Contains configuration data for various minor shots
+
+# Based on PARAGON Rules --
+
+#TODO Validate Scoring for Minor Shots
+
+mode:
+  start_events: ball_started
+  priority: 125

@@ -1,0 +1,13 @@
+#show_version=5
+- time: 0
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: off
+    l_bonus_3k: off
+    l_bonus_4k: off
+    l_bonus_5k: off
+    l_bonus_6k: off
+    l_bonus_7k: off
+    l_bonus_8k: off
+    l_bonus_9k: off
+    l_bonus_10k: white

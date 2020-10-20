@@ -1,0 +1,23 @@
+#config_version=5
+
+#This mode monitors SPECIAL events and issues awards accordingly
+
+#NOTE: extra ball/replay not yet implemented
+
+mode:
+  start_events: ball_started
+  priority: 200
+
+event_player:
+  special_scored_drop_right{settings.special_award==0}: award_nothing
+  special_scored_drop_right{settings.special_award==1}: award_replay
+  special_scored_drop_right{settings.special_award==2}: award_extra_ball
+  special_scored_drop_right{settings.special_award==3}: award_special_50000
+  special_scored_waterfall{settings.special_award==0}: award_nothing
+  special_scored_waterfall{settings.special_award==1}: award_replay
+  special_scored_waterfall{settings.special_award==2}: award_extra_ball
+  special_scored_waterfall{settings.special_award==3}: award_special_50000
+
+variable_player:
+  award_special_50000:
+    score: 50000

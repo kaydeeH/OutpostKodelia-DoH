@@ -6,6 +6,9 @@ config:
   - lights.yaml
   - scriptlets.yaml
   - switches.yaml
+  - settings.yaml
+  - widgetstyles.yaml
+  - game.yaml
 
 #slides:
 #  welcome_slide:
@@ -23,6 +26,13 @@ config:
 
 modes:
   - base
+  - service
+  - right_drops       # handler for the right bank drop target feature
+  - special           # handler for all SPECIAL events
+  - bonus_display     # handler for super bonus and bonus display (maybe countdown?)
+  - waterfall         # handler for the waterfall lane feature
+  - golden_cliffs     # handler for golden cliffs saucer
+  - minor_shots       # misc rollovers / stand ups scoring & bonus accural
 
 player_vars:
 

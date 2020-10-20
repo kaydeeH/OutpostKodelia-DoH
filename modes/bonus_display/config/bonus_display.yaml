@@ -1,0 +1,116 @@
+#config_version=5
+
+#Contains setup for the bonus display and the super bonus achievements
+
+mode:
+  start_events: ball_started
+  priority: 210
+
+achievements:
+  super_bonus_20k:
+    start_events: mode_bonus_display_started
+    show_when_completed: superbonus_20k
+    complete_events: bonus_20k_reached
+  super_bonus_30k:
+    start_events: bonus_20k_reached
+    show_when_completed: superbonus_30k
+    complete_events: bonus_30k_reached
+  super_bonus_40k:
+    start_events: bonus_30k_reached
+    show_when_completed: superbonus_40k
+    complete_events: bonus_40k_reached
+
+event_player:
+  player_bonuscount{value==20}:
+    - bonus_20k_reached
+  player_bonuscount{value==30}:
+    - bonus_30k_reached
+  player_bonuscount{value==40}:
+    - bonus_40k_reached
+
+variable_player:
+  mode_bonus_display_started{device.achievements.super_bonus_20k.state != "completed" and device.achievements.super_bonus_30k.state != "completed" and device.achievements.super_bonus_40k.state != "completed"}:
+    bonuscount:
+      action: set
+      int: 1
+  mode_bonus_display_started{device.achievements.super_bonus_20k.state == "completed" and device.achievements.super_bonus_30k.state != "completed" and device.achievements.super_bonus_40k.state != "completed"}:
+    bonuscount:
+      action: set
+      int: 20
+  mode_bonus_display_started{device.achievements.super_bonus_30k.state == "completed" and device.achievements.super_bonus_40k.state != "completed"}:
+    bonuscount:
+      action: set
+      int: 30
+  mode_bonus_display_started{device.achievements.super_bonus_40k.state == "completed"}:
+    bonuscount:
+      action: set
+      int: 40
+  player_bonuscount{value>49}:
+    bonuscount:
+      action: set
+      int: 49
+
+show_player:
+  player_bonuscount{value==1 or value==21 or value==31 or value==41}:
+    bonus_display_01k:
+      key: bonus_display
+  player_bonuscount{value==2 or value==22 or value==32 or value==42}:
+    bonus_display_02k:
+      key: bonus_display
+  player_bonuscount{value==3 or value==23 or value==33 or value==44}:
+    bonus_display_03k:
+      key: bonus_display
+  player_bonuscount{value==4 or value==24 or value==34 or value==44}:
+    bonus_display_04k:
+      key: bonus_display
+  player_bonuscount{value==5 or value==25 or value==35 or value==45}:
+    bonus_display_05k:
+      key: bonus_display
+  player_bonuscount{value==6 or value==26 or value==36 or value==46}:
+    bonus_display_06k:
+      key: bonus_display
+  player_bonuscount{value==7 or value==27 or value==37 or value==47}:
+    bonus_display_07k:
+      key: bonus_display
+  player_bonuscount{value==8 or value==28 or value==38 or value==48}:
+    bonus_display_08k:
+      key: bonus_display
+  player_bonuscount{value==9 or value==29 or value==39 or value==49}:
+    bonus_display_09k:
+      key: bonus_display
+  player_bonuscount{value==20 or value==30 or value==40}:
+    bonus_display_super:
+      key: bonus_display
+  player_bonuscount{value==10}:
+    bonus_display_10k:
+      key: bonus_display
+  player_bonuscount{value==11}:
+    bonus_display_11k:
+      key: bonus_display
+  player_bonuscount{value==12}:
+    bonus_display_12k:
+      key: bonus_display
+  player_bonuscount{value==13}:
+    bonus_display_13k:
+      key: bonus_display
+  player_bonuscount{value==14}:
+    bonus_display_14k:
+      key: bonus_display
+  player_bonuscount{value==15}:
+    bonus_display_15k:
+      key: bonus_display
+  player_bonuscount{value==16}:
+    bonus_display_16k:
+      key: bonus_display
+  player_bonuscount{value==17}:
+    bonus_display_17k:
+      key: bonus_display
+  player_bonuscount{value==18}:
+    bonus_display_18k:
+      key: bonus_display
+  player_bonuscount{value==19}:
+    bonus_display_19k:
+      key: bonus_display
+
+
+

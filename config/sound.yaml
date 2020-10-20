@@ -19,6 +19,7 @@ sound_system:
           type: standard
           simultaneous_sounds: 32
           volume: 0.8
+
 #
 #sounds:
 #    # Generic SFX

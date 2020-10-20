@@ -1,0 +1,51 @@
+#config_version=5
+
+# Contains configuration data for the "waterfall" lane
+
+# Based on PARAGON Rules --
+#
+# Each hit of the golden cliffs saucer scores current value and advances to next value, does not reset per ball
+#
+#TODO -- play a show when hit, then eject the ball
+
+mode:
+  start_events: ball_started
+  priority: 121
+
+shot_profiles:
+  golden_cliffs:
+    advance_on_hit: true
+    states:
+      - name: 2k
+        show: gc2k
+      - name: 4k
+        show: gc4k
+      - name: 6k
+        show: gc6k
+      - name: 8k
+        show: gc8k
+      - name: 10k
+        show: gc10k
+      - name: 20k
+        show: gc20k
+
+shots:
+  golden_cliffs_saucer:
+    switch: s_saucer_golden_cliffs
+    profile: golden_cliffs
+
+variable_player:
+   golden_cliffs_saucer_2k_hit:
+     score: 2000
+   golden_cliffs_saucer_4k_hit:
+     score: 4000
+   golden_cliffs_saucer_6k_hit:
+     score: 6000
+   golden_cliffs_saucer_8k_hit:
+     score: 8000
+   golden_cliffs_saucer_10k_hit:
+     score: 10000
+   golden_cliffs_saucer_20k_hit:
+     score: 20000
+     bonuscount: 1
+

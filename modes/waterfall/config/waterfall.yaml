@@ -1,0 +1,59 @@
+#config_version=5
+
+# Contains configuration data for the "waterfall" lane
+
+# Based on PARAGON Rules --
+# Waterfall Rollover Scores 1 bonus advance, plus value that increases based on drop target bank completions, resetting w/ each ball
+#
+# LIBERAL -- 5000, 10000, Special, 10000
+# CONS -- 1000, 5000, 10000, Special, 10000
+
+mode:
+  start_events: ball_started
+  priority: 120
+
+shot_profiles:
+  waterfall:
+    advance_on_hit: false
+    states:
+      - name: 1k
+        show: waterfall_off
+        manual_advance: true
+      - name: 5k
+        show: waterfall_5k
+        manual_advance: true
+      - name: 10k
+        show: waterfall_10k
+        manual_advance: true
+      - name: waterfall_special
+        show: waterfall_special
+        manual_advance: true
+      - name: 10k2
+        show: waterfall_10k
+        manual_advance: true
+
+shots:
+  waterfall_rollover:
+    switch: s_waterfall_rollover
+    advance_events:
+      - drop_target_bank_dtbank_right_down{device.shots.waterfall_rollover.state_name != "waterfall_special"}
+      - special_scored_waterfall
+      - mode_waterfall_started{settings.waterfall_lane_feature==1}
+    reset_events: mode_waterfall_started
+    profile: waterfall
+
+variable_player:
+   waterfall_rollover_hit:
+     bonuscount: 1
+   waterfall_rollover_1k_hit:
+     score: 1000
+   waterfall_rollover_5k_hit:
+     score: 5000
+   waterfall_rollover_10k_hit:
+     score: 10000
+   waterfall_rollover_10k2_hit:
+     score: 10000
+
+event_player:
+   waterfall_rollover_waterfall_special_hit:
+     - special_scored_waterfall

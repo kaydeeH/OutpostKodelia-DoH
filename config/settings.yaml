@@ -1,0 +1,111 @@
+#config_version=5
+
+#Machine level settings that will be available on the setup menu
+#Eventually should split this up into Kodelia Common and Game Specific sections
+
+# In other config files, refer to these using --
+# settings.[setting name]
+
+settings:
+  balls_per_game:
+    label: Balls Per Game
+    values:
+      3: "3 (default)"
+      5: "5"
+    default: 3
+    key_type: int
+    sort: 100
+
+  max_players:
+    label: Maximum Players
+    values:
+      1: "1"
+      2: "2"
+      4: "4 (default)"
+    default: 4
+    key_type: int
+    sort: 100
+
+  hazzard_scoring:
+    label: Hazzard Saucer Scoring
+    values:
+      0: "scores 500 and 1 bonus advance"
+      1: "scores 3000 and 2 bonus advances (default)"
+    default: 1
+    key_type: int
+    sort: 101
+
+  hazzard_scan:
+    label: Hazzard Saucer Scanning
+    values:
+      0: "letters scan continuously"
+      1: "letters advance one at a time (default)"
+    default: 1
+    key_type: int
+    sort: 102
+
+  in_line_scoring:
+    label: Inline Target Scoring
+    values:
+      0: "target scores 1000 and 1 bonus advance"
+      1: "target scores 3000 and 2 bonus advances (default)"
+    default: 1
+    key_type: int
+    sort: 103
+
+  in_line_spotting:
+    label: Inline Target Spots
+    values:
+      0: "target does not spot Hazzard letter"
+      1: "target spots Hazzard letter (default)"
+    default: 1
+    key_type: int
+    sort: 104
+
+  waterfall_drops_special:
+    label: Waterfall Drop Special
+    values:
+      0: "Special reverts after collected"
+      1: "Special remains after collected (default)"
+    default: 1
+    key_type: int
+    sort: 105
+
+  waterfall_lane_feature:
+    label: Waterfall Lane Feature
+    values:
+      0: "1000 - 5000 - 10000 - Special - 10000"
+      1: "5000 - 10000 - Special - 10000 (default)"
+    default: 1
+    key_type: int
+    sort: 106
+
+  special_award:
+    label: Special Award
+    values:
+      0: "No Award"
+      1: "Replay"
+      2: "Extra Ball"
+      3: "25000/50000 Points (default)"
+    default: 3
+    key_type: int
+    sort: 107
+
+  credit_values:
+    label: Credit Values
+    values:
+      0: "1 Coin 1 Credit"
+      1: "Freeplay (default)"
+    default: 1
+    key_type: int
+    sort: 108
+
+  match_feature:
+    label: Match Feature
+    values:
+      0: "Off"
+      1: "On (default)"
+    default: 1
+    key_type: int
+    sort: 109
+

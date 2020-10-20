@@ -5,6 +5,15 @@ mode:
   priority: 100
   file_log: full
 
+
+
 variable_player:
+
+  # PARAGON base wiring treats top right, drop target rebounds and golden cliffs rollover as switch #34 (10 point rebound)
+  s_top_center_rollover_active:
+    score: 10
+
+
+
   s_drop_inline_a_active:
     score: 100

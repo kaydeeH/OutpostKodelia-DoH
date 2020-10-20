@@ -1,0 +1,14 @@
+#config_version=5
+
+#System Level Widget Styles
+widget_styles:
+  medium:
+    font_name: pixelmix
+    font_size: 24           # for LCDs you need to increase this to 30-40. also change the font above
+    adjust_top: 1
+    adjust_bottom: 1
+  small:
+    font_name: smallest_pixel-7
+    font_size: 30           # for LCDs you need to increase this to 30-40. also change the font above
+    adjust_top: 2
+    adjust_bottom: 3

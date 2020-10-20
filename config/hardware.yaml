@@ -187,7 +187,7 @@ drop_target_banks:
      dtbank_right:
          drop_targets: R0, R1, R2
          reset_coils: c_drop_target_right
-#         reset_on_complete: 500ms
+         reset_on_complete: 500ms
          ignore_switch_ms: 200ms
          reset_events:
            player_turn_will_start, drops_right_reset
