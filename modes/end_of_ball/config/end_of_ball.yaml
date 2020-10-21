@@ -1,0 +1,45 @@
+#config_version=5
+
+mode:
+  start_events: ball_ending
+  stop_events: end_bonus
+  priority: 5000
+  use_wait_queue: true
+
+event_player:
+  mode_end_of_ball_started:
+    - decrement_bonus
+  player_bonuscount{value>0}:
+    - decrement_bonus|500ms
+  player_bonuscount{value==0}:
+    - end_bonus
+
+variable_player:
+  decrement_bonus:
+    bonuscount:
+      action: add
+      int: -1
+    score:
+      action: add
+      int: 1000 * current_player.bonusmulti
+
+show_player:
+  player_bonuscount{value==39}:
+    disable_40k:
+      key: bonus_countdown
+  player_bonuscount{value==29}:
+    disable_30k:
+      key: bonus_countdown
+  player_bonuscount{value==19}:
+    disable_20k:
+      key: bonus_countdown
+
+sound_player:
+  mode_end_of_ball_started:
+    bonuscountdownmusic:
+      action: play
+      loops: -1
+  end_bonus:
+    bonuscountdownmusic:
+      action: stop
+      fade_out: 1s

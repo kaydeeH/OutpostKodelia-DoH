@@ -29,6 +29,22 @@ event_player:
     - bonus_40k_reached
 
 variable_player:
+  mode_bonus_display_started:
+    bonusmulti:
+      action: set
+      int: 1
+  bonus_multiply_2x{current_player.bonusmulti<2}:
+    bonusmulti:
+      action: set
+      int: 2
+  bonus_multiply_3x{current_player.bonusmulti<3}:
+    bonusmulti:
+      action: set
+      int: 3
+  bonus_multiply_5x{current_player.bonusmulti<5}:
+    bonusmulti:
+      action: set
+      int: 5
   mode_bonus_display_started{device.achievements.super_bonus_20k.state != "completed" and device.achievements.super_bonus_30k.state != "completed" and device.achievements.super_bonus_40k.state != "completed"}:
     bonuscount:
       action: set
@@ -111,6 +127,14 @@ show_player:
   player_bonuscount{value==19}:
     bonus_display_19k:
       key: bonus_display
-
+  bonus_multiply_2x{current_player.bonusmulti<2}:
+    multi-2x:
+      key: bonus_x
+  bonus_multiply_3x{current_player.bonusmulti<3}:
+    multi-3x:
+      key: bonus_x
+  bonus_multiply_5x{current_player.bonusmulti<5}:
+    multi-5x:
+      key: bonus_x
 
 

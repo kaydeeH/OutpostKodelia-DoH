@@ -1,0 +1,6 @@
+#show_version=5
+- time: 0
+  lights:
+    l_bonus_2x: white
+    l_bonus_3x: off
+    l_bonus_5x: off

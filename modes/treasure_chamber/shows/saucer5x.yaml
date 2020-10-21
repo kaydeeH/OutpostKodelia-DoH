@@ -1,0 +1,6 @@
+#show_version=5
+- time: 0
+  lights:
+    l_treasure_5x: white
+    l_treasure_extra_ball: off
+    l_treasure_special: off

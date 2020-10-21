@@ -33,6 +33,8 @@ modes:
   - waterfall         # handler for the waterfall lane feature
   - golden_cliffs     # handler for golden cliffs saucer
   - minor_shots       # misc rollovers / stand ups scoring & bonus accural
+  - treasure_chamber  # in line drop targets & associated saucer
+  - end_of_ball       # bonus meltdown
 
 player_vars:
 

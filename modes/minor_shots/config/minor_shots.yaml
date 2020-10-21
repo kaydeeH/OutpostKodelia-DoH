@@ -9,3 +9,19 @@
 mode:
   start_events: ball_started
   priority: 125
+
+variable_player:
+  s_center_target_active:
+    bonuscount: 1
+  s_top_center_target_active:
+    bonuscount: 1
+  s_rebound_500pt_active:
+    score: 500
+  s_top_center_rollover_active:
+    bonuscount: 1
+  s_golden_cliffs_rollover_active:
+    score: 10
+  s_right_outlane_active:
+    score: 1000
+  s_right_flip_feeder_lane_active:
+    score: 1000
