@@ -35,6 +35,9 @@ modes:
   - minor_shots       # misc rollovers / stand ups scoring & bonus accural
   - treasure_chamber  # in line drop targets & associated saucer
   - end_of_ball       # bonus meltdown
+  - spinner           # spinner logic
+  - thumpers          # thumper bumper logic
+  - hazzard           # HAZZARD (Paragon) Saucer
 
 player_vars:
 

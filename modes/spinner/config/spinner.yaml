@@ -1,0 +1,48 @@
+#config_version=5
+
+# Contains configuration data for the spinner
+
+# Based on PARAGON Rules --
+#
+# Every 5th Spin increases bonus
+# Adding 100pts/spin for now
+#
+#TODO -- verify paragon spinner rules
+
+mode:
+  start_events: ball_started
+  priority: 130
+
+shot_profiles:
+  spinner:
+    advance_on_hit: true
+    loop: true
+    states:
+      - name: spin_count_0
+        show: sp0
+      - name: spin_count_1
+        show: sp1
+      - name: spin_count_2
+        show: sp2
+      - name: spin_count_3
+        show: sp3
+      - name: spin_count_4
+        show: sp4
+
+shots:
+  spinner_default:
+    switch: s_spinner
+    profile: spinner
+
+variable_player:
+   spinner_default_spin_count_0_hit:
+     score: 100
+   spinner_default_spin_count_1_hit:
+     score: 100
+   spinner_default_spin_count_2_hit:
+     score: 100
+   spinner_default_spin_count_3_hit:
+     score: 100
+   spinner_default_spin_count_4_hit:
+     score: 100
+     bonuscount: 1

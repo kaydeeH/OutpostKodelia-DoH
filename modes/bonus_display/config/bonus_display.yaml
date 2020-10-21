@@ -21,11 +21,11 @@ achievements:
     complete_events: bonus_40k_reached
 
 event_player:
-  player_bonuscount{value==20}:
+  player_bonuscount{value>=20}:
     - bonus_20k_reached
-  player_bonuscount{value==30}:
+  player_bonuscount{value>=30}:
     - bonus_30k_reached
-  player_bonuscount{value==40}:
+  player_bonuscount{value>=40}:
     - bonus_40k_reached
 
 variable_player:

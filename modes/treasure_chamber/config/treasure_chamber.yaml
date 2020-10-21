@@ -32,7 +32,6 @@ shots:
     switch: s_saucer_treasure_chamber
     profile: treasure_profile
 
-
 shot_groups:
    shot_group_drop_inline:
      shots: shot_drop_inline_a, shot_drop_inline_b, shot_drop_inline_c, shot_drop_inline_d
@@ -47,6 +46,8 @@ event_player:
     - bonus_multiply_3x
   treasure_saucer_5x_hit:
     - bonus_multiply_5x
+  shot_group_drop_inline_hit{settings.in_line_spotting==1}:
+    - spot_hazzard_letter
 
 variable_player:
   shot_group_drop_inline_hit{settings.in_line_scoring==0}:

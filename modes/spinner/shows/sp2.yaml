@@ -1,0 +1,8 @@
+#show_version=5
+- time: 0
+  lights:
+    l_spinner_1: off
+    l_spinner_2: off
+    l_spinner_3: white
+    l_spinner_4: off
+    l_spinner_5: off

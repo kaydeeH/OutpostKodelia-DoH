@@ -1,0 +1,197 @@
+#config_version=5
+
+# Contains configuration data for the HAZZARD (Paragon) Saucer
+
+#TODO "lit" priority set over "flash" (done, need to test)
+
+mode:
+  start_events: ball_started
+  priority: 140
+
+achievements:
+  sau_1_complete:
+    show_tokens:
+      leds: l_paragon_center_01p, l_paragon_saucer_01p
+    show_when_completed: on
+    start_events: mode_hazzard_started
+    complete_events: hazzard_saucer_sau_1_hit, spot_sau_1
+    reset_events: special_scored_hazzard
+  sau_2_complete:
+    show_tokens:
+      leds: l_paragon_center_02a, l_paragon_saucer_02a
+    show_when_completed: on
+    start_events: mode_hazzard_started
+    complete_events: hazzard_saucer_sau_2_hit, spot_sau_2
+    reset_events: special_scored_hazzard
+  sau_3_complete:
+    show_tokens:
+      leds: l_paragon_center_03r, l_paragon_saucer_03r
+    show_when_completed: on
+    start_events: mode_hazzard_started
+    complete_events: hazzard_saucer_sau_3_hit, spot_sau_3
+    reset_events: special_scored_hazzard
+  sau_4_complete:
+    show_tokens:
+      leds: l_paragon_center_04a, l_paragon_saucer_04a
+    show_when_completed: on
+    start_events: mode_hazzard_started
+    complete_events: hazzard_saucer_sau_4_hit, spot_sau_4
+    reset_events: special_scored_hazzard
+  sau_5_complete:
+    show_tokens:
+      leds: l_paragon_center_05g, l_paragon_saucer_05g
+    show_when_completed: on
+    start_events: mode_hazzard_started
+    complete_events: hazzard_saucer_sau_5_hit, spot_sau_5
+    reset_events: special_scored_hazzard
+  sau_6_complete:
+    show_tokens:
+      leds: l_paragon_center_06o, l_paragon_saucer_06o
+    show_when_completed: on
+    start_events: mode_hazzard_started
+    complete_events: hazzard_saucer_sau_6_hit, spot_sau_6
+    reset_events: special_scored_hazzard
+  sau_7_complete:
+    show_tokens:
+      leds: l_paragon_center_07n, l_paragon_saucer_07n
+    show_when_completed: on
+    start_events: mode_hazzard_started
+    complete_events: hazzard_saucer_sau_7_hit, spot_sau_7
+    reset_events: special_scored_hazzard
+
+achievement_groups:
+  saucer_group:
+    achievements: sau_1_complete, sau_2_complete, sau_3_complete, sau_4_complete, sau_5_complete, sau_6_complete, sau_7_complete
+    events_when_all_completed: enable_saucer_special
+
+shot_profiles:
+  hazzard_sweep:
+    advance_on_hit: false
+    loop: true
+    states:
+      - name: sau_1
+        priority: 100
+        show: flash_leds
+        show_tokens:
+          leds: l_paragon_saucer_01p
+      - name: sau_2
+        priority: 100
+        show: flash_leds
+        show_tokens:
+          leds: l_paragon_saucer_02a
+      - name: sau_3
+        priority: 100
+        show: flash_leds
+        show_tokens:
+          leds: l_paragon_saucer_03r
+      - name: sau_4
+        priority: 100
+        show: flash_leds
+        show_tokens:
+          leds: l_paragon_saucer_04a
+      - name: sau_5
+        priority: 100
+        show: flash_leds
+        show_tokens:
+          leds: l_paragon_saucer_05g
+      - name: sau_6
+        priority: 100
+        show: flash_leds
+        show_tokens:
+          leds: l_paragon_saucer_06o
+      - name: sau_7
+        priority: 100
+        show: flash_leds
+        show_tokens:
+          leds: l_paragon_saucer_07n
+  hazzard_special:
+    advance_on_hit: false
+    states:
+      - name: enabled
+        show: flash_leds
+        show_tokens:
+          leds: l_paragon_saucer_special
+shots:
+  hazzard_saucer:
+    switch: s_saucer_paragon
+    profile: hazzard_sweep
+    advance_events:
+      - hazzard_select_rotate
+      - hazzard_saucer_hazzard_sweep_hit{settings.hazzard_scan==1}
+      - spot_hazzard_letter{settings.hazzard_scan==1}
+    reset_events: special_scored_hazzard
+    enable_events: special_scored_hazzard, mode_hazzard_started
+    disable_events: enable_saucer_special
+  hazzard_saucer_special:
+    enable_events: enable_saucer_special
+    disable_events: special_scored_hazzard
+    switch: s_saucer_paragon
+    profile: hazzard_special
+
+event_player:
+  mode_hazzard_started:
+    - hazzard_sel_letter_1
+  timer_hazzard_rotate_timer_tick:
+    - hazzard_select_rotate
+  hazzard_saucer_special_enabled_hit:
+    - special_scored_hazzard
+  special_scored_hazzard:
+    - mode_hazzard_started|100ms
+  spot_hazzard_letter:
+    - sau_1_result_(device.achievements.sau_1_complete.state)
+  sau_1_result_started:
+    - spot_sau_1
+  sau_1_result_completed:
+    - sau_2_result_(device.achievements.sau_2_complete.state)
+  sau_2_result_started:
+    - spot_sau_2
+  sau_2_result_completed:
+    - sau_3_result_(device.achievements.sau_3_complete.state)
+  sau_3_result_started:
+    - spot_sau_3
+  sau_3_result_completed:
+    - sau_4_result_(device.achievements.sau_4_complete.state)
+  sau_4_result_started:
+    - spot_sau_4
+  sau_4_result_completed:
+    - sau_5_result_(device.achievements.sau_5_complete.state)
+  sau_5_result_started:
+    - spot_sau_5
+  sau_5_result_completed:
+    - sau_6_result_(device.achievements.sau_6_complete.state)
+  sau_6_result_started:
+    - spot_sau_6
+  sau_6_result_completed:
+    - sau_7_result_(device.achievements.sau_7_complete.state)
+  sau_7_result_started:
+    - spot_sau_7
+
+#  spot_hazzard_letter:
+#    - sau_1_("complete" if device.achievements.sau_1_complete.state != "completed" else "checknext")
+#  sau_1_checknext:
+#    - sau_2_("complete" if device.achievements.sau_2_complete.state != "completed" else "checknext")
+#  sau_2_checknext:
+#    - sau_3_("complete" if device.achievements.sau_3_complete.state != "completed" else "checknext")
+#  sau_3_checknext:
+#    - sau_4_("complete" if device.achievements.sau_4_complete.state != "completed" else "checknext")
+#  sau_4_checknext:
+#    - sau_5_("complete" if device.achievements.sau_5_complete.state != "completed" else "checknext")
+#  sau_5_checknext:
+#    - sau_6_("complete" if device.achievements.sau_6_complete.state != "completed" else "checknext")
+#  sau_6_checknext:
+#    - sau_7_("complete" if device.achievements.sau_7_complete.state != "completed" else "checknext")
+
+timers:
+  hazzard_rotate_timer:
+    tick_interval: 3s
+    control_events:
+      - action: start
+        event: mode_hazzard_started{settings.hazzard_scan==0}
+
+variable_player:
+  hazzard_saucer_hazzard_sweep_hit{settings.hazzard_scoring==0}:
+    score: 500
+    bonuscount: 1
+  hazzard_saucer_hazzard_sweep_hit{settings.hazzard_scoring==1}:
+    score: 3000
+    bonuscount: 2

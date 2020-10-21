@@ -1,0 +1,27 @@
+#config_version=5
+
+# Contains configuration data for the pop bumpers
+
+# THIS IS A GUESS AND WILL LIKELY NEED TO BE REDONE
+#
+# Regular pops -- +10 points
+# "Jail" (beast lair) -- -10 points
+
+#TODO -- verify paragon pop rules
+
+mode:
+  start_events: ball_started
+  priority: 130
+
+variable_player:
+  s_thumper_bottom_active{current_player.score>9}:
+    score:
+      action: add
+      int: -10
+  s_thumper_center_active:
+    score: 10
+  s_thumper_right_active:
+    score: 10
+  s_thumper_left_active:
+    score: 10
+
