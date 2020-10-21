@@ -91,12 +91,17 @@ settings:
     key_type: int
     sort: 107
 
-  credit_values:
-    label: Credit Values
+  maximum_credits:
+    label: Maximum Credits
     values:
-      0: "1 Coin 1 Credit"
-      1: "Freeplay (default)"
-    default: 1
+      10: "10"
+      20: "20"
+      30: "30 (default)"
+      40: "40"
+      50: "50"
+      60: "60"
+      99: "99"
+    default: 30
     key_type: int
     sort: 108
 

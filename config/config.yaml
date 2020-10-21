@@ -38,6 +38,30 @@ modes:
   - spinner           # spinner logic
   - thumpers          # thumper bumper logic
   - hazzard           # HAZZARD (Paragon) Saucer
+  - credits           # credits/freeplay control
+
+credits:
+  max_credits: settings.maximum_credits
+  free_play: false
+  switches:
+    - switch: s_coin_1
+      type: money
+      value: .25
+    - switch: s_coin_2
+      type: money
+      value: .25
+    - switch: s_coin_3
+      type: money
+      value: .25
+  pricing_tiers:
+    - price: .25
+      credits: 1
+    - price: 1
+      credits: 5
+  events:
+    - event: award_special_replay
+      type: special
+      credits: 1
 
 player_vars:
 
