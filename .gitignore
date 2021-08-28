@@ -98,3 +98,4 @@ celerybeat-schedule
 .idea
 /data/*
 /showcreator/output*.yaml
+/venv

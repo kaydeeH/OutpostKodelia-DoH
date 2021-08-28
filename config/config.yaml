@@ -1,6 +1,7 @@
 #config_version=5
 config:
   - hardware.yaml
+  - display.yaml
   - sound.yaml
   - assets.yaml
   - lights.yaml
