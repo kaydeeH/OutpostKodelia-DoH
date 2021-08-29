@@ -1,0 +1,170 @@
+#config_version=5
+
+# Screen display version of segment displays & backglass
+
+widgets:
+  backglass:
+    - type: image
+      image: DoH_Backglass_Color
+      z: 10
+#  display1:
+#    - type: text
+#      text: (machine|disp1value)
+#      number_grouping: false
+#      min_digits: 2
+#      font_name: DSEG14Classic-Italic
+#      color: orange
+#      x: 440
+#      y: 614
+#      font_size: 40
+#      anchor_x: right
+#      anchor_y: bottom
+#      z: 2
+  display1:
+    - type: segment_display_emulator
+      name: display1
+      character_count: 7
+      character_slant_angle: 5
+      character_spacing: 5
+      segment_width: 0.15
+      segment_interval: .02
+      segment_off_color: 4b4c4a30
+      segment_on_color: fe961bff
+      side_bevel_enabled: true
+      dot_enabled: true
+      comma_enabled: true
+      text: ""
+      width: 230
+      height: 75
+      x: 391
+      y: 588
+      z: 2
+  display2:
+    - type: segment_display_emulator
+      name: display2
+      character_count: 7
+      character_slant_angle: 5
+      character_spacing: 5
+      segment_width: 0.15
+      segment_interval: .02
+      segment_off_color: 4b4c4a30
+      segment_on_color: fe961bff
+      side_bevel_enabled: true
+      dot_enabled: true
+      comma_enabled: true
+      text: ""
+      width: 230
+      height: 75
+      x: 972
+      y: 588
+      z: 2
+#  display2:
+#    - type: text
+#      text: (machine|disp2value)
+#      number_grouping: false
+#      min_digits: 2
+#      font_name: DSEG14Classic-Italic
+#      color: orange
+#      x: 1150
+#      y: 614
+#      font_size: 40
+#      anchor_x: right
+#      anchor_y: bottom
+#      z: 2
+  display3:
+    - type: segment_display_emulator
+      name: display3
+      character_count: 7
+      character_slant_angle: 5
+      character_spacing: 5
+      segment_width: 0.15
+      segment_interval: .02
+      segment_off_color: 4b4c4a30
+      segment_on_color: fe961bff
+      side_bevel_enabled: true
+      dot_enabled: true
+      comma_enabled: true
+      text: ""
+      width: 230
+      height: 75
+      x: 391
+      y: 112
+      z: 2
+#  display3:
+#    - type: text
+#      text: (machine|disp3value)
+#      number_grouping: false
+#      min_digits: 2
+#      font_name: DSEG14Classic-Italic
+#      color: orange
+#      x: 440
+#      y: 39
+#      font_size: 40
+#      anchor_x: right
+#      anchor_y: bottom
+#      z: 2
+  display4:
+    - type: segment_display_emulator
+      name: display4
+      character_count: 7
+      character_slant_angle: 5
+      character_spacing: 5
+      segment_width: 0.15
+      segment_interval: .02
+      segment_off_color: 4b4c4a30
+      segment_on_color: fe961bff
+      side_bevel_enabled: true
+      dot_enabled: true
+      comma_enabled: true
+      text: ""
+      width: 230
+      height: 76
+      x: 972
+      y: 112
+      z: 2
+#  display4:
+#    - type: text
+#      text: (machine|disp4value)
+#      number_grouping: false
+#      min_digits: 2
+#      font_name: DSEG14Classic-Italic
+#      color: orange
+#      x: 1150
+#      y: 39
+#      font_size: 40
+#      anchor_x: right
+#      anchor_y: bottom
+#      z: 2
+  display5:
+    - type: segment_display_emulator
+      name: display5
+      character_count: 7
+      character_slant_angle: 5
+      character_spacing: 5
+      segment_width: 0.15
+      segment_interval: .02
+      segment_off_color: 4b4c4a30
+      segment_on_color: fe961bff
+      side_bevel_enabled: true
+      dot_enabled: true
+      comma_enabled: true
+      text: ""
+      width: 230
+      height: 76
+      x: 990
+      y: 420
+      z: 2
+#  display5:
+#    - type: text
+#      text: (machine|disp5value)
+#      number_grouping: false
+#      min_digits: 2
+#      font_name: DSEG14Classic-Italic
+#      color: orange
+#      x: 1180
+#      y: 404
+#      font_size: 40
+#      anchor_x: right
+#      anchor_y: bottom
+#      z: 2
+

@@ -1,1 +1,81 @@
 #config_version=5
+
+hardware:
+  segment_displays: light_segment_displays
+
+segment_displays:
+  display1:
+    number: 1
+  display2:
+    number: 2
+  display3:
+    number: 3
+  display4:
+    number: 4
+  display5:
+    number: 5
+
+virtual_segment_display_connector:
+  segment_displays: display1, display2, display3, display4, display5
+
+#event_player:
+#  mode_attract_started:
+#    - fix_disp|10ms
+#  dimDisplay4:
+#    - fix_disp|10ms
+#
+#
+#segment_display_player:
+#  mode_attract_started:
+#    display1:
+#      action: set_color
+#      color: "FFA500"
+#    display2:
+#      action: set_color
+#      color: "FFA500"
+#    display3:
+#      action: set_color
+#      color: "FFA500"
+#    display4:
+#      action: set_color
+#      color: "FFA500"
+##      color: "776300"
+#    display5:
+#      action: set_color
+#      color: "FFA500"
+#  dimDisplay4:
+#     display4:
+#       action: set_color
+#       color: "776330"
+#  fix_disp:
+#    display1:
+#      text: "{machine.disp1value}"
+#    display2:
+#      text: "{machine.disp2value}"
+#    display3:
+#      text: "{machine.disp3value}"
+#    display4:
+#      text: "{machine.disp4value}"
+#    display5:
+#      text: "{machine.disp5value}"
+#  machine_var_disp1value:
+#    display1:
+#      text: "{machine.disp1value}"
+#  machine_var_disp2value:
+#    display2:
+#      text: "{machine.disp2value}"
+#  machine_var_disp3value:
+#    display3:
+#      text: "{machine.disp3value}"
+#  machine_var_disp4value:
+#    display4:
+#      text: "{machine.disp4value}"
+#  machine_var_disp5value:
+#    display5:
+#      text: "{machine.disp5value}"
+##  update_color_1:
+##    display1:
+##      action: set_color
+##      color: color
+
+#

@@ -10,3 +10,6 @@ assets:
             track: sfx
         voice:
             track: voice
+    images:
+        preload:
+            load: preload

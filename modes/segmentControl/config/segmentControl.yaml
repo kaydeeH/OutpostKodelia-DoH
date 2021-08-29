@@ -1,0 +1,50 @@
+#config_version=5
+
+mode:
+  start_events: ball_started
+  priority: 15
+
+event_player:
+  mode_game_started:
+    show_scores|10ms:
+
+segment_display_player:
+  mode_game_started:
+    display1:
+      action: set_color
+      color: "FFA500"
+    display2:
+      action: set_color
+      color: "FFA500"
+    display3:
+      action: set_color
+      color: "FFA500"
+    display4:
+      action: set_color
+      color: "FFA500"
+  #    color: "776300"
+    display5:
+      action: set_color
+      color: "FFA500"
+  show_scores:
+    display1:
+      text: "{players[0].score:d}"
+    display2:
+      text: "{players[1].score:d}"
+    display3:
+      text: "{players[2].score:d}"
+    display4:
+      text: "{players[3].score:d}"
+  sw_playfield_active:
+    display1:
+      text: "{players[0].score:d}"
+      flashing: off
+    display2:
+      text: "{players[1].score:d}"
+      flashing: off
+    display3:
+      text: "{players[2].score:d}"
+      flashing: off
+    display4:
+      text: "{players[3].score:d}"
+      flashing: off

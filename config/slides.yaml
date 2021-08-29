@@ -1,0 +1,6 @@
+#config_version=5
+
+# This will be the "development" slide shown on the display to represent what will show on the segment displays
+
+slides:
+  screen_segement_display: []

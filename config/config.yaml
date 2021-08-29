@@ -1,6 +1,7 @@
 #config_version=5
 config:
   - hardware.yaml
+  - coils.yaml
   - display.yaml
   - sound.yaml
   - assets.yaml
@@ -9,25 +10,38 @@ config:
   - switches.yaml
   - settings.yaml
   - widgetstyles.yaml
+  - widgets.yaml
+  - slides.yaml
+  - segmentdisplays.yaml
   - game.yaml
 
-#slides:
-#  welcome_slide:
-#    widgets:
-#      - type: text
-#        text: PINBALL!
-#        font_size: 50
-#        color: red
-#      - type: rectangle
-#        width: 240
-#        height: 60
-#
-#slide_player:
-#  init_done: welcome_slide
+custom_code:
+  - code.updateMachineVar.updateMachineVar
+
+# This is for the debug only segment display simulation
+slide_player:
+  init_done: screen_segement_display
+
+widget_player:
+  init_done:
+    backglass:
+      slide: screen_segement_display
+    display1:
+      slide: screen_segement_display
+    display2:
+      slide: screen_segement_display
+    display3:
+      slide: screen_segement_display
+    display4:
+      slide: screen_segement_display
+    display5:
+      slide: screen_segement_display
 
 modes:
   - base
+  - attract
   - service
+  - segmentControl    # handler for segment displays
   - right_drops       # handler for the right bank drop target feature
   - special           # handler for all SPECIAL events
   - bonus_display     # handler for super bonus and bonus display (maybe countdown?)

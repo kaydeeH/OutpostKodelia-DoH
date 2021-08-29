@@ -1,98 +1,36 @@
 #config_version=5
 
 hardware:
-  platform: p3_roc
-  driverboards: pdb
+  platform: opp
+  driverboards: gen2
 
-p_roc:
-  use_watchdog: true
-  watchdog_time: 1s
+opp:
+  #Use the USB ports defined by your OS for the two STM32 boards
+  ports: /dev/ttyACM0, /dev/ttyACM1
+  #USING SERIAL NUMBERS INSTEAD OF CHAINS
+  #  Board 0 has serial number 0, Board 1 has serial number 1.
+  #  This is convenient if your OS tends to reassign the serial port.
+  #  MPF will automatically address the correct board even if the ports
+  #     are swapped.
 
-# PARAGON - Base Solenoid Identification Table
-#
-# 01 Outhole Kicker
-# 02 Knocker
-# 03 Treasure Chamber Saucer
-# 04 Paragon Saucer
-# 05 Golden Cliffs Saucer
-# 06 Left Slingshot
-# 07 Right Slingshot
-# 08 Left Thumper Bumper
-# 09 Right Thumper Bumper
-# 10 Bottom Thumper Bumper
-# 11 Center Thumper Bumper
-# 12 Drop Target (In line)
-# 13 Drop Target
-# 14 Coin Lockout Door
-# 15 K1 relay (flipper enable)
+  #For multiple CobraPin boards in a game, you will either have to give
+  #  the STM32 boards on the second CobraPin board new serial numbers
+  #  (10 and 11 are suggested for the 2nd board since 2 is used by the
+  #  CobraPin Xpansion Board)
+  #  <OR> Use the chains section to assign a port to a board number.
+  #  Mixing these up could cause blown FETs, coils, and fuses. Proceed
+  #  with caution. Test without coil power and use the yellow coil LEDs
+  #  for feedback.
+  #chains:
+     #0: /dev/ttyACM0
+     #1: /dev/ttyACM1
 
-coils:
-  c_outhole_kicker:
-    number: A0-B0-0
-    default_pulse_ms: 15
-  c_knocker:
-    number: A0-B0-1
-    default_pulse_ms: 15
-  c_saucer_trasure_chamber:
-    number: A0-B0-2
-    default_pulse_ms: 15
-  c_saucer_paragon:
-    number: A0-B0-3
-    default_pulse_ms: 15
-  c_saucer_golden_cliffs:
-    number: A0-B0-4
-    default_pulse_ms: 15
-  c_left_slingshot:
-    number: A0-B0-5
-    default_pulse_ms: 12
-  c_right_slingshot:
-    number: A0-B0-6
-    default_pulse_ms: 12
-  c_left_thumper:
-    number: A0-B0-7
-    default_pulse_ms: 20
-  c_right_thumper:
-    number: A0-B1-0
-    default_pulse_ms: 20
-  c_bottom_thumper:
-    number: A0-B1-1
-    default_pulse_ms: 20
-  c_center_thumper:
-    number: A0-B1-2
-    default_pulse_ms: 20
-  c_drop_target_inline:
-    number: A0-B1-3
-    default_pulse_ms: 30
-  c_drop_target_right:
-    number: A0-B1-4
-    default_pulse_ms: 30
-  c_coin_lockout_door:
-    number: A0-B1-5
-    default_pulse_ms: 15
-  c_k1_relay_flipper_enable:
-    number: A0-B1-6
-    default_pulse_ms: 15
-  c_flipper_right_main:
-    number: A1-B0-0
-    default_pulse_ms: 7
-    debug: true
-    allow_enable: true
-  c_flipper_left_main:
-    number: A1-B0-1
-    default_pulse_ms: 7
-    debug: true
-    allow_enable: true
-  c_flipper_right_upper:
-    number: A1-B0-2
-    default_pulse_ms: 7
-    debug: true
-    allow_enable: true
-  c_flipper_left_upper:
-    number: A1-B0-3
-    default_pulse_ms: 7
-    debug: true
-    allow_enable: true
-
+psus:
+  default:
+    #Gives the capacitors extra time to recharge after firing a coil
+    #  and eases the load on the power supply. Doesn't affect autofire
+    #  devices like flippers, pops, slings.
+    release_wait_ms: 50
 
 playfields:
   playfield:
@@ -131,7 +69,6 @@ ball_devices:
     eject_coil: c_outhole_kicker
     tags: drain, home, trough
     debug: true
-
 
 
 autofire_coils:
