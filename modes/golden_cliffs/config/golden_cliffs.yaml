@@ -68,16 +68,37 @@ event_player:
   golden_cliffs_saucer_20k_hit{current_player.last_creek_value==20000}:
     player_last_creek_value:
       value: 20000
+      player_num:
+        value: game.player.number
+        type: int
+#  player_last_creek_value{player_num==game.player.number}:
+#    show_score_flash_text:
+#      text_1: "CREEK  "
+#      text_2: "VALUE"
+#      text_3: "SCORES "
+#      text_4:
+#        value: current_player.last_creek_value
+#        type: int
+
 
 show_player:
-  player_last_creek_value:
+  player_last_creek_value{player_num==game.player.number}:
     score_flash_text:
-      loops: 4
+      loops: 4  # appears this cannot be resolved at run time and must be a constant here
       show_tokens:
         text_1: "CREEK  "
         text_2: "VALUE"
         text_3: "SCORES "
         text_4: "{current_player.last_creek_value}"
+        
+#  show_score_flash_text:
+#    score_flash_text:
+#      loops: 4  # appears this cannot be resolved at run time and must be a constant here
+#      show_tokens:
+#        text_1: {text_1}
+#        text_2: {text_2}
+#        text_3: {text_3}
+#        text_4: {text_4}
 
 
 
