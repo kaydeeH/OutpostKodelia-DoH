@@ -64,9 +64,10 @@ variable_player:
      score:
        int: (value)
 
-#event_player:
-#  player_last_creek_value:
-#    - golden_cliffs_score_show
+event_player:
+  golden_cliffs_saucer_20k_hit{current_player.last_creek_value==20000}:
+    player_last_creek_value:
+      value: 20000
 
 show_player:
   player_last_creek_value:
