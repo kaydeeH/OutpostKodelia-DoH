@@ -28,7 +28,7 @@ segment_display_player:
     display2:
       text: "  DUKES"
     display3:
-      text: "OF     "
+      text: "öF =?@æ"
     display4:
       text: "HAZZARD"
   attract_show_1_complete:
@@ -39,7 +39,13 @@ segment_display_player:
     display3:
       text: "*******"
     display4:
-      text: "Test"
+      color: "FFA500"
+      transition:
+        type: push
+        direction: left
+        text: "  <o%-'o"
+#        color: "FFA500"
+      text: "*******   TEST"
     display5:
       text: "__**_**"
   attract_show_2_complete:

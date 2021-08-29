@@ -79,6 +79,9 @@ credits:
       credits: 1
 
 player_vars:
+  last_creek_value:
+    initial_value: 0
+
 
 ## Normal Game Settings
 

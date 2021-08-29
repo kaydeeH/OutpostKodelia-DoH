@@ -6,10 +6,13 @@ hardware:
 segment_displays:
   display1:
     number: 1
+    integrated_dots: true
   display2:
     number: 2
   display3:
     number: 3
+    platform_settings:
+      type: 16segment
   display4:
     number: 4
   display5:

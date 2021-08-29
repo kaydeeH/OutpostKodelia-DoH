@@ -29,6 +29,7 @@ segment_display_player:
   show_scores:
     display1:
       text: "{players[0].score:d}"
+      priority: 10
     display2:
       text: "{players[1].score:d}"
     display3:

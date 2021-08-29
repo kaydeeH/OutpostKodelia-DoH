@@ -36,16 +36,52 @@ shots:
 
 variable_player:
    golden_cliffs_saucer_2k_hit:
-     score: 2000
+     last_creek_value:
+       int: 2000
+       action: set
    golden_cliffs_saucer_4k_hit:
-     score: 4000
+     last_creek_value:
+       int: 4000
+       action: set
    golden_cliffs_saucer_6k_hit:
-     score: 6000
+     last_creek_value:
+       int: 6000
+       action: set
    golden_cliffs_saucer_8k_hit:
-     score: 8000
+     last_creek_value:
+       int: 8000
+       action: set
    golden_cliffs_saucer_10k_hit:
-     score: 10000
+     last_creek_value:
+       int: 10000
+       action: set
    golden_cliffs_saucer_20k_hit:
-     score: 20000
+     last_creek_value:
+       int: 20000
+       action: set
      bonuscount: 1
+   player_last_creek_value:
+     score:
+       int: (value)
+
+#event_player:
+#  player_last_creek_value:
+#    - golden_cliffs_score_show
+
+show_player:
+  player_last_creek_value:
+    score_flash_text:
+      loops: 4
+      show_tokens:
+        text_1: "CREEK  "
+        text_2: "VALUE"
+        text_3: "SCORES "
+        text_4: "{current_player.last_creek_value}"
+
+
+
+
+
+
+
 
