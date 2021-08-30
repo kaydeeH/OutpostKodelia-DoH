@@ -42,7 +42,6 @@ modes:
   - base
   - attract
   - service
-  - segmentControl    # handler for segment displays
   - right_drops       # handler for the right bank drop target feature
   - special           # handler for all SPECIAL events
   - bonus_display     # handler for super bonus and bonus display (maybe countdown?)

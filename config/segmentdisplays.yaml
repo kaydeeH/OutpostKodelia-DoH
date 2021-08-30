@@ -1,5 +1,11 @@
 #config_version=5
 
+# PRIMARY SCORE DISPLAY CONTROL GOES HERE
+#
+# Colors - Orange, Half Orange
+#      color: "FFA500"
+#      color: "776300"
+
 hardware:
   segment_displays: light_segment_displays
 
@@ -21,64 +27,76 @@ segment_displays:
 virtual_segment_display_connector:
   segment_displays: display1, display2, display3, display4, display5
 
-#event_player:
-#  mode_attract_started:
-#    - fix_disp|10ms
-#  dimDisplay4:
-#    - fix_disp|10ms
-#
-#
-#segment_display_player:
-#  mode_attract_started:
-#    display1:
-#      action: set_color
-#      color: "FFA500"
-#    display2:
-#      action: set_color
-#      color: "FFA500"
-#    display3:
-#      action: set_color
-#      color: "FFA500"
-#    display4:
-#      action: set_color
-#      color: "FFA500"
-##      color: "776300"
-#    display5:
-#      action: set_color
-#      color: "FFA500"
-#  dimDisplay4:
-#     display4:
-#       action: set_color
-#       color: "776330"
-#  fix_disp:
-#    display1:
-#      text: "{machine.disp1value}"
-#    display2:
-#      text: "{machine.disp2value}"
-#    display3:
-#      text: "{machine.disp3value}"
-#    display4:
-#      text: "{machine.disp4value}"
-#    display5:
-#      text: "{machine.disp5value}"
-#  machine_var_disp1value:
-#    display1:
-#      text: "{machine.disp1value}"
-#  machine_var_disp2value:
-#    display2:
-#      text: "{machine.disp2value}"
-#  machine_var_disp3value:
-#    display3:
-#      text: "{machine.disp3value}"
-#  machine_var_disp4value:
-#    display4:
-#      text: "{machine.disp4value}"
-#  machine_var_disp5value:
-#    display5:
-#      text: "{machine.disp5value}"
-##  update_color_1:
-##    display1:
-##      action: set_color
-##      color: color
+segment_display_player:
+  # init displays on game start
+  game_started:
+    display2:
+      text: ""
+    display3:
+      text: ""
+    display4:
+      text: ""
+    display5:
+      text: "{current_player.ball:d}"
 
-#
+# show score when adding players
+  player_added.1{num==1}:
+    display1:
+      text: "{players[0].score:d}"
+      priority: 10
+  player_added.2{num==2}:
+    display2:
+      text: "{players[1].score:d}"
+      priority: 10
+  player_added.3{num==3}:
+    display3:
+      text: "{players[2].score:d}"
+      priority: 10
+  player_added.4{num==4}:
+    display4:
+      text: "{players[3].score:d}"
+      priority: 10
+
+# Control playfield validation flashing
+#  player_turn_started.1{number==1}:
+  player_turn_started.1{number==1}:
+    display1:
+      action: flash
+  sw_playfield_active.2{game.player.number==1}:
+    display1:
+      action: no_flash
+  player_turn_started.3{number==2}:
+    display2:
+      action: flash
+  sw_playfield_active.4{game.player.number==2}:
+    display2:
+      action: no_flash
+  player_turn_started.5{number==3}:
+    display3:
+      action: flash
+  sw_playfield_active.6{game.player.number==3}:
+    display3:
+      action: no_flash
+  player_turn_started.7{number==4}:
+    display4:
+      action: flash
+  sw_playfield_active.8{game.player.number==4}:
+    display4:
+      action: no_flash
+
+  # clear only display5 after game
+  game_ended{machine.player1_score > 0}:
+    display1:
+      text: "{machine.player1_score:d}"
+  game_ended{machine.player2_score > 0}:
+    display2:
+      text: "{machine.player2_score:d}"
+  game_ended{machine.player3_score > 0}:
+    display3:
+      text: "{machine.player3_score:d}"
+  game_ended{machine.player4_score > 0}:
+    display4:
+      text: "{machine.player4_score:d}"
+  game_ended:
+    display5:
+      text: ""
