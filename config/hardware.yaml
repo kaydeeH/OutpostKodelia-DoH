@@ -3,6 +3,33 @@
 hardware:
   platform: opp
   driverboards: gen2
+  lights: fadecandy
+
+# COBRAPIN lights get numbers 0-0-0 to 0-0-255 and 1-0-0 to 1-0-255
+# they may also need a platform override? doc seems to indicate no.
+#
+# FADECANDY lights get numbers 0 .. 511
+# Connector 0 - 0..63
+# Connector 1 - 64..127
+# Connector 2 - 128..191
+# Connector 3 - 192..255
+# Connector 4 - 256..319
+# Connector 5 - 320..383
+# Connector 6 - 384..477
+# Connector 7 - 448..511
+#
+# OR
+# by assigning OSC channels
+#
+# Connector 0 - 0-0 .. 0-63
+# Connector 1 - 1-0 .. 0-63
+# Connector 2 - 2-0 .. 0-63
+# Connector 3 - 3-0 .. 0-63
+# Connector 4 - 4-0 .. 0-63
+# Connector 5 - 5-0 .. 0-63
+# Connector 6 - 6-0 .. 0-63
+# Connector 7 - 7-0 .. 0-63
+
 
 opp:
   #Use the USB ports defined by your OS for the two STM32 boards

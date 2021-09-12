@@ -6,6 +6,7 @@ config:
   - sound.yaml
   - assets.yaml
   - lights.yaml
+  - neoseglights.yaml
   - scriptlets.yaml
   - switches.yaml
   - settings.yaml

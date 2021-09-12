@@ -9,20 +9,640 @@
 hardware:
   segment_displays: light_segment_displays
 
+#config_version=5
+
 segment_displays:
   display1:
+    size: 7
     number: 1
     integrated_dots: true
-  display2:
-    number: 2
-  display3:
-    number: 3
+    default_transition_update_hz: 24
     platform_settings:
-      type: 16segment
+      lights:
+        - k: l_kodseg_1_1_k
+          m: l_kodseg_1_1_m
+          a: l_kodseg_1_1_a
+          s: l_kodseg_1_1_s
+          u: l_kodseg_1_1_u
+          h: l_kodseg_1_1_h
+          f: l_kodseg_1_1_f
+          g: l_kodseg_1_1_g
+          t: l_kodseg_1_1_t
+          DP: l_kodseg_1_1_DP
+          e: l_kodseg_1_1_e
+          p: l_kodseg_1_1_p
+          r: l_kodseg_1_1_r
+          d: l_kodseg_1_1_d
+          b: l_kodseg_1_1_b
+          n: l_kodseg_1_1_n
+          c: l_kodseg_1_1_c
+        - k: l_kodseg_1_2_k
+          m: l_kodseg_1_2_m
+          a: l_kodseg_1_2_a
+          s: l_kodseg_1_2_s
+          u: l_kodseg_1_2_u
+          h: l_kodseg_1_2_h
+          f: l_kodseg_1_2_f
+          g: l_kodseg_1_2_g
+          t: l_kodseg_1_2_t
+          DP: l_kodseg_1_2_DP
+          e: l_kodseg_1_2_e
+          p: l_kodseg_1_2_p
+          r: l_kodseg_1_2_r
+          d: l_kodseg_1_2_d
+          b: l_kodseg_1_2_b
+          n: l_kodseg_1_2_n
+          c: l_kodseg_1_2_c
+        - k: l_kodseg_1_3_k
+          m: l_kodseg_1_3_m
+          a: l_kodseg_1_3_a
+          s: l_kodseg_1_3_s
+          u: l_kodseg_1_3_u
+          h: l_kodseg_1_3_h
+          f: l_kodseg_1_3_f
+          g: l_kodseg_1_3_g
+          t: l_kodseg_1_3_t
+          DP: l_kodseg_1_3_DP
+          e: l_kodseg_1_3_e
+          p: l_kodseg_1_3_p
+          r: l_kodseg_1_3_r
+          d: l_kodseg_1_3_d
+          b: l_kodseg_1_3_b
+          n: l_kodseg_1_3_n
+          c: l_kodseg_1_3_c
+        - k: l_kodseg_1_4_k
+          m: l_kodseg_1_4_m
+          a: l_kodseg_1_4_a
+          s: l_kodseg_1_4_s
+          u: l_kodseg_1_4_u
+          h: l_kodseg_1_4_h
+          f: l_kodseg_1_4_f
+          g: l_kodseg_1_4_g
+          t: l_kodseg_1_4_t
+          DP: l_kodseg_1_4_DP
+          e: l_kodseg_1_4_e
+          p: l_kodseg_1_4_p
+          r: l_kodseg_1_4_r
+          d: l_kodseg_1_4_d
+          b: l_kodseg_1_4_b
+          n: l_kodseg_1_4_n
+          c: l_kodseg_1_4_c
+        - k: l_kodseg_1_5_k
+          m: l_kodseg_1_5_m
+          a: l_kodseg_1_5_a
+          s: l_kodseg_1_5_s
+          u: l_kodseg_1_5_u
+          h: l_kodseg_1_5_h
+          f: l_kodseg_1_5_f
+          g: l_kodseg_1_5_g
+          t: l_kodseg_1_5_t
+          DP: l_kodseg_1_5_DP
+          e: l_kodseg_1_5_e
+          p: l_kodseg_1_5_p
+          r: l_kodseg_1_5_r
+          d: l_kodseg_1_5_d
+          b: l_kodseg_1_5_b
+          n: l_kodseg_1_5_n
+          c: l_kodseg_1_5_c
+        - k: l_kodseg_1_6_k
+          m: l_kodseg_1_6_m
+          a: l_kodseg_1_6_a
+          s: l_kodseg_1_6_s
+          u: l_kodseg_1_6_u
+          h: l_kodseg_1_6_h
+          f: l_kodseg_1_6_f
+          g: l_kodseg_1_6_g
+          t: l_kodseg_1_6_t
+          DP: l_kodseg_1_6_DP
+          e: l_kodseg_1_6_e
+          p: l_kodseg_1_6_p
+          r: l_kodseg_1_6_r
+          d: l_kodseg_1_6_d
+          b: l_kodseg_1_6_b
+          n: l_kodseg_1_6_n
+          c: l_kodseg_1_6_c
+        - k: l_kodseg_1_7_k
+          m: l_kodseg_1_7_m
+          a: l_kodseg_1_7_a
+          s: l_kodseg_1_7_s
+          u: l_kodseg_1_7_u
+          h: l_kodseg_1_7_h
+          f: l_kodseg_1_7_f
+          g: l_kodseg_1_7_g
+          t: l_kodseg_1_7_t
+          DP: l_kodseg_1_7_DP
+          e: l_kodseg_1_7_e
+          p: l_kodseg_1_7_p
+          r: l_kodseg_1_7_r
+          d: l_kodseg_1_7_d
+          b: l_kodseg_1_7_b
+          n: l_kodseg_1_7_n
+          c: l_kodseg_1_7_c
+  display2:
+    size: 7
+    number: 2
+    integrated_dots: true
+    default_transition_update_hz: 24
+    platform_settings:
+      lights:
+        - k: l_kodseg_2_1_k
+          m: l_kodseg_2_1_m
+          a: l_kodseg_2_1_a
+          s: l_kodseg_2_1_s
+          u: l_kodseg_2_1_u
+          h: l_kodseg_2_1_h
+          f: l_kodseg_2_1_f
+          g: l_kodseg_2_1_g
+          t: l_kodseg_2_1_t
+          DP: l_kodseg_2_1_DP
+          e: l_kodseg_2_1_e
+          p: l_kodseg_2_1_p
+          r: l_kodseg_2_1_r
+          d: l_kodseg_2_1_d
+          b: l_kodseg_2_1_b
+          n: l_kodseg_2_1_n
+          c: l_kodseg_2_1_c
+        - k: l_kodseg_2_2_k
+          m: l_kodseg_2_2_m
+          a: l_kodseg_2_2_a
+          s: l_kodseg_2_2_s
+          u: l_kodseg_2_2_u
+          h: l_kodseg_2_2_h
+          f: l_kodseg_2_2_f
+          g: l_kodseg_2_2_g
+          t: l_kodseg_2_2_t
+          DP: l_kodseg_2_2_DP
+          e: l_kodseg_2_2_e
+          p: l_kodseg_2_2_p
+          r: l_kodseg_2_2_r
+          d: l_kodseg_2_2_d
+          b: l_kodseg_2_2_b
+          n: l_kodseg_2_2_n
+          c: l_kodseg_2_2_c
+        - k: l_kodseg_2_3_k
+          m: l_kodseg_2_3_m
+          a: l_kodseg_2_3_a
+          s: l_kodseg_2_3_s
+          u: l_kodseg_2_3_u
+          h: l_kodseg_2_3_h
+          f: l_kodseg_2_3_f
+          g: l_kodseg_2_3_g
+          t: l_kodseg_2_3_t
+          DP: l_kodseg_2_3_DP
+          e: l_kodseg_2_3_e
+          p: l_kodseg_2_3_p
+          r: l_kodseg_2_3_r
+          d: l_kodseg_2_3_d
+          b: l_kodseg_2_3_b
+          n: l_kodseg_2_3_n
+          c: l_kodseg_2_3_c
+        - k: l_kodseg_2_4_k
+          m: l_kodseg_2_4_m
+          a: l_kodseg_2_4_a
+          s: l_kodseg_2_4_s
+          u: l_kodseg_2_4_u
+          h: l_kodseg_2_4_h
+          f: l_kodseg_2_4_f
+          g: l_kodseg_2_4_g
+          t: l_kodseg_2_4_t
+          DP: l_kodseg_2_4_DP
+          e: l_kodseg_2_4_e
+          p: l_kodseg_2_4_p
+          r: l_kodseg_2_4_r
+          d: l_kodseg_2_4_d
+          b: l_kodseg_2_4_b
+          n: l_kodseg_2_4_n
+          c: l_kodseg_2_4_c
+        - k: l_kodseg_2_5_k
+          m: l_kodseg_2_5_m
+          a: l_kodseg_2_5_a
+          s: l_kodseg_2_5_s
+          u: l_kodseg_2_5_u
+          h: l_kodseg_2_5_h
+          f: l_kodseg_2_5_f
+          g: l_kodseg_2_5_g
+          t: l_kodseg_2_5_t
+          DP: l_kodseg_2_5_DP
+          e: l_kodseg_2_5_e
+          p: l_kodseg_2_5_p
+          r: l_kodseg_2_5_r
+          d: l_kodseg_2_5_d
+          b: l_kodseg_2_5_b
+          n: l_kodseg_2_5_n
+          c: l_kodseg_2_5_c
+        - k: l_kodseg_2_6_k
+          m: l_kodseg_2_6_m
+          a: l_kodseg_2_6_a
+          s: l_kodseg_2_6_s
+          u: l_kodseg_2_6_u
+          h: l_kodseg_2_6_h
+          f: l_kodseg_2_6_f
+          g: l_kodseg_2_6_g
+          t: l_kodseg_2_6_t
+          DP: l_kodseg_2_6_DP
+          e: l_kodseg_2_6_e
+          p: l_kodseg_2_6_p
+          r: l_kodseg_2_6_r
+          d: l_kodseg_2_6_d
+          b: l_kodseg_2_6_b
+          n: l_kodseg_2_6_n
+          c: l_kodseg_2_6_c
+        - k: l_kodseg_2_7_k
+          m: l_kodseg_2_7_m
+          a: l_kodseg_2_7_a
+          s: l_kodseg_2_7_s
+          u: l_kodseg_2_7_u
+          h: l_kodseg_2_7_h
+          f: l_kodseg_2_7_f
+          g: l_kodseg_2_7_g
+          t: l_kodseg_2_7_t
+          DP: l_kodseg_2_7_DP
+          e: l_kodseg_2_7_e
+          p: l_kodseg_2_7_p
+          r: l_kodseg_2_7_r
+          d: l_kodseg_2_7_d
+          b: l_kodseg_2_7_b
+          n: l_kodseg_2_7_n
+          c: l_kodseg_2_7_c
+  display3:
+    size: 7
+    number: 3
+    integrated_dots: true
+    default_transition_update_hz: 24
+    platform_settings:
+      lights:
+        - k: l_kodseg_3_1_k
+          m: l_kodseg_3_1_m
+          a: l_kodseg_3_1_a
+          s: l_kodseg_3_1_s
+          u: l_kodseg_3_1_u
+          h: l_kodseg_3_1_h
+          f: l_kodseg_3_1_f
+          g: l_kodseg_3_1_g
+          t: l_kodseg_3_1_t
+          DP: l_kodseg_3_1_DP
+          e: l_kodseg_3_1_e
+          p: l_kodseg_3_1_p
+          r: l_kodseg_3_1_r
+          d: l_kodseg_3_1_d
+          b: l_kodseg_3_1_b
+          n: l_kodseg_3_1_n
+          c: l_kodseg_3_1_c
+        - k: l_kodseg_3_2_k
+          m: l_kodseg_3_2_m
+          a: l_kodseg_3_2_a
+          s: l_kodseg_3_2_s
+          u: l_kodseg_3_2_u
+          h: l_kodseg_3_2_h
+          f: l_kodseg_3_2_f
+          g: l_kodseg_3_2_g
+          t: l_kodseg_3_2_t
+          DP: l_kodseg_3_2_DP
+          e: l_kodseg_3_2_e
+          p: l_kodseg_3_2_p
+          r: l_kodseg_3_2_r
+          d: l_kodseg_3_2_d
+          b: l_kodseg_3_2_b
+          n: l_kodseg_3_2_n
+          c: l_kodseg_3_2_c
+        - k: l_kodseg_3_3_k
+          m: l_kodseg_3_3_m
+          a: l_kodseg_3_3_a
+          s: l_kodseg_3_3_s
+          u: l_kodseg_3_3_u
+          h: l_kodseg_3_3_h
+          f: l_kodseg_3_3_f
+          g: l_kodseg_3_3_g
+          t: l_kodseg_3_3_t
+          DP: l_kodseg_3_3_DP
+          e: l_kodseg_3_3_e
+          p: l_kodseg_3_3_p
+          r: l_kodseg_3_3_r
+          d: l_kodseg_3_3_d
+          b: l_kodseg_3_3_b
+          n: l_kodseg_3_3_n
+          c: l_kodseg_3_3_c
+        - k: l_kodseg_3_4_k
+          m: l_kodseg_3_4_m
+          a: l_kodseg_3_4_a
+          s: l_kodseg_3_4_s
+          u: l_kodseg_3_4_u
+          h: l_kodseg_3_4_h
+          f: l_kodseg_3_4_f
+          g: l_kodseg_3_4_g
+          t: l_kodseg_3_4_t
+          DP: l_kodseg_3_4_DP
+          e: l_kodseg_3_4_e
+          p: l_kodseg_3_4_p
+          r: l_kodseg_3_4_r
+          d: l_kodseg_3_4_d
+          b: l_kodseg_3_4_b
+          n: l_kodseg_3_4_n
+          c: l_kodseg_3_4_c
+        - k: l_kodseg_3_5_k
+          m: l_kodseg_3_5_m
+          a: l_kodseg_3_5_a
+          s: l_kodseg_3_5_s
+          u: l_kodseg_3_5_u
+          h: l_kodseg_3_5_h
+          f: l_kodseg_3_5_f
+          g: l_kodseg_3_5_g
+          t: l_kodseg_3_5_t
+          DP: l_kodseg_3_5_DP
+          e: l_kodseg_3_5_e
+          p: l_kodseg_3_5_p
+          r: l_kodseg_3_5_r
+          d: l_kodseg_3_5_d
+          b: l_kodseg_3_5_b
+          n: l_kodseg_3_5_n
+          c: l_kodseg_3_5_c
+        - k: l_kodseg_3_6_k
+          m: l_kodseg_3_6_m
+          a: l_kodseg_3_6_a
+          s: l_kodseg_3_6_s
+          u: l_kodseg_3_6_u
+          h: l_kodseg_3_6_h
+          f: l_kodseg_3_6_f
+          g: l_kodseg_3_6_g
+          t: l_kodseg_3_6_t
+          DP: l_kodseg_3_6_DP
+          e: l_kodseg_3_6_e
+          p: l_kodseg_3_6_p
+          r: l_kodseg_3_6_r
+          d: l_kodseg_3_6_d
+          b: l_kodseg_3_6_b
+          n: l_kodseg_3_6_n
+          c: l_kodseg_3_6_c
+        - k: l_kodseg_3_7_k
+          m: l_kodseg_3_7_m
+          a: l_kodseg_3_7_a
+          s: l_kodseg_3_7_s
+          u: l_kodseg_3_7_u
+          h: l_kodseg_3_7_h
+          f: l_kodseg_3_7_f
+          g: l_kodseg_3_7_g
+          t: l_kodseg_3_7_t
+          DP: l_kodseg_3_7_DP
+          e: l_kodseg_3_7_e
+          p: l_kodseg_3_7_p
+          r: l_kodseg_3_7_r
+          d: l_kodseg_3_7_d
+          b: l_kodseg_3_7_b
+          n: l_kodseg_3_7_n
+          c: l_kodseg_3_7_c
   display4:
+    size: 7
     number: 4
+    integrated_dots: true
+    default_transition_update_hz: 24
+    platform_settings:
+      lights:
+        - k: l_kodseg_4_1_k
+          m: l_kodseg_4_1_m
+          a: l_kodseg_4_1_a
+          s: l_kodseg_4_1_s
+          u: l_kodseg_4_1_u
+          h: l_kodseg_4_1_h
+          f: l_kodseg_4_1_f
+          g: l_kodseg_4_1_g
+          t: l_kodseg_4_1_t
+          DP: l_kodseg_4_1_DP
+          e: l_kodseg_4_1_e
+          p: l_kodseg_4_1_p
+          r: l_kodseg_4_1_r
+          d: l_kodseg_4_1_d
+          b: l_kodseg_4_1_b
+          n: l_kodseg_4_1_n
+          c: l_kodseg_4_1_c
+        - k: l_kodseg_4_2_k
+          m: l_kodseg_4_2_m
+          a: l_kodseg_4_2_a
+          s: l_kodseg_4_2_s
+          u: l_kodseg_4_2_u
+          h: l_kodseg_4_2_h
+          f: l_kodseg_4_2_f
+          g: l_kodseg_4_2_g
+          t: l_kodseg_4_2_t
+          DP: l_kodseg_4_2_DP
+          e: l_kodseg_4_2_e
+          p: l_kodseg_4_2_p
+          r: l_kodseg_4_2_r
+          d: l_kodseg_4_2_d
+          b: l_kodseg_4_2_b
+          n: l_kodseg_4_2_n
+          c: l_kodseg_4_2_c
+        - k: l_kodseg_4_3_k
+          m: l_kodseg_4_3_m
+          a: l_kodseg_4_3_a
+          s: l_kodseg_4_3_s
+          u: l_kodseg_4_3_u
+          h: l_kodseg_4_3_h
+          f: l_kodseg_4_3_f
+          g: l_kodseg_4_3_g
+          t: l_kodseg_4_3_t
+          DP: l_kodseg_4_3_DP
+          e: l_kodseg_4_3_e
+          p: l_kodseg_4_3_p
+          r: l_kodseg_4_3_r
+          d: l_kodseg_4_3_d
+          b: l_kodseg_4_3_b
+          n: l_kodseg_4_3_n
+          c: l_kodseg_4_3_c
+        - k: l_kodseg_4_4_k
+          m: l_kodseg_4_4_m
+          a: l_kodseg_4_4_a
+          s: l_kodseg_4_4_s
+          u: l_kodseg_4_4_u
+          h: l_kodseg_4_4_h
+          f: l_kodseg_4_4_f
+          g: l_kodseg_4_4_g
+          t: l_kodseg_4_4_t
+          DP: l_kodseg_4_4_DP
+          e: l_kodseg_4_4_e
+          p: l_kodseg_4_4_p
+          r: l_kodseg_4_4_r
+          d: l_kodseg_4_4_d
+          b: l_kodseg_4_4_b
+          n: l_kodseg_4_4_n
+          c: l_kodseg_4_4_c
+        - k: l_kodseg_4_5_k
+          m: l_kodseg_4_5_m
+          a: l_kodseg_4_5_a
+          s: l_kodseg_4_5_s
+          u: l_kodseg_4_5_u
+          h: l_kodseg_4_5_h
+          f: l_kodseg_4_5_f
+          g: l_kodseg_4_5_g
+          t: l_kodseg_4_5_t
+          DP: l_kodseg_4_5_DP
+          e: l_kodseg_4_5_e
+          p: l_kodseg_4_5_p
+          r: l_kodseg_4_5_r
+          d: l_kodseg_4_5_d
+          b: l_kodseg_4_5_b
+          n: l_kodseg_4_5_n
+          c: l_kodseg_4_5_c
+        - k: l_kodseg_4_6_k
+          m: l_kodseg_4_6_m
+          a: l_kodseg_4_6_a
+          s: l_kodseg_4_6_s
+          u: l_kodseg_4_6_u
+          h: l_kodseg_4_6_h
+          f: l_kodseg_4_6_f
+          g: l_kodseg_4_6_g
+          t: l_kodseg_4_6_t
+          DP: l_kodseg_4_6_DP
+          e: l_kodseg_4_6_e
+          p: l_kodseg_4_6_p
+          r: l_kodseg_4_6_r
+          d: l_kodseg_4_6_d
+          b: l_kodseg_4_6_b
+          n: l_kodseg_4_6_n
+          c: l_kodseg_4_6_c
+        - k: l_kodseg_4_7_k
+          m: l_kodseg_4_7_m
+          a: l_kodseg_4_7_a
+          s: l_kodseg_4_7_s
+          u: l_kodseg_4_7_u
+          h: l_kodseg_4_7_h
+          f: l_kodseg_4_7_f
+          g: l_kodseg_4_7_g
+          t: l_kodseg_4_7_t
+          DP: l_kodseg_4_7_DP
+          e: l_kodseg_4_7_e
+          p: l_kodseg_4_7_p
+          r: l_kodseg_4_7_r
+          d: l_kodseg_4_7_d
+          b: l_kodseg_4_7_b
+          n: l_kodseg_4_7_n
+          c: l_kodseg_4_7_c
   display5:
+    size: 7
     number: 5
+    integrated_dots: true
+    default_transition_update_hz: 24
+    platform_settings:
+      lights:
+        - k: l_kodseg_5_1_k
+          m: l_kodseg_5_1_m
+          a: l_kodseg_5_1_a
+          s: l_kodseg_5_1_s
+          u: l_kodseg_5_1_u
+          h: l_kodseg_5_1_h
+          f: l_kodseg_5_1_f
+          g: l_kodseg_5_1_g
+          t: l_kodseg_5_1_t
+          DP: l_kodseg_5_1_DP
+          e: l_kodseg_5_1_e
+          p: l_kodseg_5_1_p
+          r: l_kodseg_5_1_r
+          d: l_kodseg_5_1_d
+          b: l_kodseg_5_1_b
+          n: l_kodseg_5_1_n
+          c: l_kodseg_5_1_c
+        - k: l_kodseg_5_2_k
+          m: l_kodseg_5_2_m
+          a: l_kodseg_5_2_a
+          s: l_kodseg_5_2_s
+          u: l_kodseg_5_2_u
+          h: l_kodseg_5_2_h
+          f: l_kodseg_5_2_f
+          g: l_kodseg_5_2_g
+          t: l_kodseg_5_2_t
+          DP: l_kodseg_5_2_DP
+          e: l_kodseg_5_2_e
+          p: l_kodseg_5_2_p
+          r: l_kodseg_5_2_r
+          d: l_kodseg_5_2_d
+          b: l_kodseg_5_2_b
+          n: l_kodseg_5_2_n
+          c: l_kodseg_5_2_c
+        - k: l_kodseg_5_3_k
+          m: l_kodseg_5_3_m
+          a: l_kodseg_5_3_a
+          s: l_kodseg_5_3_s
+          u: l_kodseg_5_3_u
+          h: l_kodseg_5_3_h
+          f: l_kodseg_5_3_f
+          g: l_kodseg_5_3_g
+          t: l_kodseg_5_3_t
+          DP: l_kodseg_5_3_DP
+          e: l_kodseg_5_3_e
+          p: l_kodseg_5_3_p
+          r: l_kodseg_5_3_r
+          d: l_kodseg_5_3_d
+          b: l_kodseg_5_3_b
+          n: l_kodseg_5_3_n
+          c: l_kodseg_5_3_c
+        - k: l_kodseg_5_4_k
+          m: l_kodseg_5_4_m
+          a: l_kodseg_5_4_a
+          s: l_kodseg_5_4_s
+          u: l_kodseg_5_4_u
+          h: l_kodseg_5_4_h
+          f: l_kodseg_5_4_f
+          g: l_kodseg_5_4_g
+          t: l_kodseg_5_4_t
+          DP: l_kodseg_5_4_DP
+          e: l_kodseg_5_4_e
+          p: l_kodseg_5_4_p
+          r: l_kodseg_5_4_r
+          d: l_kodseg_5_4_d
+          b: l_kodseg_5_4_b
+          n: l_kodseg_5_4_n
+          c: l_kodseg_5_4_c
+        - k: l_kodseg_5_5_k
+          m: l_kodseg_5_5_m
+          a: l_kodseg_5_5_a
+          s: l_kodseg_5_5_s
+          u: l_kodseg_5_5_u
+          h: l_kodseg_5_5_h
+          f: l_kodseg_5_5_f
+          g: l_kodseg_5_5_g
+          t: l_kodseg_5_5_t
+          DP: l_kodseg_5_5_DP
+          e: l_kodseg_5_5_e
+          p: l_kodseg_5_5_p
+          r: l_kodseg_5_5_r
+          d: l_kodseg_5_5_d
+          b: l_kodseg_5_5_b
+          n: l_kodseg_5_5_n
+          c: l_kodseg_5_5_c
+        - k: l_kodseg_5_6_k
+          m: l_kodseg_5_6_m
+          a: l_kodseg_5_6_a
+          s: l_kodseg_5_6_s
+          u: l_kodseg_5_6_u
+          h: l_kodseg_5_6_h
+          f: l_kodseg_5_6_f
+          g: l_kodseg_5_6_g
+          t: l_kodseg_5_6_t
+          DP: l_kodseg_5_6_DP
+          e: l_kodseg_5_6_e
+          p: l_kodseg_5_6_p
+          r: l_kodseg_5_6_r
+          d: l_kodseg_5_6_d
+          b: l_kodseg_5_6_b
+          n: l_kodseg_5_6_n
+          c: l_kodseg_5_6_c
+        - k: l_kodseg_5_7_k
+          m: l_kodseg_5_7_m
+          a: l_kodseg_5_7_a
+          s: l_kodseg_5_7_s
+          u: l_kodseg_5_7_u
+          h: l_kodseg_5_7_h
+          f: l_kodseg_5_7_f
+          g: l_kodseg_5_7_g
+          t: l_kodseg_5_7_t
+          DP: l_kodseg_5_7_DP
+          e: l_kodseg_5_7_e
+          p: l_kodseg_5_7_p
+          r: l_kodseg_5_7_r
+          d: l_kodseg_5_7_d
+          b: l_kodseg_5_7_b
+          n: l_kodseg_5_7_n
+          c: l_kodseg_5_7_c
+
 
 virtual_segment_display_connector:
   segment_displays: display1, display2, display3, display4, display5

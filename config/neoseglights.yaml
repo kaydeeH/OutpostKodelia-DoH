@@ -1,0 +1,3577 @@
+#config_version=5
+
+lights:
+  l_kodseg_1_1_k:
+    start_channel: 0-0-0
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_m:
+    previous: l_kodseg_1_1_k
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_a:
+    previous: l_kodseg_1_1_m
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_s:
+    previous: l_kodseg_1_1_a
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_u:
+    previous: l_kodseg_1_1_s
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_h:
+    previous: l_kodseg_1_1_u
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_f:
+    previous: l_kodseg_1_1_h
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_g:
+    previous: l_kodseg_1_1_f
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_t:
+    previous: l_kodseg_1_1_g
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_DP:
+    previous: l_kodseg_1_1_t
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_e:
+    previous: l_kodseg_1_1_DP
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_p:
+    previous: l_kodseg_1_1_e
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_r:
+    previous: l_kodseg_1_1_p
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_d:
+    previous: l_kodseg_1_1_r
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_b:
+    previous: l_kodseg_1_1_d
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_n:
+    previous: l_kodseg_1_1_b
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_c:
+    previous: l_kodseg_1_1_n
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_k:
+    previous: l_kodseg_1_1_c
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_m:
+    previous: l_kodseg_1_2_k
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_a:
+    previous: l_kodseg_1_2_m
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_s:
+    previous: l_kodseg_1_2_a
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_u:
+    previous: l_kodseg_1_2_s
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_h:
+    previous: l_kodseg_1_2_u
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_f:
+    previous: l_kodseg_1_2_h
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_g:
+    previous: l_kodseg_1_2_f
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_t:
+    previous: l_kodseg_1_2_g
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_DP:
+    previous: l_kodseg_1_2_t
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_e:
+    previous: l_kodseg_1_2_DP
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_p:
+    previous: l_kodseg_1_2_e
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_r:
+    previous: l_kodseg_1_2_p
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_d:
+    previous: l_kodseg_1_2_r
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_b:
+    previous: l_kodseg_1_2_d
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_n:
+    previous: l_kodseg_1_2_b
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_c:
+    previous: l_kodseg_1_2_n
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_k:
+    previous: l_kodseg_1_2_c
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_m:
+    previous: l_kodseg_1_3_k
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_a:
+    previous: l_kodseg_1_3_m
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_s:
+    previous: l_kodseg_1_3_a
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_u:
+    previous: l_kodseg_1_3_s
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_h:
+    previous: l_kodseg_1_3_u
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_f:
+    previous: l_kodseg_1_3_h
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_g:
+    previous: l_kodseg_1_3_f
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_t:
+    previous: l_kodseg_1_3_g
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_DP:
+    previous: l_kodseg_1_3_t
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_e:
+    previous: l_kodseg_1_3_DP
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_p:
+    previous: l_kodseg_1_3_e
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_r:
+    previous: l_kodseg_1_3_p
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_d:
+    previous: l_kodseg_1_3_r
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_b:
+    previous: l_kodseg_1_3_d
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_n:
+    previous: l_kodseg_1_3_b
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_c:
+    previous: l_kodseg_1_3_n
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_k:
+    previous: l_kodseg_1_3_c
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_m:
+    previous: l_kodseg_1_4_k
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_a:
+    previous: l_kodseg_1_4_m
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_s:
+    previous: l_kodseg_1_4_a
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_u:
+    previous: l_kodseg_1_4_s
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_h:
+    previous: l_kodseg_1_4_u
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_f:
+    previous: l_kodseg_1_4_h
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_g:
+    previous: l_kodseg_1_4_f
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_t:
+    previous: l_kodseg_1_4_g
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_DP:
+    previous: l_kodseg_1_4_t
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_e:
+    previous: l_kodseg_1_4_DP
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_p:
+    previous: l_kodseg_1_4_e
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_r:
+    previous: l_kodseg_1_4_p
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_d:
+    previous: l_kodseg_1_4_r
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_b:
+    previous: l_kodseg_1_4_d
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_n:
+    previous: l_kodseg_1_4_b
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_c:
+    previous: l_kodseg_1_4_n
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_k:
+    previous: l_kodseg_1_4_c
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_m:
+    previous: l_kodseg_1_5_k
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_a:
+    previous: l_kodseg_1_5_m
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_s:
+    previous: l_kodseg_1_5_a
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_u:
+    previous: l_kodseg_1_5_s
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_h:
+    previous: l_kodseg_1_5_u
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_f:
+    previous: l_kodseg_1_5_h
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_g:
+    previous: l_kodseg_1_5_f
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_t:
+    previous: l_kodseg_1_5_g
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_DP:
+    previous: l_kodseg_1_5_t
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_e:
+    previous: l_kodseg_1_5_DP
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_p:
+    previous: l_kodseg_1_5_e
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_r:
+    previous: l_kodseg_1_5_p
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_d:
+    previous: l_kodseg_1_5_r
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_b:
+    previous: l_kodseg_1_5_d
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_n:
+    previous: l_kodseg_1_5_b
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_c:
+    previous: l_kodseg_1_5_n
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_k:
+    previous: l_kodseg_1_5_c
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_m:
+    previous: l_kodseg_1_6_k
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_a:
+    previous: l_kodseg_1_6_m
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_s:
+    previous: l_kodseg_1_6_a
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_u:
+    previous: l_kodseg_1_6_s
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_h:
+    previous: l_kodseg_1_6_u
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_f:
+    previous: l_kodseg_1_6_h
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_g:
+    previous: l_kodseg_1_6_f
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_t:
+    previous: l_kodseg_1_6_g
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_DP:
+    previous: l_kodseg_1_6_t
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_e:
+    previous: l_kodseg_1_6_DP
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_p:
+    previous: l_kodseg_1_6_e
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_r:
+    previous: l_kodseg_1_6_p
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_d:
+    previous: l_kodseg_1_6_r
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_b:
+    previous: l_kodseg_1_6_d
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_n:
+    previous: l_kodseg_1_6_b
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_c:
+    previous: l_kodseg_1_6_n
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_k:
+    previous: l_kodseg_1_6_c
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_m:
+    previous: l_kodseg_1_7_k
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_a:
+    previous: l_kodseg_1_7_m
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_s:
+    previous: l_kodseg_1_7_a
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_u:
+    previous: l_kodseg_1_7_s
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_h:
+    previous: l_kodseg_1_7_u
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_f:
+    previous: l_kodseg_1_7_h
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_g:
+    previous: l_kodseg_1_7_f
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_t:
+    previous: l_kodseg_1_7_g
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_DP:
+    previous: l_kodseg_1_7_t
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_e:
+    previous: l_kodseg_1_7_DP
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_p:
+    previous: l_kodseg_1_7_e
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_r:
+    previous: l_kodseg_1_7_p
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_d:
+    previous: l_kodseg_1_7_r
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_b:
+    previous: l_kodseg_1_7_d
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_n:
+    previous: l_kodseg_1_7_b
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_c:
+    previous: l_kodseg_1_7_n
+    type: w
+    subtype: led
+    tags: disp1led
+    color_correction_profile: NeoSeg_white
+
+  l_kodseg_2_1_k:
+    start_channel: 0-0-126
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_m:
+    previous: l_kodseg_2_1_k
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_a:
+    previous: l_kodseg_2_1_m
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_s:
+    previous: l_kodseg_2_1_a
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_u:
+    previous: l_kodseg_2_1_s
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_h:
+    previous: l_kodseg_2_1_u
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_f:
+    previous: l_kodseg_2_1_h
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_g:
+    previous: l_kodseg_2_1_f
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_t:
+    previous: l_kodseg_2_1_g
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_DP:
+    previous: l_kodseg_2_1_t
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_e:
+    previous: l_kodseg_2_1_DP
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_p:
+    previous: l_kodseg_2_1_e
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_r:
+    previous: l_kodseg_2_1_p
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_d:
+    previous: l_kodseg_2_1_r
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_b:
+    previous: l_kodseg_2_1_d
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_n:
+    previous: l_kodseg_2_1_b
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_c:
+    previous: l_kodseg_2_1_n
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_k:
+    previous: l_kodseg_2_1_c
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_m:
+    previous: l_kodseg_2_2_k
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_a:
+    previous: l_kodseg_2_2_m
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_s:
+    previous: l_kodseg_2_2_a
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_u:
+    previous: l_kodseg_2_2_s
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_h:
+    previous: l_kodseg_2_2_u
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_f:
+    previous: l_kodseg_2_2_h
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_g:
+    previous: l_kodseg_2_2_f
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_t:
+    previous: l_kodseg_2_2_g
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_DP:
+    previous: l_kodseg_2_2_t
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_e:
+    previous: l_kodseg_2_2_DP
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_p:
+    previous: l_kodseg_2_2_e
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_r:
+    previous: l_kodseg_2_2_p
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_d:
+    previous: l_kodseg_2_2_r
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_b:
+    previous: l_kodseg_2_2_d
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_n:
+    previous: l_kodseg_2_2_b
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_c:
+    previous: l_kodseg_2_2_n
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_k:
+    previous: l_kodseg_2_2_c
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_m:
+    previous: l_kodseg_2_3_k
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_a:
+    previous: l_kodseg_2_3_m
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_s:
+    previous: l_kodseg_2_3_a
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_u:
+    previous: l_kodseg_2_3_s
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_h:
+    previous: l_kodseg_2_3_u
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_f:
+    previous: l_kodseg_2_3_h
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_g:
+    previous: l_kodseg_2_3_f
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_t:
+    previous: l_kodseg_2_3_g
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_DP:
+    previous: l_kodseg_2_3_t
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_e:
+    previous: l_kodseg_2_3_DP
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_p:
+    previous: l_kodseg_2_3_e
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_r:
+    previous: l_kodseg_2_3_p
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_d:
+    previous: l_kodseg_2_3_r
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_b:
+    previous: l_kodseg_2_3_d
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_n:
+    previous: l_kodseg_2_3_b
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_c:
+    previous: l_kodseg_2_3_n
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_k:
+    previous: l_kodseg_2_3_c
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_m:
+    previous: l_kodseg_2_4_k
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_a:
+    previous: l_kodseg_2_4_m
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_s:
+    previous: l_kodseg_2_4_a
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_u:
+    previous: l_kodseg_2_4_s
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_h:
+    previous: l_kodseg_2_4_u
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_f:
+    previous: l_kodseg_2_4_h
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_g:
+    previous: l_kodseg_2_4_f
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_t:
+    previous: l_kodseg_2_4_g
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_DP:
+    previous: l_kodseg_2_4_t
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_e:
+    previous: l_kodseg_2_4_DP
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_p:
+    previous: l_kodseg_2_4_e
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_r:
+    previous: l_kodseg_2_4_p
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_d:
+    previous: l_kodseg_2_4_r
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_b:
+    previous: l_kodseg_2_4_d
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_n:
+    previous: l_kodseg_2_4_b
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_c:
+    previous: l_kodseg_2_4_n
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_k:
+    previous: l_kodseg_2_4_c
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_m:
+    previous: l_kodseg_2_5_k
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_a:
+    previous: l_kodseg_2_5_m
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_s:
+    previous: l_kodseg_2_5_a
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_u:
+    previous: l_kodseg_2_5_s
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_h:
+    previous: l_kodseg_2_5_u
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_f:
+    previous: l_kodseg_2_5_h
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_g:
+    previous: l_kodseg_2_5_f
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_t:
+    previous: l_kodseg_2_5_g
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_DP:
+    previous: l_kodseg_2_5_t
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_e:
+    previous: l_kodseg_2_5_DP
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_p:
+    previous: l_kodseg_2_5_e
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_r:
+    previous: l_kodseg_2_5_p
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_d:
+    previous: l_kodseg_2_5_r
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_b:
+    previous: l_kodseg_2_5_d
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_n:
+    previous: l_kodseg_2_5_b
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_c:
+    previous: l_kodseg_2_5_n
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_k:
+    previous: l_kodseg_2_5_c
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_m:
+    previous: l_kodseg_2_6_k
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_a:
+    previous: l_kodseg_2_6_m
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_s:
+    previous: l_kodseg_2_6_a
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_u:
+    previous: l_kodseg_2_6_s
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_h:
+    previous: l_kodseg_2_6_u
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_f:
+    previous: l_kodseg_2_6_h
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_g:
+    previous: l_kodseg_2_6_f
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_t:
+    previous: l_kodseg_2_6_g
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_DP:
+    previous: l_kodseg_2_6_t
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_e:
+    previous: l_kodseg_2_6_DP
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_p:
+    previous: l_kodseg_2_6_e
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_r:
+    previous: l_kodseg_2_6_p
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_d:
+    previous: l_kodseg_2_6_r
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_b:
+    previous: l_kodseg_2_6_d
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_n:
+    previous: l_kodseg_2_6_b
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_c:
+    previous: l_kodseg_2_6_n
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_k:
+    previous: l_kodseg_2_6_c
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_m:
+    previous: l_kodseg_2_7_k
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_a:
+    previous: l_kodseg_2_7_m
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_s:
+    previous: l_kodseg_2_7_a
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_u:
+    previous: l_kodseg_2_7_s
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_h:
+    previous: l_kodseg_2_7_u
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_f:
+    previous: l_kodseg_2_7_h
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_g:
+    previous: l_kodseg_2_7_f
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_t:
+    previous: l_kodseg_2_7_g
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_DP:
+    previous: l_kodseg_2_7_t
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_e:
+    previous: l_kodseg_2_7_DP
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_p:
+    previous: l_kodseg_2_7_e
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_r:
+    previous: l_kodseg_2_7_p
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_d:
+    previous: l_kodseg_2_7_r
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_b:
+    previous: l_kodseg_2_7_d
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_n:
+    previous: l_kodseg_2_7_b
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_c:
+    previous: l_kodseg_2_7_n
+    type: w
+    subtype: led
+    tags: disp2led
+    color_correction_profile: NeoSeg_white
+
+  l_kodseg_3_1_k:
+    start_channel: 0-0-252
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_m:
+    previous: l_kodseg_3_1_k
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_a:
+    previous: l_kodseg_3_1_m
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_s:
+    previous: l_kodseg_3_1_a
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_u:
+    previous: l_kodseg_3_1_s
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_h:
+    previous: l_kodseg_3_1_u
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_f:
+    previous: l_kodseg_3_1_h
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_g:
+    previous: l_kodseg_3_1_f
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_t:
+    previous: l_kodseg_3_1_g
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_DP:
+    previous: l_kodseg_3_1_t
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_e:
+    previous: l_kodseg_3_1_DP
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_p:
+    previous: l_kodseg_3_1_e
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_r:
+    previous: l_kodseg_3_1_p
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_d:
+    previous: l_kodseg_3_1_r
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_b:
+    previous: l_kodseg_3_1_d
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_n:
+    previous: l_kodseg_3_1_b
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_c:
+    previous: l_kodseg_3_1_n
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_k:
+    previous: l_kodseg_3_1_c
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_m:
+    previous: l_kodseg_3_2_k
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_a:
+    previous: l_kodseg_3_2_m
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_s:
+    previous: l_kodseg_3_2_a
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_u:
+    previous: l_kodseg_3_2_s
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_h:
+    previous: l_kodseg_3_2_u
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_f:
+    previous: l_kodseg_3_2_h
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_g:
+    previous: l_kodseg_3_2_f
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_t:
+    previous: l_kodseg_3_2_g
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_DP:
+    previous: l_kodseg_3_2_t
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_e:
+    previous: l_kodseg_3_2_DP
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_p:
+    previous: l_kodseg_3_2_e
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_r:
+    previous: l_kodseg_3_2_p
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_d:
+    previous: l_kodseg_3_2_r
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_b:
+    previous: l_kodseg_3_2_d
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_n:
+    previous: l_kodseg_3_2_b
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_c:
+    previous: l_kodseg_3_2_n
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_k:
+    previous: l_kodseg_3_2_c
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_m:
+    previous: l_kodseg_3_3_k
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_a:
+    previous: l_kodseg_3_3_m
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_s:
+    previous: l_kodseg_3_3_a
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_u:
+    previous: l_kodseg_3_3_s
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_h:
+    previous: l_kodseg_3_3_u
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_f:
+    previous: l_kodseg_3_3_h
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_g:
+    previous: l_kodseg_3_3_f
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_t:
+    previous: l_kodseg_3_3_g
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_DP:
+    previous: l_kodseg_3_3_t
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_e:
+    previous: l_kodseg_3_3_DP
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_p:
+    previous: l_kodseg_3_3_e
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_r:
+    previous: l_kodseg_3_3_p
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_d:
+    previous: l_kodseg_3_3_r
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_b:
+    previous: l_kodseg_3_3_d
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_n:
+    previous: l_kodseg_3_3_b
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_c:
+    previous: l_kodseg_3_3_n
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_k:
+    previous: l_kodseg_3_3_c
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_m:
+    previous: l_kodseg_3_4_k
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_a:
+    previous: l_kodseg_3_4_m
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_s:
+    previous: l_kodseg_3_4_a
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_u:
+    previous: l_kodseg_3_4_s
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_h:
+    previous: l_kodseg_3_4_u
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_f:
+    previous: l_kodseg_3_4_h
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_g:
+    previous: l_kodseg_3_4_f
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_t:
+    previous: l_kodseg_3_4_g
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_DP:
+    previous: l_kodseg_3_4_t
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_e:
+    previous: l_kodseg_3_4_DP
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_p:
+    previous: l_kodseg_3_4_e
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_r:
+    previous: l_kodseg_3_4_p
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_d:
+    previous: l_kodseg_3_4_r
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_b:
+    previous: l_kodseg_3_4_d
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_n:
+    previous: l_kodseg_3_4_b
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_c:
+    previous: l_kodseg_3_4_n
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_k:
+    previous: l_kodseg_3_4_c
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_m:
+    previous: l_kodseg_3_5_k
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_a:
+    previous: l_kodseg_3_5_m
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_s:
+    previous: l_kodseg_3_5_a
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_u:
+    previous: l_kodseg_3_5_s
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_h:
+    previous: l_kodseg_3_5_u
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_f:
+    previous: l_kodseg_3_5_h
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_g:
+    previous: l_kodseg_3_5_f
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_t:
+    previous: l_kodseg_3_5_g
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_DP:
+    previous: l_kodseg_3_5_t
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_e:
+    previous: l_kodseg_3_5_DP
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_p:
+    previous: l_kodseg_3_5_e
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_r:
+    previous: l_kodseg_3_5_p
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_d:
+    previous: l_kodseg_3_5_r
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_b:
+    previous: l_kodseg_3_5_d
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_n:
+    previous: l_kodseg_3_5_b
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_c:
+    previous: l_kodseg_3_5_n
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_k:
+    previous: l_kodseg_3_5_c
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_m:
+    previous: l_kodseg_3_6_k
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_a:
+    previous: l_kodseg_3_6_m
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_s:
+    previous: l_kodseg_3_6_a
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_u:
+    previous: l_kodseg_3_6_s
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_h:
+    previous: l_kodseg_3_6_u
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_f:
+    previous: l_kodseg_3_6_h
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_g:
+    previous: l_kodseg_3_6_f
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_t:
+    previous: l_kodseg_3_6_g
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_DP:
+    previous: l_kodseg_3_6_t
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_e:
+    previous: l_kodseg_3_6_DP
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_p:
+    previous: l_kodseg_3_6_e
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_r:
+    previous: l_kodseg_3_6_p
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_d:
+    previous: l_kodseg_3_6_r
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_b:
+    previous: l_kodseg_3_6_d
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_n:
+    previous: l_kodseg_3_6_b
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_c:
+    previous: l_kodseg_3_6_n
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_k:
+    previous: l_kodseg_3_6_c
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_m:
+    previous: l_kodseg_3_7_k
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_a:
+    previous: l_kodseg_3_7_m
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_s:
+    previous: l_kodseg_3_7_a
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_u:
+    previous: l_kodseg_3_7_s
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_h:
+    previous: l_kodseg_3_7_u
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_f:
+    previous: l_kodseg_3_7_h
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_g:
+    previous: l_kodseg_3_7_f
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_t:
+    previous: l_kodseg_3_7_g
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_DP:
+    previous: l_kodseg_3_7_t
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_e:
+    previous: l_kodseg_3_7_DP
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_p:
+    previous: l_kodseg_3_7_e
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_r:
+    previous: l_kodseg_3_7_p
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_d:
+    previous: l_kodseg_3_7_r
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_b:
+    previous: l_kodseg_3_7_d
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_n:
+    previous: l_kodseg_3_7_b
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_c:
+    previous: l_kodseg_3_7_n
+    type: w
+    subtype: led
+    tags: disp3led
+    color_correction_profile: NeoSeg_white
+
+  l_kodseg_4_1_k:
+    start_channel: 0-0-378
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_m:
+    previous: l_kodseg_4_1_k
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_a:
+    previous: l_kodseg_4_1_m
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_s:
+    previous: l_kodseg_4_1_a
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_u:
+    previous: l_kodseg_4_1_s
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_h:
+    previous: l_kodseg_4_1_u
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_f:
+    previous: l_kodseg_4_1_h
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_g:
+    previous: l_kodseg_4_1_f
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_t:
+    previous: l_kodseg_4_1_g
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_DP:
+    previous: l_kodseg_4_1_t
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_e:
+    previous: l_kodseg_4_1_DP
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_p:
+    previous: l_kodseg_4_1_e
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_r:
+    previous: l_kodseg_4_1_p
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_d:
+    previous: l_kodseg_4_1_r
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_b:
+    previous: l_kodseg_4_1_d
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_n:
+    previous: l_kodseg_4_1_b
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_c:
+    previous: l_kodseg_4_1_n
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_k:
+    previous: l_kodseg_4_1_c
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_m:
+    previous: l_kodseg_4_2_k
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_a:
+    previous: l_kodseg_4_2_m
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_s:
+    previous: l_kodseg_4_2_a
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_u:
+    previous: l_kodseg_4_2_s
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_h:
+    previous: l_kodseg_4_2_u
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_f:
+    previous: l_kodseg_4_2_h
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_g:
+    previous: l_kodseg_4_2_f
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_t:
+    previous: l_kodseg_4_2_g
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_DP:
+    previous: l_kodseg_4_2_t
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_e:
+    previous: l_kodseg_4_2_DP
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_p:
+    previous: l_kodseg_4_2_e
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_r:
+    previous: l_kodseg_4_2_p
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_d:
+    previous: l_kodseg_4_2_r
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_b:
+    previous: l_kodseg_4_2_d
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_n:
+    previous: l_kodseg_4_2_b
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_c:
+    previous: l_kodseg_4_2_n
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_k:
+    previous: l_kodseg_4_2_c
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_m:
+    previous: l_kodseg_4_3_k
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_a:
+    previous: l_kodseg_4_3_m
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_s:
+    previous: l_kodseg_4_3_a
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_u:
+    previous: l_kodseg_4_3_s
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_h:
+    previous: l_kodseg_4_3_u
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_f:
+    previous: l_kodseg_4_3_h
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_g:
+    previous: l_kodseg_4_3_f
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_t:
+    previous: l_kodseg_4_3_g
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_DP:
+    previous: l_kodseg_4_3_t
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_e:
+    previous: l_kodseg_4_3_DP
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_p:
+    previous: l_kodseg_4_3_e
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_r:
+    previous: l_kodseg_4_3_p
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_d:
+    previous: l_kodseg_4_3_r
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_b:
+    previous: l_kodseg_4_3_d
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_n:
+    previous: l_kodseg_4_3_b
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_c:
+    previous: l_kodseg_4_3_n
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_k:
+    previous: l_kodseg_4_3_c
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_m:
+    previous: l_kodseg_4_4_k
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_a:
+    previous: l_kodseg_4_4_m
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_s:
+    previous: l_kodseg_4_4_a
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_u:
+    previous: l_kodseg_4_4_s
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_h:
+    previous: l_kodseg_4_4_u
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_f:
+    previous: l_kodseg_4_4_h
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_g:
+    previous: l_kodseg_4_4_f
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_t:
+    previous: l_kodseg_4_4_g
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_DP:
+    previous: l_kodseg_4_4_t
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_e:
+    previous: l_kodseg_4_4_DP
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_p:
+    previous: l_kodseg_4_4_e
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_r:
+    previous: l_kodseg_4_4_p
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_d:
+    previous: l_kodseg_4_4_r
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_b:
+    previous: l_kodseg_4_4_d
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_n:
+    previous: l_kodseg_4_4_b
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_c:
+    previous: l_kodseg_4_4_n
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_k:
+    previous: l_kodseg_4_4_c
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_m:
+    previous: l_kodseg_4_5_k
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_a:
+    previous: l_kodseg_4_5_m
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_s:
+    previous: l_kodseg_4_5_a
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_u:
+    previous: l_kodseg_4_5_s
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_h:
+    previous: l_kodseg_4_5_u
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_f:
+    previous: l_kodseg_4_5_h
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_g:
+    previous: l_kodseg_4_5_f
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_t:
+    previous: l_kodseg_4_5_g
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_DP:
+    previous: l_kodseg_4_5_t
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_e:
+    previous: l_kodseg_4_5_DP
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_p:
+    previous: l_kodseg_4_5_e
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_r:
+    previous: l_kodseg_4_5_p
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_d:
+    previous: l_kodseg_4_5_r
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_b:
+    previous: l_kodseg_4_5_d
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_n:
+    previous: l_kodseg_4_5_b
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_c:
+    previous: l_kodseg_4_5_n
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_k:
+    previous: l_kodseg_4_5_c
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_m:
+    previous: l_kodseg_4_6_k
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_a:
+    previous: l_kodseg_4_6_m
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_s:
+    previous: l_kodseg_4_6_a
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_u:
+    previous: l_kodseg_4_6_s
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_h:
+    previous: l_kodseg_4_6_u
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_f:
+    previous: l_kodseg_4_6_h
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_g:
+    previous: l_kodseg_4_6_f
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_t:
+    previous: l_kodseg_4_6_g
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_DP:
+    previous: l_kodseg_4_6_t
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_e:
+    previous: l_kodseg_4_6_DP
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_p:
+    previous: l_kodseg_4_6_e
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_r:
+    previous: l_kodseg_4_6_p
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_d:
+    previous: l_kodseg_4_6_r
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_b:
+    previous: l_kodseg_4_6_d
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_n:
+    previous: l_kodseg_4_6_b
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_c:
+    previous: l_kodseg_4_6_n
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_k:
+    previous: l_kodseg_4_6_c
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_m:
+    previous: l_kodseg_4_7_k
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_a:
+    previous: l_kodseg_4_7_m
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_s:
+    previous: l_kodseg_4_7_a
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_u:
+    previous: l_kodseg_4_7_s
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_h:
+    previous: l_kodseg_4_7_u
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_f:
+    previous: l_kodseg_4_7_h
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_g:
+    previous: l_kodseg_4_7_f
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_t:
+    previous: l_kodseg_4_7_g
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_DP:
+    previous: l_kodseg_4_7_t
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_e:
+    previous: l_kodseg_4_7_DP
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_p:
+    previous: l_kodseg_4_7_e
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_r:
+    previous: l_kodseg_4_7_p
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_d:
+    previous: l_kodseg_4_7_r
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_b:
+    previous: l_kodseg_4_7_d
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_n:
+    previous: l_kodseg_4_7_b
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_c:
+    previous: l_kodseg_4_7_n
+    type: w
+    subtype: led
+    tags: disp4led
+    color_correction_profile: NeoSeg_white
+
+  l_kodseg_5_1_k:
+    start_channel: 0-0-504
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_m:
+    previous: l_kodseg_5_1_k
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_a:
+    previous: l_kodseg_5_1_m
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_s:
+    previous: l_kodseg_5_1_a
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_u:
+    previous: l_kodseg_5_1_s
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_h:
+    previous: l_kodseg_5_1_u
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_f:
+    previous: l_kodseg_5_1_h
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_g:
+    previous: l_kodseg_5_1_f
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_t:
+    previous: l_kodseg_5_1_g
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_DP:
+    previous: l_kodseg_5_1_t
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_e:
+    previous: l_kodseg_5_1_DP
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_p:
+    previous: l_kodseg_5_1_e
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_r:
+    previous: l_kodseg_5_1_p
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_d:
+    previous: l_kodseg_5_1_r
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_b:
+    previous: l_kodseg_5_1_d
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_n:
+    previous: l_kodseg_5_1_b
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_c:
+    previous: l_kodseg_5_1_n
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_k:
+    previous: l_kodseg_5_1_c
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_m:
+    previous: l_kodseg_5_2_k
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_a:
+    previous: l_kodseg_5_2_m
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_s:
+    previous: l_kodseg_5_2_a
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_u:
+    previous: l_kodseg_5_2_s
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_h:
+    previous: l_kodseg_5_2_u
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_f:
+    previous: l_kodseg_5_2_h
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_g:
+    previous: l_kodseg_5_2_f
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_t:
+    previous: l_kodseg_5_2_g
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_DP:
+    previous: l_kodseg_5_2_t
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_e:
+    previous: l_kodseg_5_2_DP
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_p:
+    previous: l_kodseg_5_2_e
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_r:
+    previous: l_kodseg_5_2_p
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_d:
+    previous: l_kodseg_5_2_r
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_b:
+    previous: l_kodseg_5_2_d
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_n:
+    previous: l_kodseg_5_2_b
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_c:
+    previous: l_kodseg_5_2_n
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_k:
+    previous: l_kodseg_5_2_c
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_m:
+    previous: l_kodseg_5_3_k
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_a:
+    previous: l_kodseg_5_3_m
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_s:
+    previous: l_kodseg_5_3_a
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_u:
+    previous: l_kodseg_5_3_s
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_h:
+    previous: l_kodseg_5_3_u
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_f:
+    previous: l_kodseg_5_3_h
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_g:
+    previous: l_kodseg_5_3_f
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_t:
+    previous: l_kodseg_5_3_g
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_DP:
+    previous: l_kodseg_5_3_t
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_e:
+    previous: l_kodseg_5_3_DP
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_p:
+    previous: l_kodseg_5_3_e
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_r:
+    previous: l_kodseg_5_3_p
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_d:
+    previous: l_kodseg_5_3_r
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_b:
+    previous: l_kodseg_5_3_d
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_n:
+    previous: l_kodseg_5_3_b
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_c:
+    previous: l_kodseg_5_3_n
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_k:
+    previous: l_kodseg_5_3_c
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_m:
+    previous: l_kodseg_5_4_k
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_a:
+    previous: l_kodseg_5_4_m
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_s:
+    previous: l_kodseg_5_4_a
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_u:
+    previous: l_kodseg_5_4_s
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_h:
+    previous: l_kodseg_5_4_u
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_f:
+    previous: l_kodseg_5_4_h
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_g:
+    previous: l_kodseg_5_4_f
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_t:
+    previous: l_kodseg_5_4_g
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_DP:
+    previous: l_kodseg_5_4_t
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_e:
+    previous: l_kodseg_5_4_DP
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_p:
+    previous: l_kodseg_5_4_e
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_r:
+    previous: l_kodseg_5_4_p
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_d:
+    previous: l_kodseg_5_4_r
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_b:
+    previous: l_kodseg_5_4_d
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_n:
+    previous: l_kodseg_5_4_b
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_c:
+    previous: l_kodseg_5_4_n
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_k:
+    previous: l_kodseg_5_4_c
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_m:
+    previous: l_kodseg_5_5_k
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_a:
+    previous: l_kodseg_5_5_m
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_s:
+    previous: l_kodseg_5_5_a
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_u:
+    previous: l_kodseg_5_5_s
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_h:
+    previous: l_kodseg_5_5_u
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_f:
+    previous: l_kodseg_5_5_h
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_g:
+    previous: l_kodseg_5_5_f
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_t:
+    previous: l_kodseg_5_5_g
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_DP:
+    previous: l_kodseg_5_5_t
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_e:
+    previous: l_kodseg_5_5_DP
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_p:
+    previous: l_kodseg_5_5_e
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_r:
+    previous: l_kodseg_5_5_p
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_d:
+    previous: l_kodseg_5_5_r
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_b:
+    previous: l_kodseg_5_5_d
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_n:
+    previous: l_kodseg_5_5_b
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_c:
+    previous: l_kodseg_5_5_n
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_k:
+    previous: l_kodseg_5_5_c
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_m:
+    previous: l_kodseg_5_6_k
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_a:
+    previous: l_kodseg_5_6_m
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_s:
+    previous: l_kodseg_5_6_a
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_u:
+    previous: l_kodseg_5_6_s
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_h:
+    previous: l_kodseg_5_6_u
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_f:
+    previous: l_kodseg_5_6_h
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_g:
+    previous: l_kodseg_5_6_f
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_t:
+    previous: l_kodseg_5_6_g
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_DP:
+    previous: l_kodseg_5_6_t
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_e:
+    previous: l_kodseg_5_6_DP
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_p:
+    previous: l_kodseg_5_6_e
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_r:
+    previous: l_kodseg_5_6_p
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_d:
+    previous: l_kodseg_5_6_r
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_b:
+    previous: l_kodseg_5_6_d
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_n:
+    previous: l_kodseg_5_6_b
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_c:
+    previous: l_kodseg_5_6_n
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_k:
+    previous: l_kodseg_5_6_c
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_m:
+    previous: l_kodseg_5_7_k
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_a:
+    previous: l_kodseg_5_7_m
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_s:
+    previous: l_kodseg_5_7_a
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_u:
+    previous: l_kodseg_5_7_s
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_h:
+    previous: l_kodseg_5_7_u
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_f:
+    previous: l_kodseg_5_7_h
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_g:
+    previous: l_kodseg_5_7_f
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_t:
+    previous: l_kodseg_5_7_g
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_DP:
+    previous: l_kodseg_5_7_t
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_e:
+    previous: l_kodseg_5_7_DP
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_p:
+    previous: l_kodseg_5_7_e
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_r:
+    previous: l_kodseg_5_7_p
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_d:
+    previous: l_kodseg_5_7_r
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_b:
+    previous: l_kodseg_5_7_d
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_n:
+    previous: l_kodseg_5_7_b
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_c:
+    previous: l_kodseg_5_7_n
+    type: w
+    subtype: led
+    tags: disp5led
+    color_correction_profile: NeoSeg_white
