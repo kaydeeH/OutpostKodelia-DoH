@@ -62,7 +62,7 @@ psus:
 playfields:
   playfield:
     tags: default
-    default_source_device: bd_drain
+    default_source_device: bd_plunger
 #    enable_ball_search: true
 #    ball_search_timeout: 20s
 #    ball_search_wait_after_iteration: 10s
@@ -91,11 +91,32 @@ flippers:
 
 
 ball_devices:
+  bd_trough:
+    ball_switches: s_trough_1, s_trough_2, s_trough_3, s_trough_4, s_trough_jam
+    eject_coil: c_ball_trough
+    tags: trough, home
+    jam_switch: s_trough_jam
+    eject_targets: bd_plunger
+    eject_timeouts: 3s
+  bd_plunger:
+    ball_switches: s_shooter_lane
+    mechanical_eject: true
+    eject_timeouts: 5s
   bd_drain:
     ball_switches: s_outhole
     eject_coil: c_outhole_kicker
-    tags: drain, home, trough
+    tags: drain
     debug: true
+  bd_escape_saucer:
+    ball_switches: s_saucer_treasure_chamber
+    eject_coil: c_saucer_trasure_chamber
+  bd_river_saucer:
+    ball_switches: s_saucer_golden_cliffs
+    eject_coil: c_saucer_golden_cliffs
+  bd_hazzard_saucer:
+    ball_switches: s_saucer_paragon
+    eject_coil: c_saucer_paragon
+
 
 
 autofire_coils:
@@ -157,4 +178,7 @@ drop_target_banks:
            player_turn_will_start, drops_right_reset
 
 virtual_platform_start_active_switches:
-  s_outhole
+  - s_trough_1
+  - s_trough_2
+  - s_trough_3
+  - s_trough_4

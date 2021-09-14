@@ -23,10 +23,10 @@ coils:
     number: 0-0-9
     default_pulse_ms: 15
   c_knocker:
-    number: 1-0-2
+    number: 0-0-7
     default_pulse_ms: 15
   c_saucer_trasure_chamber:
-    number: 1-0-3
+    number: 0-0-15
     default_pulse_ms: 15
   c_saucer_paragon:
     number: 1-0-5
@@ -35,10 +35,10 @@ coils:
     number: 1-0-4
     default_pulse_ms: 15
   c_left_slingshot:
-    number: 0-0-15
+    number: 1-0-3
     default_pulse_ms: 12
   c_right_slingshot:
-    number: 0-0-13
+    number: 1-0-1
     default_pulse_ms: 12
 
   c_left_thumper:
@@ -48,7 +48,7 @@ coils:
     number: 1-0-7
     default_pulse_ms: 20
   c_bottom_thumper:
-    number: 0-0-7
+    number: 1-0-2
     default_pulse_ms: 20
   c_center_thumper:
     number: 1-0-0
