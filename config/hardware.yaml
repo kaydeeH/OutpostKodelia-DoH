@@ -106,7 +106,7 @@ ball_devices:
     ball_switches: s_outhole
     eject_coil: c_outhole_kicker
     tags: drain
-    debug: true
+    eject_targets: bd_trough
   bd_escape_saucer:
     ball_switches: s_saucer_treasure_chamber
     eject_coil: c_saucer_trasure_chamber

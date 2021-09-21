@@ -108,11 +108,13 @@ keyboard:
   3:
      switch: s_coin_3
   8:
-     switch: s_slam
+     switch: s_service_0
   9:
      switch: s_service_1
   0:
      switch: s_service_2
+  "-":
+     switch: s_service_3
   y:
      switch: s_drop_right_a
   u:

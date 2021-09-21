@@ -55,22 +55,24 @@ switches:
 
   # Coindoor/Tilt - these may change - assuming J2
   s_credit_button:
-    number: 0-0-16
+    number: 0-0-24
     tags: start
     ignore_window_ms: 500
   s_tilt:
-    number: 0-0-17
+    number: 0-0-25
     tags: tilt_warning, playfield_active
   s_service_0:  # back
     number: 0-0-18
+    tags: service_esc
   s_service_1:
+    number: 0-0-17
+    tags: service_up
+  s_service_2:
+    number: 0-0-16
+    tags: service_down
+  s_service_3: # select
     number: 0-0-19
     tags: service_enter
-  s_service_2:    # this switch won't exist, probably needs to be added to make this all work.
-    number: 0-0-20
-    tags: service_esc
-  s_service_3: # select
-    number: 0-0-21
   s_coin_1: # this wont exist
     number: 0-0-1
   s_coin_2: # this wont exist
@@ -79,11 +81,11 @@ switches:
     number: 0-0-3
 
   s_flipper_left:
-    number: 0-0-22
-    tags: left_flipper, service_up
+    number: 0-0-27
+    tags: left_flippe
   s_flipper_right:
-    number: 0-0-23
-    tags: right_flipper, service_down
+    number: 0-0-26
+    tags: right_flipper
 
   # Optos - these may change - assuming J3
   s_trough_1:
@@ -131,13 +133,10 @@ switches:
   # Saucers
   s_saucer_paragon:
     number: 1-0-49
-    tags: playfield_active
   s_saucer_golden_cliffs:
     number: 1-0-66
-    tags: playfield_active
   s_saucer_treasure_chamber:
     number: 1-0-87
-    tags: playfield_active
 
   # Targets and Rebounds
   s_center_target:
