@@ -52,6 +52,10 @@ opp:
      #0: /dev/ttyACM0
      #1: /dev/ttyACM1
 
+fadecandy:
+  linear_cutoff: 0.00390365
+  whitepoint: 0.95,0.97,1
+  
 psus:
   default:
     #Gives the capacitors extra time to recharge after firing a coil
