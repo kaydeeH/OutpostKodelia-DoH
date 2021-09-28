@@ -152,6 +152,9 @@ switches:
   s_rebound_500pt:
     number: 1-0-75
     tags: playfield_active
+  s_left_mid_standup:
+    number: 1-0-82
+    tags: playfield_active
 
   # Rollovers
   # Note that golden cliffs is also tied to drop rebound
