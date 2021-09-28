@@ -61,8 +61,9 @@ psus:
 
 playfields:
   playfield:
-    tags: default
     default_source_device: bd_plunger
+    tags: default
+
 #    enable_ball_search: true
 #    ball_search_timeout: 20s
 #    ball_search_wait_after_iteration: 10s
@@ -94,7 +95,7 @@ ball_devices:
   bd_trough:
     ball_switches: s_trough_1, s_trough_2, s_trough_3, s_trough_4, s_trough_jam
     eject_coil: c_ball_trough
-    tags: drain, trough, home
+    tags: trough, drain, home
     jam_switch: s_trough_jam
     eject_targets: bd_plunger
     eject_timeouts: 3s
@@ -148,12 +149,16 @@ autofire_coils:
 drop_targets:
      I0:
          switch: s_drop_inline_a
+         knockdown_coil: c_inline_knockdown_a
      I1:
          switch: s_drop_inline_b
+         knockdown_coil: c_inline_knockdown_b
      I2:
          switch: s_drop_inline_c
+         knockdown_coil: c_inline_knockdown_c
      I3:
          switch: s_drop_inline_d
+         knockdown_coil: c_inline_knockdown_d
      R0:
          switch: s_drop_right_a
      R1:

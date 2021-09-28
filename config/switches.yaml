@@ -60,7 +60,7 @@ switches:
     ignore_window_ms: 500
   s_tilt:
     number: 0-0-25
-    tags: tilt_warning, playfield_active
+    tags: tilt_warning
   s_service_0:  # back
     number: 0-0-18
     tags: service_esc
@@ -82,7 +82,7 @@ switches:
 
   s_flipper_left:
     number: 0-0-27
-    tags: left_flippe
+    tags: left_flipper
   s_flipper_right:
     number: 0-0-26
     tags: right_flipper
@@ -94,6 +94,7 @@ switches:
     number: 0-0-10
   s_playfield_entry:
     number: 0-0-9
+    tags: playfield_active
 
   # Drop Targets - Right Side - C = Bottom
   s_drop_right_a:
@@ -129,6 +130,7 @@ switches:
     number: 1-0-48
   s_thumper_left:
     number: 1-0-65
+
 
   # Saucers
   s_saucer_paragon:
@@ -177,4 +179,4 @@ switches:
     tags: playfield_active
   s_right_drop_standing:
     number: 1-0-39
-
+    tags: playfield_active
