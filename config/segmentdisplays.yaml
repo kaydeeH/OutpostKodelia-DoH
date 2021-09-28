@@ -9,8 +9,6 @@
 hardware:
   segment_displays: light_segment_displays
 
-#config_version=5
-
 segment_displays:
   display1:
     size: 7
@@ -28,7 +26,7 @@ segment_displays:
           f: l_kodseg_1_1_f
           g: l_kodseg_1_1_g
           t: l_kodseg_1_1_t
-          DP: l_kodseg_1_1_DP
+          dp: l_kodseg_1_1_dp
           e: l_kodseg_1_1_e
           p: l_kodseg_1_1_p
           r: l_kodseg_1_1_r
@@ -45,7 +43,7 @@ segment_displays:
           f: l_kodseg_1_2_f
           g: l_kodseg_1_2_g
           t: l_kodseg_1_2_t
-          DP: l_kodseg_1_2_DP
+          dp: l_kodseg_1_2_dp
           e: l_kodseg_1_2_e
           p: l_kodseg_1_2_p
           r: l_kodseg_1_2_r
@@ -62,7 +60,7 @@ segment_displays:
           f: l_kodseg_1_3_f
           g: l_kodseg_1_3_g
           t: l_kodseg_1_3_t
-          DP: l_kodseg_1_3_DP
+          dp: l_kodseg_1_3_dp
           e: l_kodseg_1_3_e
           p: l_kodseg_1_3_p
           r: l_kodseg_1_3_r
@@ -79,7 +77,7 @@ segment_displays:
           f: l_kodseg_1_4_f
           g: l_kodseg_1_4_g
           t: l_kodseg_1_4_t
-          DP: l_kodseg_1_4_DP
+          dp: l_kodseg_1_4_dp
           e: l_kodseg_1_4_e
           p: l_kodseg_1_4_p
           r: l_kodseg_1_4_r
@@ -96,7 +94,7 @@ segment_displays:
           f: l_kodseg_1_5_f
           g: l_kodseg_1_5_g
           t: l_kodseg_1_5_t
-          DP: l_kodseg_1_5_DP
+          dp: l_kodseg_1_5_dp
           e: l_kodseg_1_5_e
           p: l_kodseg_1_5_p
           r: l_kodseg_1_5_r
@@ -113,7 +111,7 @@ segment_displays:
           f: l_kodseg_1_6_f
           g: l_kodseg_1_6_g
           t: l_kodseg_1_6_t
-          DP: l_kodseg_1_6_DP
+          dp: l_kodseg_1_6_dp
           e: l_kodseg_1_6_e
           p: l_kodseg_1_6_p
           r: l_kodseg_1_6_r
@@ -130,7 +128,7 @@ segment_displays:
           f: l_kodseg_1_7_f
           g: l_kodseg_1_7_g
           t: l_kodseg_1_7_t
-          DP: l_kodseg_1_7_DP
+          dp: l_kodseg_1_7_dp
           e: l_kodseg_1_7_e
           p: l_kodseg_1_7_p
           r: l_kodseg_1_7_r
@@ -139,6 +137,7 @@ segment_displays:
           n: l_kodseg_1_7_n
           c: l_kodseg_1_7_c
       type: 16segment
+
   display2:
     size: 7
     number: 2
@@ -155,7 +154,7 @@ segment_displays:
           f: l_kodseg_2_1_f
           g: l_kodseg_2_1_g
           t: l_kodseg_2_1_t
-          DP: l_kodseg_2_1_DP
+          dp: l_kodseg_2_1_dp
           e: l_kodseg_2_1_e
           p: l_kodseg_2_1_p
           r: l_kodseg_2_1_r
@@ -172,7 +171,7 @@ segment_displays:
           f: l_kodseg_2_2_f
           g: l_kodseg_2_2_g
           t: l_kodseg_2_2_t
-          DP: l_kodseg_2_2_DP
+          dp: l_kodseg_2_2_dp
           e: l_kodseg_2_2_e
           p: l_kodseg_2_2_p
           r: l_kodseg_2_2_r
@@ -189,7 +188,7 @@ segment_displays:
           f: l_kodseg_2_3_f
           g: l_kodseg_2_3_g
           t: l_kodseg_2_3_t
-          DP: l_kodseg_2_3_DP
+          dp: l_kodseg_2_3_dp
           e: l_kodseg_2_3_e
           p: l_kodseg_2_3_p
           r: l_kodseg_2_3_r
@@ -206,7 +205,7 @@ segment_displays:
           f: l_kodseg_2_4_f
           g: l_kodseg_2_4_g
           t: l_kodseg_2_4_t
-          DP: l_kodseg_2_4_DP
+          dp: l_kodseg_2_4_dp
           e: l_kodseg_2_4_e
           p: l_kodseg_2_4_p
           r: l_kodseg_2_4_r
@@ -223,7 +222,7 @@ segment_displays:
           f: l_kodseg_2_5_f
           g: l_kodseg_2_5_g
           t: l_kodseg_2_5_t
-          DP: l_kodseg_2_5_DP
+          dp: l_kodseg_2_5_dp
           e: l_kodseg_2_5_e
           p: l_kodseg_2_5_p
           r: l_kodseg_2_5_r
@@ -240,7 +239,7 @@ segment_displays:
           f: l_kodseg_2_6_f
           g: l_kodseg_2_6_g
           t: l_kodseg_2_6_t
-          DP: l_kodseg_2_6_DP
+          dp: l_kodseg_2_6_dp
           e: l_kodseg_2_6_e
           p: l_kodseg_2_6_p
           r: l_kodseg_2_6_r
@@ -257,7 +256,7 @@ segment_displays:
           f: l_kodseg_2_7_f
           g: l_kodseg_2_7_g
           t: l_kodseg_2_7_t
-          DP: l_kodseg_2_7_DP
+          dp: l_kodseg_2_7_dp
           e: l_kodseg_2_7_e
           p: l_kodseg_2_7_p
           r: l_kodseg_2_7_r
@@ -266,6 +265,7 @@ segment_displays:
           n: l_kodseg_2_7_n
           c: l_kodseg_2_7_c
       type: 16segment
+
   display3:
     size: 7
     number: 3
@@ -282,7 +282,7 @@ segment_displays:
           f: l_kodseg_3_1_f
           g: l_kodseg_3_1_g
           t: l_kodseg_3_1_t
-          DP: l_kodseg_3_1_DP
+          dp: l_kodseg_3_1_dp
           e: l_kodseg_3_1_e
           p: l_kodseg_3_1_p
           r: l_kodseg_3_1_r
@@ -299,7 +299,7 @@ segment_displays:
           f: l_kodseg_3_2_f
           g: l_kodseg_3_2_g
           t: l_kodseg_3_2_t
-          DP: l_kodseg_3_2_DP
+          dp: l_kodseg_3_2_dp
           e: l_kodseg_3_2_e
           p: l_kodseg_3_2_p
           r: l_kodseg_3_2_r
@@ -316,7 +316,7 @@ segment_displays:
           f: l_kodseg_3_3_f
           g: l_kodseg_3_3_g
           t: l_kodseg_3_3_t
-          DP: l_kodseg_3_3_DP
+          dp: l_kodseg_3_3_dp
           e: l_kodseg_3_3_e
           p: l_kodseg_3_3_p
           r: l_kodseg_3_3_r
@@ -333,7 +333,7 @@ segment_displays:
           f: l_kodseg_3_4_f
           g: l_kodseg_3_4_g
           t: l_kodseg_3_4_t
-          DP: l_kodseg_3_4_DP
+          dp: l_kodseg_3_4_dp
           e: l_kodseg_3_4_e
           p: l_kodseg_3_4_p
           r: l_kodseg_3_4_r
@@ -350,7 +350,7 @@ segment_displays:
           f: l_kodseg_3_5_f
           g: l_kodseg_3_5_g
           t: l_kodseg_3_5_t
-          DP: l_kodseg_3_5_DP
+          dp: l_kodseg_3_5_dp
           e: l_kodseg_3_5_e
           p: l_kodseg_3_5_p
           r: l_kodseg_3_5_r
@@ -367,7 +367,7 @@ segment_displays:
           f: l_kodseg_3_6_f
           g: l_kodseg_3_6_g
           t: l_kodseg_3_6_t
-          DP: l_kodseg_3_6_DP
+          dp: l_kodseg_3_6_dp
           e: l_kodseg_3_6_e
           p: l_kodseg_3_6_p
           r: l_kodseg_3_6_r
@@ -384,7 +384,7 @@ segment_displays:
           f: l_kodseg_3_7_f
           g: l_kodseg_3_7_g
           t: l_kodseg_3_7_t
-          DP: l_kodseg_3_7_DP
+          dp: l_kodseg_3_7_dp
           e: l_kodseg_3_7_e
           p: l_kodseg_3_7_p
           r: l_kodseg_3_7_r
@@ -393,6 +393,7 @@ segment_displays:
           n: l_kodseg_3_7_n
           c: l_kodseg_3_7_c
       type: 16segment
+
   display4:
     size: 7
     number: 4
@@ -409,7 +410,7 @@ segment_displays:
           f: l_kodseg_4_1_f
           g: l_kodseg_4_1_g
           t: l_kodseg_4_1_t
-          DP: l_kodseg_4_1_DP
+          dp: l_kodseg_4_1_dp
           e: l_kodseg_4_1_e
           p: l_kodseg_4_1_p
           r: l_kodseg_4_1_r
@@ -426,7 +427,7 @@ segment_displays:
           f: l_kodseg_4_2_f
           g: l_kodseg_4_2_g
           t: l_kodseg_4_2_t
-          DP: l_kodseg_4_2_DP
+          dp: l_kodseg_4_2_dp
           e: l_kodseg_4_2_e
           p: l_kodseg_4_2_p
           r: l_kodseg_4_2_r
@@ -443,7 +444,7 @@ segment_displays:
           f: l_kodseg_4_3_f
           g: l_kodseg_4_3_g
           t: l_kodseg_4_3_t
-          DP: l_kodseg_4_3_DP
+          dp: l_kodseg_4_3_dp
           e: l_kodseg_4_3_e
           p: l_kodseg_4_3_p
           r: l_kodseg_4_3_r
@@ -460,7 +461,7 @@ segment_displays:
           f: l_kodseg_4_4_f
           g: l_kodseg_4_4_g
           t: l_kodseg_4_4_t
-          DP: l_kodseg_4_4_DP
+          dp: l_kodseg_4_4_dp
           e: l_kodseg_4_4_e
           p: l_kodseg_4_4_p
           r: l_kodseg_4_4_r
@@ -477,7 +478,7 @@ segment_displays:
           f: l_kodseg_4_5_f
           g: l_kodseg_4_5_g
           t: l_kodseg_4_5_t
-          DP: l_kodseg_4_5_DP
+          dp: l_kodseg_4_5_dp
           e: l_kodseg_4_5_e
           p: l_kodseg_4_5_p
           r: l_kodseg_4_5_r
@@ -494,7 +495,7 @@ segment_displays:
           f: l_kodseg_4_6_f
           g: l_kodseg_4_6_g
           t: l_kodseg_4_6_t
-          DP: l_kodseg_4_6_DP
+          dp: l_kodseg_4_6_dp
           e: l_kodseg_4_6_e
           p: l_kodseg_4_6_p
           r: l_kodseg_4_6_r
@@ -511,7 +512,7 @@ segment_displays:
           f: l_kodseg_4_7_f
           g: l_kodseg_4_7_g
           t: l_kodseg_4_7_t
-          DP: l_kodseg_4_7_DP
+          dp: l_kodseg_4_7_dp
           e: l_kodseg_4_7_e
           p: l_kodseg_4_7_p
           r: l_kodseg_4_7_r
@@ -520,6 +521,7 @@ segment_displays:
           n: l_kodseg_4_7_n
           c: l_kodseg_4_7_c
       type: 16segment
+
   display5:
     size: 7
     number: 5
@@ -536,7 +538,7 @@ segment_displays:
           f: l_kodseg_5_1_f
           g: l_kodseg_5_1_g
           t: l_kodseg_5_1_t
-          DP: l_kodseg_5_1_DP
+          dp: l_kodseg_5_1_dp
           e: l_kodseg_5_1_e
           p: l_kodseg_5_1_p
           r: l_kodseg_5_1_r
@@ -553,7 +555,7 @@ segment_displays:
           f: l_kodseg_5_2_f
           g: l_kodseg_5_2_g
           t: l_kodseg_5_2_t
-          DP: l_kodseg_5_2_DP
+          dp: l_kodseg_5_2_dp
           e: l_kodseg_5_2_e
           p: l_kodseg_5_2_p
           r: l_kodseg_5_2_r
@@ -570,7 +572,7 @@ segment_displays:
           f: l_kodseg_5_3_f
           g: l_kodseg_5_3_g
           t: l_kodseg_5_3_t
-          DP: l_kodseg_5_3_DP
+          dp: l_kodseg_5_3_dp
           e: l_kodseg_5_3_e
           p: l_kodseg_5_3_p
           r: l_kodseg_5_3_r
@@ -587,7 +589,7 @@ segment_displays:
           f: l_kodseg_5_4_f
           g: l_kodseg_5_4_g
           t: l_kodseg_5_4_t
-          DP: l_kodseg_5_4_DP
+          dp: l_kodseg_5_4_dp
           e: l_kodseg_5_4_e
           p: l_kodseg_5_4_p
           r: l_kodseg_5_4_r
@@ -604,7 +606,7 @@ segment_displays:
           f: l_kodseg_5_5_f
           g: l_kodseg_5_5_g
           t: l_kodseg_5_5_t
-          DP: l_kodseg_5_5_DP
+          dp: l_kodseg_5_5_dp
           e: l_kodseg_5_5_e
           p: l_kodseg_5_5_p
           r: l_kodseg_5_5_r
@@ -621,7 +623,7 @@ segment_displays:
           f: l_kodseg_5_6_f
           g: l_kodseg_5_6_g
           t: l_kodseg_5_6_t
-          DP: l_kodseg_5_6_DP
+          dp: l_kodseg_5_6_dp
           e: l_kodseg_5_6_e
           p: l_kodseg_5_6_p
           r: l_kodseg_5_6_r
@@ -638,7 +640,7 @@ segment_displays:
           f: l_kodseg_5_7_f
           g: l_kodseg_5_7_g
           t: l_kodseg_5_7_t
-          DP: l_kodseg_5_7_DP
+          dp: l_kodseg_5_7_dp
           e: l_kodseg_5_7_e
           p: l_kodseg_5_7_p
           r: l_kodseg_5_7_r
@@ -647,6 +649,7 @@ segment_displays:
           n: l_kodseg_5_7_n
           c: l_kodseg_5_7_c
       type: 16segment
+
 
 virtual_segment_display_connector:
   segment_displays: display1, display2, display3, display4, display5
