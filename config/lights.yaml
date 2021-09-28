@@ -70,6 +70,14 @@
 # 13 Credit Indicator
 # 14 8K golden cliff
 
+light_settings:
+  #  default_fade_ms: 1000
+   color_correction_profiles:
+      NeoSeg_white:
+         #whitepoint: [0.2, 0.2, 0.2]
+         gamma: 1.5
+         whitepoint: [.8, .8, .8]
+         
 lights:
 # ASSUME we are putting these on different channels
 
