@@ -646,7 +646,7 @@ segment_displays:
           b: l_kodseg_5_7_b
           n: l_kodseg_5_7_n
           c: l_kodseg_5_7_c
-      type: 16segment 
+      type: 16segment
 
 virtual_segment_display_connector:
   segment_displays: display1, display2, display3, display4, display5

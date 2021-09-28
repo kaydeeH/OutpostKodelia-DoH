@@ -94,7 +94,7 @@ ball_devices:
   bd_trough:
     ball_switches: s_trough_1, s_trough_2, s_trough_3, s_trough_4, s_trough_jam
     eject_coil: c_ball_trough
-    tags: trough, home
+    tags: drain, trough, home
     jam_switch: s_trough_jam
     eject_targets: bd_plunger
     eject_timeouts: 3s
@@ -105,7 +105,6 @@ ball_devices:
   bd_drain:
     ball_switches: s_outhole
     eject_coil: c_outhole_kicker
-    tags: drain
     eject_targets: bd_trough
   bd_escape_saucer:
     ball_switches: s_saucer_treasure_chamber
@@ -144,6 +143,7 @@ autofire_coils:
   thumper_left:
     coil: c_left_thumper
     switch: s_thumper_left
+
 
 drop_targets:
      I0:
