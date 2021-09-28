@@ -90,8 +90,10 @@ switches:
   # Optos - these may change - assuming J3
   s_trough_1:
     number: 0-0-11
+    type: 'NC'
   s_trough_jam:
     number: 0-0-10
+    type: 'NC'
   s_playfield_entry:
     number: 0-0-9
     tags: playfield_active
