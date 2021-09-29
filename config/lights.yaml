@@ -77,7 +77,7 @@ light_settings:
          #whitepoint: [0.2, 0.2, 0.2]
          gamma: 1.5
          whitepoint: [.8, .8, .8]
-         
+
 lights:
 # ASSUME we are putting these on different channels
 

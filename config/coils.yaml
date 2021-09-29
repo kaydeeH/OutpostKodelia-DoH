@@ -42,10 +42,10 @@ coils:
     default_pulse_ms: 12
 
   c_left_thumper:
-    number: 1-0-6
+    number: 1-0-7
     default_pulse_ms: 20
   c_right_thumper:
-    number: 1-0-7
+    number: 1-0-6
     default_pulse_ms: 20
   c_bottom_thumper:
     number: 1-0-2
@@ -56,7 +56,7 @@ coils:
 
   c_drop_target_inline:
     number: 0-0-5
-    default_pulse_ms: 30
+    default_pulse_ms: 40
   c_drop_target_right:
     number: 0-0-14
     default_pulse_ms: 30
