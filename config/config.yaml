@@ -1,6 +1,7 @@
 #config_version=5
 config:
   - hardware.yaml
+  - switches.yaml
   - coils.yaml
   - display.yaml
   - sound.yaml
@@ -8,7 +9,6 @@ config:
   - lights.yaml
   - neoseglights.yaml
   - scriptlets.yaml
-  - switches.yaml
   - settings.yaml
   - widgetstyles.yaml
   - widgets.yaml

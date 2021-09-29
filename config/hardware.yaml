@@ -123,31 +123,7 @@ ball_devices:
 
 
 
-autofire_coils:
-  slingshot_left:
-    coil: c_left_slingshot
-    switch: s_slingshot_left
-    timeout_watch_time: 1s
-    timeout_max_hits: 1
-    timeout_disable_time: 300ms
-  slingshot_right:
-    coil: c_right_slingshot
-    switch: s_slingshot_right
-    timeout_watch_time: 1s
-    timeout_max_hits: 1
-    timeout_disable_time: 300ms
-  thumper_bottom:
-    coil: c_bottom_thumper
-    switch: s_thumper_bottom
-  thumper_center:
-    coil: c_center_thumper
-    switch: s_thumper_center
-  thumper_right:
-    coil: c_right_thumper
-    switch: s_thumper_right
-  thumper_left:
-    coil: c_left_thumper
-    switch: s_thumper_left
+
 
 
 drop_targets:
