@@ -110,7 +110,7 @@ ball_devices:
   bd_drain:
     ball_switches: s_outhole
     eject_coil: c_outhole_kicker
-    eject_targets: bd_trough
+#    eject_targets: bd_trough
   bd_escape_saucer:
     ball_switches: s_saucer_treasure_chamber
     eject_coil: c_saucer_trasure_chamber
