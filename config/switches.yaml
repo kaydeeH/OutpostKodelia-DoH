@@ -138,6 +138,9 @@ switches:
   s_thumper_left:
     number: 1-0-65
     events_when_activated: temp_thumper_left
+  #Temp switch to test mirror universe theory
+  s_void:
+    number: 1-0-72
 
 
   # Saucers
@@ -151,13 +154,13 @@ switches:
   # Targets and Rebounds
   s_center_target:
     number: 1-0-56
-    tags: playfield_active
+    #tags: playfield_active
   s_top_center_target:
     number: 1-0-59
     tags: playfield_active
   s_rebound_500pt:
     number: 1-0-75
-    tags: playfield_active
+    #tags: playfield_active
   s_left_mid_standup:
     number: 1-0-82
     tags: playfield_active
