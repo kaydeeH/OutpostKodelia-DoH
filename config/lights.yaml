@@ -92,84 +92,98 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_01p2:
     number: 0-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_02a:
     number: 0-2
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_02a2:
     number: 0-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_03r:
     number: 0-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_03r2:
     number: 0-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_04a:
     number: 0-6
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_04a2:
     number: 0-7
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_05g:
     number: 0-8
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_05g2:
     number: 0-9
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_06o:
     number: 0-10
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_06o2:
     number: 0-11
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_07n:
     number: 0-12
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_paragon_center_07n2:
     number: 0-13
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
 
 # Multiplier Section
   l_bonus_2x:
@@ -178,36 +192,42 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_2x2:
     number: 0-15
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_2x3:
     number: 0-16
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_3x:
     number: 0-17
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_3x2:
     number: 0-18
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_3x3:
     number: 0-19
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
 
   l_bonus_5x:
     number: 0-23
@@ -215,36 +235,42 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_5x2:
     number: 0-24
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_5x3:
     number: 0-25
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_shoot_again:
     number: 0-26
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_shoot_again2:
     number: 0-27
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_shoot_again3:
     number: 0-28
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
 
 # Super Bonus Section
   l_bonus_super_20k:
@@ -253,18 +279,21 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_super_30k:
     number: 0-21
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_super_40k:
     number: 0-22
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
 
 # Bonus Section
   l_bonus_1k:
@@ -273,60 +302,70 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_2k:
     number: 0-30
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_3k:
     number: 0-31
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_4k:
     number: 0-32
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_5k:
     number: 0-33
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_6k:
     number: 0-34
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_7k:
     number: 0-35
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_8k:
     number: 0-36
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_9k:
     number: 0-37
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
   l_bonus_10k:
     number: 0-38
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j3
 
 # FADECANDY J4
 # Channel 1
@@ -337,198 +376,231 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4
   l_waterlane_10k:
     number: 1-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4
   l_waterlane_special:
     number: 1-2
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4
   l_gi_01:
     number: 1-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_02:
     number: 1-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_03:
     number: 1-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_04:
     number: 1-6
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_05:
     number: 1-7
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_06:
     number: 1-8
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_07:
     number: 1-9
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_08:
     number: 1-10
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_09:
     number: 1-11
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_10:
     number: 1-12
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_11:
     number: 1-13
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_12:
     number: 1-14
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_13:
     number: 1-15
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_14:
     number: 1-16
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_15:
     number: 1-17
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_16:
     number: 1-18
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_17:
     number: 1-19
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_18:
     number: 1-20
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_19:
     number: 1-21
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_20:
     number: 1-22
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_21:
     number: 1-23
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_22:
     number: 1-24
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_23:
     number: 1-25
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_24:
     number: 1-26
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_25:
     number: 1-27
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_26:
     number: 1-28
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_27:
     number: 1-29
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_28:
     number: 1-30
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_29:
     number: 1-31
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
   l_gi_30:
     number: 1-32
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j4, gi
 
 # FADECANDY J5
 # Channel 2
@@ -540,150 +612,175 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1c
   pop1_1:
     number: 2-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1c
   pop1_2:
     number: 2-2
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1c
   pop1_3:
     number: 2-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1c
   pop1_4:
     number: 2-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1c
   pop1_5:
     number: 2-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1c
   pop1_6:
     number: 2-6
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_7:
     number: 2-7
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_8:
     number: 2-8
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_9:
     number: 2-9
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_10:
     number: 2-10
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_11:
     number: 2-11
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_12:
     number: 2-12
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_13:
     number: 2-13
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_14:
     number: 2-14
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_15:
     number: 2-15
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_16:
     number: 2-16
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_17:
     number: 2-17
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_18:
     number: 2-18
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_19:
     number: 2-19
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_20:
     number: 2-20
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_21:
     number: 2-21
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_22:
     number: 2-22
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_23:
     number: 2-23
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5, p1o
   pop1_24:
     number: 2-24
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j5
 
 
 
@@ -703,36 +800,42 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_goldencliffs_4k:
     number: 4-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_goldencliffs_6k:
     number: 4-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_goldencliffs_8k:
     number: 4-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_goldencliffs_10k:
     number: 4-2
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_goldencliffs_20k:
     number: 4-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
 
   l_paragon_saucer_01p:
     number: 4-6
@@ -740,48 +843,56 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_paragon_saucer_02a:
     number: 4-7
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_paragon_saucer_03r:
     number: 4-8
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_paragon_saucer_04a:
     number: 4-9
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_paragon_saucer_05g:
     number: 4-10
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_paragon_saucer_06o:
     number: 4-11
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_paragon_saucer_07n:
     number: 4-12
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
   l_paragon_saucer_special:
     number: 4-13
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
 
 # Drop Target (Not In-Line)
   l_droptarget_10k:
@@ -790,6 +901,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
 # Drop Target (Not In-Line)
   l_droptarget_15k:
     number: 4-15
@@ -797,6 +909,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
 # Drop Target (Not In-Line)
   l_droptarget_20k:
     number: 4-16
@@ -804,6 +917,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
 # Drop Target (Not In-Line)
   l_droptarget_25k:
     number: 4-17
@@ -811,6 +925,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
 # Drop Target (Not In-Line)
   l_droptarget_special:
     number: 4-18
@@ -818,6 +933,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j7
 
 # FADECANDY J8
 # Channel 5
@@ -829,150 +945,175 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2c
   pop2_1:
     number: 5-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2c
   pop2_2:
     number: 5-2
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2c
   pop2_3:
     number: 5-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2c
   pop2_4:
     number: 5-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2c
   pop2_5:
     number: 5-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2c
   pop2_6:
     number: 5-6
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_7:
     number: 5-7
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_8:
     number: 5-8
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_9:
     number: 5-9
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_10:
     number: 5-10
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_11:
     number: 5-11
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_12:
     number: 5-12
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_13:
     number: 5-13
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_14:
     number: 5-14
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_15:
     number: 5-15
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_16:
     number: 5-16
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_17:
     number: 5-17
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_18:
     number: 5-18
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_19:
     number: 5-19
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_20:
     number: 5-20
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_21:
     number: 5-21
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_22:
     number: 5-22
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_23:
     number: 5-23
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8, p2o
   pop2_24:
     number: 5-24
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j8
 
 # FADECANDY J9
 # Channel 6
@@ -986,18 +1127,21 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j9
   l_treasure_extra_ball:
     number: 6-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j9
   l_treasure_special:
     number: 6-0
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j9
 
 # Spinner Section
 # Manual shows 4 controled lights but playfield appears to have 5
@@ -1008,30 +1152,35 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j9
   l_spinner_2:
     number: 6-6
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j9
   l_spinner_3:
     number: 6-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j9
   l_spinner_4:
     number: 6-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j9
   l_spinner_5:
     number: 6-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j9
 
 # FADECANDY J10
 # Channel 7
@@ -1042,151 +1191,175 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3c
   pop3_1:
     number: 7-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3c
   pop3_2:
     number: 7-2
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3c
   pop3_3:
     number: 7-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3c
   pop3_4:
     number: 7-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3c
   pop3_5:
     number: 7-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3c
   pop3_6:
     number: 7-6
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_7:
     number: 7-7
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_8:
     number: 7-8
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_9:
     number: 7-9
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_10:
     number: 7-10
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_11:
     number: 7-11
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_12:
     number: 7-12
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_13:
     number: 7-13
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_14:
     number: 7-14
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_15:
     number: 7-15
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_16:
     number: 7-16
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_17:
     number: 7-17
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_18:
     number: 7-18
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_19:
     number: 7-19
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_20:
     number: 7-20
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_21:
     number: 7-21
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_22:
     number: 7-22
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_23:
     number: 7-23
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
+    tags: j10, p3o
   pop3_24:
     number: 7-24
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-
+    tags: j10
 
 
 

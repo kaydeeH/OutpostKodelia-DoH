@@ -1,0 +1,19 @@
+#show_version=5
+- time: 0
+  lights:
+    (tag1): (color)
+    (tag2): (color)
+    (tag3): (color)
+    (tag4): (color)
+    (tag5): (color)
+    (tag6): (color)
+    (tag7): (color)
+- time: 1
+  lights:
+    (tag1): off
+    (tag2): off
+    (tag3): off
+    (tag4): off
+    (tag5): off
+    (tag6): off
+    (tag7): off
