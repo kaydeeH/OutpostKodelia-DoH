@@ -138,6 +138,9 @@ switches:
   s_thumper_left:
     number: 1-0-65
     events_when_activated: temp_thumper_left
+  #Temp switch to test mirror universe theory
+  s_void:
+    number: 1-0-72
 
 
   # Saucers
