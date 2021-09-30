@@ -3,4 +3,7 @@
 mode:
   file_log: full
 
-
+show_player:
+  game_started:
+    gi:
+      key: gi_show

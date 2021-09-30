@@ -113,7 +113,7 @@ keyboard:
      switch: s_service_1
   0:
      switch: s_service_2
-  "-":
+  c:
      switch: s_service_3
   y:
      switch: s_drop_right_a
