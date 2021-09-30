@@ -4,44 +4,36 @@
   segment_displays:
     display1:
       flashing: off
-      color: "FFA500"
       text: (text_1)
       priority: 1000
     display2:
       flashing: off
-      color: "FFA500"
       text: (text_2)
       priority: 1000
     display3:
       flashing: off
-      color: "FFA500"
       text: (text_3)
       priority: 1000
     display4:
       flashing: off
-      color: "FFA500"
       text: (text_4)
       priority: 1000
 - duration: .125
   segment_displays:
     display1:
       flashing: off
-      color: "FFA500"
       text: ""
       priority: 1000
     display2:
       flashing: off
-      color: "FFA500"
       text: ""
       priority: 1000
     display3:
       flashing: off
-      color: "FFA500"
       text: ""
       priority: 1000
     display4:
       flashing: off
-      color: "FFA500"
       text: (text_4)
       priority: 1000
 
