@@ -78,8 +78,15 @@ lights:
     tags: disp1led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_1_1_p:
+  l_kodseg_1_1_stub:
     previous: l_kodseg_1_1_e
+    type: w
+    subtype: led
+    tags: disp1led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_1_p:
+    previous: l_kodseg_1_1_stub
     type: w
     subtype: led
     tags: disp1led
@@ -197,8 +204,15 @@ lights:
     tags: disp1led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_1_2_p:
+  l_kodseg_1_2_stub:
     previous: l_kodseg_1_2_e
+    type: w
+    subtype: led
+    tags: disp1led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_2_p:
+    previous: l_kodseg_1_2_stub
     type: w
     subtype: led
     tags: disp1led
@@ -316,8 +330,15 @@ lights:
     tags: disp1led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_1_3_p:
+  l_kodseg_1_3_stub:
     previous: l_kodseg_1_3_e
+    type: w
+    subtype: led
+    tags: disp1led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_3_p:
+    previous: l_kodseg_1_3_stub
     type: w
     subtype: led
     tags: disp1led
@@ -435,8 +456,15 @@ lights:
     tags: disp1led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_1_4_p:
+  l_kodseg_1_4_stub:
     previous: l_kodseg_1_4_e
+    type: w
+    subtype: led
+    tags: disp1led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_4_p:
+    previous: l_kodseg_1_4_stub
     type: w
     subtype: led
     tags: disp1led
@@ -554,8 +582,15 @@ lights:
     tags: disp1led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_1_5_p:
+  l_kodseg_1_5_stub:
     previous: l_kodseg_1_5_e
+    type: w
+    subtype: led
+    tags: disp1led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_5_p:
+    previous: l_kodseg_1_5_stub
     type: w
     subtype: led
     tags: disp1led
@@ -673,8 +708,15 @@ lights:
     tags: disp1led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_1_6_p:
+  l_kodseg_1_6_stub:
     previous: l_kodseg_1_6_e
+    type: w
+    subtype: led
+    tags: disp1led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_6_p:
+    previous: l_kodseg_1_6_stub
     type: w
     subtype: led
     tags: disp1led
@@ -792,8 +834,15 @@ lights:
     tags: disp1led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_1_7_p:
+  l_kodseg_1_7_stub:
     previous: l_kodseg_1_7_e
+    type: w
+    subtype: led
+    tags: disp1led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_1_7_p:
+    previous: l_kodseg_1_7_stub
     type: w
     subtype: led
     tags: disp1led
@@ -912,8 +961,15 @@ lights:
     tags: disp2led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_2_1_p:
+  l_kodseg_2_1_stub:
     previous: l_kodseg_2_1_e
+    type: w
+    subtype: led
+    tags: disp2led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_1_p:
+    previous: l_kodseg_2_1_stub
     type: w
     subtype: led
     tags: disp2led
@@ -1031,8 +1087,15 @@ lights:
     tags: disp2led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_2_2_p:
+  l_kodseg_2_2_stub:
     previous: l_kodseg_2_2_e
+    type: w
+    subtype: led
+    tags: disp2led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_2_p:
+    previous: l_kodseg_2_2_stub
     type: w
     subtype: led
     tags: disp2led
@@ -1150,8 +1213,15 @@ lights:
     tags: disp2led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_2_3_p:
+  l_kodseg_2_3_stub:
     previous: l_kodseg_2_3_e
+    type: w
+    subtype: led
+    tags: disp2led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_3_p:
+    previous: l_kodseg_2_3_stub
     type: w
     subtype: led
     tags: disp2led
@@ -1269,8 +1339,15 @@ lights:
     tags: disp2led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_2_4_p:
+  l_kodseg_2_4_stub:
     previous: l_kodseg_2_4_e
+    type: w
+    subtype: led
+    tags: disp2led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_4_p:
+    previous: l_kodseg_2_4_stub
     type: w
     subtype: led
     tags: disp2led
@@ -1388,8 +1465,15 @@ lights:
     tags: disp2led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_2_5_p:
+  l_kodseg_2_5_stub:
     previous: l_kodseg_2_5_e
+    type: w
+    subtype: led
+    tags: disp2led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_5_p:
+    previous: l_kodseg_2_5_stub
     type: w
     subtype: led
     tags: disp2led
@@ -1507,8 +1591,15 @@ lights:
     tags: disp2led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_2_6_p:
+  l_kodseg_2_6_stub:
     previous: l_kodseg_2_6_e
+    type: w
+    subtype: led
+    tags: disp2led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_6_p:
+    previous: l_kodseg_2_6_stub
     type: w
     subtype: led
     tags: disp2led
@@ -1626,8 +1717,15 @@ lights:
     tags: disp2led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_2_7_p:
+  l_kodseg_2_7_stub:
     previous: l_kodseg_2_7_e
+    type: w
+    subtype: led
+    tags: disp2led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_2_7_p:
+    previous: l_kodseg_2_7_stub
     type: w
     subtype: led
     tags: disp2led
@@ -1746,8 +1844,15 @@ lights:
     tags: disp3led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_3_1_p:
+  l_kodseg_3_1_stub:
     previous: l_kodseg_3_1_e
+    type: w
+    subtype: led
+    tags: disp3led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_1_p:
+    previous: l_kodseg_3_1_stub
     type: w
     subtype: led
     tags: disp3led
@@ -1865,8 +1970,15 @@ lights:
     tags: disp3led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_3_2_p:
+  l_kodseg_3_2_stub:
     previous: l_kodseg_3_2_e
+    type: w
+    subtype: led
+    tags: disp3led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_2_p:
+    previous: l_kodseg_3_2_stub
     type: w
     subtype: led
     tags: disp3led
@@ -1984,8 +2096,15 @@ lights:
     tags: disp3led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_3_3_p:
+  l_kodseg_3_3_stub:
     previous: l_kodseg_3_3_e
+    type: w
+    subtype: led
+    tags: disp3led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_3_p:
+    previous: l_kodseg_3_3_stub
     type: w
     subtype: led
     tags: disp3led
@@ -2103,8 +2222,15 @@ lights:
     tags: disp3led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_3_4_p:
+  l_kodseg_3_4_stub:
     previous: l_kodseg_3_4_e
+    type: w
+    subtype: led
+    tags: disp3led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_4_p:
+    previous: l_kodseg_3_4_stub
     type: w
     subtype: led
     tags: disp3led
@@ -2222,8 +2348,15 @@ lights:
     tags: disp3led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_3_5_p:
+  l_kodseg_3_5_stub:
     previous: l_kodseg_3_5_e
+    type: w
+    subtype: led
+    tags: disp3led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_5_p:
+    previous: l_kodseg_3_5_stub
     type: w
     subtype: led
     tags: disp3led
@@ -2341,8 +2474,15 @@ lights:
     tags: disp3led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_3_6_p:
+  l_kodseg_3_6_stub:
     previous: l_kodseg_3_6_e
+    type: w
+    subtype: led
+    tags: disp3led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_6_p:
+    previous: l_kodseg_3_6_stub
     type: w
     subtype: led
     tags: disp3led
@@ -2460,8 +2600,15 @@ lights:
     tags: disp3led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_3_7_p:
+  l_kodseg_3_7_stub:
     previous: l_kodseg_3_7_e
+    type: w
+    subtype: led
+    tags: disp3led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_3_7_p:
+    previous: l_kodseg_3_7_stub
     type: w
     subtype: led
     tags: disp3led
@@ -2580,8 +2727,15 @@ lights:
     tags: disp4led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_4_1_p:
+  l_kodseg_4_1_stub:
     previous: l_kodseg_4_1_e
+    type: w
+    subtype: led
+    tags: disp4led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_1_p:
+    previous: l_kodseg_4_1_stub
     type: w
     subtype: led
     tags: disp4led
@@ -2699,8 +2853,15 @@ lights:
     tags: disp4led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_4_2_p:
+  l_kodseg_4_2_stub:
     previous: l_kodseg_4_2_e
+    type: w
+    subtype: led
+    tags: disp4led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_2_p:
+    previous: l_kodseg_4_2_stub
     type: w
     subtype: led
     tags: disp4led
@@ -2818,8 +2979,15 @@ lights:
     tags: disp4led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_4_3_p:
+  l_kodseg_4_3_stub:
     previous: l_kodseg_4_3_e
+    type: w
+    subtype: led
+    tags: disp4led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_3_p:
+    previous: l_kodseg_4_3_stub
     type: w
     subtype: led
     tags: disp4led
@@ -2937,8 +3105,15 @@ lights:
     tags: disp4led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_4_4_p:
+  l_kodseg_4_4_stub:
     previous: l_kodseg_4_4_e
+    type: w
+    subtype: led
+    tags: disp4led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_4_p:
+    previous: l_kodseg_4_4_stub
     type: w
     subtype: led
     tags: disp4led
@@ -3056,8 +3231,15 @@ lights:
     tags: disp4led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_4_5_p:
+  l_kodseg_4_5_stub:
     previous: l_kodseg_4_5_e
+    type: w
+    subtype: led
+    tags: disp4led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_5_p:
+    previous: l_kodseg_4_5_stub
     type: w
     subtype: led
     tags: disp4led
@@ -3175,8 +3357,15 @@ lights:
     tags: disp4led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_4_6_p:
+  l_kodseg_4_6_stub:
     previous: l_kodseg_4_6_e
+    type: w
+    subtype: led
+    tags: disp4led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_6_p:
+    previous: l_kodseg_4_6_stub
     type: w
     subtype: led
     tags: disp4led
@@ -3294,8 +3483,15 @@ lights:
     tags: disp4led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_4_7_p:
+  l_kodseg_4_7_stub:
     previous: l_kodseg_4_7_e
+    type: w
+    subtype: led
+    tags: disp4led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_4_7_p:
+    previous: l_kodseg_4_7_stub
     type: w
     subtype: led
     tags: disp4led
@@ -3414,8 +3610,15 @@ lights:
     tags: disp5led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_5_1_p:
+  l_kodseg_5_1_stub:
     previous: l_kodseg_5_1_e
+    type: w
+    subtype: led
+    tags: disp5led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_1_p:
+    previous: l_kodseg_5_1_stub
     type: w
     subtype: led
     tags: disp5led
@@ -3533,8 +3736,15 @@ lights:
     tags: disp5led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_5_2_p:
+  l_kodseg_5_2_stub:
     previous: l_kodseg_5_2_e
+    type: w
+    subtype: led
+    tags: disp5led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_2_p:
+    previous: l_kodseg_5_2_stub
     type: w
     subtype: led
     tags: disp5led
@@ -3652,8 +3862,15 @@ lights:
     tags: disp5led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_5_3_p:
+  l_kodseg_5_3_stub:
     previous: l_kodseg_5_3_e
+    type: w
+    subtype: led
+    tags: disp5led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_3_p:
+    previous: l_kodseg_5_3_stub
     type: w
     subtype: led
     tags: disp5led
@@ -3771,8 +3988,15 @@ lights:
     tags: disp5led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_5_4_p:
+  l_kodseg_5_4_stub:
     previous: l_kodseg_5_4_e
+    type: w
+    subtype: led
+    tags: disp5led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_4_p:
+    previous: l_kodseg_5_4_stub
     type: w
     subtype: led
     tags: disp5led
@@ -3890,8 +4114,15 @@ lights:
     tags: disp5led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_5_5_p:
+  l_kodseg_5_5_stub:
     previous: l_kodseg_5_5_e
+    type: w
+    subtype: led
+    tags: disp5led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_5_p:
+    previous: l_kodseg_5_5_stub
     type: w
     subtype: led
     tags: disp5led
@@ -4009,8 +4240,15 @@ lights:
     tags: disp5led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_5_6_p:
+  l_kodseg_5_6_stub:
     previous: l_kodseg_5_6_e
+    type: w
+    subtype: led
+    tags: disp5led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_6_p:
+    previous: l_kodseg_5_6_stub
     type: w
     subtype: led
     tags: disp5led
@@ -4128,8 +4366,15 @@ lights:
     tags: disp5led
     platform: opp
     color_correction_profile: NeoSeg_white
-  l_kodseg_5_7_p:
+  l_kodseg_5_7_stub:
     previous: l_kodseg_5_7_e
+    type: w
+    subtype: led
+    tags: disp5led
+    platform: opp
+    color_correction_profile: NeoSeg_white
+  l_kodseg_5_7_p:
+    previous: l_kodseg_5_7_stub
     type: w
     subtype: led
     tags: disp5led
