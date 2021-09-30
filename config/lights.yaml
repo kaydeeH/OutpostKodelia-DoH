@@ -1368,49 +1368,49 @@ lights:
 
 # Misc Informational Lights
   l_info_ball_in_play:
-    number: 1-0-0
+    number: 1-0-126
     subtype: led
     fade_ms: 50ms
     platform: opp
     platform_settings:
       polarity: true
   l_info_credit_indicator:
-    number: 1-0-2
+    number: 1-0-127
     subtype: led
     fade_ms: 50ms
     platform: opp
     platform_settings:
       polarity: true
   l_info_game_over:
-    number: 1-0-3
+    number: 1-0-128
     subtype: led
     fade_ms: 50ms
     platform: opp
     platform_settings:
       polarity: true
   l_info_high_score_to_date:
-    number: 1-0-4
+    number: 1-0-129
     subtype: led
     fade_ms: 50ms
     platform: opp
     platform_settings:
       polarity: true
   l_info_match:
-    number: 1-0-5
+    number: 1-0-130
     subtype: led
     fade_ms: 50ms
     platform: opp
     platform_settings:
       polarity: true
   l_info_same_player_sa:
-    number: 1-0-6
+    number: 1-0-131
     subtype: led
     fade_ms: 50ms
     platform: opp
     platform_settings:
       polarity: true
   l_info_tilt:
-    number: 1-0-7
+    number: 1-0-132
     subtype: led
     fade_ms: 50ms
     platform: opp
