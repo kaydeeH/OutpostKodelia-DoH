@@ -122,16 +122,22 @@ switches:
 
   s_slingshot_right:
     number: 1-0-51
+    events_when_activated: temp_sling_right
   s_slingshot_left:
     number: 1-0-64
+    events_when_activated: temp_sling_left
   s_thumper_bottom:
     number: 1-0-81
+    events_when_activated: temp_thumper_bottom
   s_thumper_center:
     number: 1-0-57
+    events_when_activated: temp_thumper_center
   s_thumper_right:
     number: 1-0-48
+    events_when_activated: temp_thumper_right
   s_thumper_left:
     number: 1-0-65
+    events_when_activated: temp_thumper_left
 
 
   # Saucers

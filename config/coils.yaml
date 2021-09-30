@@ -37,22 +37,28 @@ coils:
   c_left_slingshot:
     number: 1-0-3
     default_pulse_ms: 12
+    pulse_events: temp_sling_left
   c_right_slingshot:
     number: 1-0-1
     default_pulse_ms: 12
+    pulse_events: temp_sling_right
 
   c_left_thumper:
     number: 1-0-7
     default_pulse_ms: 20
+    pulse_events: temp_thumper_left
   c_right_thumper:
     number: 1-0-6
     default_pulse_ms: 20
+    pulse_events: temp_thumper_right
   c_bottom_thumper:
     number: 1-0-2
     default_pulse_ms: 20
+    pulse_events: temp_thumper_bottom
   c_center_thumper:
     number: 1-0-0
     default_pulse_ms: 20
+    pulse_events: temp_thumper_center
 
   c_drop_target_inline:
     number: 0-0-5
@@ -114,28 +120,28 @@ coils:
     allow_enable: true
 
 
-autofire_coils:
-  slingshot_left:
-    coil: c_left_slingshot
-    switch: s_slingshot_left
-    timeout_watch_time: 1s
-    timeout_max_hits: 1
-    timeout_disable_time: 300ms
-  slingshot_right:
-    coil: c_right_slingshot
-    switch: s_slingshot_right
-    timeout_watch_time: 1s
-    timeout_max_hits: 1
-    timeout_disable_time: 300ms
-  thumper_bottom:
-    coil: c_bottom_thumper
-    switch: s_thumper_bottom
-  thumper_center:
-    coil: c_center_thumper
-    switch: s_thumper_center
-  thumper_right:
-    coil: c_right_thumper
-    switch: s_thumper_right
-  thumper_left:
-    coil: c_left_thumper
-    switch: s_thumper_left
+#autofire_coils:
+#  slingshot_left:
+#    coil: c_left_slingshot
+#    switch: s_slingshot_left
+#    timeout_watch_time: 1s
+#    timeout_max_hits: 1
+#    timeout_disable_time: 300ms
+#  slingshot_right:
+#    coil: c_right_slingshot
+#    switch: s_slingshot_right
+#    timeout_watch_time: 1s
+#    timeout_max_hits: 1
+#    timeout_disable_time: 300ms
+#  thumper_bottom:
+#    coil: c_bottom_thumper
+#    switch: s_thumper_bottom
+#  thumper_center:
+#    coil: c_center_thumper
+#    switch: s_thumper_center
+#  thumper_right:
+#    coil: c_right_thumper
+#    switch: s_thumper_right
+#  thumper_left:
+#    coil: c_left_thumper
+#    switch: s_thumper_left
