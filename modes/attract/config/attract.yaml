@@ -5,23 +5,23 @@ event_player:
     start_loop:
 
 segment_display_player:
-  mode_attract_started:
-    display1:
-      action: set_color
-      color: "FFA500"
-    display2:
-      action: set_color
-      color: "FFA500"
-    display3:
-      action: set_color
-      color: "FFA500"
-    display4:
-      action: set_color
-      color: "FFA500"
-  #    color: "776300"
-    display5:
-      action: set_color
-      color: "FFA500"
+#  mode_attract_started:
+#    display1:
+#      action: set_color
+#      color: "FFA500"
+#    display2:
+#      action: set_color
+#      color: "FFA500"
+#    display3:
+#      action: set_color
+#      color: "FFA500"
+#    display4:
+#      action: set_color
+#      color: "FFA500"
+#  #    color: "776300"
+#    display5:
+#      action: set_color
+#      color: "FFA500"
   start_loop:
     display1:
       text: "THE    "
