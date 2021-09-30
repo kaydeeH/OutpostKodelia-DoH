@@ -46,7 +46,7 @@ class Service(Service):
 
         for item in items:
             item.light.color(colors[color_position], key="service", priority=1000000)
-
+            
         key = await self._get_key()
         for item in items:
             item.light.remove_from_stack_by_key("service")
