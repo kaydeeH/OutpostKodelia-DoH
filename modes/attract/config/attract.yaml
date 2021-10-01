@@ -107,6 +107,15 @@ show_player:
     oil_slick_show:
       key: oil_slick_show
       priority: 1
+    creek_show:
+      key: creek_show
+      priority: 1
+    hazzard_show:
+      key: hazzard_show
+      priority: 1
+    hazzard_special_show:
+      key: hazzard_special_show
+      priority: 1
   start_loop:
     attract_show_1:
       action: play

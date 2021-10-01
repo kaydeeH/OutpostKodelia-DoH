@@ -1,0 +1,7 @@
+#show_version=5
+- duration: 250ms
+  lights:
+    l_paragon_saucer_special: white
+- duration: 250ms
+  lights:
+    l_paragon_saucer_special: off
