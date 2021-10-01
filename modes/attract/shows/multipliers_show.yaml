@@ -4,17 +4,29 @@
     l_bonus_2x: turquoise
     l_bonus_2x2: off
     l_bonus_2x3: off
-    l_bonus_3x: springgreen
+    l_bonus_3x: lightsalmon
     l_bonus_3x2: off
     l_bonus_3x3: off
+    l_bonus_5x: springgreen
+    l_bonus_5x2: off
+    l_bonus_5x3: off
+    l_bonus_shoot_again: deeppink
+    l_bonus_shoot_again2: off
+    l_bonus_shoot_again3: off
 - duration: 150ms
   lights:
     l_bonus_2x: off
     l_bonus_2x2: turquoise
     l_bonus_2x3: off
     l_bonus_3x: off
-    l_bonus_3x2: springgreen
+    l_bonus_3x2: lightsalmon
     l_bonus_3x3: off
+    l_bonus_5x: off
+    l_bonus_5x2: springgreen
+    l_bonus_5x3: off
+    l_bonus_shoot_again: off
+    l_bonus_shoot_again2: deeppink
+    l_bonus_shoot_again3: off
 - duration: 150ms
   lights:
     l_bonus_2x: off
@@ -22,5 +34,11 @@
     l_bonus_2x3: turquoise
     l_bonus_3x: off
     l_bonus_3x2: off
-    l_bonus_3x3: springgreen
+    l_bonus_3x3: lightsalmon
+    l_bonus_5x: off
+    l_bonus_5x2: off
+    l_bonus_5x3: springgreen
+    l_bonus_shoot_again: off
+    l_bonus_shoot_again2: off
+    l_bonus_shoot_again3: deeppink
 
