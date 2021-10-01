@@ -53,8 +53,9 @@ opp:
      #1: /dev/ttyACM1
 
 fadecandy:
-  linear_cutoff: 0.00390365
-  whitepoint: 0.95,0.97,1
+  linear_cutoff: 0.004
+  whitepoint: 0.97, 0.95, 1.0
+  linear_slope: 1.0
 
 psus:
   default:
