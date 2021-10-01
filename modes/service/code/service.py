@@ -26,6 +26,34 @@ class Service(Service):
     #     ]
     #     return entries
 
+    ksLast = ""
+    ksLastList = []
+    ksSkipList = ["Switch Edge Test", "Single Coil Test", "Single Light Test", "Light Channel Test", "All Light Test",
+                  "Earning Audits", "Switch Audits", "Shot Audits", "Event Audits", "Player Audits",
+                  "Standard Adjustments", "Feature Adjustments", "Game Adjustments", "Coin Adjustments",
+                  "Reset Coin Audits", "Reset Game Audits", "Reset High Scores", "Reset Credits",
+                  "Reset to Factory Settings"]
+
+    def _ks_purge_list(self):
+        self.ksLastList = []
+
+    def _ks_add_to_list(self, last_item: str):
+        if not(last_item in self.ksSkipList):
+            self.ksLastList.insert(len(self.ksLastList), last_item)
+
+    def _ks_pop_from_list(self):
+        if len(self.ksLastList) > 0:
+            self.ksLastList.pop(len(self.ksLastList)-1)
+
+    def _ks_provide_list(self):
+        ret_string = ""
+        for nav in self.ksLastList:
+            if ret_string == "":
+                ret_string = nav
+            else:
+                ret_string = ret_string + ">" + nav
+        return ret_string
+
     def _load_diagnostic_light_menu_entries(self) -> List[ServiceMenuEntry]:
         """Return the light menu items with label and callback."""
         entries = [
@@ -34,6 +62,54 @@ class Service(Service):
             ServiceMenuEntry("Light Channel Test", self._fc_channel_test)
         ]
         return entries
+
+    def _update_main_menu(self, items: List[ServiceMenuEntry], position: int):
+        self.machine.events.post("service_menu_deselected")
+        self.machine.events.post("service_menu_show")
+        self.machine.events.post("service_menu_selected", label=items[position].label, ks_last=self._ks_provide_list())
+
+    def _load_menu_entries(self) -> List[ServiceMenuEntry]:
+        """Return the menu items with label and callback."""
+        # If you want to add menu entries overload the mode and this method.
+        self._ks_purge_list()
+        entries = [
+            ServiceMenuEntry("Diagnostics Menu", self._diagnostics_menu),
+            ServiceMenuEntry("Audits Menu", self._audits_menu),
+            ServiceMenuEntry("Adjustments Menu", self._adjustments_menu),
+            ServiceMenuEntry("Utilities Menu", self._utilities_menu),
+
+        ]
+        self.ksLast = ""
+        return entries
+
+    async def _make_menu(self, items):
+        """Show a menu by controlling slides via events and executing callbacks."""
+        if not items:
+            # do not crash on empty menu
+            return
+        position = 0
+        self._update_main_menu(items, position)
+
+        while True:
+            key = await self._get_key()
+            if key == 'ESC':
+                self._ks_pop_from_list()
+                return
+            if key == 'UP':
+                position += 1
+                if position >= len(items):
+                    position = 0
+                self._update_main_menu(items, position)
+            elif key == 'DOWN':
+                position -= 1
+                if position < 0:
+                    position = len(items) - 1
+                self._update_main_menu(items, position)
+            elif key == 'ENTER':
+                # call submenu
+                self._ks_add_to_list(items[position].label)
+                await items[position].callback()
+                self._update_main_menu(items, position)
 
     async def _light_test_all(self):
         position = 0
@@ -98,3 +174,4 @@ class Service(Service):
             self.machine.events.post("service_light_channel_test_start", test_color=colors[color_position], test_channel=fchan[position])
 
         self.machine.events.post("service_light_channel_test_stop")
+

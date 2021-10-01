@@ -99,6 +99,7 @@ slides:
     text: Press enter for service
     font_name: hobby
     y: bottom + 40%
+
   # menu
   service_menu:
   - type: text
@@ -289,5 +290,45 @@ widgets:
     style: kodelia_service_medium
     valign: top
     halign: left
+  kservice_menu_item:
+    type: text
+    text: (ks_last)
+    style: kodelia_service_medium
+    x: center
+    y: bottom + 60%
 
 
+widget_player:
+  # power off
+  _overwrite: true
+  service_power_off:
+    service_power_off_door_open:
+      action: add
+      slide: service_door_open
+    service_power_off_coil_test:
+      action: add
+      slide: service_coil_test
+  service_power_on:
+    service_power_off_door_open:
+      action: remove
+      slide: service_door_open
+    service_power_off_coil_test:
+      action: remove
+      slide: service_coil_test
+
+  # menu items
+  service_menu_selected:
+    service_menu_item:
+      action: add
+      slide: service_menu
+    kservice_menu_item:
+      action: add
+      slide: service_menu
+
+  service_menu_deselected:
+    service_menu_item:
+      action: remove
+      slide: service_menu
+    kservice_menu_item:
+      action: remove
+      slide: service_menu
