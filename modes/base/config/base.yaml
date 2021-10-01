@@ -8,12 +8,17 @@ mode:
 
 
 variable_player:
-
   # PARAGON base wiring treats top right, drop target rebounds and golden cliffs rollover as switch #34 (10 point rebound)
   s_top_center_rollover_active:
     score: 10
-
-
-
   s_drop_inline_a_active:
     score: 100
+
+#ball_saves:
+#  initial_ball_save:
+#    active_time: 5s
+#    hurry_up_time: 2s
+#    grace_period: 2s
+#    enable_events: s_playfield_entry_active
+#    auto_launch: true
+#    balls_to_save: 1
