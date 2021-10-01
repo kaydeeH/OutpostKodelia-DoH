@@ -10,7 +10,7 @@
     l_bonus_5x: springgreen
     l_bonus_5x2: off
     l_bonus_5x3: off
-    l_bonus_shoot_again: deeppink
+    l_bonus_shoot_again: pink
     l_bonus_shoot_again2: off
     l_bonus_shoot_again3: off
 - duration: 150ms
@@ -25,7 +25,7 @@
     l_bonus_5x2: springgreen
     l_bonus_5x3: off
     l_bonus_shoot_again: off
-    l_bonus_shoot_again2: deeppink
+    l_bonus_shoot_again2: pink
     l_bonus_shoot_again3: off
 - duration: 150ms
   lights:
@@ -40,5 +40,5 @@
     l_bonus_5x3: springgreen
     l_bonus_shoot_again: off
     l_bonus_shoot_again2: off
-    l_bonus_shoot_again3: deeppink
+    l_bonus_shoot_again3: pink
 

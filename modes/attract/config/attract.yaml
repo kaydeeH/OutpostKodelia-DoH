@@ -101,6 +101,12 @@ show_player:
     escape_show:
       key: escape_show
       priority: 1
+    drops_show:
+      key: drops_show
+      priority: 1
+    oil_slick_show:
+      key: oil_slick_show
+      priority: 1
   start_loop:
     attract_show_1:
       action: play

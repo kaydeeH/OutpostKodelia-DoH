@@ -1,0 +1,48 @@
+#show_version=5
+- duration: 500ms
+  lights:
+    l_droptarget_10k:
+      color: orangered
+      fade: 250ms
+- duration: 500ms
+  lights:
+    l_droptarget_15k:
+      color: orangered
+      fade: 250ms
+- duration: 500ms
+  lights:
+    l_droptarget_20k:
+      color: orangered
+      fade: 250ms
+- duration: 500ms
+  lights:
+    l_droptarget_25k:
+      color: orangered
+      fade: 250ms
+- duration: 1000ms
+  lights:
+    l_droptarget_special:
+      color: orangered
+      fade: 500ms
+- duration: 1000ms
+  lights:
+    l_droptarget_special:
+      color: off
+      fade: 500ms
+- duration: 1000ms
+  lights:
+    l_droptarget_special:
+      color: orangered
+      fade: 500ms
+- duration: 1000ms
+  lights:
+    l_droptarget_special:
+      color: off
+      fade: 500ms
+- duration: 50ms
+  lights:
+    l_droptarget_10k: off
+    l_droptarget_15k: off
+    l_droptarget_20k: off
+    l_droptarget_25k: off
+
