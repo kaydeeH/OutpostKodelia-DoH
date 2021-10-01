@@ -95,6 +95,9 @@ show_player:
     bonus_show:
       key: bonus_show
       priority: 1
+    spinner_show:
+      key: spinner_show
+      priority: 1
   start_loop:
     attract_show_1:
       action: play
