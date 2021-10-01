@@ -112,7 +112,7 @@ ball_devices:
   bd_drain:
     ball_switches: s_outhole
     eject_coil: c_outhole_kicker
-    eject_timeout: 1s
+    eject_timeouts: 1s
 #    eject_targets: bd_trough
   bd_escape_saucer:
     ball_switches: s_saucer_treasure_chamber
