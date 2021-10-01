@@ -92,6 +92,9 @@ show_player:
     super_bonus_show:
       key: super_bonus_show
       priority: 1
+    bonus_show:
+      key: bonus_show
+      priority: 1
   start_loop:
     attract_show_1:
       action: play

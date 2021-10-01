@@ -1,0 +1,149 @@
+#show_version=5
+
+- duration: 150ms
+  lights:
+    l_bonus_1k: white
+    l_bonus_2k: off
+    l_bonus_3k: off
+    l_bonus_4k: off
+    l_bonus_5k: off
+    l_bonus_6k: off
+    l_bonus_7k: off
+    l_bonus_8k: off
+    l_bonus_9k: off
+    l_bonus_10k: off
+- duration: 150ms
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: white
+    l_bonus_3k: white
+    l_bonus_4k: off
+    l_bonus_5k: off
+    l_bonus_6k: off
+    l_bonus_7k: off
+    l_bonus_8k: off
+    l_bonus_9k: off
+    l_bonus_10k: off
+- duration: 150ms
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: off
+    l_bonus_3k: off
+    l_bonus_4k: white
+    l_bonus_5k: white
+    l_bonus_6k: white
+    l_bonus_7k: off
+    l_bonus_8k: off
+    l_bonus_9k: off
+    l_bonus_10k: off
+- duration: 150ms
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: off
+    l_bonus_3k: off
+    l_bonus_4k: off
+    l_bonus_5k: off
+    l_bonus_6k: off
+    l_bonus_7k: white
+    l_bonus_8k: white
+    l_bonus_9k: white
+    l_bonus_10k: white
+
+- duration: 150ms
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: off
+    l_bonus_3k: off
+    l_bonus_4k: off
+    l_bonus_5k: off
+    l_bonus_6k: off
+    l_bonus_7k: white
+    l_bonus_8k: off
+    l_bonus_9k: off
+    l_bonus_10k: off
+- duration: 150ms
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: off
+    l_bonus_3k: off
+    l_bonus_4k: white
+    l_bonus_5k: off
+    l_bonus_6k: off
+    l_bonus_7k: off
+    l_bonus_8k: white
+    l_bonus_9k: off
+    l_bonus_10k: off
+- duration: 150ms
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: white
+    l_bonus_3k: off
+    l_bonus_4k: off
+    l_bonus_5k: white
+    l_bonus_6k: off
+    l_bonus_7k: off
+    l_bonus_8k: off
+    l_bonus_9k: white
+    l_bonus_10k: off
+- duration: 150ms
+  lights:
+    l_bonus_1k: white
+    l_bonus_2k: off
+    l_bonus_3k: white
+    l_bonus_4k: off
+    l_bonus_5k: off
+    l_bonus_6k: white
+    l_bonus_7k: off
+    l_bonus_8k: off
+    l_bonus_9k: off
+    l_bonus_10k: white
+
+
+- duration: 150ms
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: off
+    l_bonus_3k: off
+    l_bonus_4k: off
+    l_bonus_5k: off
+    l_bonus_6k: off
+    l_bonus_7k: off
+    l_bonus_8k: off
+    l_bonus_9k: off
+    l_bonus_10k: white
+- duration: 150ms
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: off
+    l_bonus_3k: off
+    l_bonus_4k: off
+    l_bonus_5k: off
+    l_bonus_6k: white
+    l_bonus_7k: off
+    l_bonus_8k: off
+    l_bonus_9k: white
+    l_bonus_10k: off
+- duration: 150ms
+  lights:
+    l_bonus_1k: off
+    l_bonus_2k: off
+    l_bonus_3k: white
+    l_bonus_4k: off
+    l_bonus_5k: white
+    l_bonus_6k: off
+    l_bonus_7k: off
+    l_bonus_8k: white
+    l_bonus_9k: off
+    l_bonus_10k: off
+- duration: 150ms
+  lights:
+    l_bonus_1k: white
+    l_bonus_2k: white
+    l_bonus_3k: off
+    l_bonus_4k: white
+    l_bonus_5k: off
+    l_bonus_6k: off
+    l_bonus_7k: white
+    l_bonus_8k: off
+    l_bonus_9k: off
+    l_bonus_10k: off
