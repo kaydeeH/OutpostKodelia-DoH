@@ -65,28 +65,28 @@ coils:
     default_pulse_ms: 40
   c_drop_target_right:
     number: 0-0-14
-    default_pulse_ms: 30
+    default_pulse_ms: 40
   c_flipper_right_main:
     number: 0-0-10
-    default_pulse_ms: 7
+    default_pulse_ms: 15
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
   c_flipper_left_main:
     number: 0-0-8
-    default_pulse_ms: 7
+    default_pulse_ms: 15
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
   c_flipper_right_upper:
     number: 0-0-11
-    default_pulse_ms: 7
+    default_pulse_ms: 15
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
   c_flipper_left_upper:
     number: 0-0-6
-    default_pulse_ms: 7
+    default_pulse_ms: 15
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
