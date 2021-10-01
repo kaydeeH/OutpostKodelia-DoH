@@ -24,16 +24,16 @@ coils:
     default_pulse_ms: 15
   c_knocker:
     number: 0-0-7
-    default_pulse_ms: 15
+    default_pulse_ms: 18
   c_saucer_trasure_chamber:
     number: 0-0-15
-    default_pulse_ms: 15
+    default_pulse_ms: 18
   c_saucer_paragon:
     number: 1-0-5
-    default_pulse_ms: 15
+    default_pulse_ms: 18
   c_saucer_golden_cliffs:
     number: 1-0-4
-    default_pulse_ms: 15
+    default_pulse_ms: 18
   c_left_slingshot:
     number: 1-0-3
     default_pulse_ms: 12
