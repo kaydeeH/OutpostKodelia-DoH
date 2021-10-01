@@ -87,3 +87,4 @@ multiballs:
     ball_count_type: add
     shoot_again: 15s
     enable_events: golden_cliffs_saucer_20k_hit
+    start_events: golden_cliffs_saucer_20k_hit
