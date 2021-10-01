@@ -1,0 +1,17 @@
+#show_version=5
+- duration: 100ms
+  lights:
+    l_bonus_2x: red
+    l_bonus_2x2: off
+    l_bonus_2x3: off
+- duration: 100ms
+  lights:
+    l_bonus_2x: off
+    l_bonus_2x2: red
+    l_bonus_2x3: off
+- duration: 100ms
+  lights:
+    l_bonus_2x: off
+    l_bonus_2x2: off
+    l_bonus_2x3: red
+

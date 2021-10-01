@@ -86,6 +86,9 @@ show_player:
     characters_show:
       key: characters_show
       priority: 1
+    multipliers_show:
+      key: multipliers_show
+      priority: 1
   start_loop:
     attract_show_1:
       action: play

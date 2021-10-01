@@ -228,7 +228,6 @@ lights:
     platform_settings:
       polarity: true
     tags: j3
-
   l_bonus_5x:
     number: 0-23
     subtype: led
