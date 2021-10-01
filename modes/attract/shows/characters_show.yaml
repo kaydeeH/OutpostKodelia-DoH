@@ -1,0 +1,204 @@
+#show_version=5
+- duration: 250ms
+  lights:
+    l_paragon_center_01p: white
+    l_paragon_center_01p2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_02a: white
+    l_paragon_center_02a2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_03r: white
+    l_paragon_center_03r2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_04a: white
+    l_paragon_center_04a2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_05g: white
+    l_paragon_center_05g2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_06o: white
+    l_paragon_center_06o2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_07n: white
+    l_paragon_center_07n2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_01p: off
+    l_paragon_center_01p2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_02a: off
+    l_paragon_center_02a2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_03r: off
+    l_paragon_center_03r2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_04a: off
+    l_paragon_center_04a2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_05g: off
+    l_paragon_center_05g2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_06o: off
+    l_paragon_center_06o2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_07n: off
+    l_paragon_center_07n2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_07n: white
+    l_paragon_center_07n2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_06o: white
+    l_paragon_center_06o2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_05g: white
+    l_paragon_center_05g2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_04a: white
+    l_paragon_center_04a2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_03r: white
+    l_paragon_center_03r2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_02a: white
+    l_paragon_center_02a2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_01p: white
+    l_paragon_center_01p2: white
+- duration: 250ms
+  lights:
+    l_paragon_center_07n: off
+    l_paragon_center_07n2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_06o: off
+    l_paragon_center_06o2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_05g: off
+    l_paragon_center_05g2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_04a: off
+    l_paragon_center_04a2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_03r: off
+    l_paragon_center_03r2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_02a: off
+    l_paragon_center_02a2: off
+- duration: 250ms
+  lights:
+    l_paragon_center_01p: off
+    l_paragon_center_01p2: off
+
+
+- duration: 1000ms
+  lights:
+    l_paragon_center_07n:
+      color: white
+      fade: 500ms
+    l_paragon_center_07n2:
+      color: white
+      fade: 500ms
+    l_paragon_center_06o:
+      color: white
+      fade: 500ms
+    l_paragon_center_06o2:
+      color: white
+      fade: 500ms
+    l_paragon_center_05g:
+      color: white
+      fade: 500ms
+    l_paragon_center_05g2:
+      color: white
+      fade: 500ms
+    l_paragon_center_04a:
+      color: white
+      fade: 500ms
+    l_paragon_center_04a2:
+      color: white
+      fade: 500ms
+    l_paragon_center_03r:
+      color: white
+      fade: 500ms
+    l_paragon_center_03r2:
+      color: white
+      fade: 500ms
+    l_paragon_center_02a:
+      color: white
+      fade: 500ms
+    l_paragon_center_02a2:
+      color: white
+      fade: 500ms
+    l_paragon_center_01p:
+      color: white
+      fade: 500ms
+    l_paragon_center_01p2:
+      color: white
+      fade: 500ms
+
+- duration: 1000ms
+  lights:
+    l_paragon_center_07n:
+      color: off
+      fade: 500ms
+    l_paragon_center_07n2:
+      color: off
+      fade: 500ms
+    l_paragon_center_06o:
+      color: off
+      fade: 500ms
+    l_paragon_center_06o2:
+      color: off
+      fade: 500ms
+    l_paragon_center_05g:
+      color: off
+      fade: 500ms
+    l_paragon_center_05g2:
+      color: off
+      fade: 500ms
+    l_paragon_center_04a:
+      color: off
+      fade: 500ms
+    l_paragon_center_04a2:
+      color: off
+      fade: 500ms
+    l_paragon_center_03r:
+      color: off
+      fade: 500ms
+    l_paragon_center_03r2:
+      color: off
+      fade: 500ms
+    l_paragon_center_02a:
+      color: off
+      fade: 500ms
+    l_paragon_center_02a2:
+      color: off
+      fade: 500ms
+    l_paragon_center_01p:
+      color: off
+      fade: 500ms
+    l_paragon_center_01p2:
+      color: off
+      fade: 500ms

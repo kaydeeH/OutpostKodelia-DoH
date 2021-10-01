@@ -87,6 +87,9 @@ show_player:
      gi:
        key: gi_show
        priority: 1
+     characters_show:
+       key: characters_show
+       priority: 1
    attract_show_1_complete:
      attract_show_2:
        action: play
