@@ -26,18 +26,18 @@ widgets:
       character_count: 7
       character_slant_angle: 5
       character_spacing: 5
-      segment_width: 0.15
+      segment_width: 0.1
       segment_interval: .02
       segment_off_color: 4b4c4a30
-      segment_on_color: fe961bff
+      segment_on_color: ffa500ff
       side_bevel_enabled: true
       dot_enabled: true
       comma_enabled: true
       text: ""
-      width: 230
-      height: 75
-      x: 391
-      y: 588
+      width: 135
+      height: 60
+      x: 245
+      y: 347
       z: 2
   display2:
     - type: segment_display_emulator
@@ -45,18 +45,18 @@ widgets:
       character_count: 7
       character_slant_angle: 5
       character_spacing: 5
-      segment_width: 0.15
+      segment_width: 0.1
       segment_interval: .02
       segment_off_color: 4b4c4a30
-      segment_on_color: fe961bff
+      segment_on_color: ffa500ff
       side_bevel_enabled: true
       dot_enabled: true
       comma_enabled: true
       text: ""
-      width: 230
-      height: 75
-      x: 972
-      y: 588
+      width: 135
+      height: 60
+      x: 555
+      y: 347
       z: 2
 #  display2:
 #    - type: text
@@ -77,18 +77,18 @@ widgets:
       character_count: 7
       character_slant_angle: 5
       character_spacing: 5
-      segment_width: 0.15
+      segment_width: 0.1
       segment_interval: .02
       segment_off_color: 4b4c4a30
-      segment_on_color: fe961bff
+      segment_on_color: ffa500ff
       side_bevel_enabled: true
       dot_enabled: true
       comma_enabled: true
       text: ""
-      width: 230
-      height: 75
-      x: 391
-      y: 112
+      width: 135
+      height: 60
+      x: 245
+      y: 97
       z: 2
 #  display3:
 #    - type: text
@@ -109,18 +109,18 @@ widgets:
       character_count: 7
       character_slant_angle: 5
       character_spacing: 5
-      segment_width: 0.15
+      segment_width: 0.1
       segment_interval: .02
       segment_off_color: 4b4c4a30
-      segment_on_color: fe961bff
+      segment_on_color: ffa500ff
       side_bevel_enabled: true
       dot_enabled: true
       comma_enabled: true
       text: ""
-      width: 230
-      height: 76
-      x: 972
-      y: 112
+      width: 135
+      height: 60
+      x: 555
+      y: 97
       z: 2
 #  display4:
 #    - type: text
@@ -141,18 +141,18 @@ widgets:
       character_count: 7
       character_slant_angle: 5
       character_spacing: 5
-      segment_width: 0.15
+      segment_width: 0.1
       segment_interval: .02
       segment_off_color: 4b4c4a30
-      segment_on_color: fe961bff
+      segment_on_color: ffa500ff
       side_bevel_enabled: true
       dot_enabled: true
       comma_enabled: true
       text: ""
-      width: 230
-      height: 76
-      x: 990
-      y: 420
+      width: 140
+      height: 60
+      x: 562
+      y: 258
       z: 2
 #  display5:
 #    - type: text

@@ -12,3 +12,12 @@ widget_styles:
     font_size: 30           # for LCDs you need to increase this to 30-40. also change the font above
     adjust_top: 2
     adjust_bottom: 3
+  kodelia_service_big:
+    font_name: hobby
+    font_size: 48
+  kodelia_service_medium:
+    font_name: hobby
+    font_size: 36
+  kodelia_service_small:
+    font_name: hobby
+    font_size: 24
