@@ -94,7 +94,7 @@ coils:
 # Non-Paragon Coils
   c_auto_plunge:
     number: 0-0-12
-    default_pulse_ms: 7
+    default_pulse_ms: 15
     debug: true
     allow_enable: true
   c_ball_trough:
