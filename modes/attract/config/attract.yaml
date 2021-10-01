@@ -98,6 +98,9 @@ show_player:
     spinner_show:
       key: spinner_show
       priority: 1
+    escape_show:
+      key: escape_show
+      priority: 1
   start_loop:
     attract_show_1:
       action: play
