@@ -108,6 +108,7 @@ ball_devices:
     mechanical_eject: true
     eject_timeouts: 2s
     player_controlled_eject_event: s_shooter_lane_active{multiballs.river_multiball == true}
+    eject_coil: c_auto_plunge
   bd_drain:
     ball_switches: s_outhole
     eject_coil: c_outhole_kicker
