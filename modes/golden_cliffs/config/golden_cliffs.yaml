@@ -80,3 +80,11 @@ event_player:
         value: current_player.last_creek_value
         type: int
       events_when_completed: show_creek_score_done
+
+multiball:
+  river_multiball:
+    ball_count: 1
+    ball_count_type: add
+    shoot_again: 15s
+    enable_events: golden_cliffs_saucer_20k_hit
+    
