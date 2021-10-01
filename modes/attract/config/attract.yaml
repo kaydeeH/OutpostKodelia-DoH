@@ -79,42 +79,43 @@ segment_display_player:
 
 
 show_player:
-   start_loop:
-     attract_show_1:
-       action: play
-       loops: 0
-       events_when_completed: attract_show_1_complete
-     gi:
-       key: gi_show
-       priority: 1
-     characters_show:
-       key: characters_show
-       priority: 1
-   attract_show_1_complete:
-     attract_show_2:
-       action: play
-       loops: 0
-       events_when_completed: attract_show_2_complete
-   attract_show_2_complete:
-     attract_show_3:
-       action: play
-       loops: 0
-       events_when_completed: attract_show_3_complete
-   attract_show_3_complete:
-     attract_show_4:
-       action: play
-       loops: 0
-       events_when_completed: attract_show_4_complete, start_loop
+  mode_attract_started:
+    gi:
+      key: gi_show
+      priority: 1
+    characters_show:
+      key: characters_show
+      priority: 1
+  start_loop:
+    attract_show_1:
+      action: play
+      loops: 0
+      events_when_completed: attract_show_1_complete
+  attract_show_1_complete:
+    attract_show_2:
+      action: play
+      loops: 0
+      events_when_completed: attract_show_2_complete
+  attract_show_2_complete:
+    attract_show_3:
+      action: play
+      loops: 0
+      events_when_completed: attract_show_3_complete
+  attract_show_3_complete:
+    attract_show_4:
+      action: play
+      loops: 0
+      events_when_completed: attract_show_4_complete, start_loop
 
 shows:
-   attract_show_1:
-     - duration: 5
-   attract_show_2:
-     - duration: 5
-   attract_show_3:
-     - duration: 5
-   attract_show_4:
-     - duration: 5
+  attract_show_1:
+    - duration: 5
+  attract_show_2:
+    - duration: 5
+  attract_show_3:
+    - duration: 5
+  attract_show_4:
+    - duration: 5
 
 
 #variable_player:
