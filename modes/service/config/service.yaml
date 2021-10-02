@@ -107,6 +107,8 @@ slides:
     style: kodelia_service_big
     x: center
     y: bottom + 80%
+
+
   # confirm slide
   service_options_slide:
   - type: text
@@ -296,7 +298,24 @@ widgets:
     style: kodelia_service_medium
     x: center
     y: bottom + 60%
-
+  doh_logo_item:
+    type: image
+    image: dohlogo_transparent
+    x: 0
+    y: -45
+    z: 1
+    anchor_x: left
+    anchor_y: bottom
+    scale: .21
+  kodelia_logo_item:
+    type: image
+    image: ok_transparent
+    x: 800
+    y: -10
+    z: 1
+    anchor_x: right
+    anchor_y: bottom
+    scale: .15
 
 widget_player:
   # power off
@@ -324,11 +343,74 @@ widget_player:
     kservice_menu_item:
       action: add
       slide: service_menu
+    doh_logo_item:
+      action: add
+      slide: service_menu
+    kodelia_logo_item:
+      action: add
+      slide: service_menu
 
-  service_menu_deselected:
-    service_menu_item:
-      action: remove
-      slide: service_menu
-    kservice_menu_item:
-      action: remove
-      slide: service_menu
+  slide_service_audits_menu_active:
+    doh_logo_item:
+      action: add
+      slide: service_audits_menu
+    kodelia_logo_item:
+      action: add
+      slide: service_audits_menu
+
+  slide_service_settings_edit_active:
+    doh_logo_item:
+      action: add
+      slide: service_settings_edit
+    kodelia_logo_item:
+      action: add
+      slide: service_settings_edit
+
+  slide_service_settings_active:
+    doh_logo_item:
+      action: add
+      slide: service_settings
+    kodelia_logo_item:
+      action: add
+      slide: service_settings
+
+  slide_software_update_active:
+    doh_logo_item:
+      action: add
+      slide: software_update
+    kodelia_logo_item:
+      action: add
+      slide: software_update
+
+  slide_service_light_test_active:
+    doh_logo_item:
+      action: add
+      slide: service_light_test
+    kodelia_logo_item:
+      action: add
+      slide: service_light_test
+
+  slide_service_coil_test_active:
+    doh_logo_item:
+      action: add
+      slide: service_coil_test
+    kodelia_logo_item:
+      action: add
+      slide: service_coil_test
+
+  slide_service_switch_test_active:
+    doh_logo_item:
+      action: add
+      slide: service_switch_test
+    kodelia_logo_item:
+      action: add
+      slide: service_switch_test
+
+  slide_service_options_slide_active:
+    doh_logo_item:
+      action: add
+      slide: service_options_slide
+    kodelia_logo_item:
+      action: add
+      slide: service_options_slide
+

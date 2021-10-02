@@ -36,12 +36,12 @@ settings:
     values:
       0: "None"
       3: "3 seconds"
-      4: "3 seconds"
-      5: "3 seconds"
-      6: "3 seconds"
-      7: "3 seconds"
-      8: "3 seconds"
-      9: "3 seconds"
+      4: "4 seconds"
+      5: "5 seconds"
+      6: "6 seconds"
+      7: "7 seconds"
+      8: "8 seconds"
+      9: "9 seconds"
       10: "10 seconds"
       11: "11 seconds"
       12: "12 seconds (default)"
@@ -160,3 +160,13 @@ settings:
     key_type: int
     sort: 210
     settingType: coin
+
+  river_multiball_feature:
+    label: River Multiball Enabled
+    values:
+      0: "Off"
+      1: "On (default)"
+    default: 1
+    key_type: int
+    sort: 100
+    settingType: feature

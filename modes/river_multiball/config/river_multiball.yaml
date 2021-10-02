@@ -1,0 +1,54 @@
+#config_version=5
+
+# River Multi-ball is Ready
+
+# EVENTS --
+# multiball_river_multiball_started
+# multiball_river_multiball_shoot_again
+# multiball_river_multiball_lost_ball
+# multiball_river_multiball_shoot_again_ended
+# multiball_river_multiball_ended
+
+mode:
+  start_events: start_mode_river_multiball
+  stop_events: multiball_river_multiball_ended
+  priority: 200
+
+state_machines:
+  river_notify_state:
+    states:
+      start:
+        label: start_state
+      step1:
+        label: end_state
+    transitions:
+      - source: start
+        target: step1
+        events: show_creek_score_done
+
+event_player:
+  show_creek_score_done{device.state_machines.river_notify_state.state == "start"}:
+    show_notify_flash_text:
+      text_1: "CREEK  "
+      text_2: "M-BALL"
+      text_3: "READY "
+      text_4: "AtCREEK"
+      events_when_completed: show_river_mball_done
+
+multiballs:
+  river_multiball:
+    ball_count: 1
+    ball_count_type: add
+    shoot_again: 15s
+    start_events: golden_cliffs_saucer_20k_hit
+
+show_player:
+  multiball_river_multiball_started:
+    ball_save_flash:
+      key: ball_save
+      speed: 2
+      show_tokens:
+        lights: l_bonus_shoot_again, l_bonus_shoot_again2
+        color: orange
+  multiball_river_multiball_shoot_again_ended:
+    ball_save: stop

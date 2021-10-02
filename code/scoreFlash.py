@@ -16,6 +16,7 @@ scoreFlashLoops = 4
 class scoreFlash(CustomCode):
     def on_load(self):
         self.machine.events.add_handler('show_score_flash_text', self._show_flash_text)
+        self.machine.events.add_handler('show_notify_flash_text', self._show_notify_text)
 
     def _show_flash_text(self, **kwargs):
         show_tokens = {"text_1": kwargs.get("text_1"), "text_2": kwargs.get("text_2"), "text_3": kwargs.get("text_3"),
@@ -24,6 +25,12 @@ class scoreFlash(CustomCode):
         show_instance = self.machine.shows["score_flash_text"].play(loops=scoreFlashLoops, show_tokens=show_tokens,
                                                                     events_when_completed=events_when_completed)
 
+    def _show_notify_text(self, **kwargs):
+        show_tokens = {"text_1": kwargs.get("text_1"), "text_2": kwargs.get("text_2"), "text_3": kwargs.get("text_3"),
+                       "text_4": kwargs.get("text_4")}
+        events_when_completed = {kwargs.get("events_when_completed")}
+        show_instance = self.machine.shows["notify_flash_text"].play(loops=scoreFlashLoops, show_tokens=show_tokens,
+                                                                    events_when_completed=events_when_completed)
 
 
 

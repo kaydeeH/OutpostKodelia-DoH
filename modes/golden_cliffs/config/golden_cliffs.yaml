@@ -66,6 +66,8 @@ variable_player:
        int: (value)
 
 event_player:
+  golden_cliffs_saucer_20k_hit{settings.river_multiball_feature==1}:
+    start_mode_river_multiball:
   golden_cliffs_saucer_20k_hit{current_player.last_creek_value==20000}:
     player_last_creek_value:
       value: 20000
@@ -88,22 +90,4 @@ ball_holds:
      hold_devices: bd_river_saucer
      release_one_events: show_creek_score_done
 
-multiballs:
-  river_multiball:
-    ball_count: 1
-    ball_count_type: add
-    shoot_again: 15s
-#    ball_locks: bd_river_saucer
-    enable_events: golden_cliffs_saucer_20k_hit
-    start_events: golden_cliffs_saucer_20k_hit
 
-show_player:
-  multiball_river_multiball_started:
-    ball_save_flash:
-      key: ball_save
-      speed: 2
-      show_tokens:
-        lights: l_bonus_shoot_again, l_bonus_shoot_again2
-        color: orange
-  multiball_river_multiball_shoot_again_ended:
-    ball_save: stop
