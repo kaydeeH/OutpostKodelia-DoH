@@ -62,7 +62,7 @@ ball_holds:
   chase_hold:
     balls_to_hold: 1
     hold_devices: bd_escape_saucer
-    release_one_events: zzz_start_chase_multiball, release_chase_hold
+    release_one_events: zzz_start_chase_multiball, release_chase_hold, end_chase_sequence
     disable_events: zzz_chase_multiball_started
 
 ball_saves:
