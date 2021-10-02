@@ -5,9 +5,10 @@ mode:
   stop_events: end_bonus
   priority: 5000
   use_wait_queue: true
+  events_when_started: start_drain_show
 
 event_player:
-  mode_end_of_ball_started:
+  start_bonus_countdown:
     - decrement_bonus
   player_bonuscount{value>0}:
     - decrement_bonus|500ms
@@ -33,6 +34,12 @@ show_player:
   player_bonuscount{value==19}:
     disable_20k:
       key: bonus_countdown
+  start_drain_show:
+    drain_show:
+      key: drain_show
+      speed: 30
+      loops: 0
+      events_when_completed: start_bonus_countdown
 
 sound_player:
   mode_end_of_ball_started:
