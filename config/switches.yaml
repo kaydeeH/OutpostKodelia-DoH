@@ -42,16 +42,22 @@
 # 39 Right thumper bumper
 # 40 Left thumper bumper
 
+# Tag "KPF" is used to start the initial ball save timer.
+
 switches:
   # Inline Drop Targets (a = bottom, d = top)
   s_drop_inline_a:
     number: 1-0-83
+    tags: kpf
   s_drop_inline_b:
     number: 1-0-84
+    tags: kpf
   s_drop_inline_c:
     number: 1-0-85
+    tags: kpf
   s_drop_inline_d:
     number: 1-0-86
+    tags: kpf
 
   # Coindoor/Tilt - these may change - assuming J2
   s_credit_button:
@@ -101,10 +107,14 @@ switches:
   # Drop Targets - Right Side - C = Bottom
   s_drop_right_a:
     number: 1-0-36
+    tags: kpf
   s_drop_right_b:
     number: 1-0-37
+    tags: kpf
   s_drop_right_c:
     number: 1-0-38
+    tags: kpf
+
 
   # Ball Control
   s_outhole:
@@ -123,21 +133,27 @@ switches:
   s_slingshot_right:
     number: 1-0-51
     events_when_activated: temp_sling_right
+    tags: kpf
   s_slingshot_left:
     number: 1-0-64
     events_when_activated: temp_sling_left
+    tags: kpf
   s_thumper_bottom:
     number: 1-0-81
     events_when_activated: temp_thumper_bottom
+    tags: kpf
   s_thumper_center:
     number: 1-0-57
     events_when_activated: temp_thumper_center
+    tags: kpf
   s_thumper_right:
     number: 1-0-48
     events_when_activated: temp_thumper_right
+    tags: kpf
   s_thumper_left:
     number: 1-0-65
     events_when_activated: temp_thumper_left
+    tags: kpf
   #Temp switch to test mirror universe theory
   s_void:
     number: 1-0-72
@@ -146,51 +162,54 @@ switches:
   # Saucers
   s_saucer_paragon:
     number: 1-0-49
+    tags: kpf
   s_saucer_golden_cliffs:
     number: 1-0-66
+    tags: kpf
   s_saucer_treasure_chamber:
     number: 1-0-87
+    tags: kpf
 
   # Targets and Rebounds
   s_center_target:
     number: 1-0-56
-    #tags: playfield_active
+    tags: kpf
   s_top_center_target:
     number: 1-0-59
-    tags: playfield_active
+    tags: playfield_active, kpf
   s_rebound_500pt:
     number: 1-0-75
-    #tags: playfield_active
+    tags: kpf
   s_left_mid_standup:
     number: 1-0-82
-    tags: playfield_active
+    tags: playfield_active, kpf
 
   # Rollovers
   # Note that golden cliffs is also tied to drop rebound
   # SWITCH 34:
   s_top_center_rollover:
     number: 1-0-58
-    tags: playfield_active
+    tags: playfield_active, kpf
   s_waterfall_rollover:  # oil slick rollover
     number: 1-0-32
-    tags: playfield_active
+    tags: playfield_active, kpf
   s_golden_cliffs_rollover:
     number: 1-0-67
-    tags: playfield_active
+    tags: playfield_active, kpf
   s_upper_right_rollver:
     number: 1-0-33
-    tags: playfield_active
+    tags: playfield_active, kpf
 
   # Uncategorized
   s_right_outlane:
     number: 1-0-43
-    tags: playfield_active
+    tags: playfield_active, kpf
   s_right_flip_feeder_lane:
     number: 1-0-35
-    tags: playfield_active
+    tags: playfield_active, kpf
   s_spinner:
     number: 1-0-74
-    tags: playfield_active
+    tags: playfield_active, kpf
   s_right_drop_standing:
     number: 1-0-39
-    tags: playfield_active
+    tags: playfield_active, kpf

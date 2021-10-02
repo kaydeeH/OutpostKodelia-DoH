@@ -28,6 +28,8 @@ class Service(Service):
 
     ksLast = ""
     ksLastList = []
+
+    # If a title is on this list, it will not be added to the breadcrumb trail
     ksSkipList = ["Switch Edge Test", "Single Coil Test", "Single Light Test", "Light Channel Test", "All Light Test",
                   "Earning Audits", "Switch Audits", "Shot Audits", "Event Audits", "Player Audits",
                   "Standard Adjustments", "Feature Adjustments", "Game Adjustments", "Coin Adjustments",

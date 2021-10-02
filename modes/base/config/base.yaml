@@ -20,7 +20,7 @@ ball_saves:
     active_time: 12s
     hurry_up_time: 4s
     grace_period: 3s
-    timer_start_events: balldevice_bd_plunger_ejecting_ball
+    timer_start_events: sw_kpf
     auto_launch: true
     balls_to_save: 1
 
