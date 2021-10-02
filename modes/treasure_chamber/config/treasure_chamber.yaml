@@ -34,7 +34,7 @@ shots:
     profile: treasure_profile
     disable_events: mode_chase_multiball_started
     enable_events: init_inline_drops, mode_chase_multiball_ended, end_chase_mode
-    reset_events: end_chase_mode
+    reset_events: drops_shot_profile_reset
 
 shot_groups:
    shot_group_drop_inline:
@@ -56,6 +56,9 @@ event_player:
     - start_mode_chase_multiball
   init_inline_drops{settings.chase_multiball_feature==1 and current_player.in_line_d_down>0}:
     - start_mode_chase_multiball
+  end_chase_mode:
+    - drops_inline_reset
+    - drops_shot_profile_reset
 
 variable_player:
   shot_group_drop_inline_hit{settings.in_line_scoring==0}:
