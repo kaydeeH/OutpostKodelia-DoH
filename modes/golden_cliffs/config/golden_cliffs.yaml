@@ -83,7 +83,7 @@ event_player:
       events_when_completed: show_creek_score_done
 
 ball_holds:
-   scoop:
+   river:
      balls_to_hold: 1
      hold_devices: bd_river_saucer
      release_one_events: show_creek_score_done
@@ -93,7 +93,7 @@ multiballs:
     ball_count: 1
     ball_count_type: add
     shoot_again: 15s
-    ball_locks: bd_river_saucer
+#    ball_locks: bd_river_saucer
     enable_events: golden_cliffs_saucer_20k_hit
     start_events: golden_cliffs_saucer_20k_hit
 
