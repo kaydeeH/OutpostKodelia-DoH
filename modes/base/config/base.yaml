@@ -31,7 +31,7 @@ show_player:
         lights: l_bonus_shoot_again, l_bonus_shoot_again2
         color: orange
   ball_save_ball_save_main_hurry_up:
-    ball_save_ball_save_main_timer_start:
+    ball_save_flash:
       key: ball_save
       speed: 4
       show_tokens:
