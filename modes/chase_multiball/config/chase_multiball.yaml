@@ -44,10 +44,19 @@ event_player:
   balls_in_play{balls==1}:
     - release_chase_hold
     - end_chase_mode|100ms
-
+  gc_start_mball_hit:
+    - end_chase_sequence
+    - chase_multiball_qualified
+  hz_start_mball_hit:
+    - end_chase_sequence
+    - chase_multiball_qualified
 shots:
   chase_saucer:
     switch: s_saucer_treasure_chamber
+  gc_start_mball:
+    switch: s_saucer_golden_cliffs
+  hz_start_mball:
+    switch: s_saucer_golden_cliffs
 
 ball_holds:
   chase_hold:
