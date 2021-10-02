@@ -62,7 +62,7 @@ ball_holds:
   chase_hold:
     balls_to_hold: 1
     hold_devices: bd_escape_saucer
-    release_one_events: zzz_start_chase_multiball, release_chase_hold, end_chase_sequence
+    release_one_events: zzz_start_chase_multiball, release_chase_hold
     disable_events: zzz_chase_multiball_started
 
 ball_saves:
@@ -80,5 +80,6 @@ multiballs:
   chase_multiball:
     ball_count: 2
     ball_count_type: add
+    ball_locks: bd_escape_saucer
     shoot_again: settings.chase_ball_save
     start_events: chase_multiball_qualified
