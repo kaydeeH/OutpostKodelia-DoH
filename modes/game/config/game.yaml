@@ -8,7 +8,7 @@ show_player:
     gi:
       key: gi_show
 
-ballsaves:
+ball_saves:
   ball_save_main:
     active_time: 10s
     hurry_up_time: 3s
