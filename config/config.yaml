@@ -51,6 +51,7 @@ modes:
   - river_multiball   # handler for the river multiball
   - minor_shots       # misc rollovers / stand ups scoring & bonus accural
   - treasure_chamber  # in line drop targets & associated saucer
+  - chase_multiball   # The chase multiball mode
   - end_of_ball       # bonus meltdown
   - spinner           # spinner logic
   - thumpers          # thumper bumper logic

@@ -262,3 +262,49 @@ settings:
       28: "28 seconds"
       29: "29 seconds"
       30: "30 seconds"
+
+  chase_multiball_feature:
+    label: Chase Multiball Enabled
+    values:
+      0: "Off"
+      1: "On (default)"
+    default: 1
+    key_type: int
+    sort: 130
+    settingType: feature
+
+  chase_ball_save:
+    label: Chase Multiball Ball Save Time
+    key_type: int
+    default: 15
+    sort: 140
+    values:
+      0: "None"
+      3: "3 seconds"
+      4: "4 seconds"
+      5: "5 seconds"
+      6: "6 seconds"
+      7: "7 seconds"
+      8: "8 seconds"
+      9: "9 seconds"
+      10: "10 seconds"
+      11: "11 seconds"
+      12: "12 seconds"
+      13: "13 seconds"
+      14: "14 seconds"
+      15: "15 seconds (default)"
+      16: "16 seconds"
+      17: "17 seconds"
+      18: "18 seconds"
+      19: "19 seconds"
+      20: "20 seconds"
+      21: "21 seconds"
+      22: "22 seconds"
+      23: "23 seconds"
+      24: "24 seconds"
+      25: "25 seconds"
+      26: "26 seconds"
+      27: "27 seconds"
+      28: "28 seconds"
+      29: "29 seconds"
+      30: "30 seconds"

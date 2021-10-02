@@ -32,6 +32,8 @@ shots:
   treasure_saucer:
     switch: s_saucer_treasure_chamber
     profile: treasure_profile
+    disable_events: mode_chase_multiball_started
+    enable_events: init_inline_drops, mode_chase_multiball_ended
 
 shot_groups:
    shot_group_drop_inline:
@@ -49,6 +51,10 @@ event_player:
     - bonus_multiply_5x
   shot_group_drop_inline_hit{settings.in_line_spotting==1}:
     - spot_hazzard_letter
+  shot_drop_inline_d_hit{settings.chase_multiball_feature==1}:
+    - start_mode_chase_multiball
+  init_inline_drops{settings.chase_multiball_feature==1 and current_player.in_line_d_down>0}:
+    - start_mode_chase_multiball
 
 variable_player:
   shot_group_drop_inline_hit{settings.in_line_scoring==0}:
