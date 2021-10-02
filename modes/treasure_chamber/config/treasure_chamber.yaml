@@ -33,12 +33,13 @@ shots:
     switch: s_saucer_treasure_chamber
     profile: treasure_profile
     disable_events: mode_chase_multiball_started
-    enable_events: init_inline_drops, mode_chase_multiball_ended
+    enable_events: init_inline_drops, mode_chase_multiball_ended, end_chase_mode
+    reset_events: end_chase_mode
 
 shot_groups:
    shot_group_drop_inline:
      shots: shot_drop_inline_a, shot_drop_inline_b, shot_drop_inline_c, shot_drop_inline_d
-     reset_events: zzz_placeholder_drop_inline_reset
+     reset_events: zzz_placeholder_drop_inline_reset, end_chase_mode
      enable_events: ball_started
      disable_events: ball_ending
 
