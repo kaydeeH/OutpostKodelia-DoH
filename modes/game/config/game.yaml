@@ -7,3 +7,11 @@ show_player:
   game_started:
     gi:
       key: gi_show
+
+ballsaves:
+  ball_save_main:
+    active_time: 10s
+    hurry_up_time: 3s
+    timer_start_events: playfield_active
+    auto_launch: true
+    balls_to_save: 1
