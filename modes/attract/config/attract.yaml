@@ -83,6 +83,11 @@ show_player:
     gi:
       key: gi_show
       priority: 1
+      show_tokens:
+        tag1: gi
+        color1: white
+        tag2: pop_cores
+        color2: ff7500
     characters_show:
       key: characters_show
       priority: 1

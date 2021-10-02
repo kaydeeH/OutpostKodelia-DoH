@@ -7,5 +7,10 @@ show_player:
   game_started:
     gi:
       key: gi_show
+      show_tokens:
+        tag1: gi
+        color1: white
+        tag2: pop_cores
+        color2: ff7500
 
 
