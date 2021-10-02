@@ -14,7 +14,10 @@ variable_player:
   s_drop_inline_a_active:
     score: 100
 
-#TODO Improve Starting Event -- Need to hit some switch that matters, this starts when the ball comes out of the trough
+#The first ball save is the "playfield validation" save and will save unlimited balls until
+#a switch with the "kpf" tag is registered.  Once this happens, the real ball save starts
+#which is time limited and will save at most one ball.
+
 ball_saves:
   ball_save_validate:
     balls_to_save: -1
@@ -23,10 +26,10 @@ ball_saves:
     early_ball_save_events: sw_early_ball_save
 
   ball_save_main:
-    active_time: 12s
+    active_time: settings.initial_ball_save
     hurry_up_time: 4s
     grace_period: 3s
-    enable_events: ball_save_ball_save_validate_disabled
+    enable_events: ball_save_ball_save_validate_disabled{settings.initial_ball_save>0}
     auto_launch: true
     balls_to_save: 1
     early_ball_save_events: sw_early_ball_save

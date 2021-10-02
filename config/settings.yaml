@@ -15,6 +15,7 @@ settings:
     default: 3
     key_type: int
     sort: 100
+    settingType: standard
 
   max_players:
     label: Maximum Players
@@ -24,7 +25,44 @@ settings:
       4: "4 (default)"
     default: 4
     key_type: int
-    sort: 100
+    sort: 110
+    settingType: standard
+
+  initial_ball_save:
+    label: Initial Ball Save Time
+    key_type: int
+    default: 12
+    sort: 120
+    values:
+      0: "None"
+      3: "3 seconds"
+      4: "3 seconds"
+      5: "3 seconds"
+      6: "3 seconds"
+      7: "3 seconds"
+      8: "3 seconds"
+      9: "3 seconds"
+      10: "10 seconds"
+      11: "11 seconds"
+      12: "12 seconds (default)"
+      13: "13 seconds"
+      14: "14 seconds"
+      15: "15 seconds"
+      16: "16 seconds"
+      17: "17 seconds"
+      18: "18 seconds"
+      19: "19 seconds"
+      20: "20 seconds"
+      21: "21 seconds"
+      22: "22 seconds"
+      23: "23 seconds"
+      24: "24 seconds"
+      25: "25 seconds"
+      26: "26 seconds"
+      27: "27 seconds"
+      28: "28 seconds"
+      29: "29 seconds"
+      30: "30 seconds"
 
   hazzard_scoring:
     label: Hazzard Saucer Scoring
@@ -34,6 +72,7 @@ settings:
     default: 1
     key_type: int
     sort: 101
+    settingType: game
 
   hazzard_scan:
     label: Hazzard Saucer Scanning
@@ -43,6 +82,7 @@ settings:
     default: 1
     key_type: int
     sort: 102
+    settingType: game
 
   in_line_scoring:
     label: Inline Target Scoring
@@ -52,6 +92,7 @@ settings:
     default: 1
     key_type: int
     sort: 103
+    settingType: game
 
   in_line_spotting:
     label: Inline Target Spots
@@ -61,6 +102,7 @@ settings:
     default: 1
     key_type: int
     sort: 104
+    settingType: game
 
   waterfall_drops_special:
     label: Waterfall Drop Special
@@ -70,6 +112,7 @@ settings:
     default: 1
     key_type: int
     sort: 105
+    settingType: game
 
   waterfall_lane_feature:
     label: Waterfall Lane Feature
@@ -79,6 +122,7 @@ settings:
     default: 1
     key_type: int
     sort: 106
+    settingType: game
 
   special_award:
     label: Special Award
@@ -90,6 +134,7 @@ settings:
     default: 3
     key_type: int
     sort: 107
+    settingType: game
 
   maximum_credits:
     label: Maximum Credits
@@ -103,7 +148,8 @@ settings:
       99: "99"
     default: 30
     key_type: int
-    sort: 108
+    sort: 200
+    settingType: coin
 
   match_feature:
     label: Match Feature
@@ -112,4 +158,5 @@ settings:
       1: "On (default)"
     default: 1
     key_type: int
-    sort: 109
+    sort: 210
+    settingType: coin
