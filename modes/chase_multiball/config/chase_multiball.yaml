@@ -56,7 +56,7 @@ shots:
   gc_start_mball:
     switch: s_saucer_golden_cliffs
   hz_start_mball:
-    switch: s_saucer_golden_cliffs
+    switch: s_saucer_paragon
 
 ball_holds:
   chase_hold:
