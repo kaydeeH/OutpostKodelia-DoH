@@ -4,6 +4,7 @@
 
 mode:
   start_events: ball_started
+  events_when_started: check_holdover_bonus
   priority: 210
 
 achievements:
@@ -29,10 +30,6 @@ event_player:
     - bonus_40k_reached
 
 variable_player:
-  mode_bonus_display_started:
-    bonusmulti:
-      action: set
-      int: 1
   init_inline_drops{settings.inline_memory_feature==0}:
     bonsumulti:
       action: set
@@ -71,6 +68,20 @@ variable_player:
       int: 49
 
 show_player:
+  # ball start-up -------------------
+  check_holdover_bonus{current_player.bonusmulti==1}:
+    bonus_x:
+      action: stop
+  check_holdover_bonus{current_player.bonusmulti==2}:
+    multi-2x:
+      key: bonus_x
+  check_holdover_bonus{current_player.bonusmulti==3}:
+    multi-3x:
+      key: bonus_x
+  check_holdover_bonus{current_player.bonusmulti==5}:
+    multi-5x:
+      key: bonus_x
+  # ball start-up complete ------------
   player_bonuscount{value==1 or value==21 or value==31 or value==41}:
     bonus_display_01k:
       key: bonus_display
@@ -131,15 +142,6 @@ show_player:
   player_bonuscount{value==19}:
     bonus_display_19k:
       key: bonus_display
-  init_inline_drops{current_player.bonusmulti==2}:
-    multi-2x:
-      key: bonus_x
-  init_inline_drops{current_player.bonusmulti==3}:
-    multi-3x:
-      key: bonus_x
-  init_inline_drops{current_player.bonusmulti==5}:
-    multi-5x:
-      key: bonus_x
   bonus_multiply_2x{current_player.bonusmulti<2}:
     multi-2x:
       key: bonus_x
