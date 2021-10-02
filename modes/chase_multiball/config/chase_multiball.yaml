@@ -11,7 +11,7 @@
 
 mode:
   start_events: start_mode_chase_multiball
-  stop_events: multiball_chase_multiball_ended
+  stop_events: multiball_chase_multiball_ended, end_chase_mode
   events_when_started: chase_notify
   priority: 200
 
@@ -41,6 +41,9 @@ event_player:
     - zzz_kick_a_ball_if_not_in_multiball
   multiball_chase_multiball_started:
     - end_chase_sequence
+  balls_in_play{balls==1}:
+    - release_chase_hold
+    - end_chase_mode|100ms
 
 shots:
   chase_saucer:
@@ -50,12 +53,13 @@ ball_holds:
   chase_hold:
     balls_to_hold: 1
     hold_devices: bd_escape_saucer
-    release_one_events: zzz_start_chase_multiball, balls_in_play{balls==1}
+    release_one_events: zzz_start_chase_multiball, release_chase_hold
     disable_events: zzz_chase_multiball_started
 
 ball_saves:
   pre_chase_ballsave:
     enable_events: start_chase_sequence
+    disable_events: release_chase_hold
     only_last_ball: true
 
 multiballs:
