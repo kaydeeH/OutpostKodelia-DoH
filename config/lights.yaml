@@ -390,6 +390,8 @@ lights:
     platform_settings:
       polarity: true
     tags: j4
+
+#GI
   l_gi_01_midright_4:
     number: 1-3
     subtype: led

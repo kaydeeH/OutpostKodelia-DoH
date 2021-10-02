@@ -2,17 +2,17 @@
 - duration: 1000ms
   lights:
     l_waterlane_5k:
-      color: darkslateblue
+      color: 3D488B
       fade: 500ms
 - duration: 1000ms
   lights:
     l_waterlane_10k:
-      color: darkslateblue
+      color: 3D488B
       fade: 500ms
 - duration: 1000ms
   lights:
     l_waterlane_special:
-      color: darkslateblue
+      color: 3D488B
       fade: 500ms
 - duration: 1000ms
   lights:
