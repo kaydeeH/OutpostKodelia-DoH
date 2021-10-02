@@ -16,13 +16,19 @@ variable_player:
 
 #TODO Improve Starting Event -- Need to hit some switch that matters, this starts when the ball comes out of the trough
 ball_saves:
+  ball_save_validate:
+    balls_to_save: -1
+    disable_events: sw_kpf
+    auto_launch: false
+
   ball_save_main:
     active_time: 12s
     hurry_up_time: 4s
     grace_period: 3s
-    timer_start_events: sw_kpf
+    enable_events: ball_save_ball_save_validate_disabled
     auto_launch: true
     balls_to_save: 1
+#early ball save events
 
 show_player:
   ball_save_ball_save_main_timer_start:
