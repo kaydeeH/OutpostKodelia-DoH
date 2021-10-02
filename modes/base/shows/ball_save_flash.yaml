@@ -1,0 +1,8 @@
+#show_version=5
+- time: 0
+  lights:
+    (lights): (color)
+- time: +.25
+  lights:
+    (lights): off
+- time: +.25
