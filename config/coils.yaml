@@ -107,25 +107,25 @@ coils:
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and player.in_line_a_down>0}
+    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_a_down>0}
   c_inline_knockdown_b:
     number: 0-0-3
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and player.in_line_b_down>0}
+    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_b_down>0}
   c_inline_knockdown_c:
     number: 0-0-2
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and player.in_line_c_down>0}
+    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_c_down>0}
   c_inline_knockdown_d:
     number: 0-0-1
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and player.in_line_d_down>0}
+    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_d_down>0}
 
 
 autofire_coils:
