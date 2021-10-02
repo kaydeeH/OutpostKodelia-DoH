@@ -33,6 +33,7 @@ shots:
   golden_cliffs_saucer:
     switch: s_saucer_golden_cliffs
     profile: golden_cliffs
+    reset_events: multiball_river_multiball_ended
 
 variable_player:
    golden_cliffs_saucer_2k_hit:
@@ -89,3 +90,14 @@ multiballs:
     ball_locks: bd_river_saucer
     enable_events: golden_cliffs_saucer_20k_hit
     start_events: golden_cliffs_saucer_20k_hit
+
+show_player:
+  multiball_river_multiball_started:
+    ball_save_flash:
+      key: ball_save
+      speed: 2
+      show_tokens:
+        lights: l_bonus_shoot_again, l_bonus_shoot_again2
+        color: orange
+  multiball_river_multiball_shoot_again_ended:
+    ball_save: stop
