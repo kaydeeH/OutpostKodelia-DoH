@@ -55,6 +55,7 @@ modes:
   - spinner           # spinner logic
   - thumpers          # thumper bumper logic
   - hazzard           # HAZZARD (Paragon) Saucer
+  - hazzard_multiball # HAZZARD multiball feature
   - credits           # credits/freeplay control
 
 credits:

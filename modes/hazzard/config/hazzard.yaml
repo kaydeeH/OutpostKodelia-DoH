@@ -129,12 +129,16 @@ shots:
     profile: hazzard_special
 
 event_player:
+  enable_saucer_special:
+    - start_mode_hazzard_multiball{settings.hazzard_multiball_feature==1}
+    - show_hazzard_multiball_notify|200ms
   mode_hazzard_started:
     - hazzard_sel_letter_1
   timer_hazzard_rotate_timer_tick:
     - hazzard_select_rotate
   hazzard_saucer_special_enabled_hit:
     - special_scored_hazzard
+    - launch_hazzard_multiball
   special_scored_hazzard:
     - mode_hazzard_started|100ms
   spot_hazzard_letter:

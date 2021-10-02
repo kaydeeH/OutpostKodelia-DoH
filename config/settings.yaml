@@ -170,3 +170,13 @@ settings:
     key_type: int
     sort: 100
     settingType: feature
+
+  hazzard_multiball_feature:
+    label: Hazzard Multiball Enabled
+    values:
+      0: "Off"
+      1: "On (default)"
+    default: 1
+    key_type: int
+    sort: 110
+    settingType: feature

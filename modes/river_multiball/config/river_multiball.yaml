@@ -24,7 +24,7 @@ state_machines:
     transitions:
       - source: start
         target: step1
-        events: show_creek_score_done
+        events: show_river_mball_done
 
 event_player:
   show_creek_score_done{device.state_machines.river_notify_state.state == "start"}:
