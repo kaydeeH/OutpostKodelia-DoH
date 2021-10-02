@@ -9,7 +9,7 @@ mode:
 
 event_player:
   start_bonus_countdown:
-    - decrement_bonus|1000ms
+    - decrement_bonus|250ms
   player_bonuscount{value>0}:
     - decrement_bonus|500ms
   player_bonuscount{value==0}:
