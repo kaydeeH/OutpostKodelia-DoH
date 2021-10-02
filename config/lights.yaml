@@ -603,7 +603,7 @@ lights:
 
 # FADECANDY J5
 # Channel 2
-# PopBumper 1
+# PopBumper 1 - Upper Right
 
   pop1_0:
     number: 2-0
@@ -936,7 +936,7 @@ lights:
 
 # FADECANDY J8
 # Channel 5
-# Pop 2
+# Pop 2 - Upper Left
 
   pop2_0:
     number: 5-0
@@ -1183,7 +1183,7 @@ lights:
 
 # FADECANDY J10
 # Channel 7
-# Pop 3
+# Pop 3 - Center
   pop3_0:
     number: 7-0
     subtype: led
