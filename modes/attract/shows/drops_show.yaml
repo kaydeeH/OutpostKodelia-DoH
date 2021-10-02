@@ -39,10 +39,16 @@
     l_droptarget_special:
       color: off
       fade: 500ms
-- duration: 50ms
-  lights:
-    l_droptarget_10k: off
-    l_droptarget_15k: off
-    l_droptarget_20k: off
-    l_droptarget_25k: off
+    l_droptarget_10k:
+      color: off
+      fade: 500ms
+    l_droptarget_15k:
+      color: off
+      fade: 500ms
+    l_droptarget_20k:
+      color: off
+      fade: 500ms
+    l_droptarget_25k:
+      color: off
+      fade: 500ms
 
