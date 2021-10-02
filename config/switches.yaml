@@ -119,6 +119,7 @@ switches:
   # Ball Control
   s_outhole:
     number: 1-0-80
+    tags: sw_early_ball_save
   s_trough_4:
     number: 1-0-40
   s_trough_3:
@@ -203,7 +204,7 @@ switches:
   # Uncategorized
   s_right_outlane:
     number: 1-0-43
-    tags: playfield_active, kpf
+    tags: playfield_active, kpf, sw_early_ball_save
   s_right_flip_feeder_lane:
     number: 1-0-35
     tags: playfield_active, kpf

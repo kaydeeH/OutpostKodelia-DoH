@@ -20,6 +20,7 @@ ball_saves:
     balls_to_save: -1
     disable_events: sw_kpf
     auto_launch: false
+    early ball save events: sw_early_ball_save
 
   ball_save_main:
     active_time: 12s
@@ -28,7 +29,7 @@ ball_saves:
     enable_events: ball_save_ball_save_validate_disabled
     auto_launch: true
     balls_to_save: 1
-#early ball save events
+    early ball save events: sw_early_ball_save
 
 show_player:
   ball_save_ball_save_main_timer_start:
