@@ -84,7 +84,16 @@ credits:
 player_vars:
   last_creek_value:
     initial_value: 0
-
+  bonusmulti:
+    initial_value: 1
+  in_line_a_down:
+    initial_value: 0
+  in_line_b_down:
+    initial_value: 0
+  in_line_c_down:
+    initial_value: 0
+  in_line_d_down:
+    initial_value: 0
 
 ## Normal Game Settings
 

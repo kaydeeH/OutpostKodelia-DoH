@@ -161,6 +161,16 @@ settings:
     sort: 210
     settingType: coin
 
+  inline_memory_feature:
+    label: In-Line Drop Target Memory
+    values:
+      0: "Off"
+      1: "On (default)"
+    default: 1
+    key_type: int
+    sort: 90
+    settingType: feature
+
   river_multiball_feature:
     label: River Multiball Enabled
     values:
@@ -171,6 +181,42 @@ settings:
     sort: 100
     settingType: feature
 
+  river_ball_save:
+    label: River Multiball Ball Save Time
+    key_type: int
+    default: 15
+    sort: 120
+    values:
+      0: "None"
+      3: "3 seconds"
+      4: "4 seconds"
+      5: "5 seconds"
+      6: "6 seconds"
+      7: "7 seconds"
+      8: "8 seconds"
+      9: "9 seconds"
+      10: "10 seconds"
+      11: "11 seconds"
+      12: "12 seconds"
+      13: "13 seconds"
+      14: "14 seconds"
+      15: "15 seconds (default)"
+      16: "16 seconds"
+      17: "17 seconds"
+      18: "18 seconds"
+      19: "19 seconds"
+      20: "20 seconds"
+      21: "21 seconds"
+      22: "22 seconds"
+      23: "23 seconds"
+      24: "24 seconds"
+      25: "25 seconds"
+      26: "26 seconds"
+      27: "27 seconds"
+      28: "28 seconds"
+      29: "29 seconds"
+      30: "30 seconds"
+
   hazzard_multiball_feature:
     label: Hazzard Multiball Enabled
     values:
@@ -180,3 +226,39 @@ settings:
     key_type: int
     sort: 110
     settingType: feature
+
+  hazzard_ball_save:
+    label: Hazzard Multiball Ball Save Time
+    key_type: int
+    default: 15
+    sort: 120
+    values:
+      0: "None"
+      3: "3 seconds"
+      4: "4 seconds"
+      5: "5 seconds"
+      6: "6 seconds"
+      7: "7 seconds"
+      8: "8 seconds"
+      9: "9 seconds"
+      10: "10 seconds"
+      11: "11 seconds"
+      12: "12 seconds"
+      13: "13 seconds"
+      14: "14 seconds"
+      15: "15 seconds (default)"
+      16: "16 seconds"
+      17: "17 seconds"
+      18: "18 seconds"
+      19: "19 seconds"
+      20: "20 seconds"
+      21: "21 seconds"
+      22: "22 seconds"
+      23: "23 seconds"
+      24: "24 seconds"
+      25: "25 seconds"
+      26: "26 seconds"
+      27: "27 seconds"
+      28: "28 seconds"
+      29: "29 seconds"
+      30: "30 seconds"

@@ -8,6 +8,7 @@
 
 mode:
   start_events: ball_started
+  events_when_started: init_inline_drops
   priority: 118
 
 shot_profiles:
@@ -56,3 +57,11 @@ variable_player:
   shot_group_drop_inline_hit{settings.in_line_scoring==1}:
     score: 3000
     bonuscount: 2
+  shot_drop_inline_a_hit:
+    in_line_a_down: 1
+  shot_drop_inline_b_hit:
+    in_line_b_down: 1
+  shot_drop_inline_c_hit:
+    in_line_c_down: 1
+  shot_drop_inline_d_hit:
+    in_line_d_down: 1

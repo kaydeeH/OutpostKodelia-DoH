@@ -39,7 +39,7 @@ multiballs:
   hazzard_multiball:
     ball_count: 1
     ball_count_type: add
-    shoot_again: 15s
+    shoot_again: settings.hazzard_ball_save
     start_events: launch_hazzard_multiball
 
 show_player:
