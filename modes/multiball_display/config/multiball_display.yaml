@@ -74,7 +74,7 @@ event_player:
     - timer_fake_tick
   multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target==0}:
     - timer_fake_tick
-  multiball_display_boar{current_player.boars_nest_active<>0}:
+  multiball_display_boar{current_player.boars_nest_active==0}:
     - timer_fake_tick
 
 
