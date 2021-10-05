@@ -1,0 +1,161 @@
+#show_version=5
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: FF7500
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: FF7500
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: FF7500
+    l_paragon_saucer_02a: FF7500
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: off
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: FF7500
+    l_paragon_saucer_02a: FF7500
+    l_paragon_saucer_03r: FF7500
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: FF7500
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: FF7500
+    l_paragon_saucer_03r: FF7500
+    l_paragon_saucer_04a: FF7500
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: FF7500
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: FF7500
+    l_paragon_saucer_04a: FF7500
+    l_paragon_saucer_05g: FF7500
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: off
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: FF7500
+    l_paragon_saucer_05g: FF7500
+    l_paragon_saucer_06o: FF7500
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: FF7500
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: FF7500
+    l_paragon_saucer_06o: FF7500
+    l_paragon_saucer_07n: FF7500
+    l_paragon_saucer_special: off
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: FF7500
+    l_paragon_saucer_07n: FF7500
+    l_paragon_saucer_special: FF7500
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: FF7500
+    l_paragon_saucer_special: off
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: FF7500
+    l_paragon_saucer_07n: FF7500
+    l_paragon_saucer_special: FF7500
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: FF7500
+    l_paragon_saucer_06o: FF7500
+    l_paragon_saucer_07n: FF7500
+    l_paragon_saucer_special: off
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: FF7500
+    l_paragon_saucer_05g: FF7500
+    l_paragon_saucer_06o: FF7500
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: FF7500
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: FF7500
+    l_paragon_saucer_04a: FF7500
+    l_paragon_saucer_05g: FF7500
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: off
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: FF7500
+    l_paragon_saucer_03r: FF7500
+    l_paragon_saucer_04a: FF7500
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: FF7500
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: FF7500
+    l_paragon_saucer_02a: FF7500
+    l_paragon_saucer_03r: FF7500
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: FF7500
+- duration: 150ms
+  lights:
+    l_paragon_saucer_01p: FF7500
+    l_paragon_saucer_02a: FF7500
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: off

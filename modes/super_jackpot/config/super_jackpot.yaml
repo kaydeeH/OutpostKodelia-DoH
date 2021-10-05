@@ -18,6 +18,40 @@ event_player:
     - start_hazzard_only_super_show
   hazzard_super_jackpot_post_focus{current_player.creek_jackpot_count>=3}:
     - start_combined_super_show
+  start_hazzard_only_super_show:
+    - start_hazzard_spinner_show
+  #Events to handle both ways to set the spinner stage.
+  player_hazzard_spinner_count{current_player.hazzard_spinner_count>0 and current_player.hazzard_spinner_count<=4 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage1
+  player_hazzard_spinner_count{current_player.hazzard_spinner_count>4 and current_player.hazzard_spinner_count<=8 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage2
+  player_hazzard_spinner_count{current_player.hazzard_spinner_count>8 and current_player.hazzard_spinner_count<=12 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage3
+  player_hazzard_spinner_count{current_player.hazzard_spinner_count>12 and current_player.hazzard_spinner_count<=16 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage4
+  player_hazzard_spinner_count{current_player.hazzard_spinner_count>16 and current_player.hazzard_spinner_count<=19 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage5
+  player_hazzard_spinner_count{current_player.hazzard_spinner_count==20 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_multiplier_complete
+  start_combined_super_show{current_player.hazzard_spinner_count==0 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_show
+  start_combined_super_show{current_player.hazzard_spinner_count>0 and current_player.hazzard_spinner_count<=4 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage1
+  start_combined_super_show{current_player.hazzard_spinner_count>4 and current_player.hazzard_spinner_count<=8 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage2
+  start_combined_super_show{current_player.hazzard_spinner_count>8 and current_player.hazzard_spinner_count<=12 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage3
+  start_combined_super_show{current_player.hazzard_spinner_count>12 and current_player.hazzard_spinner_count<=16 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage4
+  start_combined_super_show{current_player.hazzard_spinner_count>16 and current_player.hazzard_spinner_count<=19 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_stage5
+  #Is this last one necessary? Maybe not... may delete later.
+  start_combined_super_show{current_player.hazzard_spinner_count==20 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
+    - start_hazzard_spinner_multiplier_complete
+
+#TODO light show for creek super jackpot collected
+#TODO play show on "creek_super_jackpot_collected"
+#TODO this event should restart the jackpot active show
 
 show_player:
   start_creek_only_super_show:
@@ -29,11 +63,77 @@ show_player:
       key: creek_super_multiplier_show_key
       speed: 1
       priority: 1000
+
   start_hazzard_only_super_show:
     hazzard_only_super_show:
       key: hazzard_only_super_show_key
       speed: 1
       priority: 1000
+    #Reusing spinner_show from attract
+  start_hazzard_spinner_show:
+    spinner_show:
+      key: hazzard_super_multiplier_show_key
+      speed: 1
+      priority: 1000
+  start_hazzard_spinner_stage1:
+    hazzard_super_multiplier_show_key: stop
+    hazzard_spinner_stage1_show:
+      key: hazzard_super_multiplier_stage1_show_key
+      speed: 1
+      priority: 1000
+  start_hazzard_spinner_stage2:
+    hazzard_super_multiplier_show_key: stop
+    hazzard_super_multiplier_stage1_show_key: stop
+    hazzard_spinner_stage2_show:
+      key: hazzard_super_multiplier_stage2_show_key
+      speed: 1
+      priority: 1000
+  start_hazzard_spinner_stage3:
+    hazzard_super_multiplier_show_key: stop
+    hazzard_super_multiplier_stage1_show_key: stop
+    hazzard_super_multiplier_stage2_show_key: stop
+    hazzard_spinner_stage3_show:
+      key: hazzard_super_multiplier_stage3_show_key
+      speed: 1
+      priority: 1000
+  start_hazzard_spinner_stage4:
+    hazzard_super_multiplier_show_key: stop
+    hazzard_super_multiplier_stage1_show_key: stop
+    hazzard_super_multiplier_stage2_show_key: stop
+    hazzard_super_multiplier_stage3_show_key: stop
+    hazzard_spinner_stage4_show:
+      key: hazzard_super_multiplier_stage4_show_key
+      speed: 1
+      priority: 1000
+  start_hazzard_spinner_stage5:
+    hazzard_super_multiplier_show_key: stop
+    hazzard_super_multiplier_stage1_show_key: stop
+    hazzard_super_multiplier_stage2_show_key: stop
+    hazzard_super_multiplier_stage3_show_key: stop
+    hazzard_super_multiplier_stage4_show_key: stop
+    hazzard_spinner_stage5_show:
+      key: hazzard_super_multiplier_stage5_show_key
+      speed: 1
+      priority: 1000
+  start_hazzard_spinner_multiplier_complete:
+    hazzard_super_multiplier_show_key: stop
+    hazzard_super_multiplier_stage1_show_key: stop
+    hazzard_super_multiplier_stage2_show_key: stop
+    hazzard_super_multiplier_stage3_show_key: stop
+    hazzard_super_multiplier_stage4_show_key: stop
+    hazzard_super_multiplier_stage5_show_key: stop
+    hazzard_super_multiplier_complete_show:
+      key: creek_super_multiplier_complete_show_key
+      speed: 1
+      loops: 0
+      priority: 1000
+      events_when_completed: start_hazzard_super_multiplier_locked
+  start_hazzard_super_multiplier_locked:
+    hazzard_super_multiplier_locked_show:
+      key: hazzard_super_multiplier_locked_show_key
+      speed: 1
+      priority: 1000
+
   start_combined_super_show:
     hazzard_only_super_show_key: stop
     creek_only_super_show_key: stop
@@ -45,6 +145,7 @@ show_player:
       key: creek_super_multiplier_show_key
       speed: 1
       priority: 1000
+
   creek_super_jackpot_collected:
     hazzard_only_super_show_key: stop
     creek_only_super_show_key: stop

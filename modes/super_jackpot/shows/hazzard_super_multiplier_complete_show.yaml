@@ -1,0 +1,103 @@
+#show_version=5
+- duration: 150ms
+  lights:
+    l_spinner_1:
+      color: 331700
+      fade: 150ms
+    l_spinner_2:
+      color: 662F00
+      fade: 150ms
+    l_spinner_3:
+      color: 994600
+      fade: 150ms
+    l_spinner_4:
+      color: CC5E00
+      fade: 150ms
+    l_spinner_5:
+      color: FF7500
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_spinner_1:
+      color: off
+      fade: 150ms
+    l_spinner_2:
+      color: off
+      fade: 150ms
+    l_spinner_3:
+      color: off
+      fade: 150ms
+    l_spinner_4:
+      color: off
+      fade: 150ms
+    l_spinner_5:
+      color: off
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_spinner_1:
+      color: 331700
+      fade: 150ms
+    l_spinner_2:
+      color: 662F00
+      fade: 150ms
+    l_spinner_3:
+      color: 994600
+      fade: 150ms
+    l_spinner_4:
+      color: CC5E00
+      fade: 150ms
+    l_spinner_5:
+      color: FF7500
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_spinner_1:
+      color: off
+      fade: 150ms
+    l_spinner_2:
+      color: off
+      fade: 150ms
+    l_spinner_3:
+      color: off
+      fade: 150ms
+    l_spinner_4:
+      color: off
+      fade: 150ms
+    l_spinner_5:
+      color: off
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_spinner_1:
+      color: 331700
+      fade: 150ms
+    l_spinner_2:
+      color: 662F00
+      fade: 150ms
+    l_spinner_3:
+      color: 994600
+      fade: 150ms
+    l_spinner_4:
+      color: CC5E00
+      fade: 150ms
+    l_spinner_5:
+      color: FF7500
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_spinner_1:
+      color: off
+      fade: 150ms
+    l_spinner_2:
+      color: off
+      fade: 150ms
+    l_spinner_3:
+      color: off
+      fade: 150ms
+    l_spinner_4:
+      color: off
+      fade: 150ms
+    l_spinner_5:
+      color: off
+      fade: 150ms

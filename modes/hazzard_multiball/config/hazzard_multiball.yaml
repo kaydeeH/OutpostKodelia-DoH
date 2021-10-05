@@ -109,6 +109,54 @@ show_player:
         color: orange
   multiball_hazzard_multiball_shoot_again_ended:
     ball_save_hazzard: stop
+  enable_hazzard_multiball_start:
+    hazzard_saucer_focus_show:
+      key: hazzard_saucer_focus_show_key
+      speed: 1
+      priority: 1000
+      loops: 0
+      events_when_completed: hazzard_saucer_post_focus_show
+  hazzard_saucer_post_focus_show:
+    hazzard_saucer_post_focus_show:
+      key: hazzard_saucer_post_focus_show_key
+      speed: 1
+      priority: 1000
+  start_hazzard_multiball:
+    hazzard_saucer_post_focus_show_key: stop
+    hazzard_saucer_jackpot_ready_show:
+      key: hazzard_saucer_jackpot_ready_show_key
+      speed: 1
+      priority: 1000
+    jackpot_show:
+      speed: 1
+      loops: 5
+      priority: 2000
+      show_tokens:
+        color: FF7500
+        color2: 75FF00
+  hazzard_super_jackpot_collected:
+    hazzard_saucer_jackpot_ready_show:
+      key: hazzard_saucer_jackpot_ready_show_key
+      speed: 1
+      priority: 1000
+  hazzard_super_jackpot_enabled:
+    hazzard_saucer_jackpot_ready_show_key: stop
+    hazzard_super_jackpot_focus_show:
+      key: hazzard_super_jackpot_focus_show_key
+      speed: 1
+      priority: 1500
+      loops: 0
+      events_when_completed: hazzard_super_jackpot_post_focus
+  multiball_hazzard_multiball_ended:
+    hazzard_saucer_jackpot_ready_show_key: stop
+  player_hazzard_jackpot_count{current_player.hazzard_jackpot_count<3 and current_player.hazzard_jackpot_count>0}:
+    jackpot_show:
+      speed: 1
+      loops: 2
+      priority: 2000
+      show_tokens:
+        color: FF7500
+        color2: 75FF00
 
 variable_player:
   multiball_hazzard_multiball_started:
