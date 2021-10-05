@@ -9,6 +9,12 @@
 # multiball_hazzard_multiball_shoot_again_ended
 # multiball_hazzard_multiball_ended
 
+#TODO Show on multiball ready to start
+#TODO Start Event: enable_hazzard_multiball_start
+#TODO End Event:   start_hazzard_multiball
+#
+#TODO Show on Hazzard Jackpot Ready
+#TODO Start Event: start_hazzard_multiball, hazzard_super_jackpot_collected
 mode:
   start_events: start_mode_hazzard_multiball
   stop_events: multiball_hazzard_multiball_ended
@@ -79,13 +85,13 @@ multiballs:
 show_player:
   multiball_hazzard_multiball_started:
     ball_save_flash:
-      key: ball_save
+      key: ball_save_hazzard
       speed: 2
       show_tokens:
         lights: l_bonus_shoot_again, l_bonus_shoot_again2
         color: orange
   multiball_hazzard_multiball_shoot_again_ended:
-    ball_save: stop
+    ball_save_hazzard: stop
 
 variable_player:
   multiball_hazzard_multiball_started:
