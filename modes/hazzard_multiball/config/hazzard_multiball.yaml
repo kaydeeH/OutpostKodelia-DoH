@@ -15,6 +15,22 @@
 #
 #TODO Show on Hazzard Jackpot Ready
 #TODO Start Event: start_hazzard_multiball, hazzard_super_jackpot_collected
+#TODO End Event  : hazzard_super_jackpot_enabled
+#
+#TODO Show on Hazzard Super Jackpot Ready, Draw attention to jackpot doubler (spinner)
+#TODO Start Event: hazzard_super_jackpot_enabled
+#TODO End Event  : hazzard_super_jackpot_collected
+#
+#TODO Show on Jackpot Collect
+#TODO Play Event: hazzard_jackpot_collected
+#
+#TODO Show on Super Jackpot Doubled
+#TODO Play Event: player_hazzard_spinner_count{current_player.hazzard_spinner_count>=20 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}
+#TODO Stop Show -- whatever draws attention to the spinner
+#
+#TODO Show on Super Jackpot Collect
+#TODO Play Event: hazzard_super_jackpot_collected
+
 mode:
   start_events: start_mode_hazzard_multiball
   stop_events: multiball_hazzard_multiball_ended
@@ -144,7 +160,7 @@ variable_player:
   spinner_default_hit:
     hazzard_spinner_count:
       int: 1
-  player_hazzard_spinner_count{current_player.hazzard_spinner_count>=20 and current_player.hazzard_jackpot_multiplier==1}:
+  player_hazzard_spinner_count{current_player.hazzard_spinner_count>=20 and current_player.hazzard_jackpot_multiplier==1 and current_player.hazzard_jackpot_count>=3}:
     hazzard_jackpot_multiplier:
       action: set
       int: 2
