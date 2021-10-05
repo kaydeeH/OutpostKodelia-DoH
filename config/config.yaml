@@ -60,6 +60,7 @@ modes:
   - hazzard_multiball # HAZZARD multiball feature
   - credits           # credits/freeplay control
   - multiball_display # control the display when multiball or chase is active
+  - super_jackpot     # control light shows in super jackpot situations
 
 credits:
   max_credits: settings.maximum_credits
@@ -96,6 +97,10 @@ player_vars:
   in_line_c_down:
     initial_value: 0
   in_line_d_down:
+    initial_value: 0
+  hazzard_jackpot_count:
+    initial_value: 0
+  creek_jackpot_count:
     initial_value: 0
   skill_shot_points:
     initial_value: 0

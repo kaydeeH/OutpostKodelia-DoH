@@ -1,6 +1,6 @@
 #config_version=5
 
-# River Multi-ball is Ready
+# Creek Multi-ball is Ready
 
 # EVENTS --
 # multiball_creek_multiball_started
@@ -46,27 +46,6 @@ shots:
     enable_events: creek_super_jackpot_enabled
     disable_events: creek_super_jackpot_collected
 
-
-#TODO light show indicating creek multiball is ready to start
-#TODO start show on "enable_creek_multiball_start"
-#TODO   end show on "start_creek_multiball"
-
-#TODO light show for jackpot active
-#TODO start show on "start_creek_multiball", after "creek_super_jackpot_collected" show below
-#TODO   end show on "creek_super_jackpot_enabled", "multiball_creek_multiball_ended" (this will end the mode so may not be needed)
-
-#TODO light show for jackpot collected
-#TODO start show on "creek_jackpot_collected"
-
-#TODO light show for super jackpot active, indicate ability to multiply super jackpot value
-#TODO play/start shows on "creek_super_jackpot_enabled"
-#TODO end multiplier show on "shot_group_drop_right_complete" (can only multiply once)
-
-#TODO light show for super jackpot collected
-#TODO play show on "creek_super_jackpot_collected"
-#TODO this event should restart the jackpot active show
-
-
 event_player:
   show_creek_score_done{device.state_machines.creek_notify_state.state == "start"}:
     show_notify_flash_text:
@@ -98,16 +77,79 @@ multiballs:
     shoot_again: settings.creek_ball_save
     start_events: start_creek_multiball
 
+#TODO light show for jackpot active
+#TODO start show on "start_creek_multiball", after "creek_super_jackpot_collected" show below
+#TODO   end show on "creek_super_jackpot_enabled", "multiball_creek_multiball_ended" (this will end the mode so may not be needed)
+
+#TODO light show for jackpot collected
+#TODO start show on "creek_jackpot_collected"
+
+#TODO light show for super jackpot active, indicate ability to multiply super jackpot value
+#TODO play/start shows on "creek_super_jackpot_enabled"
+#TODO end multiplier show on "shot_group_drop_right_complete" (can only multiply once)
+
+#TODO light show for super jackpot collected
+#TODO play show on "creek_super_jackpot_collected"
+#TODO this event should restart the jackpot active show
+
 show_player:
   multiball_creek_multiball_started:
     ball_save_flash:
-      key: ball_save
+      key: ball_save_creek
       speed: 2
       show_tokens:
         lights: l_bonus_shoot_again, l_bonus_shoot_again2
         color: orange
   multiball_creek_multiball_shoot_again_ended:
-    ball_save: stop
+    ball_save_creek: stop
+  enable_creek_multiball_start:
+    creek_saucer_focus_show:
+      key: creek_saucer_focus_show_key
+      speed: 30
+      priority: 1000
+      loops: 0
+      events_when_completed: creek_saucer_post_focus_show
+  creek_saucer_post_focus_show:
+    creek_saucer_post_focus_show:
+      key: creek_saucer_post_focus_show_key
+      speed: 1
+      priority: 1000
+  start_creek_multiball:
+    creek_saucer_post_focus_show_key: stop
+    creek_saucer_jackpot_ready_show:
+      key: creek_saucer_jackpot_ready_show_key
+      speed: 1
+      priority: 1000
+    jackpot_show:
+      speed: 1
+      loops: 5
+      priority: 2000
+      show_tokens:
+        color: seagreen
+        color2: 8B2E57
+  creek_super_jackpot_collected:
+    creek_saucer_jackpot_ready_show:
+      key: creek_saucer_jackpot_ready_show_key
+      speed: 1
+      priority: 1000
+  creek_super_jackpot_enabled:
+    creek_saucer_jackpot_ready_show_key: stop
+    creek_super_jackpot_focus_show:
+      key: creek_super_jackpot_focus_show_key
+      speed: 30
+      priority: 1000
+      loops: 0
+      events_when_completed: creek_super_jackpot_post_focus
+  multiball_creek_multiball_ended:
+    creek_saucer_jackpot_ready_show_key: stop
+  player_creek_jackpot_count{current_player.creek_jackpot_count<3}:
+    jackpot_show:
+      speed: 1
+      loops: 2
+      priority: 2000
+      show_tokens:
+        color: seagreen
+        color2: 8B2E57
 
 variable_player:
   multiball_creek_multiball_started:

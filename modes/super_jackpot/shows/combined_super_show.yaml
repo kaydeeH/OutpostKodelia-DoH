@@ -1,0 +1,21 @@
+#show_version=5
+- duration: 125ms
+  lights:
+    l_gi_14_oilslick_rollover:
+      color: seagreen
+      fade: 125ms
+- duration: 125ms
+  lights:
+    l_gi_14_oilslick_rollover:
+      color: off
+      fade: 125ms
+- duration: 125ms
+  lights:
+    l_gi_14_oilslick_rollover:
+      color: FF7500
+      fade: 125ms
+- duration: 125ms
+  lights:
+    l_gi_14_oilslick_rollover:
+      color: off
+      fade: 125ms

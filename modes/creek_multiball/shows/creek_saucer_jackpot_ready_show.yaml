@@ -1,0 +1,37 @@
+#show_version=5
+- duration: 500ms
+  lights:
+    l_goldencliffs_2k: seagreen
+    l_goldencliffs_4k: off
+    l_goldencliffs_6k: off
+    l_goldencliffs_8k: seagreen
+    l_goldencliffs_10k: off
+    l_goldencliffs_20k: off
+    l_gi_05_river_rollover: off
+- duration: 500ms
+  lights:
+    l_goldencliffs_2k: seagreen
+    l_goldencliffs_4k: seagreen
+    l_goldencliffs_6k: seagreen
+    l_goldencliffs_8k: seagreen
+    l_goldencliffs_10k: seagreen
+    l_goldencliffs_20k: seagreen
+    l_gi_05_river_rollover: off
+- duration: 500ms
+  lights:
+    l_goldencliffs_2k: seagreen
+    l_goldencliffs_4k: seagreen
+    l_goldencliffs_6k: seagreen
+    l_goldencliffs_8k: seagreen
+    l_goldencliffs_10k: seagreen
+    l_goldencliffs_20k: seagreen
+    l_gi_05_river_rollover: seagreen
+- duration: 500ms
+  lights:
+    l_goldencliffs_2k: off
+    l_goldencliffs_4k: off
+    l_goldencliffs_6k: off
+    l_goldencliffs_8k: off
+    l_goldencliffs_10k: off
+    l_goldencliffs_20k: off
+    l_gi_05_river_rollover: off

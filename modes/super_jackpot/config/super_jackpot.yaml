@@ -1,0 +1,47 @@
+#config_version=5
+
+mode:
+  start_events: start_creek_multiball, start_hazzard_multiball
+  stop_events: super_jackpot_end
+  priority: 250
+
+event_player:
+  multiball_creek_multiball_ended:
+    - super_jackpot_end
+  multiball_hazzard_multiball_ended:
+    - super_jackpot_end
+  creek_super_jackpot_post_focus{current_player.hazzard_jackpot_count<3}:
+    - start_creek_only_super_show
+  creek_super_jackpot_post_focus{current_player.hazzard_jackpot_count>=3}:
+    - start_combined_super_show
+  hazzard_super_jackpot_post_focus{current_player.creek_jackpot_count<3}:
+    - start_hazzard_only_super_show
+  hazzard_super_jackpot_post_focus{current_player.creek_jackpot_count>=3}:
+    - start_combined_super_show
+
+show_player:
+  start_creek_only_super_show:
+    creek_only_super_show:
+      key: creek_only_super_show_key
+      speed: 1
+      priority: 1000
+  start_hazzard_only_super_show:
+    hazzard_only_super_show:
+      key: hazzard_only_super_show_key
+      speed: 1
+      priority: 1000
+  start_combined_super_show:
+    hazzard_only_super_show_key: stop
+    creek_only_super_show_key: stop
+    combined_super_show:
+      key: combined_super_show_key
+      speed: 1
+      priority: 1000
+  creek_super_jackpot_collected:
+    hazzard_only_super_show_key: stop
+    creek_only_super_show_key: stop
+    combined_super_show_key: stop
+  hazzard_super_jackpot_collected:
+    hazzard_only_super_show_key: stop
+    creek_only_super_show_key: stop
+    combined_super_show_key: stop
