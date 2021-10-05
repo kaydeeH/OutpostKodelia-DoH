@@ -229,7 +229,7 @@ variable_player:
 # they need to be in different modes for this to work?  Below does not return
 # when in the multiball_display.yaml mode file.
 segment_display_player:
-  multiball_display_hazzard:
+  multiball_display_hazzard{device.multiballs.creek_multiball.balls_live_target>0}:
     display1:
       action: remove
       key: creek_1
@@ -243,7 +243,7 @@ segment_display_player:
       action: remove
       key: creek_4
 
-  multiball_display_creek{current_player.creek_jackpot_count<3}:
+  multiball_display_creek{device.multiballs.creek_multiball.balls_live_target>0 and current_player.creek_jackpot_count<3}:
     display1:
       action: add
       key: creek_1

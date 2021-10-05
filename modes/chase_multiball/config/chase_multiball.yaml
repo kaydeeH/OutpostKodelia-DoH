@@ -45,12 +45,16 @@ event_player:
   balls_in_play{balls==1}:
     - release_chase_hold
     - end_chase_mode|100ms
-  gc_start_mball_hit:
+  gc_start_mball_hit{current_player.general_lee_speed>=120}:
     - end_chase_sequence
     - chase_multiball_qualified
-  hz_start_mball_hit:
+  hz_start_mball_hit{current_player.general_lee_speed>=120}:
     - end_chase_sequence
     - chase_multiball_qualified
+  gc_start_mball_hit{current_player.general_lee_speed<120}:
+    - general_lee_speed_add_3
+  hz_start_mball_hit{current_player.general_lee_speed<120}:
+    - general_lee_speed_add_3
 
 shots:
   chase_saucer:
@@ -83,11 +87,11 @@ multiballs:
     ball_count: 2
     ball_count_type: add
     ball_locks: bd_escape_saucer
-    shoot_again: settings.chase_ball_save
+    shoot_again: settings.chase_ball_save * 1000
     start_events: chase_multiball_qualified
 
 variable_player:
-  chase_notify:
+  start_chase_sequence:
       in_line_a_down:
         action: set
         int: 0
@@ -100,3 +104,12 @@ variable_player:
       in_line_d_down:
         action: set
         int: 0
+      general_lee_speed:
+        action: set
+        int: 40
+      boars_nest_active:
+        action: set
+        int: 0
+  general_lee_speed_add_3:
+      general_lee_speed:
+        int: 3
