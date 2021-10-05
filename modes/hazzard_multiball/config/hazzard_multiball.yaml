@@ -38,7 +38,7 @@ event_player:
       events_when_completed: show_hazzard_mball_done
   hazzard_multiball_start_hit:
     - start_hazzard_multiball
-  sw_kpf{current_player.hazzard_jackpot_count<3}:
+  sw_h_jack{current_player.hazzard_jackpot_count<3}:
     - increment_hazzard_jackpot
   hazzard_collect_jackpot_hit:
     - hazzard_jackpot_collected
