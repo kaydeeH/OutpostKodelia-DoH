@@ -1,0 +1,116 @@
+#config_version=5
+
+mode:
+  start_events: ball_started
+  stop_events: skill_shot_failed, end_skill_shot
+  events_when_started: enable_skill_shot
+  priority: 250
+
+shots:
+  skill_1:
+    switch: s_top_center_rollover
+  skill_2:
+    switch: s_golden_cliffs_rollover
+  skill_3:
+    switch: s_saucer_golden_cliffs
+
+state_machines:
+  skill_shot_progression:
+    states:
+      start:
+        label: Skill Shot Ready
+      level1:
+        label: Level 1 Hit
+        events_when_started: skill_level_1_hit
+      level1end:
+        label: Skill Shot Complete Level 1
+        events_when_started: skill_shot_level_1_success
+      level2:
+        label: Level 2 Hit
+        events_when_started: skill_level_2_hit
+      level2end:
+        label: Skill Shot Complete Level 2
+        events_when_started: skill_shot_level_2_success
+      level3end:
+        label: Skill Shot Complete Level 3
+        events_when_started: skill_shot_level_3_complete
+      failed:
+        label: failed
+        events_when_started: skill_shot_failed
+    transitions:
+      - source: start
+        target: level1
+        events: skill_1_hit
+      - source: start
+        target: failed
+        events: sw_not_skill, skill_2_hit, skill_3_hit
+      - source: level1
+        target: level2
+        events: skill_2_hit
+      - source: level1
+        target: level1end
+        events: sw_not_skill, skill_1_hit, skill_3_hit
+      - source: level2
+        target: level3end
+        events: skill_3_hit
+      - source: level2
+        target: level2end
+        events: sw_not_kill, skill_1_hit, skill_2_hit
+
+variable_player:
+  skill_level_1_hit{current_player.skill_shot_points==0}:
+    skill_shot_points:
+      action: set
+      int: 5000
+  skill_level_1_hit{current_player.skill_shot_points>0}:
+    skill_shot_points:
+      action: set
+      int: current_player.skill_shot_points * 2
+  skill_level_2_hit:
+    skill_shot_points:
+      action: set
+      int: current_player.skill_shot_points * 2
+  skill_shot_level_3_complete:
+    skill_shot_points:
+      action: set
+      int: current_player.skill_shot_points * 2
+  skill_shot_level_1_success:
+    score:
+      int: current_player.skill_shot_points
+  skill_shot_level_2_success:
+    score:
+      int: current_player.skill_shot_points
+  skill_shot_level_3_success:
+    score:
+      int: current_player.skill_shot_points
+
+event_player:
+  skill_shot_level_1_success:
+    show_score_flash_text:
+      text_1: "SKILL  "
+      text_2: "SHOT"
+      text_3: "SCORES "
+      text_4:
+        value: current_player.skill_shot_points
+        type: int
+      events_when_complete: end_skill_shot
+  skill_shot_level_2_success:
+    show_score_flash_text:
+      text_1: "SKILL  "
+      text_2: "SHOT"
+      text_3: "SCORES "
+      text_4:
+        value: current_player.skill_shot_points
+        type: int
+      events_when_completed: end_skill_shot
+  skill_shot_level_3_complete:
+    - skill_shot_level_3_success
+  skill_shot_level_3_success:
+    show_score_flash_text:
+      text_1: "SKILL  "
+      text_2: "SHOT"
+      text_3: "SCORES "
+      text_4:
+        value: current_player.skill_shot_points
+        type: int
+      events_when_completed: end_skill_shot

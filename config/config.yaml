@@ -43,6 +43,7 @@ modes:
   - base
   - attract
   - service
+  - skill_shot        # handler for initial skill shot
   - right_drops       # handler for the right bank drop target feature
   - special           # handler for all SPECIAL events
   - bonus_display     # handler for super bonus and bonus display (maybe countdown?)
@@ -95,6 +96,8 @@ player_vars:
   in_line_c_down:
     initial_value: 0
   in_line_d_down:
+    initial_value: 0
+  skill_shot_points:
     initial_value: 0
 
 ## Normal Game Settings
