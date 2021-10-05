@@ -1,0 +1,159 @@
+#config_version=5
+# This mode will control the segment displays when one or more multiballs are active.
+
+
+mode:
+  start_events: zzz_mball_display_placeholder, multiball_creek_multiball_started, multiball_hazzard_multiball_started
+  stop_events: zzz_mball_display_end_placeholder, multiball_display_end
+  events_when_started: initialize_multiball_display
+  priority: 300
+
+state_machines:
+  multiball_display_control:
+    states:
+      start:
+        label: Start State
+      display_creek:
+        label: Display Creek
+        events_when_started: multiball_display_creek
+      display_hazzard:
+        label: Display Hazzard
+        events_when_started: multiball_display_hazzard
+      display_chase:
+        label: Display Chase
+        events_when_started: multiball_display_chase
+      display_boar:
+        label: Display Boar
+        events_when_started: multiball_display_boar
+    transitions:
+       - source: start
+         target: display_creek
+         events: enter_state_creek
+       - source: start
+         target: display_hazzard
+         events: enter_state_hazzard
+       - source: start
+         target: display_chase
+         events: enter_state_chase
+       - source: start
+         target: display_boar
+         events: enter_state_boar
+       - source: display_creek
+         target: display_hazzard
+         events: timer_display_heartbeat_tick{device.multiballs.hazzard_multiball.balls_live_target>0}
+       - source: display_creek
+         target: display_creek
+         events: enter_state_creek
+       - source: display_creek
+         target: display_hazzard
+         events: enter_state_hazzard
+       - source: display_creek
+         target: display_chase
+         events: enter_state_chase
+       - source: display_creek
+         target: display_boar
+         events: enter_state_boar
+       - source: display_hazzard
+         target: display_creek
+         events: timer_display_heartbeat_tick{device.multiballs.creek_multiball.balls_live_target>0}
+       - source: display_hazzard
+         target: display_creek
+         events: enter_state_creek
+       - source: display_hazzard
+         target: display_chase
+         events: enter_state_chase
+       - source: display_hazzard
+         target: display_boar
+         events: enter_state_boar
+       - source: display_chase
+         target: display_creek
+         events: enter_state_creek
+       - source: display_chase
+         target: display_hazzard
+         events: enter_state_hazzard
+       - source: display_boar
+         target: display_chase
+         events: enter_state_chase
+       - source: display_boar
+         target: display_hazzard
+         events: enter_state_hazzard
+
+timers:
+  display_heartbeat:
+    start_value: 0
+    tick_interval: 2.5s
+    start_running: true
+
+event_player:
+  initialize_multiball_display{device.multiballs.creek_multiball.balls_live_target>0}:
+    - enter_state_creek
+  initialize_multiball_display{device.multiballs.creek_multiball.balls_live_target==0 and device.multiballs.hazzard_multiball.balls_live_target>0}:
+    - enter_state_hazzard
+  player_creek_jackpot_count{current_player.creek_jackpot_count>=3}:
+    - enter_state_creek
+
+
+# these must check for all other display conditions
+  multiball_creek_multiball_ended{device.multiballs.hazzard_multiball.balls_live_target==0}:
+    - multiball_display_end
+  multiball_creek_multiball_ended{device.multiballs.creek_multiball.balls_live_target==0}:
+    - multiball_display_end
+
+# Display PlayerX on display one
+# Display current player score on display two
+
+# Display various messages on displays 3 & 4, and "match" window of display 5
+# Creek Multiball Only
+# Display 3 - Cr JACKP    Display 4 - (jValue)
+# Display 4 - Cr SUPER    Display 4 - (sValue)
+#
+# Hazzard Multiball only
+# Display 3 - Hz JACKP    Display 4 - (jValue)
+# Display 4 - Hz SUPER    Display 4 - (sValue)
+#
+# Both of the above - alternate between the two
+#
+# Chase Sequence
+# Show something on 3/4, maybe match display?
+
+# it would seem that a single segment display player within a mode cannot "stack"
+# they need to be in different modes for this to work?
+# Right now the "override" text will display in this mode.  The base text will display in original modes.
+# Display the "special" higher priority stuff here, display the lower priority persistant stuff in originating mode
+segment_display_player:
+  player_hazzard_last_jackpot_collected:
+    display1:
+      priority: 500
+      expire: 2s
+      text: "JACKPOT"
+    display2:
+      priority: 500
+      expire: 2s
+      text: "{current_player.hazzard_last_jackpot_collected:d}"
+  player_hazzard_last_super_jackpot_collected:
+    display1:
+      priority: 500
+      expire: 2s
+      text: "*SUPER*"
+    display2:
+      priority: 500
+      expire: 2s
+      text: "{current_player.hazzard_last_super_jackpot_collected:d}"
+  player_creek_last_jackpot_collected:
+    display1:
+      priority: 500
+      expire: 2s
+      text: "JACKPOT"
+    display2:
+      priority: 500
+      expire: 2s
+      text: "{current_player.creek_last_jackpot_collected:d}"
+  player_creek_last_super_jackpot_collected:
+    display1:
+      priority: 500
+      expire: 2s
+      text: "*SUPER*"
+    display2:
+      priority: 500
+      expire: 2s
+      text: "{current_player.creek_last_super_jackpot_collected:d}"

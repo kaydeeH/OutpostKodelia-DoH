@@ -1,0 +1,227 @@
+#config_version=5
+
+# River Multi-ball is Ready
+
+# EVENTS --
+# multiball_creek_multiball_started
+# multiball_creek_multiball_shoot_again
+# multiball_creek_multiball_lost_ball
+# multiball_creek_multiball_shoot_again_ended
+# multiball_creek_multiball_ended
+
+mode:
+  start_events: start_mode_creek_multiball
+  stop_events: multiball_creek_multiball_ended
+  events_when_started: disable_base_creek_shot, enable_creek_multiball_start
+  events_when_stopped: enable_base_creek_shot
+  priority: 200
+
+state_machines:
+  creek_notify_state:
+    states:
+      start:
+        label: start_state
+      step1:
+        label: end_state
+    transitions:
+      - source: start
+        target: step1
+        events: show_creek_mball_done
+
+shots:
+  creek_multiball_start:
+    switch: s_saucer_golden_cliffs
+    disable_events: multiball_creek_multiball_started
+    enable_events: enable_creek_multiball_start
+  creek_collect_jackpot:
+    switch: s_saucer_golden_cliffs
+    disable_events: creek_super_jackpot_enabled
+    enable_events: multiball_creek_multiball_started, creek_super_jackpot_collected
+  creek_enhance_jackpot:
+    switch: s_saucer_golden_cliffs
+    disable_events: creek_super_jackpot_collected
+    enable_events: creek_super_jackpot_enabled
+  creek_collect_super_jackpot:
+    switch: s_waterfall_rollover
+    enable_events: creek_super_jackpot_enabled
+    disable_events: creek_super_jackpot_collected
+
+
+event_player:
+  show_creek_score_done{device.state_machines.creek_notify_state.state == "start"}:
+    show_notify_flash_text:
+      text_1: "CREEK  "
+      text_2: "M-BALL"
+      text_3: "READY "
+      text_4: "AtCREEK"
+      events_when_completed: show_creek_mball_done
+  creek_multiball_start_hit:
+    - start_creek_multiball
+  sw_kpf{current_player.creek_jackpot_count<3}:
+    - increment_creek_jackpot
+  creek_collect_jackpot_hit:
+    - creek_jackpot_collected
+  player_creek_jackpot_count{current_player.creek_jackpot_count>=3}:
+    - creek_super_jackpot_enabled
+    - multiball_display_creek
+    - right_drops_reset
+  creek_enhance_jackpot_hit:
+    - creek_super_jackpot_enhanced
+  creek_collect_super_jackpot_hit:
+    - creek_super_jackpot_collected
+    - multiball_display_creek
+
+multiballs:
+  creek_multiball:
+    ball_count: 1
+    ball_count_type: add
+    shoot_again: settings.creek_ball_save
+    start_events: start_creek_multiball
+
+show_player:
+  multiball_creek_multiball_started:
+    ball_save_flash:
+      key: ball_save
+      speed: 2
+      show_tokens:
+        lights: l_bonus_shoot_again, l_bonus_shoot_again2
+        color: orange
+  multiball_creek_multiball_shoot_again_ended:
+    ball_save: stop
+#TODO light show indicating creek multiball is ready to start
+#TODO light show for jackpot active
+#TODO light show for super jackpot active, indicate ability to multiply super jackpot value
+#TODO light show for jackpot collected
+#TODO light show for super jackpot collected
+
+variable_player:
+  multiball_creek_multiball_started:
+    creek_jackpot:
+      action: set
+      int: 10000
+    creek_superjackpot:
+      action: set
+      int: 0
+    creek_jackpot_increment_value:
+      action: set
+      int: 0
+    creek_jackpot_count:
+      action: set
+      int: 0
+    creek_jackpot_multiplier:
+      action: set
+      int: 1
+  increment_creek_jackpot:
+    creek_jackpot_increment_value:
+      int: 100
+    creek_jackpot:
+      int: current_player.creek_jackpot_increment_value
+  creek_jackpot_collected:
+    creek_jackpot_count:
+      int: 1
+    score:
+      int: current_player.creek_jackpot
+    creek_superjackpot:
+      int: current_player.creek_jackpot
+    creek_last_jackpot_collected:
+      action: set
+      int: current_player.creek_jackpot
+    creek_jackpot:
+      action: set
+      int: 10000
+    creek_jackpot_increment_value:
+      action: set
+      int: 0
+  creek_super_jackpot_enabled:
+    creek_jackpot_multiplier:
+      action: set
+      int: 1
+  shot_group_drop_right_complete:
+    creek_jackpot_multiplier:
+      action: set
+      int: 2
+  creek_super_jackpot_enhanced:
+    creek_superjackpot:
+      int: 10000
+  creek_super_jackpot_collected:
+    score:
+      int: current_player.creek_superjackpot * current_player.creek_jackpot_multiplier
+    total_super_jackpots_scored:
+      int: current_player.creek_superjackpot * current_player.creek_jackpot_multiplier
+    creek_last_super_jackpot_collected:
+      action: set
+      int: current_player.creek_superjackpot * current_player.creek_jackpot_multiplier
+    creek_jackpot:
+      action: set
+      int: 10000
+    creek_superjackpot:
+      action: set
+      int: 0
+    creek_jackpot_increment_value:
+      action: set
+      int: 0
+    creek_jackpot_count:
+      action: set
+      int: 0
+
+# it would seem that a single segment display player within a mode cannot "stack"
+# they need to be in different modes for this to work?  Below does not return
+# when in the multiball_display.yaml mode file.
+segment_display_player:
+  multiball_display_hazzard:
+    display1:
+      action: remove
+      key: creek_1
+    display2:
+      action: remove
+      key: creek_2
+    display3:
+      action: remove
+      key: creek_3
+    display4:
+      action: remove
+      key: creek_4
+
+  multiball_display_creek{current_player.creek_jackpot_count<3}:
+    display1:
+      action: add
+      key: creek_1
+      priority: 400
+      text: "Player{current_player.number}"
+    display2:
+      action: add
+      key: creek_2
+      priority: 400
+      text: "{current_player.score:d}"
+    display3:
+      action: add
+      key: creek_3
+      priority: 400
+      text: "Cr JACK"
+    display4:
+      action: add
+      key: creek_4
+      priority: 400
+      text: "{current_player.creek_jackpot:d}"
+  multiball_display_creek{current_player.creek_jackpot_count>=3}:
+    display1:
+      action: add
+      key: creek_1
+      priority: 400
+      text: "Player{current_player.number}"
+    display2:
+      action: add
+      key: creek_2
+      priority: 400
+      text: "{current_player.score:d}"
+    display3:
+      action: add
+      key: creek_3
+      priority: 400
+      text: "CrSUPER"
+    display4:
+      action: add
+      key: creek_4
+      priority: 400
+      text: "{current_player.creek_superjackpot:d}"
+

@@ -10,53 +10,56 @@
 
 mode:
   start_events: ball_started
+  events_when_started: enable_base_creek_shot
   priority: 121
 
 shot_profiles:
-  golden_cliffs:
+  creek:
     advance_on_hit: true
     states:
       - name: 2k
-        show: gc2k
+        show: creek2k
       - name: 4k
-        show: gc4k
+        show: creek4k
       - name: 6k
-        show: gc6k
+        show: creek6k
       - name: 8k
-        show: gc8k
+        show: creek8k
       - name: 10k
-        show: gc10k
+        show: creek10k
       - name: 20k
-        show: gc20k
+        show: creek20k
 
 shots:
-  golden_cliffs_saucer:
+  creek_saucer:
     switch: s_saucer_golden_cliffs
-    profile: golden_cliffs
+    profile: creek
+    disable_events: disable_base_creek_shot
+    enable_events: enable_base_creek_shot
     reset_events: multiball_river_multiball_ended
 
 variable_player:
-   golden_cliffs_saucer_2k_hit:
+   creek_saucer_2k_hit:
      last_creek_value:
        int: 2000
        action: set
-   golden_cliffs_saucer_4k_hit:
+   creek_saucer_4k_hit:
      last_creek_value:
        int: 4000
        action: set
-   golden_cliffs_saucer_6k_hit:
+   creek_saucer_6k_hit:
      last_creek_value:
        int: 6000
        action: set
-   golden_cliffs_saucer_8k_hit:
+   creek_saucer_8k_hit:
      last_creek_value:
        int: 8000
        action: set
-   golden_cliffs_saucer_10k_hit:
+   creek_saucer_10k_hit:
      last_creek_value:
        int: 10000
        action: set
-   golden_cliffs_saucer_20k_hit:
+   creek_saucer_20k_hit:
      last_creek_value:
        int: 20000
        action: set
@@ -66,9 +69,9 @@ variable_player:
        int: (value)
 
 event_player:
-  golden_cliffs_saucer_20k_hit{settings.river_multiball_feature==1}:
-    start_mode_river_multiball:
-  golden_cliffs_saucer_20k_hit{current_player.last_creek_value==20000}:
+  creek_saucer_20k_hit{settings.creek_multiball_feature==1}:
+    - start_mode_creek_multiball
+  creek_saucer_20k_hit{current_player.last_creek_value==20000}:
     player_last_creek_value:
       value: 20000
       player_num:

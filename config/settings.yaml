@@ -7,6 +7,7 @@
 # settings.[setting name]
 
 settings:
+# STANDARD SETTINGS
   balls_per_game:
     label: Balls Per Game
     values:
@@ -63,7 +64,9 @@ settings:
       28: "28 seconds"
       29: "29 seconds"
       30: "30 seconds"
+    settingType: standard
 
+# GAME SETTINGS
   hazzard_scoring:
     label: Hazzard Saucer Scoring
     values:
@@ -136,6 +139,8 @@ settings:
     sort: 107
     settingType: game
 
+# COIN SETTINGS
+# Note that "Free Play/Coin Play" is a "default" setting provided by MPF and therefore not listed here
   maximum_credits:
     label: Maximum Credits
     values:
@@ -161,6 +166,7 @@ settings:
     sort: 210
     settingType: coin
 
+# FEATURE settings
   inline_memory_feature:
     label: In-Line Drop Target Memory
     values:
@@ -171,8 +177,8 @@ settings:
     sort: 90
     settingType: feature
 
-  river_multiball_feature:
-    label: River Multiball Enabled
+  creek_multiball_feature:
+    label: Creek Multiball Enabled
     values:
       0: "Off"
       1: "On (default)"
@@ -181,8 +187,8 @@ settings:
     sort: 100
     settingType: feature
 
-  river_ball_save:
-    label: River Multiball Ball Save Time
+  creek_ball_save:
+    label: Creek Multiball Ball Save Time
     key_type: int
     default: 15
     sort: 120
@@ -216,6 +222,7 @@ settings:
       28: "28 seconds"
       29: "29 seconds"
       30: "30 seconds"
+    settingType: feature
 
   hazzard_multiball_feature:
     label: Hazzard Multiball Enabled
@@ -262,6 +269,7 @@ settings:
       28: "28 seconds"
       29: "29 seconds"
       30: "30 seconds"
+    settingType: feature
 
   chase_multiball_feature:
     label: Chase Multiball Enabled
@@ -308,3 +316,4 @@ settings:
       28: "28 seconds"
       29: "29 seconds"
       30: "30 seconds"
+    settingType: feature

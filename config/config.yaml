@@ -47,8 +47,8 @@ modes:
   - special           # handler for all SPECIAL events
   - bonus_display     # handler for super bonus and bonus display (maybe countdown?)
   - waterfall         # handler for the waterfall lane feature
-  - golden_cliffs     # handler for golden cliffs saucer
-  - river_multiball   # handler for the river multiball
+  - creek             # handler for creek saucer
+  - creek_multiball   # handler for the creek multiball
   - minor_shots       # misc rollovers / stand ups scoring & bonus accural
   - treasure_chamber  # in line drop targets & associated saucer
   - chase_multiball   # The chase multiball mode
@@ -58,6 +58,7 @@ modes:
   - hazzard           # HAZZARD (Paragon) Saucer
   - hazzard_multiball # HAZZARD multiball feature
   - credits           # credits/freeplay control
+  - multiball_display # control the display when multiball or chase is active
 
 credits:
   max_credits: settings.maximum_credits

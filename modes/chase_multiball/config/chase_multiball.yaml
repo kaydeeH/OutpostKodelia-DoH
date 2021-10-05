@@ -35,10 +35,11 @@ event_player:
       text_3: "READY "
       text_4: "ESCAPE!"
       events_when_completed: show_chase_mball_done
+  start_chase_sequence:
+    - drops_inline_reset
+    - bonus_multiply_5x
   ball_hold_chase_hold_held_ball:
     - start_chase_sequence
-  start_chase_sequence:
-    - zzz_kick_a_ball_if_not_in_multiball
   multiball_chase_multiball_started:
     - end_chase_sequence
   balls_in_play{balls==1}:
@@ -50,6 +51,7 @@ event_player:
   hz_start_mball_hit:
     - end_chase_sequence
     - chase_multiball_qualified
+
 shots:
   chase_saucer:
     switch: s_saucer_treasure_chamber
@@ -83,3 +85,18 @@ multiballs:
     ball_locks: bd_escape_saucer
     shoot_again: settings.chase_ball_save
     start_events: chase_multiball_qualified
+
+variable_player:
+  chase_notify:
+      in_line_a_down:
+        action: set
+        int: 0
+      in_line_b_down:
+        action: set
+        int: 0
+      in_line_c_down:
+        action: set
+        int: 0
+      in_line_d_down:
+        action: set
+        int: 0

@@ -15,49 +15,49 @@ achievements:
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_1_hit, spot_sau_1
-    reset_events: special_scored_hazzard
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended
   sau_2_complete:
     show_tokens:
       leds: l_paragon_center_02a, l_paragon_center_02a2, l_paragon_saucer_02a
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_2_hit, spot_sau_2
-    reset_events: special_scored_hazzard
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended
   sau_3_complete:
     show_tokens:
       leds: l_paragon_center_03r, l_paragon_center_03r2, l_paragon_saucer_03r
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_3_hit, spot_sau_3
-    reset_events: special_scored_hazzard
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended
   sau_4_complete:
     show_tokens:
       leds: l_paragon_center_04a, l_paragon_center_04a2, l_paragon_saucer_04a
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_4_hit, spot_sau_4
-    reset_events: special_scored_hazzard
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended
   sau_5_complete:
     show_tokens:
       leds: l_paragon_center_05g, l_paragon_center_05g2, l_paragon_saucer_05g
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_5_hit, spot_sau_5
-    reset_events: special_scored_hazzard
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended
   sau_6_complete:
     show_tokens:
       leds: l_paragon_center_06o, l_paragon_center_06o2, l_paragon_saucer_06o
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_6_hit, spot_sau_6
-    reset_events: special_scored_hazzard
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended
   sau_7_complete:
     show_tokens:
       leds: l_paragon_center_07n, l_paragon_center_07n2, l_paragon_saucer_07n
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_7_hit, spot_sau_7
-    reset_events: special_scored_hazzard
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended
 
 achievement_groups:
   saucer_group:
@@ -111,6 +111,7 @@ shot_profiles:
         show: flash_leds
         show_tokens:
           leds: l_paragon_saucer_special
+
 shots:
   hazzard_saucer:
     switch: s_saucer_paragon
@@ -120,10 +121,10 @@ shots:
       - hazzard_saucer_hazzard_sweep_hit{settings.hazzard_scan==1}
       - spot_hazzard_letter{settings.hazzard_scan==1}
     reset_events: special_scored_hazzard
-    enable_events: special_scored_hazzard, mode_hazzard_started
-    disable_events: enable_saucer_special
+    enable_events: special_scored_hazzard, mode_hazzard_started, multiball_hazzard_multiball_ended
+    disable_events: enable_saucer_special, disable_base_hazzard_shot
   hazzard_saucer_special:
-    enable_events: enable_saucer_special
+    enable_events: enable_saucer_special{settings.hazzard_multiball_feature==0}
     disable_events: special_scored_hazzard
     switch: s_saucer_paragon
     profile: hazzard_special
@@ -138,7 +139,6 @@ event_player:
     - hazzard_select_rotate
   hazzard_saucer_special_enabled_hit:
     - special_scored_hazzard
-    - launch_hazzard_multiball
   special_scored_hazzard:
     - mode_hazzard_started|100ms
   spot_hazzard_letter:

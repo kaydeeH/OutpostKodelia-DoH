@@ -66,6 +66,11 @@ variable_player:
     bonuscount:
       action: set
       int: 49
+# 5x bonus will not carry from the last ball
+  check_holdover_bonus{current_player.bonusmulti==5}:
+    bonusmulti:
+      action: set
+      int: 1
 
 show_player:
   # ball start-up -------------------
@@ -77,9 +82,6 @@ show_player:
       key: bonus_x
   check_holdover_bonus{current_player.bonusmulti==3}:
     multi-3x:
-      key: bonus_x
-  check_holdover_bonus{current_player.bonusmulti==5}:
-    multi-5x:
       key: bonus_x
   # ball start-up complete ------------
   player_bonuscount{value==1 or value==21 or value==31 or value==41}:
