@@ -128,7 +128,7 @@ variable_player:
       int: current_player.creek_jackpot
     creek_jackpot:
       action: set
-      int: 9900
+      int: 10000
     creek_jackpot_increment_value:
       action: set
       int: 0

@@ -91,7 +91,7 @@ variable_player:
   multiball_hazzard_multiball_started:
     hazzard_jackpot:
       action: set
-      int: 9900
+      int: 10000
     hazzard_superjackpot:
       action: set
       int: 0
