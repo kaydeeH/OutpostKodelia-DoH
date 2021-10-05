@@ -99,7 +99,7 @@ show_player:
       key: ball_save_creek
       speed: 2
       show_tokens:
-        lights: l_bonus_shoot_again, l_bonus_shoot_again2, l_bonus_shoot_again2
+        lights: l_bonus_shoot_again, l_bonus_shoot_again2, l_bonus_shoot_again3
         color: orange
   multiball_creek_multiball_shoot_again_ended:
     ball_save_creek: stop
