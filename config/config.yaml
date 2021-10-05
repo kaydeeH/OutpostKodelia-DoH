@@ -61,6 +61,7 @@ modes:
   - credits           # credits/freeplay control
   - multiball_display # control the display when multiball or chase is active
   - super_jackpot     # control light shows in super jackpot situations
+  - boars_nest        # wizard mode
 
 credits:
   max_credits: settings.maximum_credits

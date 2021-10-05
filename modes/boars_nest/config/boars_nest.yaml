@@ -1,0 +1,263 @@
+#config_version=5
+
+mode:
+  start_events: start_chase_multiball
+  stop_events: boars_nest_ended
+  events_when_started: boars_nest_started
+  priority: 500
+
+achievements:
+  boar_1_complete:
+    show_tokens:
+      leds: l_paragon_center_01p, l_paragon_center_01p2, l_paragon_saucer_01p
+    show_when_completed: on
+    start_events: boars_nest_started
+    complete_events: boar_collect_1
+  boar_2_complete:
+    show_tokens:
+      leds: l_paragon_center_02a, l_paragon_center_02a2, l_paragon_saucer_02a
+    show_when_completed: on
+    start_events: boars_nest_started
+    complete_events: boar_collect_2
+  boar_3_complete:
+    show_tokens:
+      leds: l_paragon_center_03r, l_paragon_center_03r2, l_paragon_saucer_03r
+    show_when_completed: on
+    start_events: boars_nest_started
+    complete_events: boar_collect_3
+  boar_4_complete:
+    show_tokens:
+      leds: l_paragon_center_04a, l_paragon_center_04a2, l_paragon_saucer_04a
+    show_when_completed: on
+    start_events: boars_nest_started
+    complete_events: boar_collect_4
+  boar_5_complete:
+    show_tokens:
+      leds: l_paragon_center_05g, l_paragon_center_05g2, l_paragon_saucer_05g
+    show_when_completed: on
+    start_events: boars_nest_started
+    complete_events: boar_collect_5
+  boar_6_complete:
+    show_tokens:
+      leds: l_paragon_center_06o, l_paragon_center_06o2, l_paragon_saucer_06o
+    show_when_completed: on
+    start_events: boars_nest_started
+    complete_events: boar_collect_6
+
+achievement_groups:
+  boar_six_pack:
+    achievements: boar_1_complete, boar_2_complete, boar_3_complete, boar_4_complete, boar_5_complete, boar_6_complete
+    enable_events: boars_nest_started
+    events_when_all_completed: boar_six_pack_complete
+
+event_player:
+  boars_nest_started:
+    - zzz_do_some_stuff
+    - drops_inline_reset
+  player_boars_nest_spins{current_player.boars_nest_spins==20}:
+    - boar_collect_1
+  player_boars_nest_pops{current_player.boars_nest_pops==8}:
+    - boar_collect_2
+  shot_group_drop_right_complete:
+    - boar_collect_3
+  player_boars_nest_oil_slicks{current_player.boars_nest_oil_slicks==1}:
+    - boar_collect_4
+  player_boars_nest_creeks{current_player.boars_nest_creeks==1}:
+    - boar_collect_5
+  player_boars_nest_hazzards{current_player.boars_nest_hazzards==1}:
+    - boar_collect_6
+  boar_six_pack_complete:
+    - inline_drop_all
+  ball_hold_boar_hold_held_ball:
+    - disable_playfield_coils # drain all balls except ball hold
+    - zzz_big_awards_show
+    # after big awards show, pop the held ball and end the mode
+    # also throw "enable_playfield_coils"
+
+variable_player:
+  boars_nest_started:
+    boars_nest_active:
+      action: set
+      int: 1
+    boars_nest_spins:
+      action: set
+      int: 0
+    boars_nest_pops:
+      action: set
+      int: 0
+    boars_nest_right_drops:
+      action: set
+      int: 0
+    boars_next_oil_slicks:
+      action: set
+      int: 0
+    boars_nest_creeks:
+      action: set
+      int: 0
+    boars_nest_hazzards:
+      action: set
+      int: 0
+    boars_next_inlines:
+      action: set
+      int: 0
+# Spins
+  s_spinner_active:
+    score: 1000
+    boars_nest_spins: 1
+# Pops
+  s_thumper_center_active:
+    score: 1000
+    boars_nest_pops: 1
+  s_thumper_left_active:
+    score: 1000
+    boars_nest_pops: 1
+  s_thumper_right_active:
+    score: 1000
+    boars_nest_pops: 1
+# Right Drops
+  s_drop_right_a_active:
+    score: 1000
+    boars_nest_right_drops: 1
+  s_drop_right_b_active:
+    score: 1000
+    boars_nest_right_drops: 1
+  s_drop_right_c_active:
+    score: 1000
+    boars_nest_right_drops: 1
+# Oil Slick
+  s_waterfall_rollover_active:
+    score: 1000
+    boars_nest_oil_slicks: 1
+# Creek
+  s_saucer_golden_cliffs_active:
+    score: 1000
+    boars_nest_creeks: 1
+# Hazzard
+  s_saucer_paragon_active:
+    score: 1000
+    boars_nest_hazzards: 1
+# In Line Drops
+  s_drop_inline_a_active: # add requirement for achiv group NOT complete
+    score: 1000
+    boars_nest_inlines: 1
+  s_drop_inline_b_active: # add requirement for achiv group NOT complete
+    score: 1000
+    boars_nest_inlines: 1
+  s_drop_inline_c_active: # add requirement for achiv group NOT complete
+    score: 1000
+    boars_nest_inlines: 1
+  s_drop_inline_d_active: # add requirement for achiv group NOT complete
+    score: 1000
+    boars_nest_inlines: 1
+  ball_hold_boar_hold_held_ball:
+    boars_next_complete_balls_in_play:
+      action: set
+      int: device.playfields.playfield.balls
+
+# TODO Design and Play shows to highlight the 6 character collect areas excluding escape saucer
+# TODO Stop above shows when "boar_collect_X" is thrown
+# TODO Design and play show for 7th character collect when 1-6 are complete
+# TODO stop that show on 7th is complete, then do some cool stuff
+
+# When this mode starts, we will be in a multiball
+# However, this mode continues until boar's nest is completed or all balls drain, not on multiball end
+
+#TODO - Prevent CREEK or HAZZARD multiball start when boars_nest_active==1
+#TODO - Disable lots of other stuff as needed...TBD
+
+# Character Collects
+# 1 - A given number of spinner rips
+# 2 - A given number of pop bumper hits
+# 3 - Right Bank Complete
+# 4 - Oil Slick
+# 5 - Creek Saucer
+# 6 - Hazzard Saucer
+# 7 - Escape Saucer
+
+# In line drops will start UP
+# Completing inline drops 1-4 before collects 1-6 will reset drops
+# Completing character collects 1-6 will drop all inline drops
+# Escape saucer ends mode, awards bonus & light show and stuff, drains all balls except the one in the saucer,
+#   returns to normal single ball play
+
+ball_holds:
+  boar_hold:
+    balls_to_hold: 1
+    hold_devices: bd_escape_saucer
+    enable_events: boar_six_pack_complete
+    release_one_events: zzz_boar_final_display
+
+# Mode finished w/ success scoring --
+# 100,000 points
+# Char 1 x 10000
+# Char 2 x 10000
+# Char 3 x 10000
+# Char 4 x 10000
+# Char 5 x 10000
+# Char 6 x 10000
+# Char 7 (inlines) * 10000
+# Super Jackpots
+# double if 4 inlines hit
+
+segment_display_player:
+  multiball_display_creek{device.multiballs.creek_multiball.balls_live_target>0}:
+    display1:
+      action: remove
+      key: boar_1
+    display2:
+      action: remove
+      key: boar_2
+    display3:
+      action: remove
+      key: boar_3
+    display4:
+      action: remove
+      key: boar_4
+  multiball_display_hazzard{device.multiballs.creek_multiball.balls_live_target>0}:
+    display1:
+      action: remove
+      key: boar_1
+    display2:
+      action: remove
+      key: boar_2
+    display3:
+      action: remove
+      key: boar_3
+    display4:
+      action: remove
+      key: boar_4
+  multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target>0}:
+    display1:
+      action: remove
+      key: boar_1
+    display2:
+      action: remove
+      key: boar_2
+    display3:
+      action: remove
+      key: boar_3
+    display4:
+      action: remove
+      key: boar_4
+
+  multiball_display_boar{current_player.boars_nest_active==1}:
+    display1:
+      action: add
+      key: boar_1
+      priority: 400
+      text: "Player{current_player.number}"
+    display2:
+      action: add
+      key: boar_2
+      priority: 400
+      text: "{current_player.score:d}"
+    display3:
+      action: add
+      key: boar_3
+      priority: 400
+      text: "BOAR'S"
+    display4:
+      action: add
+      key: boar_4
+      priority: 400
+      text: "NEST"

@@ -37,27 +37,45 @@ coils:
   c_left_slingshot:
     number: 1-0-3
     default_pulse_ms: 15
+    default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
     #pulse_events: temp_sling_left
   c_right_slingshot:
     number: 1-0-1
     default_pulse_ms: 15
+    default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
     #pulse_events: temp_sling_right
 
   c_left_thumper:
     number: 1-0-7
     default_pulse_ms: 20
+    default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
     #pulse_events: temp_thumper_left
   c_right_thumper:
     number: 1-0-6
     default_pulse_ms: 20
+    default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
     #pulse_events: temp_thumper_right
   c_bottom_thumper:
     number: 1-0-2
     default_pulse_ms: 20
+    default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
     #pulse_events: temp_thumper_bottom
   c_center_thumper:
     number: 1-0-0
     default_pulse_ms: 20
+    default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
     #pulse_events: temp_thumper_center
 
   c_drop_target_inline:
@@ -72,24 +90,32 @@ coils:
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
   c_flipper_left_main:
     number: 0-0-8
     default_pulse_ms: 25
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
   c_flipper_right_upper:
     number: 0-0-11
     default_pulse_ms: 25
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
   c_flipper_left_upper:
     number: 0-0-6
     default_pulse_ms: 17
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
 
 # Non-Paragon Coils
   c_auto_plunge:
@@ -107,25 +133,25 @@ coils:
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_a_down>0}
+    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_a_down>0}, inline_drop_all
   c_inline_knockdown_b:
     number: 0-0-3
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_b_down>0}
+    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_b_down>0}, inline_drop_all
   c_inline_knockdown_c:
     number: 0-0-2
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_c_down>0}
+    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_c_down>0}, inline_drop_all
   c_inline_knockdown_d:
     number: 0-0-1
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_d_down>0}
+    pulse_events: init_inline_drops{settings.inline_memory_feature==1 and current_player.in_line_d_down>0}, inline_drop_all
 
 
 autofire_coils:

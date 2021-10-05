@@ -64,7 +64,7 @@ event_player:
     - enter_state_creek
   initialize_multiball_display{device.multiballs.creek_multiball.balls_live_target==0 and device.multiballs.hazzard_multiball.balls_live_target>0}:
     - enter_state_hazzard
-  initialize_multiball_display{device.multiballs.creek_multiball.balls_live_target==0 and device.multiballs.hazzard_multiball.balls_live_target==0 and device.multiballs.pre_chase_multiball.balls_live_target>0}:
+  initialize_multiball_display{device.multiballs.creek_multiball.balls_live_target==0 and device.multiballs.hazzard_multiball.balls_live_target==0 and device.multiballs.pre_chase_multiball.balls_live_target>0 and current_player.boars_nest_active==0}:
     - enter_state_chase
   initialize_multiball_display{device.multiballs.creek_multiball.balls_live_target==0 and device.multiballs.hazzard_multiball.balls_live_target==0 and device.multiballs.pre_chase_multiball.balls_live_target==0 and current_player.boars_nest_active>0}:
     - enter_state_boar
@@ -72,7 +72,7 @@ event_player:
     - timer_fake_tick
   multiball_display_hazzard{device.multiballs.hazzard_multiball.balls_live_target==0}:
     - timer_fake_tick
-  multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target==0}:
+  multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target==0 or current_player.boars_nest_active>0}:
     - timer_fake_tick
   multiball_display_boar{current_player.boars_nest_active==0}:
     - timer_fake_tick
