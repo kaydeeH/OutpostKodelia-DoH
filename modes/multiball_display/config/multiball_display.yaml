@@ -96,7 +96,7 @@ event_player:
 # these must check for all other display conditions
   multiball_creek_multiball_ended{device.multiballs.hazzard_multiball.balls_live_target==0}:
     - multiball_display_end
-  multiball_creek_multiball_ended{device.multiballs.creek_multiball.balls_live_target==0}:
+  multiball_hazzard_multiball_ended{device.multiballs.creek_multiball.balls_live_target==0}:
     - multiball_display_end
 
 # Display PlayerX on display one

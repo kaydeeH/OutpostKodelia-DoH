@@ -11,7 +11,7 @@
 
 mode:
   start_events: start_mode_hazzard_multiball
-  stop_events: multiball_hazzard_ended
+  stop_events: multiball_hazzard_multiball_ended
   events_when_started: disable_base_hazzard_shot, enable_hazzard_multiball_start
   events_when_stopped: enable_base_creek_shot
   priority: 200
