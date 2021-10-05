@@ -121,9 +121,11 @@ ball_devices:
   bd_river_saucer:
     ball_switches: s_saucer_golden_cliffs
     eject_coil: c_saucer_golden_cliffs
+    eject_timeouts: 500ms, 1s, 2s, 4s
   bd_hazzard_saucer:
     ball_switches: s_saucer_paragon
     eject_coil: c_saucer_paragon
+    eject_timeouts: 500ms, 1s, 2s, 4s
 
 
 
