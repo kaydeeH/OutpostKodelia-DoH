@@ -115,7 +115,7 @@ variable_player:
     creek_jackpot_increment_value:
       int: 100
     creek_jackpot:
-      int: current_player.creek_jackpot_increment_value
+      int: current_player.creek_jackpot_increment_value - 100
   creek_jackpot_collected:
     creek_jackpot_count:
       int: 1
@@ -128,7 +128,7 @@ variable_player:
       int: current_player.creek_jackpot
     creek_jackpot:
       action: set
-      int: 10000
+      int: 9900
     creek_jackpot_increment_value:
       action: set
       int: 0
@@ -142,7 +142,7 @@ variable_player:
       int: 2
   creek_super_jackpot_enhanced:
     creek_superjackpot:
-      int: 10000
+      int: 9900
   creek_super_jackpot_collected:
     score:
       int: current_player.creek_superjackpot * current_player.creek_jackpot_multiplier

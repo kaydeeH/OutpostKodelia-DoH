@@ -91,13 +91,13 @@ variable_player:
   multiball_hazzard_multiball_started:
     hazzard_jackpot:
       action: set
-      int: 10000
+      int: 9900
     hazzard_superjackpot:
       action: set
       int: 0
     hazzard_jackpot_increment_value:
       action: set
-      int: -1
+      int: 0
     hazzard_jackpot_count:
       action: set
       int: 0
@@ -111,7 +111,7 @@ variable_player:
     hazzard_jackpot_increment_value:
       int: 100
     hazzard_jackpot:
-      int: current_player.hazzard_jackpot_increment_value
+      int: current_player.hazzard_jackpot_increment_value - 100
   hazzard_jackpot_collected:
     hazzard_jackpot_count:
       int: 1
@@ -124,7 +124,7 @@ variable_player:
       int: current_player.hazzard_jackpot
     hazzard_jackpot:
       action: set
-      int: 10000
+      int: 9900
     hazzard_jackpot_increment_value:
       action: set
       int: 0
