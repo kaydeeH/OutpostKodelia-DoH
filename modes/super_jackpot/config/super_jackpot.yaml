@@ -25,6 +25,10 @@ show_player:
       key: creek_only_super_show_key
       speed: 1
       priority: 1000
+    creek_super_multiplier_show:
+      key: creek_super_multiplier_show_key
+      speed: 1
+      priority: 1000
   start_hazzard_only_super_show:
     hazzard_only_super_show:
       key: hazzard_only_super_show_key
@@ -37,11 +41,32 @@ show_player:
       key: combined_super_show_key
       speed: 1
       priority: 1000
+    creek_super_multiplier_show:
+      key: creek_super_multiplier_show_key
+      speed: 1
+      priority: 1000
   creek_super_jackpot_collected:
     hazzard_only_super_show_key: stop
     creek_only_super_show_key: stop
+    creek_super_multiplier_show_key: stop
+    creek_super_multiplier_locked_show_key: stop
     combined_super_show_key: stop
   hazzard_super_jackpot_collected:
     hazzard_only_super_show_key: stop
     creek_only_super_show_key: stop
+    creek_super_multiplier_show_key: stop
+    creek_super_multiplier_locked_show_key: stop
     combined_super_show_key: stop
+  shot_group_drop_right_complete:
+    creek_super_multiplier_show_key: stop
+    creek_super_multiplier_complete_show:
+      key: creek_super_multiplier_complete_show_key
+      speed: 1
+      loops: 0
+      priority: 1000
+      events_when_completed: start_creek_super_multiplier_locked
+  start_creek_super_multiplier_locked:
+    creek_super_multiplier_locked_show:
+      key: creek_super_multiplier_locked_show_key
+      speed: 1
+      priority: 1000

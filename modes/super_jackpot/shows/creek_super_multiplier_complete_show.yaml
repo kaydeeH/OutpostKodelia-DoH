@@ -1,0 +1,103 @@
+#show_version=5
+- duration: 150ms
+  lights:
+    l_droptarget_10k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_15k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_20k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_25k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_special:
+      color: orangered
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_droptarget_10k:
+      color: off
+      fade: 150ms
+    l_droptarget_15k:
+      color: off
+      fade: 150ms
+    l_droptarget_20k:
+      color: off
+      fade: 150ms
+    l_droptarget_25k:
+      color: off
+      fade: 150ms
+    l_droptarget_special:
+      color: off
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_droptarget_10k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_15k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_20k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_25k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_special:
+      color: orangered
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_droptarget_10k:
+      color: off
+      fade: 150ms
+    l_droptarget_15k:
+      color: off
+      fade: 150ms
+    l_droptarget_20k:
+      color: off
+      fade: 150ms
+    l_droptarget_25k:
+      color: off
+      fade: 150ms
+    l_droptarget_special:
+      color: off
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_droptarget_10k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_15k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_20k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_25k:
+      color: orangered
+      fade: 150ms
+    l_droptarget_special:
+      color: orangered
+      fade: 150ms
+- duration: 150ms
+  lights:
+    l_droptarget_10k:
+      color: off
+      fade: 150ms
+    l_droptarget_15k:
+      color: off
+      fade: 150ms
+    l_droptarget_20k:
+      color: off
+      fade: 150ms
+    l_droptarget_25k:
+      color: off
+      fade: 150ms
+    l_droptarget_special:
+      color: off
+      fade: 150ms

@@ -137,7 +137,7 @@ show_player:
     creek_saucer_jackpot_ready_show_key: stop
     creek_super_jackpot_focus_show:
       key: creek_super_jackpot_focus_show_key
-      speed: 30
+      speed: 1
       priority: 1000
       loops: 0
       events_when_completed: creek_super_jackpot_post_focus
