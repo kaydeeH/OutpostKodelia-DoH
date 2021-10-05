@@ -143,7 +143,7 @@ show_player:
       events_when_completed: creek_super_jackpot_post_focus
   multiball_creek_multiball_ended:
     creek_saucer_jackpot_ready_show_key: stop
-  player_creek_jackpot_count{current_player.creek_jackpot_count<3}:
+  player_creek_jackpot_count{current_player.creek_jackpot_count<3 and current_player.creek_jackpot_count>0}:
     jackpot_show:
       speed: 1
       loops: 2
