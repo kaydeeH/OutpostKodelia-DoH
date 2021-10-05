@@ -11,6 +11,7 @@
 
 mode:
   start_events: ball_started
+  events_when_started: init_right_drops
   priority: 110
 
 counters:
@@ -62,7 +63,7 @@ shot_groups:
    shot_group_drop_right:
      shots: shot_drop_right_a, shot_drop_right_b, shot_drop_right_c
      reset_events: zzz_placeholder_drop_right_reset
-     enable_events: ball_started
+     enable_events: init_right_drops
      disable_events: ball_ending
 
 event_player:
