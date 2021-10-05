@@ -67,6 +67,10 @@ variable_player:
    player_last_creek_value:
      score:
        int: (value)
+   multiball_creek_multiball_ended:
+     creek_jackpot_count:
+       action: set
+       int: 0
 
 event_player:
   creek_saucer_20k_hit{settings.creek_multiball_feature==1}:

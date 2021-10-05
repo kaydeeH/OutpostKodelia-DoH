@@ -199,3 +199,7 @@ variable_player:
   hazzard_saucer_hazzard_sweep_hit{settings.hazzard_scoring==1}:
     score: 3000
     bonuscount: 2
+  multiball_hazzard_multiball_ended:
+    hazzard_jackpot_count:
+      action: set
+      int: 0
