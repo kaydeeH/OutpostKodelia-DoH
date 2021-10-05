@@ -209,7 +209,7 @@ segment_display_player:
     display4:
       action: remove
       key: hazzard_4
-  multiball_display_chase{device.multiballs.chase_multiball.balls_live_target>0}:
+  multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target>0}:
     display1:
       action: remove
       key: hazzard_1

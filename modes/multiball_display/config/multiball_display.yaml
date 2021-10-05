@@ -3,7 +3,7 @@
 
 
 mode:
-  start_events: zzz_mball_display_placeholder, multiball_creek_multiball_started, multiball_hazzard_multiball_started
+  start_events: zzz_mball_display_placeholder, multiball_creek_multiball_started, multiball_hazzard_multiball_started, multiball_pre_chase_multiball_started, mutliball_chase_multiball_started
   stop_events: zzz_mball_display_end_placeholder, multiball_display_end
   events_when_started: initialize_multiball_display
   priority: 300
@@ -50,7 +50,7 @@ state_machines:
          target: display_boar
          events: timer_display_heartbeat_tick, timer_fake_tick
        - source: display_boar
-         target: display_chase
+         target: display_creek
          events: timer_display_heartbeat_tick, timer_fake_tick
 
 timers:
@@ -66,7 +66,7 @@ event_player:
     - enter_state_hazzard
   initialize_multiball_display{device.multiballs.creek_multiball.balls_live_target==0 and device.multiballs.hazzard_multiball.balls_live_target==0 and device.multiballs.pre_chase_multiball.balls_live_target>0}:
     - enter_state_chase
-  initialize_multiball_display{device.multiballs.creek_multiball.balls_live_target==0 and device.multiballs.hazzard_multiball.balls_live_target==0 and device.multiballs.pre_chase_multiball.balls_live_target==0 and current_player.boars_nest_active<>0}:
+  initialize_multiball_display{device.multiballs.creek_multiball.balls_live_target==0 and device.multiballs.hazzard_multiball.balls_live_target==0 and device.multiballs.pre_chase_multiball.balls_live_target==0 and current_player.boars_nest_active>0}:
     - enter_state_boar
   multiball_display_creek{device.multiballs.creek_multiball.balls_live_target==0}:
     - timer_fake_tick

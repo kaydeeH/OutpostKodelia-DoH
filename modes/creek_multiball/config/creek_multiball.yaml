@@ -106,7 +106,7 @@ show_player:
   enable_creek_multiball_start:
     creek_saucer_focus_show:
       key: creek_saucer_focus_show_key
-      speed: 20
+      speed: 1
       priority: 1000
       loops: 0
       events_when_completed: creek_saucer_post_focus_show
@@ -242,7 +242,7 @@ segment_display_player:
     display4:
       action: remove
       key: creek_4
-  multiball_display_chase{device.multiballs.chase_multiball.balls_live_target>0}:
+  multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target>0}:
     display1:
       action: remove
       key: creek_1

@@ -113,3 +113,87 @@ variable_player:
   general_lee_speed_add_3:
       general_lee_speed:
         int: 3
+
+segment_display_player:
+  multiball_display_creek{device.multiballs.creek_multiball.balls_live_target>0}:
+    display1:
+      action: remove
+      key: chase_1
+    display2:
+      action: remove
+      key: chase_2
+    display3:
+      action: remove
+      key: chase_3
+    display4:
+      action: remove
+      key: chase_4
+  multiball_display_hazzard{device.multiballs.creek_multiball.balls_live_target>0}:
+    display1:
+      action: remove
+      key: chase_1
+    display2:
+      action: remove
+      key: chase_2
+    display3:
+      action: remove
+      key: chase_3
+    display4:
+      action: remove
+      key: chase_4
+  multiball_display_boar{current_player.boars_nest_active>0}:
+    display1:
+      action: remove
+      key: chase_1
+    display2:
+      action: remove
+      key: chase_2
+    display3:
+      action: remove
+      key: chase_3
+    display4:
+      action: remove
+      key: chase_4
+
+  multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target>0 and current_player.general_lee_speed<120}:
+    display1:
+      action: add
+      key: chase_1
+      priority: 400
+      text: "Player{current_player.number}"
+    display2:
+      action: add
+      key: chase_2
+      priority: 400
+      text: "{current_player.score:d}"
+    display3:
+      action: add
+      key: chase_3
+      priority: 400
+      text: "SpeedUp"
+    display4:
+      action: add
+      key: chase_4
+      priority: 400
+      text: "MPH {current_player.general_lee_speed:d}"
+  multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target>0 and current_player.general_lee_speed>=120}:
+    display1:
+      action: add
+      key: chase_1
+      priority: 400
+      text: "Player{current_player.number}"
+    display2:
+      action: add
+      key: chase_2
+      priority: 400
+      text: "{current_player.score:d}"
+    display3:
+      action: add
+      key: chase_3
+      priority: 400
+      text: "ESCAPE"
+    display4:
+      action: add
+      key: chase_4
+      priority: 400
+      text: "ROSCOE!"
