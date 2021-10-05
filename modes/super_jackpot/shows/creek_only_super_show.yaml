@@ -1,11 +1,105 @@
 #show_version=5
-- duration: 250ms
+- duration: 500ms
   lights:
     l_gi_14_oilslick_rollover:
       color: seagreen
-      fade: 250ms
-- duration: 250ms
+      fade: 500ms
+    l_gi_01_midright_4:
+      color: seagreen
+      fade: 500ms
+    l_gi_11_midright_3:
+      color: seagreen
+      fade: 500ms
+    l_gi_25_midright_1:
+      color: seagreen
+      fade: 500ms
+    l_gi_26_midright_2:
+      color: seagreen
+      fade: 500ms
+    l_waterlane_5k:
+      color: off
+      fade: 500ms
+    l_waterlane_10k:
+      color: off
+      fade: 500ms
+    l_waterlane_special:
+      color: off
+      fade: 500ms
+- duration: 500ms
   lights:
     l_gi_14_oilslick_rollover:
       color: off
-      fade: 250ms
+      fade: 500ms
+    l_gi_01_midright_4:
+      color: off
+      fade: 500ms
+    l_gi_11_midright_3:
+      color: off
+      fade: 500ms
+    l_gi_25_midright_1:
+      color: off
+      fade: 500ms
+    l_gi_26_midright_2:
+      color: off
+      fade: 500ms
+    l_waterlane_5k:
+      color: 8B2E57
+      fade: 500ms
+    l_waterlane_10k:
+      color: off
+      fade: 500ms
+    l_waterlane_special:
+      color: off
+      fade: 500ms
+- duration: 500ms
+  lights:
+    l_gi_14_oilslick_rollover:
+      color: seagreen
+      fade: 500ms
+    l_gi_01_midright_4:
+      color: seagreen
+      fade: 500ms
+    l_gi_11_midright_3:
+      color: seagreen
+      fade: 500ms
+    l_gi_25_midright_1:
+      color: seagreen
+      fade: 500ms
+    l_gi_26_midright_2:
+      color: off
+      fade: 500ms
+    l_waterlane_5k:
+      color: off
+      fade: 500ms
+    l_waterlane_10k:
+      color: 8B2E57
+      fade: 500ms
+    l_waterlane_special:
+      color: off
+      fade: 500ms
+- duration: 500ms
+  lights:
+    l_gi_14_oilslick_rollover:
+      color: off
+      fade: 500ms
+    l_gi_01_midright_4:
+      color: off
+      fade: 500ms
+    l_gi_11_midright_3:
+      color: off
+      fade: 500ms
+    l_gi_25_midright_1:
+      color: off
+      fade: 500ms
+    l_gi_26_midright_2:
+      color: off
+      fade: 500ms
+    l_waterlane_5k:
+      color: off
+      fade: 500ms
+    l_waterlane_10k:
+      color: off
+      fade: 500ms
+    l_waterlane_special:
+      color: 8B2E57
+      fade: 500ms
