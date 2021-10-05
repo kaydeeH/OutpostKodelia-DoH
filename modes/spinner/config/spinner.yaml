@@ -36,13 +36,13 @@ shots:
 
 variable_player:
    spinner_default_spin_count_0_hit{current_player.boars_nest_active!=1}:
-     score: 100
+     score: 100 + current_player.spinner_increase_points
    spinner_default_spin_count_1_hit{current_player.boars_nest_active!=1}:
-     score: 100
+     score: 100 + current_player.spinner_increase_points
    spinner_default_spin_count_2_hit{current_player.boars_nest_active!=1}:
-     score: 100
+     score: 100 + current_player.spinner_increase_points
    spinner_default_spin_count_3_hit{current_player.boars_nest_active!=1}:
-     score: 100
+     score: 100 + current_player.spinner_increase_points
    spinner_default_spin_count_4_hit{current_player.boars_nest_active!=1}:
-     score: 100
+     score: 100 + current_player.spinner_increase_points
      bonuscount: 1

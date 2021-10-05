@@ -1,0 +1,28 @@
+#config_version=5
+
+# Contains configuration data for the "yee-haw" combo
+
+mode:
+  start_events: ball_started
+  events_when_started: yee_haw_enable
+  priority: 120
+
+sequence_shots:
+  yee_haw:
+    switch_sequence: s_right_flip_feeder_lane, s_spinner
+    sequence_timeout: 3s
+
+event_player:
+  yee_haw_hit:
+    - expire_spinner_increase|3s
+
+variable_player:
+  yee_haw_hit:
+    score: 900
+    spinner_increase_points:
+      action: set
+      int: 900
+  expire_spinner_increase:
+    spinner_increase_points:
+      action: set
+      int: 0
