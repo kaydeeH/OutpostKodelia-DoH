@@ -14,6 +14,14 @@ shots:
   skill_3:
     switch: s_saucer_golden_cliffs
 
+#TODO: Shows
+# On enable_skill_shot, quickflash the bonus increment rollover light (l_gi_04_topcenter_rollover)
+# turn off on skill_level_1_hit or skill_shot_failed
+# On skill_level_1_hit flash l_gi_05_river_rollover
+# turn off on skill_level_2_hit or skill_shot_level_1_success
+# On skill_level_2_hit, do something to indicate the creek saucer
+# turn off on skill_shot_level_2_success or skill_shot_level_3_complete
+
 state_machines:
   skill_shot_progression:
     states:
@@ -65,15 +73,15 @@ variable_player:
   skill_level_1_hit{current_player.skill_shot_points>0}:
     skill_shot_points:
       action: set
-      int: current_player.skill_shot_points * 2
+      int: current_player.skill_shot_points + 5000
   skill_level_2_hit:
     skill_shot_points:
       action: set
-      int: current_player.skill_shot_points * 2
+      int: current_player.skill_shot_points + 5000
   skill_shot_level_3_complete:
     skill_shot_points:
       action: set
-      int: current_player.skill_shot_points * 2
+      int: current_player.skill_shot_points + 5000
   skill_shot_level_1_success:
     score:
       int: current_player.skill_shot_points
