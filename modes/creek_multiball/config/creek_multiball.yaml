@@ -106,7 +106,7 @@ show_player:
   enable_creek_multiball_start:
     creek_saucer_focus_show:
       key: creek_saucer_focus_show_key
-      speed: 30
+      speed: 15
       priority: 1000
       loops: 0
       events_when_completed: creek_saucer_post_focus_show
