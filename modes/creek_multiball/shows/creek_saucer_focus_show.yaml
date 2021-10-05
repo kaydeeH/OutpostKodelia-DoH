@@ -1,97 +1,10 @@
 #show_version=5
 - duration: 500ms
   lights:
-    l_bonus_10k:
+    l_gi_01_midright_4:
       color: '191919'
       fade: 500ms
-    l_bonus_1k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_2k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_2x: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_2x2: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_2x3: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_3k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_3x: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_3x2: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_3x3: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_4k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_5k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_5x: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_5x2: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_5x3: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_6k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_7k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_8k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_9k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_shoot_again: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_shoot_again2: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_shoot_again3: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_super_20k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_super_30k: 
-      color: '191919'
-      fade: 500ms
-    l_bonus_super_40k: 
-      color: '191919'
-      fade: 500ms
-    l_droptarget_10k: 
-      color: '191919'
-      fade: 500ms
-    l_droptarget_15k: 
-      color: '191919'
-      fade: 500ms
-    l_droptarget_20k: 
-      color: '191919'
-      fade: 500ms
-    l_droptarget_25k: 
-      color: '191919'
-      fade: 500ms
-    l_droptarget_special: 
-      color: '191919'
-      fade: 500ms
-    l_gi_02_upperstanding_left: 
+    l_gi_02_upperstanding_left:
       color: '191919'
       fade: 500ms
     l_gi_03_upperstanding_right: 
@@ -101,7 +14,7 @@
       color: '191919'
       fade: 500ms
     l_gi_05_river_rollover: 
-      color: '191919'
+      color: off
       fade: 500ms
     l_gi_06_upperleft_1: 
       color: '191919'
@@ -166,287 +79,23 @@
     l_gi_29_leftsling_2: 
       color: '191919'
       fade: 500ms
-    l_gi_30_credit: 
-      color: '191919'
-      fade: 500ms
-    l_goldencliffs_10k: 
-      color: '191919'
+    l_goldencliffs_10k:
+      color: off
       fade: 500ms
     l_goldencliffs_20k: 
-      color: '191919'
+      color: off
       fade: 500ms
     l_goldencliffs_2k: 
-      color: '191919'
+      color: off
       fade: 500ms
     l_goldencliffs_4k: 
-      color: '191919'
+      color: off
       fade: 500ms
     l_goldencliffs_6k: 
-      color: '191919'
+      color: off
       fade: 500ms
     l_goldencliffs_8k: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_01p: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_01p2: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_02a: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_02a2: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_03r: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_03r2: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_04a: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_04a2: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_05g: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_05g2: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_06o: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_06o2: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_07n: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_center_07n2: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_saucer_01p: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_saucer_02a: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_saucer_03r: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_saucer_04a: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_saucer_05g: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_saucer_06o: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_saucer_07n: 
-      color: '191919'
-      fade: 500ms
-    l_paragon_saucer_special: 
-      color: '191919'
-      fade: 500ms
-    l_spinner_1: 
-      color: '191919'
-      fade: 500ms
-    l_spinner_2: 
-      color: '191919'
-      fade: 500ms
-    l_spinner_3: 
-      color: '191919'
-      fade: 500ms
-    l_spinner_4: 
-      color: '191919'
-      fade: 500ms
-    l_spinner_5: 
-      color: '191919'
-      fade: 500ms
-    l_treasure_5x: 
-      color: '191919'
-      fade: 500ms
-    l_treasure_extra_ball: 
-      color: '191919'
-      fade: 500ms
-    l_treasure_special: 
-      color: '191919'
-      fade: 500ms
-    l_waterlane_10k:
-      color: '191919'
-      fade: 500ms
-    l_waterlane_5k:
-      color: '191919'
-      fade: 500ms
-    l_waterlane_special:
-      color: '191919'
-      fade: 500ms
-    pop1_0: 
-      color: '191919'
-      fade: 500ms
-    pop1_1: 
-      color: '191919'
-      fade: 500ms
-    pop1_10: 
-      color: '191919'
-      fade: 500ms
-    pop1_11: 
-      color: '191919'
-      fade: 500ms
-    pop1_12: 
-      color: '191919'
-      fade: 500ms
-    pop1_13: 
-      color: '191919'
-      fade: 500ms
-    pop1_14: 
-      color: '191919'
-      fade: 500ms
-    pop1_15: 
-      color: '191919'
-      fade: 500ms
-    pop1_16: 
-      color: '191919'
-      fade: 500ms
-    pop1_17: 
-      color: '191919'
-      fade: 500ms
-    pop1_18: 
-      color: '191919'
-      fade: 500ms
-    pop1_19: 
-      color: '191919'
-      fade: 500ms
-    pop1_2: 
-      color: '191919'
-      fade: 500ms
-    pop1_20: 
-      color: '191919'
-      fade: 500ms
-    pop1_21: 
-      color: '191919'
-      fade: 500ms
-    pop1_22: 
-      color: '191919'
-      fade: 500ms
-    pop1_23: 
-      color: '191919'
-      fade: 500ms
-    pop1_3: 
-      color: '191919'
-      fade: 500ms
-    pop1_4: 
-      color: '191919'
-      fade: 500ms
-    pop1_5: 
-      color: '191919'
-      fade: 500ms
-    pop1_6: 
-      color: '191919'
-      fade: 500ms
-    pop1_7: 
-      color: '191919'
-      fade: 500ms
-    pop1_8: 
-      color: '191919'
-      fade: 500ms
-    pop1_9: 
-      color: '191919'
-      fade: 500ms
-    pop2_0: 
-      color: '191919'
-      fade: 500ms
-    pop2_1: 
-      color: '191919'
-      fade: 500ms
-    pop2_10: 
-      color: '191919'
-      fade: 500ms
-    pop2_11: 
-      color: '191919'
-      fade: 500ms
-    pop2_12: 
-      color: '191919'
-      fade: 500ms
-    pop2_13: 
-      color: '191919'
-      fade: 500ms
-    pop2_14: 
-      color: '191919'
-      fade: 500ms
-    pop2_15: 
-      color: '191919'
-      fade: 500ms
-    pop2_16: 
-      color: '191919'
-      fade: 500ms
-    pop2_17: 
-      color: '191919'
-      fade: 500ms
-    pop2_18: 
-      color: '191919'
-      fade: 500ms
-    pop2_19: 
-      color: '191919'
-      fade: 500ms
-    pop2_2: 
-      color: '191919'
-      fade: 500ms
-    pop2_20: 
-      color: '191919'
-      fade: 500ms
-    pop2_21: 
-      color: '191919'
-      fade: 500ms
-    pop2_22: 
-      color: '191919'
-      fade: 500ms
-    pop2_23: 
-      color: '191919'
-      fade: 500ms
-    pop2_3: 
-      color: '191919'
-      fade: 500ms
-    pop2_4: 
-      color: '191919'
-      fade: 500ms
-    pop2_5: 
-      color: '191919'
-      fade: 500ms
-    pop2_6: 
-      color: '191919'
-      fade: 500ms
-    pop2_7: 
-      color: '191919'
-      fade: 500ms
-    pop2_8: 
-      color: '191919'
-      fade: 500ms
-    pop2_9: 
-      color: '191919'
-      fade: 500ms
-    pop3_0: 
-      color: '191919'
-      fade: 500ms
-    pop3_1: 
-      color: '191919'
-      fade: 500ms
-    pop3_2: 
-      color: '191919'
-      fade: 500ms
-    pop3_3: 
-      color: '191919'
-      fade: 500ms
-    pop3_4: 
-      color: '191919'
-      fade: 500ms
-    pop3_5: 
-      color: '191919'
+      color: off
       fade: 500ms
 - duration: 250ms
   lights:
