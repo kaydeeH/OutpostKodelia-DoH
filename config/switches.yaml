@@ -164,12 +164,15 @@ switches:
   s_saucer_paragon:
     number: 1-0-49
     tags: kpf, c_jack, not_skill
+    ignore_window_ms: 500
   s_saucer_golden_cliffs:
     number: 1-0-66
     tags: kpf, h_jack
+    ignore_window_ms: 500
   s_saucer_treasure_chamber:
     number: 1-0-87
     tags: kpf, c_jack, h_jack, not_skill
+    ignore_window_ms: 500
 
   # Targets and Rebounds
   s_center_target:
