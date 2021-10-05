@@ -102,6 +102,10 @@ player_vars:
     initial_value: 0
   creek_jackpot_count:
     initial_value: 0
+  hazzard_last_jackpot_collected:
+    initial_value: 0
+  creek_last_jackpot_collected:
+    initial_value: 0
   skill_shot_points:
     initial_value: 0
 

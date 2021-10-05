@@ -121,7 +121,7 @@ event_player:
 # Right now the "override" text will display in this mode.  The base text will display in original modes.
 # Display the "special" higher priority stuff here, display the lower priority persistant stuff in originating mode
 segment_display_player:
-  player_hazzard_last_jackpot_collected:
+  player_hazzard_superjackpot{current_player.hazzard_superjackpot>0}:
     display1:
       priority: 500
       expire: 2s
@@ -130,7 +130,7 @@ segment_display_player:
       priority: 500
       expire: 2s
       text: "{current_player.hazzard_last_jackpot_collected:d}"
-  player_hazzard_last_super_jackpot_collected:
+  player_hazzard_last_super_jackpot_collected{current_player.hazzard_last_super_jackpot_collected>0}:
     display1:
       priority: 500
       expire: 2s
@@ -139,7 +139,7 @@ segment_display_player:
       priority: 500
       expire: 2s
       text: "{current_player.hazzard_last_super_jackpot_collected:d}"
-  player_creek_last_jackpot_collected:
+  player_creek_superjackpot{current_player.creek_superjackpot>0}:
     display1:
       priority: 500
       expire: 2s
@@ -148,7 +148,7 @@ segment_display_player:
       priority: 500
       expire: 2s
       text: "{current_player.creek_last_jackpot_collected:d}"
-  player_creek_last_super_jackpot_collected:
+  player_creek_last_super_jackpot_collected{current_player.creek_last_super_jackpot_collected>0}:
     display1:
       priority: 500
       expire: 2s

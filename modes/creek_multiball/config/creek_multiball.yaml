@@ -74,7 +74,8 @@ multiballs:
   creek_multiball:
     ball_count: 1
     ball_count_type: add
-    shoot_again: settings.creek_ball_save
+    # seems to default to MS here, whereas it does not do so if done as a ball save
+    shoot_again: settings.creek_ball_save * 1000
     start_events: start_creek_multiball
 
 #TODO light show for jackpot active
@@ -98,7 +99,7 @@ show_player:
       key: ball_save_creek
       speed: 2
       show_tokens:
-        lights: l_bonus_shoot_again, l_bonus_shoot_again2
+        lights: l_bonus_shoot_again, l_bonus_shoot_again2, l_bonus_shoot_again2
         color: orange
   multiball_creek_multiball_shoot_again_ended:
     ball_save_creek: stop
@@ -178,15 +179,18 @@ variable_player:
       int: 1
     score:
       int: current_player.creek_jackpot
-    creek_superjackpot:
-      int: current_player.creek_jackpot
     creek_last_jackpot_collected:
       action: set
+      int: current_player.creek_jackpot
+    creek_superjackpot:
       int: current_player.creek_jackpot
     creek_jackpot:
       action: set
       int: 10000
     creek_jackpot_increment_value:
+      action: set
+      int: 0
+    creek_last_super_jackpot_collected:
       action: set
       int: 0
   creek_super_jackpot_enabled:

@@ -95,7 +95,8 @@ multiballs:
   hazzard_multiball:
     ball_count: 1
     ball_count_type: add
-    shoot_again: settings.hazzard_ball_save
+    # seems to default to MS here, whereas it does not do so if done as a ball save
+    shoot_again: settings.hazzard_ball_save * 1000
     start_events: start_hazzard_multiball
 
 show_player:
@@ -104,7 +105,7 @@ show_player:
       key: ball_save_hazzard
       speed: 2
       show_tokens:
-        lights: l_bonus_shoot_again, l_bonus_shoot_again2
+        lights: l_bonus_shoot_again, l_bonus_shoot_again2, l_bonus_shoot_again3
         color: orange
   multiball_hazzard_multiball_shoot_again_ended:
     ball_save_hazzard: stop
@@ -148,6 +149,9 @@ variable_player:
       action: set
       int: 9900
     hazzard_jackpot_increment_value:
+      action: set
+      int: 0
+    hazzard_last_super_jackpot_collected:
       action: set
       int: 0
   hazzard_super_jackpot_enabled:
