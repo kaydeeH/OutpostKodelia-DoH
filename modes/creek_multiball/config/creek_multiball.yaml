@@ -47,6 +47,26 @@ shots:
     disable_events: creek_super_jackpot_collected
 
 
+#TODO light show indicating creek multiball is ready to start
+#TODO start show on "enable_creek_multiball_start"
+#TODO   end show on "start_creek_multiball"
+
+#TODO light show for jackpot active
+#TODO start show on "start_creek_multiball", after "creek_super_jackpot_collected" show below
+#TODO   end show on "creek_super_jackpot_enabled", "multiball_creek_multiball_ended" (this will end the mode so may not be needed)
+
+#TODO light show for jackpot collected
+#TODO start show on "creek_jackpot_collected"
+
+#TODO light show for super jackpot active, indicate ability to multiply super jackpot value
+#TODO play/start shows on "creek_super_jackpot_enabled"
+#TODO end multiplier show on "shot_group_drop_right_complete" (can only multiply once)
+
+#TODO light show for super jackpot collected
+#TODO play show on "creek_super_jackpot_collected"
+#TODO this event should restart the jackpot active show
+
+
 event_player:
   show_creek_score_done{device.state_machines.creek_notify_state.state == "start"}:
     show_notify_flash_text:
@@ -88,11 +108,6 @@ show_player:
         color: orange
   multiball_creek_multiball_shoot_again_ended:
     ball_save: stop
-#TODO light show indicating creek multiball is ready to start
-#TODO light show for jackpot active
-#TODO light show for super jackpot active, indicate ability to multiply super jackpot value
-#TODO light show for jackpot collected
-#TODO light show for super jackpot collected
 
 variable_player:
   multiball_creek_multiball_started:
