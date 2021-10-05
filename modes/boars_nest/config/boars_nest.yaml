@@ -2,7 +2,7 @@
 
 mode:
   start_events: start_chase_multiball
-  stop_events: boars_nest_ended
+  stop_events: boars_nest_ended_complete
   events_when_started: boars_nest_started
   priority: 500
 
@@ -53,7 +53,18 @@ achievement_groups:
 event_player:
   boars_nest_started:
     - zzz_do_some_stuff
+#   Spinner handled in spinner mode
+#   No special handling for pops
+#   Right drops handled in right drop mode
+#   Oil slick handled in mode
+#   Hazzard handled in mode
+    - disable_base_creek_shot
     - drops_inline_reset
+#  boars_nest_ended:
+    - enable_base_creek_shot
+    - drops_inline_reset
+#   Others handled in modes
+
   player_boars_nest_spins{current_player.boars_nest_spins==20}:
     - boar_collect_1
   player_boars_nest_pops{current_player.boars_nest_pops==8}:

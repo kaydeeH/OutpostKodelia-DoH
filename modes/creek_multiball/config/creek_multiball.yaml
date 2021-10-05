@@ -31,8 +31,8 @@ state_machines:
 shots:
   creek_multiball_start:
     switch: s_saucer_golden_cliffs
-    disable_events: multiball_creek_multiball_started
-    enable_events: enable_creek_multiball_start
+    disable_events: multiball_creek_multiball_started, start_mode_chase_multiball
+    enable_events: enable_creek_multiball_start, boars_nest_ended, end_chase_mode
   creek_collect_jackpot:
     switch: s_saucer_golden_cliffs
     disable_events: creek_super_jackpot_enabled

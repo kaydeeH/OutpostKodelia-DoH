@@ -10,6 +10,7 @@
 
 mode:
   start_events: ball_started
+  events_when_started: waterfall_enable
   priority: 120
 
 shot_profiles:
@@ -41,6 +42,8 @@ shots:
       - mode_waterfall_started{settings.waterfall_lane_feature==1}
     reset_events: mode_waterfall_started
     profile: waterfall
+    enable_events: waterfall_enable, boars_nest_ended
+    disable_events: boars_nest_started
 
 variable_player:
    waterfall_rollover_hit:

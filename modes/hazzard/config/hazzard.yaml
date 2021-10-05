@@ -120,8 +120,8 @@ shots:
       - hazzard_select_rotate
       - hazzard_saucer_hazzard_sweep_hit{settings.hazzard_scan==1}
       - spot_hazzard_letter{settings.hazzard_scan==1}
-    reset_events: special_scored_hazzard
-    enable_events: special_scored_hazzard, mode_hazzard_started, multiball_hazzard_multiball_ended
+    reset_events: special_scored_hazzard, boars_nest_ended, end_chase_mode
+    enable_events: special_scored_hazzard, mode_hazzard_started, multiball_hazzard_multiball_ended, enable_base_hazzard_shot
     disable_events: enable_saucer_special, disable_base_hazzard_shot
   hazzard_saucer_special:
     enable_events: enable_saucer_special{settings.hazzard_multiball_feature==0}
@@ -131,8 +131,8 @@ shots:
 
 event_player:
   enable_saucer_special:
-    - start_mode_hazzard_multiball{settings.hazzard_multiball_feature==1}
-    - show_hazzard_multiball_notify|200ms
+    - start_mode_hazzard_multiball{settings.hazzard_multiball_feature==1 and current_player.boars_nest_active!=1}
+    - show_hazzard_multiball_notify{settings.hazzard_multiball_feature==1 and current_player.boars_nest_active!=1}|200ms
   mode_hazzard_started:
     - hazzard_sel_letter_1
   timer_hazzard_rotate_timer_tick:
@@ -141,7 +141,7 @@ event_player:
     - special_scored_hazzard
   special_scored_hazzard:
     - mode_hazzard_started|100ms
-  spot_hazzard_letter:
+  spot_hazzard_letter{current_player.boars_nest_active!=1}:
     - sau_1_result_(device.achievements.sau_1_complete.state)
   sau_1_result_started:
     - spot_sau_1

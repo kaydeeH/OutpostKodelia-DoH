@@ -85,7 +85,7 @@ multiballs:
     start_events: start_chase_sequence
     stop_events: end_chase_sequence
   chase_multiball:
-    ball_count: 1
+    ball_count: 2
     ball_count_type: add
     ball_locks: bd_escape_saucer
     shoot_again: settings.chase_ball_save * 1000
