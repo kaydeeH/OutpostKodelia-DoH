@@ -37,14 +37,14 @@ coils:
   c_left_slingshot:
     number: 1-0-3
     default_pulse_ms: 15
-    default_hold_power: 0.125
+    #default_hold_power: 0.125
     #enable_events: ball_started, enable_playfield_coils
     #disable_events: disable_playfield_coils
     #pulse_events: temp_sling_left
   c_right_slingshot:
     number: 1-0-1
     default_pulse_ms: 15
-    default_hold_power: 0.125
+    #default_hold_power: 0.125
     #enable_events: ball_started, enable_playfield_coils
     #disable_events: disable_playfield_coils
     #pulse_events: temp_sling_right
@@ -52,28 +52,28 @@ coils:
   c_left_thumper:
     number: 1-0-7
     default_pulse_ms: 20
-    default_hold_power: 0.125
+    #default_hold_power: 0.125
     #enable_events: ball_started, enable_playfield_coils
     #disable_events: disable_playfield_coils
     #pulse_events: temp_thumper_left
   c_right_thumper:
     number: 1-0-6
     default_pulse_ms: 20
-    default_hold_power: 0.125
+    #default_hold_power: 0.125
     #enable_events: ball_started, enable_playfield_coils
     #disable_events: disable_playfield_coils
     #pulse_events: temp_thumper_right
   c_bottom_thumper:
     number: 1-0-2
     default_pulse_ms: 20
-    default_hold_power: 0.125
+    #default_hold_power: 0.125
     #enable_events: ball_started, enable_playfield_coils
     #disable_events: disable_playfield_coils
     #pulse_events: temp_thumper_bottom
   c_center_thumper:
     number: 1-0-0
     default_pulse_ms: 20
-    default_hold_power: 0.125
+    #default_hold_power: 0.125
     #enable_events: ball_started, enable_playfield_coils
     #disable_events: disable_playfield_coils
     #pulse_events: temp_thumper_center

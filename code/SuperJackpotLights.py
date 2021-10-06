@@ -12,7 +12,7 @@ class SuperJackpotLights(CustomCode):
     lights = None  # type: DeviceCollection[str, Light]
     creek_scored = 0
     hazzard_scored = 0
-    random_light_count = 20
+    random_light_count = 40
     alternator = 0
 
     def on_load(self):
@@ -38,20 +38,23 @@ class SuperJackpotLights(CustomCode):
         kwargs = {"creek": self.creek_scored, "hazzard": self.hazzard_scored}
         self.machine.events.post('super_jackpot_monitor_jackpot_scored', **kwargs)
         self.machine.events.post('dim_for_super_jackpot')
-        self.machine.delay.add(callback=self._continue_handle, ms=500)
+        self.machine.delay.add(callback=self._continue_handle, ms=1000)
 
     def _continue_handle(self):
         jackpot_lights = self._get_random_lights()  # type: List[Light]
+        # self.machine.events.post('super_jackpot_lights_available_' + str(len(self.lights)))
         kwargs = {'lights': jackpot_lights}
         if self.creek_scored == 1 and self.hazzard_scored == 1:
-            self._double_jackpot()
+            self.machine.events.post('jackpot_light_both')
+            self._double_jackpot(**kwargs)
         else:
             if self.creek_scored == 1:
                 self.machine.events.post('jackpot_light_creek_only')
                 self._creek_jackpot(**kwargs)
 
             if self.hazzard_scored == 1:
-                self._hazzard_jackpot()
+                self.machine.events.post('jackpot_light_hazzard_only')
+                self._hazzard_jackpot(**kwargs)
 
     def _reset(self, **kwargs):
         del kwargs
@@ -80,44 +83,53 @@ class SuperJackpotLights(CustomCode):
         else:
             self.machine.events.post('dim_for_super_jackpot_end')
 
-    def _double_jackpot(self):
-        jackpot_lights = self._get_random_lights()  # type: List[Light]
-        alternator = 0
-        for jackpot_light in jackpot_lights:
-            self.machine.events.post('jackpot_light_firing_both_' + jackpot_light.name)
-            if alternator == 0:
+    def _double_jackpot(self, **kwargs):
+        if 'light' in kwargs:
+            last_light = kwargs.get('light')
+            last_light.remove_from_stack_by_key("jackpot", 50)
+
+        lights = kwargs.get('lights')
+        if len(lights) > 0:
+            jackpot_light = lights.pop(0)
+            self.machine.events.post('jackpot_light_firing_double_' + jackpot_light.name)
+
+            if self.alternator == 0:
                 jackpot_light.color('white', 0, 3000, 'jackpot')
-                alternator = 1
+                self.alternator = 1
             else:
-                if alternator == 1:
+                if self.alternator == 1:
                     jackpot_light.color('FF7500', 0, 3000, 'jackpot')
-                    alternator = 2
+                    self.alternator = 2
                 else:
                     jackpot_light.color('2E8B57', 0, 3000, 'jackpot')
-                    alternator = 0
+                    self.alternator = 0
+            del kwargs
+            kwargs = {'lights': lights, 'light': jackpot_light}
+            self.machine.delay.add(callback=self._double_jackpot, ms=50, **kwargs)
+        else:
+            self.machine.events.post('dim_for_super_jackpot_end')
 
-            time.sleep(0.01)
-            jackpot_light.remove_from_stack_by_key("jackpot", 50)
-            time.sleep(0.05)
-        self.machine.events.post('dim_for_super_jackpot_end')
+    def _hazzard_jackpot(self, **kwargs):
+        if 'light' in kwargs:
+            last_light = kwargs.get('light')
+            last_light.remove_from_stack_by_key("jackpot", 50)
 
-
-
-    def _hazzard_jackpot(self):
-        jackpot_lights = self._get_random_lights()  # type: List[Light]
-        alternator = 0
-        for jackpot_light in jackpot_lights:
+        lights = kwargs.get('lights')
+        if len(lights) > 0:
+            jackpot_light = lights.pop(0)
             self.machine.events.post('jackpot_light_firing_hazzard_' + jackpot_light.name)
-            if alternator == 0:
+
+            if self.alternator == 0:
                 jackpot_light.color('white', 0, 3000, 'jackpot')
-                alternator = 1
+                self.alternator = 1
             else:
                 jackpot_light.color('FF7500', 0, 3000, 'jackpot')
-                alternator = 0
-            time.sleep(0.01)
-            jackpot_light.remove_from_stack_by_key("jackpot", 50)
-            time.sleep(0.05)
-        self.machine.events.post('dim_for_super_jackpot_end')
+                self.alternator = 0
+            del kwargs
+            kwargs = {'lights': lights, 'light': jackpot_light}
+            self.machine.delay.add(callback=self._hazzard_jackpot, ms=50, **kwargs)
+        else:
+            self.machine.events.post('dim_for_super_jackpot_end')
 
     def _get_random_lights(self):
         rando_lights = list()

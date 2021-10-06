@@ -192,84 +192,84 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_2x2:
     number: 0-15
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_2x3:
     number: 0-16
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_3x:
     number: 0-17
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_3x2:
     number: 0-18
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_3x3:
     number: 0-19
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_5x:
     number: 0-23
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_5x2:
     number: 0-24
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_5x3:
     number: 0-25
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_shoot_again:
     number: 0-26
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_shoot_again2:
     number: 0-27
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_shoot_again3:
     number: 0-28
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
 
 # Super Bonus Section
   l_bonus_super_20k:
@@ -278,21 +278,21 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_super_30k:
     number: 0-21
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_super_40k:
     number: 0-22
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
 
 # Bonus Section
   l_bonus_1k:
@@ -301,70 +301,70 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_2k:
     number: 0-30
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_3k:
     number: 0-31
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_4k:
     number: 0-32
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_5k:
     number: 0-33
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_6k:
     number: 0-34
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_7k:
     number: 0-35
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_8k:
     number: 0-36
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_9k:
     number: 0-37
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
   l_bonus_10k:
     number: 0-38
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j3
+    tags: j3, superjack
 
 # FADECANDY J4
 # Channel 1
@@ -801,42 +801,42 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_goldencliffs_4k:
     number: 4-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_goldencliffs_6k:
     number: 4-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_goldencliffs_8k:
     number: 4-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_goldencliffs_10k:
     number: 4-2
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_goldencliffs_20k:
     number: 4-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
 
   l_paragon_saucer_01p:
     number: 4-6
@@ -844,56 +844,56 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_paragon_saucer_02a:
     number: 4-7
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_paragon_saucer_03r:
     number: 4-8
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_paragon_saucer_04a:
     number: 4-9
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_paragon_saucer_05g:
     number: 4-10
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_paragon_saucer_06o:
     number: 4-11
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_paragon_saucer_07n:
     number: 4-12
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
   l_paragon_saucer_special:
     number: 4-13
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
 
 # Drop Target (Not In-Line)
   l_droptarget_10k:
@@ -902,7 +902,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
 # Drop Target (Not In-Line)
   l_droptarget_15k:
     number: 4-15
@@ -910,7 +910,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
 # Drop Target (Not In-Line)
   l_droptarget_20k:
     number: 4-16
@@ -918,7 +918,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
 # Drop Target (Not In-Line)
   l_droptarget_25k:
     number: 4-17
@@ -926,7 +926,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
 # Drop Target (Not In-Line)
   l_droptarget_special:
     number: 4-18
@@ -934,7 +934,7 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j7
+    tags: j7, superjack
 
 # FADECANDY J8
 # Channel 5
@@ -1128,21 +1128,21 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j9
+    tags: j9, superjack
   l_treasure_extra_ball:
     number: 6-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j9
+    tags: j9, superjack
   l_treasure_special:
     number: 6-0
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j9
+    tags: j9, superjack
 
 # Spinner Section
 # Manual shows 4 controled lights but playfield appears to have 5
@@ -1153,35 +1153,35 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j9
+    tags: j9, superjack
   l_spinner_2:
     number: 6-6
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j9
+    tags: j9, superjack
   l_spinner_3:
     number: 6-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j9
+    tags: j9, superjack
   l_spinner_4:
     number: 6-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j9
+    tags: j9, superjack
   l_spinner_5:
     number: 6-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-    tags: j9
+    tags: j9, superjack
 
 # FADECANDY J10
 # Channel 7
@@ -1372,6 +1372,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
+    tags: superjack
   l_info_credit_indicator:
     number: 1-0-127
     subtype: led
@@ -1379,6 +1380,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
+    tags: superjack
   l_info_game_over:
     number: 1-0-128
     subtype: led
@@ -1386,6 +1388,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
+    tags: superjack
   l_info_high_score_to_date:
     number: 1-0-129
     subtype: led
@@ -1393,6 +1396,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
+    tags: superjack
   l_info_match:
     number: 1-0-130
     subtype: led
@@ -1400,6 +1404,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
+    tags: superjack
   l_info_same_player_sa:
     number: 1-0-131
     subtype: led
@@ -1407,6 +1412,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
+    tags: superjack
   l_info_tilt:
     number: 1-0-132
     subtype: led
@@ -1414,3 +1420,4 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
+    tags: superjack
