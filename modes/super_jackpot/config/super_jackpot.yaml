@@ -136,6 +136,13 @@ show_player:
       key: hazzard_super_multiplier_locked_show_key
       speed: 1
       priority: 1000
+  dim_for_super_jackpot:
+    gi_dim_show:
+      key: gi_dim_show_key
+      speed: 1
+      priority: 2000
+  dim_for_super_jackpot_end:
+    gi_dim_show_key: stop
 
   start_combined_super_show:
     hazzard_only_super_show_key: stop
