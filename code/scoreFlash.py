@@ -15,6 +15,7 @@ scoreFlashLoops = 4
 
 class scoreFlash(CustomCode):
     def on_load(self):
+        self.info_log('ScoreFlash controller successfully loaded!!')
         self.machine.events.add_handler('show_score_flash_text', self._show_flash_text)
         self.machine.events.add_handler('show_notify_flash_text', self._show_notify_text)
 

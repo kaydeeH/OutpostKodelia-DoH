@@ -53,6 +53,9 @@ event_player:
 #TODO play show on "creek_super_jackpot_collected"
 #TODO this event should restart the jackpot active show
 
+#TODO Show on Super Jackpot Collect
+#TODO Play Event: hazzard_super_jackpot_collected
+
 show_player:
   start_creek_only_super_show:
     creek_only_super_show:

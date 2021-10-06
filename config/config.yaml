@@ -19,6 +19,7 @@ config:
 custom_code:
   - code.updateMachineVar.updateMachineVar
   - code.scoreFlash.scoreFlash
+  - code.SuperJackpotLights.SuperJackpotLights
 
 # This is for the debug only segment display simulation
 slide_player:
