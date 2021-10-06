@@ -82,18 +82,26 @@ flippers:
     main_coil: c_flipper_left_main
     activation_switch: s_flipper_left
     debug: true
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
   left_flipper_upper:
     main_coil: c_flipper_left_upper
     activation_switch: s_flipper_left
     debug: true
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
   right_flipper:
     main_coil: c_flipper_right_main
     activation_switch: s_flipper_right
     debug: true
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
   right_flipper_upper:
     main_coil: c_flipper_right_upper
     activation_switch: s_flipper_right
     debug: true
+    enable_events: ball_started, enable_playfield_coils
+    disable_events: disable_playfield_coils
 
 
 ball_devices:
