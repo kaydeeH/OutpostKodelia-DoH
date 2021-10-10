@@ -1,0 +1,11 @@
+#show_version=5
+- duration: 1000ms
+  lights:
+    l_coin_lights:
+      color: FFFFFF
+      fade: 1000ms
+- duration: 1000ms
+  lights:
+    l_coin_lights:
+      color: FF20FF
+      fade: 1000ms

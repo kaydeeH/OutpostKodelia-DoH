@@ -121,6 +121,9 @@ show_player:
     hazzard_special_show:
       key: hazzard_special_show
       priority: 1
+    coin_lights_show:
+      key: coin_lights_show_key
+      priority: 1
   start_loop:
     red_siren_show:
       action: play
