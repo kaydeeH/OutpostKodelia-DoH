@@ -9,6 +9,10 @@ mode:
 #a switch with the "kpf" tag is registered.  Once this happens, the real ball save starts
 #which is time limited and will save at most one ball.
 
+event_player:
+  mode_base_started:
+    - start_base_shows
+
 ball_saves:
   ball_save_validate:
     balls_to_save: -1
@@ -26,6 +30,10 @@ ball_saves:
     early_ball_save_events: sw_early_ball_save
 
 show_player:
+  start_base_shows:
+    coin_lights_show:
+      key: coin_lights_show_key
+      priority: 1
   ball_save_ball_save_main_timer_start:
     ball_save_flash:
       key: ball_save
