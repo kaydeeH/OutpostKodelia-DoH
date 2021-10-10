@@ -87,9 +87,9 @@ multiballs:
   chase_multiball:
     ball_count: 2
     ball_count_type: add
-    ball_locks: bd_escape_saucer
+#    ball_locks: bd_escape_saucer
     start_events: start_chase_multiball
-    stop_events: ball_save_ball_save_boars_nest_main_timer_start
+    stop_events: ball_save_ball_save_boars_nest_timer_start
 
 variable_player:
   start_chase_sequence:
