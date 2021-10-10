@@ -65,6 +65,7 @@ modes:
   - boars_nest        # wizard mode
   - yee_haw           # inlane to spinner combo
   - inline_knockdown  # mode to override scoring when knocking down targets
+  - inline_knockall   # mode to knock down all in line drops
 
 credits:
   max_credits: settings.maximum_credits
