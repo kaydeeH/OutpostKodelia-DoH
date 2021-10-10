@@ -1425,15 +1425,6 @@ lights:
 
   #Backbox Driver Board (comes after P1/P3 Displays)
   l_backbox_01:
-    start_channel: 0-0-252
-    type: rgb
-    subtype: led
-    tags: backbox
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-  l_backbox_02:
     start_channel: 0-0-253
     type: rgb
     subtype: led
@@ -1442,7 +1433,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_03:
+  l_backbox_02:
     start_channel: 0-0-254
     type: rgb
     subtype: led
@@ -1451,7 +1442,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_04:
+  l_backbox_03:
     start_channel: 0-0-255
     type: rgb
     subtype: led
@@ -1460,7 +1451,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_05:
+  l_backbox_04:
     start_channel: 0-0-256
     type: rgb
     subtype: led
@@ -1469,7 +1460,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_06:
+  l_backbox_05:
     start_channel: 0-0-257
     type: rgb
     subtype: led
@@ -1478,7 +1469,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_07:
+  l_backbox_06:
     start_channel: 0-0-258
     type: rgb
     subtype: led
@@ -1487,7 +1478,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_08:
+  l_backbox_07:
     start_channel: 0-0-259
     type: rgb
     subtype: led
@@ -1496,7 +1487,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_09:
+  l_backbox_08:
     start_channel: 0-0-260
     type: rgb
     subtype: led
@@ -1505,7 +1496,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_10:
+  l_backbox_09:
     start_channel: 0-0-261
     type: rgb
     subtype: led
@@ -1514,7 +1505,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_11:
+  l_backbox_10:
     start_channel: 0-0-262
     type: rgb
     subtype: led
@@ -1523,7 +1514,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_12:
+  l_backbox_11:
     start_channel: 0-0-263
     type: rgb
     subtype: led
@@ -1532,8 +1523,17 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_13:
+  l_backbox_12:
     start_channel: 0-0-264
+    type: rgb
+    subtype: led
+    tags: backbox
+    fade_ms: 50ms
+    platform: opp
+    platform_settings:
+      polarity: true
+  l_backbox_13:
+    start_channel: 0-0-265
     type: rgb
     subtype: led
     tags: backbox
@@ -1544,7 +1544,7 @@ lights:
 
   #Cabinet Lights - but hooked up to backbox board.
   l_coin_lights: #One RGB driver driving 3 discrete white LEDs
-    start_channel: 0-0-265
+    start_channel: 0-0-266
     type: rgb
     subtype: led
     tags: backbox
