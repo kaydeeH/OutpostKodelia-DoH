@@ -36,7 +36,7 @@ event_player:
   start_chase_sequence:
     - drops_inline_reset
     - bonus_multiply_5x
-  ball_hold_chase_hold_held_ball:
+  ball_hold_chase_hold_held_ball{current_player.boars_nest_active==0}:
     - start_chase_sequence
   balls_in_play{balls==1}:
     - release_chase_hold
@@ -56,21 +56,34 @@ event_player:
     - general_lee_speed_add_5
   hz_start_mball_hit{current_player.general_lee_speed<120}:
     - general_lee_speed_add_5
+  release_chase_hold:
+    - reset_chase_hold_ball_count
 
 shots:
   chase_saucer:
     switch: s_saucer_treasure_chamber
+    enable_events: chase_notify
+    disable_events: release_chase_hold, end_chase_sequence
+  chase_collect_saucer:
+    switch: s_saucer_treasure_chamber
+    enable_events: boar_six_pack_complete
   gc_start_mball:
     switch: s_saucer_golden_cliffs
+    enable_events: chase_notify
+    disable_events: release_chase_hold, end_chase_sequence
   hz_start_mball:
     switch: s_saucer_paragon
+    enable_events: chase_notify
+    disable_events: release_chase_hold, end_chase_sequence
 
 ball_holds:
   chase_hold:
     balls_to_hold: 1
     hold_devices: bd_escape_saucer
-    release_one_events: multiball_chase_multiball_started, release_chase_hold
-    disable_events: multiball_chase_multiball_started
+    release_one_events: end_chase_sequence, release_chase_hold
+    enable_events: chase_notify
+#    disable_events: boars_nest_started
+#    disable_events: multiball_chase_multiball_started
 
 ball_saves:
   pre_chase_ballsave:
@@ -80,16 +93,26 @@ ball_saves:
 
 multiballs:
   pre_chase_multiball:
+#    add_a_ball_events: start_chase_multiball
     ball_count: 1
     ball_count_type: add
     start_events: start_chase_sequence
-    stop_events: end_chase_sequence
-  chase_multiball:
-    ball_count: 2
-    ball_count_type: add
+
+#multiballs:
+#  pre_chase_multiball:
+#    ball_count: 1
+#    ball_count_type: add
+#    start_events: start_chase_sequence
+#    stop_events: end_chase_sequence
+#  chase_multiball:
+#    ball_count: 2
+#    ball_count_type: add
 #    ball_locks: bd_escape_saucer
-    start_events: start_chase_multiball
-    stop_events: ball_save_ball_save_boars_nest_timer_start
+#    start_events: start_chase_multiball
+#    stop_events: ball_save_ball_save_boars_nest_timer_start
+
+
+
 
 variable_player:
   start_chase_sequence:

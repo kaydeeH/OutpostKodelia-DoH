@@ -26,6 +26,7 @@ coils:
     number: 0-0-7
     default_pulse_ms: 18
   c_saucer_trasure_chamber:
+    debug: true
     number: 0-0-15
     default_pulse_ms: 20
   c_saucer_paragon:
@@ -107,25 +108,21 @@ coils:
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: knockdown_drop_a
   c_inline_knockdown_b:
     number: 0-0-3
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: knockdown_drop_b
   c_inline_knockdown_c:
     number: 0-0-2
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: knockdown_drop_c
   c_inline_knockdown_d:
     number: 0-0-1
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_events: knockdown_drop_d
 
 
 autofire_coils:

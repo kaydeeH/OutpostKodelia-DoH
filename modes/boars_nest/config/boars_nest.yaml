@@ -88,7 +88,8 @@ event_player:
     - boar_collect_6
   boar_six_pack_complete:
     - inline_drop_all
-  ball_hold_boar_hold_held_ball:
+#  ball_hold_boar_hold_held_ball:
+  ball_hold_chase_hold_held_ball:
     - disable_playfield_coils # drain all balls except ball hold
     - zzz_big_awards_show
     # after big awards show, pop the held ball and end the mode
@@ -200,12 +201,12 @@ variable_player:
 # Escape saucer ends mode, awards bonus & light show and stuff, drains all balls except the one in the saucer,
 #   returns to normal single ball play
 
-ball_holds:
-  boar_hold:
-    balls_to_hold: 1
-    hold_devices: bd_escape_saucer
-    enable_events: boar_six_pack_complete
-    release_one_events: zzz_boar_final_display
+#ball_holds:
+#  boar_hold:
+#    balls_to_hold: 1
+#    hold_devices: bd_escape_saucer
+#    enable_events: boar_six_pack_complete
+#    release_one_events: zzz_boar_final_display
 
 # Mode finished w/ success scoring --
 # 100,000 points

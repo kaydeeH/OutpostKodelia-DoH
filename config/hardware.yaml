@@ -127,8 +127,9 @@ ball_devices:
     ball_switches: s_saucer_treasure_chamber
     eject_coil: c_saucer_trasure_chamber
     eject_events: zzz_none, chase_multiball_qualified
-    eject_timeouts: 500ms, 1s, 2s, 4s
-    auto_fire_on_unexpected_ball: false
+#    eject_timeouts: 500ms, 1s, 2s, 4s
+#    auto_fire_on_unexpected_ball: false
+    debug: true
   bd_river_saucer:
     ball_switches: s_saucer_golden_cliffs
     eject_coil: c_saucer_golden_cliffs
@@ -147,15 +148,19 @@ drop_targets:
      I0:
          switch: s_drop_inline_a
          knockdown_coil: c_inline_knockdown_a
+         knockdown_events: knockdown_drop_a
      I1:
          switch: s_drop_inline_b
          knockdown_coil: c_inline_knockdown_b
+         knockdown_events: knockdown_drop_b
      I2:
          switch: s_drop_inline_c
          knockdown_coil: c_inline_knockdown_c
+         knockdown_events: knockdown_drop_c
      I3:
          switch: s_drop_inline_d
          knockdown_coil: c_inline_knockdown_d
+         knockdown_events: knockdown_drop_d
      R0:
          switch: s_drop_right_a
      R1:

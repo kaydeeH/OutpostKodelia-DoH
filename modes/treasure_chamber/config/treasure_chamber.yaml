@@ -52,7 +52,7 @@ event_player:
     - bonus_multiply_5x
   shot_group_drop_inline_hit{settings.in_line_spotting==1 and current_player.suspend_spot==0}:
     - spot_hazzard_letter
-  shot_drop_inline_d_hit{settings.chase_multiball_feature==1}:
+  shot_drop_inline_d_hit{settings.chase_multiball_feature==1 and current_player.boars_nest_active==0}:
     - start_mode_chase_multiball
 #  init_inline_drops{settings.chase_multiball_feature==1 and current_player.in_line_d_down>0}:
 #    - start_mode_chase_multiball
