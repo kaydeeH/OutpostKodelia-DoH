@@ -1,0 +1,47 @@
+#config_version=5
+
+mode:
+  start_events: init_inline_drops
+  stop_events: end_inline_knockdown
+  events_when_started: trigger_knockdown_coils
+  priority: 1000
+
+event_player:
+  trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_a_down>0}:
+    - knockdown_drop_a
+  trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_b_down>0}:
+    - knockdown_drop_b
+  trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_c_down>0}:
+    - knockdown_drop_c
+  trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_d_down>0}:
+    - knockdown_drop_d
+  trigger_knockdown_coils:
+    - finish_inline_knockdown|250ms
+  player_suspend_spot{current_player.suspend_spot==0}:
+    - end_inline_knockdown
+
+variable_player:
+  shot_group_drop_inline_hit{settings.in_line_scoring==0}:
+    score:
+      int: 0
+      action: add
+      block: true
+    bonuscount:
+      int: 0
+      action: add
+      block: true
+  shot_group_drop_inline_hit{settings.in_line_scoring==1}:
+    score:
+      int: 0
+      action: add
+      block: true
+    bonuscount:
+      int: 0
+      action: add
+      block: true
+  trigger_knockdown_coils:
+    suspend_spot: 1
+  finish_inline_knockdown:
+    suspend_spot:
+      action: set
+      int: 0

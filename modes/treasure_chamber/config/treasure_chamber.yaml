@@ -50,7 +50,7 @@ event_player:
     - bonus_multiply_3x
   treasure_saucer_5x_hit:
     - bonus_multiply_5x
-  shot_group_drop_inline_hit{settings.in_line_spotting==1}:
+  shot_group_drop_inline_hit{settings.in_line_spotting==1 and current_player.suspend_spot==0}:
     - spot_hazzard_letter
   shot_drop_inline_d_hit{settings.chase_multiball_feature==1}:
     - start_mode_chase_multiball

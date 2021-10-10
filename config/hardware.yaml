@@ -127,6 +127,7 @@ ball_devices:
     ball_switches: s_saucer_treasure_chamber
     eject_coil: c_saucer_trasure_chamber
     eject_timeouts: 500ms, 1s, 2s, 4s
+    auto_fire_on_unexpected_ball: false
   bd_river_saucer:
     ball_switches: s_saucer_golden_cliffs
     eject_coil: c_saucer_golden_cliffs

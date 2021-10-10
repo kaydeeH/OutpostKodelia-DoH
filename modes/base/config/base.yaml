@@ -5,15 +5,6 @@ mode:
   priority: 100
   file_log: full
 
-
-
-variable_player:
-  # PARAGON base wiring treats top right, drop target rebounds and golden cliffs rollover as switch #34 (10 point rebound)
-  s_top_center_rollover_active:
-    score: 10
-  s_drop_inline_a_active:
-    score: 100
-
 #The first ball save is the "playfield validation" save and will save unlimited balls until
 #a switch with the "kpf" tag is registered.  Once this happens, the real ball save starts
 #which is time limited and will save at most one ball.

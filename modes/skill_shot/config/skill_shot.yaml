@@ -1,7 +1,8 @@
 #config_version=5
 
 mode:
-  start_events: ball_started
+#  start_events: ball_started
+  start_events: mode_inline_knockdown_stopped
   stop_events: skill_shot_failed, end_skill_shot
   events_when_started: enable_skill_shot
   priority: 250
