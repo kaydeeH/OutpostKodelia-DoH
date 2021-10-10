@@ -143,24 +143,25 @@ ball_devices:
 
 
 
-
+# KNOCKDOWN_EVENTS don't work
+# only works if I move those events over to the coils pulse_events
 drop_targets:
      I0:
          switch: s_drop_inline_a
          knockdown_coil: c_inline_knockdown_a
-         knockdown_events: knockdown_drop_a
+#         knockdown_events: knockdown_drop_a
      I1:
          switch: s_drop_inline_b
          knockdown_coil: c_inline_knockdown_b
-         knockdown_events: knockdown_drop_b
+#         knockdown_events: knockdown_drop_b
      I2:
          switch: s_drop_inline_c
          knockdown_coil: c_inline_knockdown_c
-         knockdown_events: knockdown_drop_c
+#         knockdown_events: knockdown_drop_c
      I3:
          switch: s_drop_inline_d
          knockdown_coil: c_inline_knockdown_d
-         knockdown_events: knockdown_drop_d
+#         knockdown_events: knockdown_drop_d
      R0:
          switch: s_drop_right_a
      R1:
