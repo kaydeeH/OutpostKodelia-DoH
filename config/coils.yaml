@@ -107,26 +107,26 @@ coils:
     number: 0-0-4
     default_pulse_ms: 9
     debug: true
-    pulse_event: knockdown_drop_a
+    pulse_events: knockdown_drop_a
     allow_enable: true
   c_inline_knockdown_b:
     number: 0-0-3
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_event: knockdown_drop_b
+    pulse_events: knockdown_drop_b
   c_inline_knockdown_c:
     number: 0-0-2
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_event: knockdown_drop_c
+    pulse_events: knockdown_drop_c
   c_inline_knockdown_d:
     number: 0-0-1
     default_pulse_ms: 9
     debug: true
     allow_enable: true
-    pulse_event: knockdown_drop_d
+    pulse_events: knockdown_drop_d
 
 
 autofire_coils:
