@@ -74,9 +74,12 @@ event_player:
     - drops_inline_reset
 #   Others handled in modes
 
-  player_boars_nest_spins{current_player.boars_nest_spins==20}:
+# spins and pops dropped to 1 for testing
+#  player_boars_nest_spins{current_player.boars_nest_spins==20}:
+  player_boars_nest_spins{current_player.boars_nest_spins==1}:
     - boar_collect_1
-  player_boars_nest_pops{current_player.boars_nest_pops==8}:
+#  player_boars_nest_pops{current_player.boars_nest_pops==8}:
+  player_boars_nest_pops{current_player.boars_nest_pops==1}:
     - boar_collect_2
   shot_group_drop_right_complete:
     - boar_collect_3
@@ -174,7 +177,10 @@ variable_player:
     boars_next_complete_balls_in_play:
       action: set
       int: device.playfields.playfield.balls
-
+  mode_boars_nest_will_stop:
+    boars_nest_active:
+      action: set
+      int: 0
 # TODO Design and Play shows to highlight the 6 character collect areas excluding escape saucer
 # TODO Stop above shows when "boar_collect_X" is thrown
 # TODO Design and play show for 7th character collect when 1-6 are complete

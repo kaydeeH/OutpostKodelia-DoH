@@ -38,6 +38,18 @@ variable_player:
   trigger_knockdown_coils:
     suspend_spot: 1
   finish_inline_knockall:
+    in_line_a_down:
+      action: set
+      int: 0
+    in_line_b_down:
+      action: set
+      int: 0
+    in_line_c_down:
+      action: set
+      int: 0
+    in_line_d_down:
+      action: set
+      int: 0
     suspend_spot:
       action: set
       int: 0

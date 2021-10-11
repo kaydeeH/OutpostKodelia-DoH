@@ -88,12 +88,12 @@ ball_holds:
 ball_saves:
   pre_chase_ballsave:
     enable_events: start_chase_sequence
-    disable_events: release_chase_hold
+    disable_events: start_chase_multiball
     only_last_ball: true
 
 multiballs:
   pre_chase_multiball:
-#    add_a_ball_events: start_chase_multiball
+    add_a_ball_events: start_chase_multiball
     ball_count: 1
     ball_count_type: add
     start_events: start_chase_sequence
@@ -136,7 +136,8 @@ variable_player:
         int: 0
   general_lee_speed_add_1{current_player.boars_nest_active!=1}:
       general_lee_speed:
-        int: 1
+        # temp change to 10 to make testing easier
+        int: 10
   general_lee_speed_add_3{current_player.boars_nest_active!=1}:
       general_lee_speed:
         int: 3
