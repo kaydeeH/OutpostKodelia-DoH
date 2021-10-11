@@ -31,35 +31,69 @@ sounds:
 #        track: sfx
 #        volume: .5
 #
-#    #Voice clips
-#    alex_01:
-#        file: a_glorious-pilgramage.wav
-#        track: voice
-#    player_one_up:
-#        file: first_player_up.wav
-#        track: voice
-#        ducking:
-#          target: music
-#          delay: 0ms
-#          attack: 100ms
-#          attenuation: .1
-#          release_point: 1.7s
-#          release: 500ms
+  #Voice Clips
+  ##Player Add Clips
+  hi_fellas:
+      file: hi_fellas.wav
+      track: voice
+  i_love_it:
+      file: i_love_it.wav
+      track: voice
+  public_enemy_number_one:
+      file: public_enemy_number_one.wav
+      track: voice
+  yall_got_your_ears_on:
+      file: yall_got_your_ears_on.wav
+      track: voice
+  get_them_duke_boys:
+      file: get_them_duke_boys.wav
+      track: voice
+  hello_sugar_plum:
+      file: hello_sugar_plum.wav
+      track: voice
+
+  ##Multiplayer Add Clips
+  gonna_kick_my_butt_is_he:
+      file: gonna_kick_my_butt_is_he.wav
+      track: voice
+  its_them_again:
+      file: its_them_again.wav
+      track: voice
+  join_us_pit_stop:
+      file: join_us_pit_stop.wav
+      track: voice
+
+## Ducking example
+#  player_one_up:
+#      file: first_player_up.wav
+#      track: voice
+#      ducking:
+#        target: music
+#        delay: 0ms
+#        attack: 100ms
+#        attenuation: .1
+#        release_point: 1.7s
+#        release: 500ms
 #
-#sound_pools:
-#  atract_voice:
-#    type: random_force_all
-#    track: voice
-#    sounds:
-#      - alex_01
-#      - alex_02
-#  ball_end_clips:
-#    type: random_force_all
-#    track: voice
-#    sounds:
-#      - bob_02
-#      - hans_02
-#      - kate_01
-#      - vincent_02
-#      - hans_05
-#
+sound_pools:
+  player_1_add:
+    type: random_force_all
+    track: voice
+    sounds:
+      - hi_fellas
+      - i_love_it
+      - public_enemy_number_one
+      - yall_got_your_ears_on
+      - get_them_duke_boys
+      - hello_sugar_plum
+    simultaneous_limit: 1
+    stealing_method: skip
+  player_multi_add:
+    type: random_force_all
+    track: voice
+    sounds:
+      - gonna_kick_my_butt_is_he
+      - its_them_again
+      - join_us_pit_stop
+    simultaneous_limit: 1
+    stealing_method: skip

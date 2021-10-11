@@ -5,3 +5,7 @@
 game:
   balls_per_game: settings.balls_per_game
   max_players: settings.max_players
+
+sound_player:
+  player_added{num==1}: player_1_add
+  player_added{num>1}: player_multi_add
