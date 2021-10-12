@@ -139,7 +139,7 @@ autofire_coils:
     timeout_max_hits: 1
     timeout_disable_time: 300ms
     enable_events: ball_started, enable_playfield_coils
-    disable_events: disable_playfield_coils
+    disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
   slingshot_right:
     coil: c_right_slingshot
     #switch: s_slingshot_right
@@ -148,28 +148,28 @@ autofire_coils:
     timeout_max_hits: 1
     timeout_disable_time: 300ms
     enable_events: ball_started, enable_playfield_coils
-    disable_events: disable_playfield_coils
+    disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
   thumper_bottom:
     coil: c_bottom_thumper
     #switch: s_thumper_bottom
     switch: s_trough_3
     enable_events: ball_started, enable_playfield_coils
-    disable_events: disable_playfield_coils
+    disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
   thumper_center:
     coil: c_center_thumper
     #switch: s_thumper_center
     switch: s_thumper_left
     enable_events: ball_started, enable_playfield_coils
-    disable_events: disable_playfield_coils
+    disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
   thumper_right:
     coil: c_right_thumper
     #switch: s_thumper_right
     switch: s_void
     enable_events: ball_started, enable_playfield_coils
-    disable_events: disable_playfield_coils
+    disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
   thumper_left:
     coil: c_left_thumper
     #switch: s_thumper_left
     switch: s_thumper_center
     enable_events: ball_started, enable_playfield_coils
-    disable_events: disable_playfield_coils
+    disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
