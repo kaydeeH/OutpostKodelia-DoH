@@ -12,7 +12,6 @@ mode:
 event_player:
   mode_base_started:
     - start_base_shows
-  start_base_shows:
     - next_song
 
 ball_saves:
