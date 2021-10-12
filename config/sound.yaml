@@ -25,9 +25,39 @@ sounds:
   bonuscountdownmusic:
     file: bonus_countdown.ogg
     track: music
+  doh_track0:
+    file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Menu Theme.wav"
+    track: music
+  doh_track1:
+    file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 1.wav"
+    track: music
+  doh_track2:
+    file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 2.wav"
+    track: music
+  doh_track3:
+    file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 3.wav"
+    track: music
+  doh_track4:
+    file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 4.wav"
+    track: music
+  doh_track5:
+    file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 5.wav"
+    track: music
+  doh_track6:
+    file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 6.wav"
+    track: music
+  doh_track7:
+    file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Credits.wav"
+    track: music
+
   # SFX
   dirt_peel:
     file: dirt_peel.wav
+    track: sfx
+    simultaneous_limit: 1
+    stealing_method: skip
+  dixie_horn:
+    file: dixie_horn.wav
     track: sfx
     simultaneous_limit: 1
     stealing_method: skip
@@ -99,3 +129,15 @@ sound_pools:
       - join_us_pit_stop
     simultaneous_limit: 1
     stealing_method: skip
+  gameplay_music:
+    type: random_force_all
+    track: music
+    sounds:
+      - doh_track0
+      - doh_track1
+      - doh_track2
+      - doh_track3
+      - doh_track4
+      - doh_track5
+      - doh_track6
+      - doh_track7

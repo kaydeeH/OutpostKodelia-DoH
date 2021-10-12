@@ -12,6 +12,8 @@ mode:
 event_player:
   mode_base_started:
     - start_base_shows
+  start_base_shows:
+    - next_song
 
 ball_saves:
   ball_save_validate:
@@ -53,3 +55,10 @@ show_player:
 
 sound_player:
   spinner_default_hit: dirt_peel
+  next_song:
+    gameplay_music:
+      delay: 500ms
+      action: play
+      loops: 0
+      about_to_finish_time: 250ms
+      events_when_about_to_finish: next_song

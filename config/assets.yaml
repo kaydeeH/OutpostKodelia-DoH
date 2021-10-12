@@ -2,14 +2,15 @@
 
 assets:
     sounds:
-        default:
-            load: preload
         music:
             track: music
+            load: on_demand
         sfx:
             track: sfx
+            load: preload
         voice:
             track: voice
+            load: preload
     images:
         preload:
             load: preload

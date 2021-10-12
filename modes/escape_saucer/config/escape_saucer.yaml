@@ -20,3 +20,6 @@ event_player:
     - escape_saucer_unexpected
   escape_saucer_unexpected:
     - escape_saucer_eject
+
+sound_player:
+  start_chase_sequence: dixie_horn

@@ -43,10 +43,13 @@ show_player:
 
 sound_player:
   mode_end_of_ball_started:
+    gameplay_music:
+      action: stop
+      fade_out: 500ms
     bonuscountdownmusic:
       action: play
       loops: -1
   end_bonus:
     bonuscountdownmusic:
       action: stop
-      fade_out: 1s
+      fade_out: 500ms
