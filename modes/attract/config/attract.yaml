@@ -3,6 +3,8 @@
 event_player:
   mode_attract_started:
     start_loop:
+  start_loop{device.switches.s_saucer_treasure_chamber.state==1}:
+    escape_saucer_eject:
 
 segment_display_player:
 #  mode_attract_started:
