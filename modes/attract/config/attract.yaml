@@ -5,6 +5,7 @@ event_player:
     start_loop:
   start_loop{device.switches.s_saucer_treasure_chamber.state==1}:
     - escape_saucer_eject
+  start_loop:
     - disable_playfield_coils
 
 segment_display_player:
