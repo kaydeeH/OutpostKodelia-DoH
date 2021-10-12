@@ -20,17 +20,18 @@ sound_system:
       simultaneous_sounds: 32
       volume: 0.8
 
-sounds:
+sounds: 
   # Music
   bonuscountdownmusic:
     file: bonus_countdown.ogg
     track: music
-#    # Generic SFX
-#    soft_laser:
-#        file: silencedlaser.wav
-#        track: sfx
-#        volume: .5
-#
+  # SFX
+  dirt_peel:
+    file: dirt_peel.wav
+    track: sfx
+    simultaneous_limit: 1
+    stealing_method: skip
+
   #Voice Clips
   ##Player Add Clips
   hi_fellas:
@@ -75,6 +76,7 @@ sounds:
 #        release_point: 1.7s
 #        release: 500ms
 #
+
 sound_pools:
   player_1_add:
     type: random_force_all

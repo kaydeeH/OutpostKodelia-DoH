@@ -51,3 +51,5 @@ show_player:
   ball_save_ball_save_main_disabled:
     ball_save: stop
 
+sound_player:
+  spinner_default_hit: dirt_peel
