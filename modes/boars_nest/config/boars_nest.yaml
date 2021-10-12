@@ -97,12 +97,18 @@ event_player:
     - zzz_big_awards_show
     # after big awards show, pop the held ball and end the mode
     # also throw "enable_playfield_coils"
+  escape_saucer_boars_nest_collect:
+    - disable_playfield_coils # drain all balls except ball hold
+    - zzz_big_awards_show
 
 variable_player:
   boars_nest_started:
     boars_nest_active:
       action: set
       int: 1
+    boars_nest_six_pack_complete:
+      action: set
+      int: 0
     boars_nest_spins:
       action: set
       int: 0
@@ -177,8 +183,15 @@ variable_player:
     boars_next_complete_balls_in_play:
       action: set
       int: device.playfields.playfield.balls
+  boar_six_pack_complete:
+    boars_nest_six_pack_complete:
+      action: set
+      int: 1
   mode_boars_nest_will_stop:
     boars_nest_active:
+      action: set
+      int: 0
+    boars_nest_six_pack_complete:
       action: set
       int: 0
 # TODO Design and Play shows to highlight the 6 character collect areas excluding escape saucer

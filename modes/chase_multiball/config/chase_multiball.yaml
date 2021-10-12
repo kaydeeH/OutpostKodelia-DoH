@@ -58,15 +58,17 @@ event_player:
     - general_lee_speed_add_5
   release_chase_hold:
     - reset_chase_hold_ball_count
+  start_chase_multiball:
+    - escape_saucer_eject
 
 shots:
-  chase_saucer:
-    switch: s_saucer_treasure_chamber
-    enable_events: chase_notify
-    disable_events: release_chase_hold, end_chase_sequence
-  chase_collect_saucer:
-    switch: s_saucer_treasure_chamber
-    enable_events: boar_six_pack_complete
+#  chase_saucer:
+#    switch: s_saucer_treasure_chamber
+#    enable_events: chase_notify
+#    disable_events: release_chase_hold, end_chase_sequence
+#  chase_collect_saucer:
+#    switch: s_saucer_treasure_chamber
+#    enable_events: boar_six_pack_complete
   gc_start_mball:
     switch: s_saucer_golden_cliffs
     enable_events: chase_notify
@@ -76,14 +78,14 @@ shots:
     enable_events: chase_notify
     disable_events: release_chase_hold, end_chase_sequence
 
-ball_holds:
-  chase_hold:
-    balls_to_hold: 1
-    hold_devices: bd_escape_saucer
-    release_one_events: end_chase_sequence, release_chase_hold
-    enable_events: chase_notify
-#    disable_events: boars_nest_started
-#    disable_events: multiball_chase_multiball_started
+#ball_holds:
+#  chase_hold:
+#    balls_to_hold: 1
+#    hold_devices: bd_escape_saucer
+#    release_one_events: end_chase_sequence, release_chase_hold
+#    enable_events: chase_notify
+##    disable_events: boars_nest_started
+##    disable_events: multiball_chase_multiball_started
 
 ball_saves:
   pre_chase_ballsave:

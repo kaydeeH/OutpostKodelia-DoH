@@ -123,13 +123,13 @@ ball_devices:
     eject_coil: c_outhole_kicker
     eject_timeouts: 1s
 #    eject_targets: bd_trough
-  bd_escape_saucer:
-    ball_switches: s_saucer_treasure_chamber
-    eject_coil: c_saucer_trasure_chamber
-    eject_events: zzz_none, chase_multiball_qualified
-#    eject_timeouts: 500ms, 1s, 2s, 4s
-    auto_fire_on_unexpected_ball: false
-    debug: true
+#  bd_escape_saucer:
+#    ball_switches: s_saucer_treasure_chamber
+#    eject_coil: c_saucer_trasure_chamber
+#    eject_events: zzz_none, chase_multiball_qualified
+##    eject_timeouts: 500ms, 1s, 2s, 4s
+#    auto_fire_on_unexpected_ball: false
+#    debug: true
   bd_river_saucer:
     ball_switches: s_saucer_golden_cliffs
     eject_coil: c_saucer_golden_cliffs

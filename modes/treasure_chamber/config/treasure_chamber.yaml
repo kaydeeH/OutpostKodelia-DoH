@@ -11,14 +11,14 @@ mode:
   events_when_started: init_inline_drops
   priority: 118
 
-shot_profiles:
-  treasure_profile:
-    advance_on_hit: true
-    states:
-      - name: 5x
-        show: saucer5x
-      - name: special
-        show: saucerspecial
+#shot_profiles:
+#  treasure_profile:
+#    advance_on_hit: true
+#    states:
+#      - name: 5x
+#        show: saucer5x
+#      - name: special
+#        show: saucerspecial
 
 shots:
   shot_drop_inline_a:
@@ -29,12 +29,12 @@ shots:
     switch: s_drop_inline_c
   shot_drop_inline_d:
     switch: s_drop_inline_d
-  treasure_saucer:
-    switch: s_saucer_treasure_chamber
-    profile: treasure_profile
-    disable_events: mode_chase_multiball_started
-    enable_events: init_inline_drops, mode_chase_multiball_ended, end_chase_mode
-    reset_events: drops_shot_profile_reset
+#  treasure_saucer:
+#    switch: s_saucer_treasure_chamber
+#    profile: treasure_profile
+#    disable_events: mode_chase_multiball_started
+#    enable_events: init_inline_drops, mode_chase_multiball_ended, end_chase_mode
+#    reset_events: drops_shot_profile_reset
 
 shot_groups:
    shot_group_drop_inline:

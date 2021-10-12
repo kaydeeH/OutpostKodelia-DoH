@@ -29,6 +29,7 @@ coils:
     debug: true
     number: 0-0-15
     default_pulse_ms: 30
+    pulse_events: escape_saucer_eject
   c_saucer_paragon:
     number: 1-0-5
     default_pulse_ms: 20
