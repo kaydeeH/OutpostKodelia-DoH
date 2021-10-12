@@ -10,9 +10,9 @@ shots:
     switch: s_saucer_treasure_chamber
 
 event_player:
-  escape_saucer_hit{current_player.boars_nest_active==1 and current_player.boar_six_pack_complete==1}:
+  escape_saucer_hit{current_player.boar_six_pack_complete==1}:
     - escape_saucer_boars_nest_collect
-  escape_saucer_hit{current_player.boars_nest_active!=1 or current_player.boar_six_pack_complete!=1}:
+  escape_saucer_hit{current_player.boar_six_pack_complete!=1}:
     - escape_saucer_check_chase_start
   escape_saucer_check_chase_start{current_player.boars_nest_active!=1 and settings.chase_multiball_feature==1 and mode.chase_multiball.active==True}:
     - start_chase_sequence
