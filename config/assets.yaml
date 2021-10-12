@@ -3,7 +3,7 @@
 assets:
     sounds:
         default:
-            load: on_demand
+            load: preload
         music:
             track: music
         sfx:
