@@ -262,6 +262,18 @@ show_player:
       speed: 60
       loops: -1
       priority: 10
+    mid_pop_dim_show:
+      key: mid_pop_dim
+      action: play
+      loops: -1
+      priority: 10
+    gi_dim_show:
+      key: gi_dim
+      action: play
+      loops: -1
+      priority: 10
   start_chase_multiball:
     red_siren: stop
     blue_siren: stop
+    mid_pop_dim: stop
+    gi_dim: stop

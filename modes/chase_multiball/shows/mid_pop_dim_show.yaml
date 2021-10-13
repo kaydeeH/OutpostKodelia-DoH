@@ -1,0 +1,10 @@
+#show_version=5
+
+- duration: 150ms
+  lights:
+    pop3_0: 331700
+    pop3_1: 331700
+    pop3_2: 331700
+    pop3_3: 331700
+    pop3_4: 331700
+    pop3_5: 331700
