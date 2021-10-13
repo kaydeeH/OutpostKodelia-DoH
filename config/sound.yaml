@@ -49,6 +49,13 @@ sounds:
   doh_track7:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Credits.wav"
     track: music
+  doh_theme:
+    file: "Waylon Jennings - Dukes Of Hazzard 'Good Ol' Boys' Theme Song.wav"
+    track: music
+  chase_theme:
+    file: "The Dukes of Hazzard Season 01 Chase Theme.wav"
+    track: music
+    volume: 1.0
 
   # SFX
   dirt_peel:
@@ -61,6 +68,9 @@ sounds:
     track: sfx
     simultaneous_limit: 1
     stealing_method: skip
+  police_siren:
+    file: police_siren.wav
+    track: sfx
 
   #Voice Clips
   ##Player Add Clips

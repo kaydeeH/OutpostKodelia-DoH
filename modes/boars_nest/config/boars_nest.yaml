@@ -73,6 +73,8 @@ event_player:
     - enable_base_creek_shot
     - drops_inline_reset
 #   Others handled in modes
+    - start_dukes_theme
+    - stop_siren
 
 # spins and pops dropped to 1 for testing
 #  player_boars_nest_spins{current_player.boars_nest_spins==20}:
@@ -301,3 +303,20 @@ segment_display_player:
       key: boar_4
       priority: 400
       text: "NEST"
+
+sound_player:
+  start_dukes_theme:
+    chase_theme:
+      action: stop
+      fade_out: 500ms
+    doh_theme:
+      delay: 500ms
+      action: play
+      loops: -1
+  stop_siren:
+    police_siren:
+      action: stop
+      fade_out: 1000ms
+
+#TODO Catch and event (or two) for when the mode ends. Use that to stop the doh_theme and restart the gameplay_music
+#TODO sound pool. May need to do this part in another mode since this mode may die before it can happen.

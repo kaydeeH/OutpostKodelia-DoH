@@ -36,6 +36,8 @@ event_player:
   start_chase_sequence:
     - drops_inline_reset
     - bonus_multiply_5x
+    - start_chase_theme
+    - start_siren
   ball_hold_chase_hold_held_ball{current_player.boars_nest_active==0}:
     - start_chase_sequence
   balls_in_play{balls==1}:
@@ -230,3 +232,36 @@ segment_display_player:
       key: chase_4
       priority: 400
       text: "ROSCOE!"
+
+sound_player:
+  start_chase_theme:
+    gameplay_music:
+      action: stop
+      fade_out: 500ms
+    chase_theme:
+      delay: 500ms
+      action: play
+      loops: -1
+  start_siren:
+    police_siren:
+      delay: 500ms
+      action: play
+      loops: -1
+
+show_player:
+  start_chase_theme:
+    red_siren_show:
+      key: red_siren
+      action: play
+      speed: 60
+      loops: -1
+      priority: 10
+    blue_siren_show:
+      key: blue_siren
+      action: play
+      speed: 60
+      loops: -1
+      priority: 10
+  start_chase_multiball:
+    red_siren: stop
+    blue_siren: stop

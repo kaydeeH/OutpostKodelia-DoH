@@ -43,6 +43,10 @@ show_player:
 
 sound_player:
   mode_end_of_ball_started:
+    #TODO Stopping the doh_theme here temporarily. Later it will be stopped by boar's nest mode end.
+    doh_theme:
+      action: stop
+      fade_out: 500ms
     gameplay_music:
       action: stop
       fade_out: 500ms
