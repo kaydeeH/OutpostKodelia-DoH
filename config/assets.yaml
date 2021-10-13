@@ -4,7 +4,7 @@ assets:
     sounds:
         music:
             track: music
-            load: on_demand
+            load: preload
         sfx:
             track: sfx
             load: preload
