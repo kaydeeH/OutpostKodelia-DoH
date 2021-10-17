@@ -27,16 +27,16 @@ high_score:
       - QUI: 20000
       - MAR: 10000
 
-segment_display_player:
-  high_score_enter_initials:
-    display1:
-      text: "PLAYER{player_num}"
-    display2:
-      text: "{award}"
-    display3:
-      text: "  Name:"
-    display4:
-      text: "A"
+#segment_display_player:
+#  high_score_enter_initials:
+#    display1:
+#      text: "PLAYER{player_num}"
+#    display2:
+#      text: "{award}"
+#    display3:
+#      text: "  Name:"
+#    display4:
+#      text: "A"
 
 # LEAVE THIS HERE FOR DEBUG, REMOVE
 # optional: change the slides (you can omit all the following)
