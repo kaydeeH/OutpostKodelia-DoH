@@ -7,6 +7,8 @@ event_player:
     - escape_saucer_eject
   start_loop:
     - disable_playfield_coils
+  flipper_cancel:
+    - attract_show_last_game_scores
 
 segment_display_player:
 #  mode_attract_started:
@@ -162,6 +164,11 @@ show_player:
       action: play
       loops: 0
       events_when_completed: attract_show_4_complete, start_loop
+  attract_show_last_game_scores:
+    attract_last_game_scores:
+      action: play
+      priority: 15
+      loops: 6
 
 shows:
   attract_show_1:

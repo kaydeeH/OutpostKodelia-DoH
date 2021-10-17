@@ -1,0 +1,12 @@
+#show_version=5
+- time: 0
+  duration: 1
+  segment_displays:
+    display1:
+      text: "{machine.player1_score}"
+    display2:
+      text: "{machine.player2_score}"
+    display3:
+      text: "{machine.player3_score}"
+    display4:
+      text: "{machine.player4_score}"
