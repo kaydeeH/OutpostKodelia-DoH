@@ -34,7 +34,7 @@ event_player:
     - boars_nest_ended_complete
     - boars_nest_ended_reset_vars
     - boars_nest_audio_reset
-    - boars_next_end_collect
+    - boars_nest_end_collect
   boars_nest_end_collect:
     - enable_playfield_coils
     - escape_saucer_eject
