@@ -12,6 +12,7 @@
 
 mode:
   start_events: ball_started
+  events_when_started: hazzard_enable_ach
   priority: 140
 
 achievements:
@@ -22,7 +23,8 @@ achievements:
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_1_hit, spot_sau_1
     disable_events: disable_two_ball_multiball_progress
-    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, enable_two_ball_multiball_progress
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, disable_two_ball_multiball_progress
   sau_2_complete:
     show_tokens:
       leds: l_paragon_center_02a, l_paragon_center_02a2, l_paragon_saucer_02a
@@ -30,7 +32,8 @@ achievements:
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_2_hit, spot_sau_2
     disable_events: disable_two_ball_multiball_progress
-    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, enable_two_ball_multiball_progress
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, disable_two_ball_multiball_progress
   sau_3_complete:
     show_tokens:
       leds: l_paragon_center_03r, l_paragon_center_03r2, l_paragon_saucer_03r
@@ -38,43 +41,50 @@ achievements:
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_3_hit, spot_sau_3
     disable_events: disable_two_ball_multiball_progress
-    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, enable_two_ball_multiball_progress
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, disable_two_ball_multiball_progress
   sau_4_complete:
     show_tokens:
       leds: l_paragon_center_04a, l_paragon_center_04a2, l_paragon_saucer_04a
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_4_hit, spot_sau_4
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
     disable_events: disable_two_ball_multiball_progress
-    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, enable_two_ball_multiball_progress
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, disable_two_ball_multiball_progress
   sau_5_complete:
     show_tokens:
       leds: l_paragon_center_05g, l_paragon_center_05g2, l_paragon_saucer_05g
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_5_hit, spot_sau_5
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
     disable_events: disable_two_ball_multiball_progress
-    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, enable_two_ball_multiball_progress
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, disable_two_ball_multiball_progress
   sau_6_complete:
     show_tokens:
       leds: l_paragon_center_06o, l_paragon_center_06o2, l_paragon_saucer_06o
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_6_hit, spot_sau_6
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
     disable_events: disable_two_ball_multiball_progress
-    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, enable_two_ball_multiball_progress
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, disable_two_ball_multiball_progress
   sau_7_complete:
     show_tokens:
       leds: l_paragon_center_07n, l_paragon_center_07n2, l_paragon_saucer_07n
     show_when_completed: on
     start_events: mode_hazzard_started
     complete_events: hazzard_saucer_sau_7_hit, spot_sau_7
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
     disable_events: disable_two_ball_multiball_progress
-    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, enable_two_ball_multiball_progress
+    reset_events: special_scored_hazzard, multiball_hazzard_multiball_ended, disable_two_ball_multiball_progress
 
 achievement_groups:
   saucer_group:
     achievements: sau_1_complete, sau_2_complete, sau_3_complete, sau_4_complete, sau_5_complete, sau_6_complete, sau_7_complete
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
+    disable_events: disable_two_ball_multiball_progress
     events_when_all_completed: enable_saucer_special
 
 shot_profiles:
