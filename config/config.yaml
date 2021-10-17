@@ -69,6 +69,7 @@ modes:
   - inline_knockall    # mode to knock down all in line drops
   - escape_saucer      # escape saucer controller
   - boars_nest_collect # big show at the end
+  - high_score         # high score saving/entering
 
 credits:
   max_credits: settings.maximum_credits
