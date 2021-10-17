@@ -70,9 +70,9 @@ slides:
       max_chars: 3
       x: 105
       y: 20
-      shift_left_event: s_flipper_left
-      shift_right_event: s_flipper_right
-      select_event: s_credit_button
+      shift_left_event: s_flipper_left_active
+      shift_right_event: s_flipper_right_active
+      select_event: s_credit_button_active
       color: ff0000
     - type: text
       style: big
