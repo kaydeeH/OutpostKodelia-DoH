@@ -3,10 +3,12 @@
   duration: 1
   segment_displays:
     display1:
-      text: "{machine.player1_score}"
+      text: (atr_score1)
     display2:
-      text: "{machine.player2_score}"
+      text: (atr_score2)
     display3:
-      text: "{machine.player3_score}"
+      text: (atr_score3)
     display4:
-      text: "{machine.player4_score}"
+      text: (atr_score4)
+    display5:
+      text: "       "

@@ -164,11 +164,16 @@ show_player:
       action: play
       loops: 0
       events_when_completed: attract_show_4_complete, start_loop
-  attract_show_last_game_scores:
-    attract_last_game_scores:
-      action: play
-      priority: 15
-      loops: 6
+#  attract_show_last_game_scores:
+#    attract_last_game_scores:
+#      action: play
+#      priority: 15
+#      loops: 6
+#      show_tokens:
+#        atr_score1: "test1"
+#        atr_score2: "test1"
+#        atr_score3: "test1"
+#        atr_score4: "test1"
 
 shows:
   attract_show_1:
@@ -179,7 +184,6 @@ shows:
     - duration: 5
   attract_show_4:
     - duration: 5
-
 
 #variable_player:
 #  mode_attract_started|5000ms:

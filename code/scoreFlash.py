@@ -1,13 +1,9 @@
 from mpf.core.custom_code import CustomCode
 
 
-# Responds to the event "show_score_flash_text"
-# Expects 4 text values as event variables (text_1, text_2, text_3, text_4)
-# Plays the "score_flash_text" show, where text in displays 1-3 flashes and display 4 does not
+# Responds to the event "attract_show_last_game_scores"
 
-# This code exists because show_player cannot read event variables and use them as tokens
-# This also enables us to customize the loops value, which is done via a constant, and the events_when_completed
-# which will be read from the event.
+# This code exists because who knows how many players were in the last game
 
 # Setting for how many loops to execute
 # The show is .25 seconds long so 4 loops = 1 second

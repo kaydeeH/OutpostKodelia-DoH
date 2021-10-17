@@ -20,6 +20,7 @@ custom_code:
   - code.updateMachineVar.updateMachineVar
   - code.scoreFlash.scoreFlash
   - code.SuperJackpotLights.SuperJackpotLights
+  - code.atrRecentScores.atrRecentScores
 
 # This is for the debug only segment display simulation
 slide_player:
