@@ -1,0 +1,18 @@
+#show_version=5
+
+- duration: 500ms
+  lights:
+    l_backbox_03_ballinplay_1:
+      color: AAAAAA
+      fade: 500ms
+    l_backbox_04_ballinplay_2:
+      color: AAAAAA
+      fade: 500ms
+- duration: 500ms
+  lights:
+    l_backbox_03_ballinplay_1:
+      color: off
+      fade: 500ms
+    l_backbox_04_ballinplay_2:
+      color: off
+      fade: 500ms

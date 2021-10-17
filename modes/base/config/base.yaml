@@ -35,6 +35,10 @@ show_player:
     coin_lights_show:
       key: coin_lights_show_key
       priority: 1
+    ball_in_play_show:
+      key: ball_in_play_show_key
+      priority: 1
+      loops: -1
   ball_save_ball_save_main_timer_start:
     ball_save_flash:
       key: ball_save

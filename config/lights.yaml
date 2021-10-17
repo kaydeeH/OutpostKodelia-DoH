@@ -1424,7 +1424,7 @@ lights:
 
 
   #Backbox Driver Board (comes after P1/P3 Displays)
-  l_backbox_01:
+  l_backbox_01_highscore_1:
     start_channel: 0-0-252
     type: rgb
     subtype: led
@@ -1433,7 +1433,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_02:
+  l_backbox_02_highscore_2:
     start_channel: 0-0-255
     type: rgb
     subtype: led
@@ -1442,7 +1442,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_03:
+  l_backbox_03_ballinplay_1:
     start_channel: 0-0-258
     type: rgb
     subtype: led
@@ -1451,7 +1451,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_04:
+  l_backbox_04_ballinplay_2:
     start_channel: 0-0-261
     type: rgb
     subtype: led
@@ -1460,7 +1460,7 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_05:
+  l_backbox_05_match:
     start_channel: 0-0-264
     type: rgb
     subtype: led
@@ -1497,6 +1497,7 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_09_shootagain_1:
+    #Physicall implemented as 3 white LEDs
     start_channel: 0-0-276
     type: rgb
     subtype: led
@@ -1506,6 +1507,7 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_10_shootagain_2:
+    #Physicall implemented as 3 white LEDs
     start_channel: 0-0-279
     type: rgb
     subtype: led
