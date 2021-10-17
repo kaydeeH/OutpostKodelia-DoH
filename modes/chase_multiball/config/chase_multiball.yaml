@@ -66,6 +66,7 @@ event_player:
   release_chase_hold:
     - escape_saucer_eject
     - end_chase_shows_fail
+    - enable_two_ball_multiball_progress
     - next_song
   start_chase_multiball:
     - escape_saucer_eject
