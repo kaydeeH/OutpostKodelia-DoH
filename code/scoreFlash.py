@@ -31,6 +31,6 @@ class scoreFlash(CustomCode):
                                                                     events_when_completed=events_when_completed)
 
     def _show_enter_initials(self, **kwargs):
-        show_tokens = {"text_1": "Player" + kwargs.get("player_num"), "text_2": kwargs.get("award"), "text_3": "  Name:", "text_4": "A"}
+        show_tokens = {"text_1": "Player" + str(kwargs.get("player_num")), "text_2": kwargs.get("award"), "text_3": "  Name:", "text_4": "A"}
         show_instance = self.machine.shows["hs_initial_entry"].play(show_tokens=show_tokens)
 
