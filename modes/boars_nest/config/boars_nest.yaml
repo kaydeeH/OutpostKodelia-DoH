@@ -101,7 +101,8 @@ event_player:
     # also throw "enable_playfield_coils"
   escape_saucer_boars_nest_collect:
     - disable_playfield_coils # drain all balls except ball hold
-    - zzz_big_awards_show
+    - boars_nest_big_collect
+#    - zzz_big_awards_show
 
 variable_player:
   boars_nest_started:
