@@ -7,6 +7,9 @@
 # DISABLE when mode chase_multiball starts
 # ENABLE when boars nest is ended
 
+# When we add a ball hold here to award hazzard lights :
+# also need to release the ball on event "boars_nest_early_hazzard_entry"
+
 mode:
   start_events: ball_started
   priority: 140

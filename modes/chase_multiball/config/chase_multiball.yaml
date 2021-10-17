@@ -51,6 +51,7 @@ event_player:
   hz_start_mball_hit{current_player.general_lee_speed>=120}:
     - end_chase_sequence
     - chase_multiball_qualified
+
   chase_multiball_qualified:
     - start_chase_multiball
 #TODO - make more various switches add speed values
@@ -58,8 +59,10 @@ event_player:
     - general_lee_speed_add_1
   gc_start_mball_hit{current_player.general_lee_speed<120}:
     - general_lee_speed_add_5
+    - boars_nest_early_creek_entry
   hz_start_mball_hit{current_player.general_lee_speed<120}:
     - general_lee_speed_add_5
+    - boars_nest_early_hazzard_entry
   release_chase_hold:
     - escape_saucer_eject
     - end_chase_shows_fail
