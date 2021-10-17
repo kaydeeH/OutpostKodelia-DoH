@@ -96,6 +96,6 @@ ball_holds:
      balls_to_hold: 1
      hold_devices: bd_river_saucer
      release_one_events: show_creek_score_done, boars_nest_early_creek_entry
-     enable_events: enable_base_creek_shot, multiball_creek_multiball_ended
-     disable_events: disable_base_creek_shot
+     enable_events: enable_base_creek_shot, multiball_creek_multiball_ended, enable_two_ball_multiball_progress
+     disable_events: disable_base_creek_shot, disable_two_ball_multiball_progress
 
