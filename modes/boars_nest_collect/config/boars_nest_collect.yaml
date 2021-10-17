@@ -38,6 +38,8 @@ event_player:
   boars_nest_end_collect:
     - enable_playfield_coils
     - escape_saucer_eject
+    - next_song
+    - boars_nest_big_collect_complete|100ms
 
 variable_player:
   boars_nest_ended_reset_vars:
@@ -49,7 +51,7 @@ variable_player:
       int: 0
 
 sound_player:
-  boars_next_audio_reset:
+  boars_nest_audio_reset:
     doh_theme:
       action: stop
       fade_out: 500ms
