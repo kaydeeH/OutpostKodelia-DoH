@@ -1496,20 +1496,20 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_09:
+  l_backbox_09_shootagain_1:
     start_channel: 0-0-276
     type: rgb
     subtype: led
-    tags: backbox
+    tags: backbox, shootagain
     fade_ms: 50ms
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_10:
+  l_backbox_10_shootagain_2:
     start_channel: 0-0-279
     type: rgb
     subtype: led
-    tags: backbox
+    tags: backbox, shootagain
     fade_ms: 50ms
     platform: opp
     platform_settings:
