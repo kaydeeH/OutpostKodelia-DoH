@@ -38,8 +38,10 @@ event_player:
     - bonus_multiply_5x
     - start_chase_theme
     - start_siren
-  ball_hold_chase_hold_held_ball{current_player.boars_nest_active==0}:
-    - start_chase_sequence
+    - disable_two_ball_multiball_progress
+#  This is now thrown from the escape saucer mode
+#  ball_hold_chase_hold_held_ball{current_player.boars_nest_active==0}:
+#    - start_chase_sequence
   balls_in_play{balls==1}:
     - release_chase_hold
     - end_chase_mode|100ms
@@ -66,13 +68,6 @@ event_player:
     - escape_saucer_eject
 
 shots:
-#  chase_saucer:
-#    switch: s_saucer_treasure_chamber
-#    enable_events: chase_notify
-#    disable_events: release_chase_hold, end_chase_sequence
-#  chase_collect_saucer:
-#    switch: s_saucer_treasure_chamber
-#    enable_events: boar_six_pack_complete
   gc_start_mball:
     switch: s_saucer_golden_cliffs
     enable_events: chase_notify

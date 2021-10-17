@@ -4,6 +4,9 @@
 
 #TODO "lit" priority set over "flash" (done, need to test)
 
+# DISABLE when mode chase_multiball starts
+# ENABLE when boars nest is ended
+
 mode:
   start_events: ball_started
   priority: 140
@@ -112,6 +115,13 @@ shot_profiles:
         show_tokens:
           leds: l_paragon_saucer_special
 
+
+# The HAZZARD saucer should be enabled to spot HAZZARD letters in the following conditions
+# Normal, Single Ball Play, HAZZARD not yet completed
+# Creek Multiball in progress, HAZZARD not yet completed
+# The HAZZARD saucer should be disabled to spot HAZZARD letters in the following conditions
+# Chase Multiball/Boars Nest mode(s) are running
+
 shots:
   hazzard_saucer:
     switch: s_saucer_paragon
@@ -121,8 +131,10 @@ shots:
       - hazzard_saucer_hazzard_sweep_hit{settings.hazzard_scan==1}
       - spot_hazzard_letter{settings.hazzard_scan==1}
     reset_events: special_scored_hazzard, boars_nest_ended, end_chase_mode
-    enable_events: special_scored_hazzard, mode_hazzard_started, multiball_hazzard_multiball_ended, enable_base_hazzard_shot
-    disable_events: enable_saucer_special, disable_base_hazzard_shot
+    enable_events: special_scored_hazzard, mode_hazzard_started, multiball_hazzard_multiball_ended, enable_base_hazzard_shot, enable_two_ball_multiball_progress
+    disable_events: enable_saucer_special, disable_base_hazzard_shot, disable_two_ball_multiball_progress
+
+# This applies to PARAGON RULES ONLY
   hazzard_saucer_special:
     enable_events: enable_saucer_special{settings.hazzard_multiball_feature==0}
     disable_events: special_scored_hazzard

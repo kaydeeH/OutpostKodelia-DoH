@@ -76,7 +76,7 @@ event_player:
 shots:
   hazzard_multiball_start:
     switch: s_saucer_paragon
-    disable_events: multiball_hazzard_multiball_started, start_mode_chase_multiball
+    disable_events: multiball_hazzard_multiball_started, disable_two_ball_multiball_progress
     enable_events: enable_hazzard_multiball_start, boars_nest_ended, end_chase_mode
   hazzard_collect_jackpot:
     switch: s_saucer_paragon
@@ -121,6 +121,11 @@ show_player:
       key: hazzard_saucer_post_focus_show_key
       speed: 1
       priority: 1000
+
+# Kill the multiball show if you can no longer start it
+  disable_two_ball_multiball_progress:
+    hazzard_saucer_post_focus_show_key: stop
+
   start_hazzard_multiball:
     hazzard_saucer_post_focus_show_key: stop
     hazzard_saucer_jackpot_ready_show:

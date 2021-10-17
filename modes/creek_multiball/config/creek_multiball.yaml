@@ -31,8 +31,8 @@ state_machines:
 shots:
   creek_multiball_start:
     switch: s_saucer_golden_cliffs
-    disable_events: multiball_creek_multiball_started, start_mode_chase_multiball
-    enable_events: enable_creek_multiball_start, boars_nest_ended, end_chase_mode
+    disable_events: multiball_creek_multiball_started, disable_two_ball_multiball_progress
+    enable_events: enable_creek_multiball_start, enable_two_ball_multiball_progress
   creek_collect_jackpot:
     switch: s_saucer_golden_cliffs
     disable_events: creek_super_jackpot_enabled
@@ -100,6 +100,11 @@ show_player:
       key: creek_saucer_post_focus_show_key
       speed: 1
       priority: 1000
+
+# Kill the multiball show if you can no longer start it
+  disable_two_ball_multiball_progress:
+    creek_saucer_post_focus_show_key: stop
+
   start_creek_multiball:
     creek_saucer_post_focus_show_key: stop
     creek_saucer_jackpot_ready_show:

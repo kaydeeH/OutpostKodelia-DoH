@@ -34,8 +34,8 @@ shots:
   creek_saucer:
     switch: s_saucer_golden_cliffs
     profile: creek
-    disable_events: disable_base_creek_shot
-    enable_events: enable_base_creek_shot
+    disable_events: disable_base_creek_shot, disable_two_ball_multiball_progress
+    enable_events: enable_base_creek_shot, enable_two_ball_multiball_progress
     reset_events: multiball_creek_multiball_ended
 
 variable_player:

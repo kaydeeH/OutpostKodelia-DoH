@@ -11,7 +11,7 @@ event_player:
     show_score_flash_text:
       text_1: "BOARS  "
       text_2: "   NEST"
-      text_3: "COLLECT "
+      text_3: "COLLECT"
       text_4: "JACKPOT"
       events_when_completed: bnbc_1
   bnbc_1:
