@@ -14,6 +14,7 @@ class scoreFlash(CustomCode):
         self.info_log('ScoreFlash controller successfully loaded!!')
         self.machine.events.add_handler('show_score_flash_text', self._show_flash_text)
         self.machine.events.add_handler('show_notify_flash_text', self._show_notify_text)
+        self.machine.events.add_handler('high_score_enter_initials', self._show_enter_initials)
 
     def _show_flash_text(self, **kwargs):
         show_tokens = {"text_1": kwargs.get("text_1"), "text_2": kwargs.get("text_2"), "text_3": kwargs.get("text_3"),
@@ -29,5 +30,7 @@ class scoreFlash(CustomCode):
         show_instance = self.machine.shows["notify_flash_text"].play(loops=scoreFlashLoops, show_tokens=show_tokens,
                                                                     events_when_completed=events_when_completed)
 
-
+    def _show_enter_initials(self, **kwargs):
+        show_tokens = {"text_1": "Player" + kwargs.get("player_num"), "text_2": kwargs.get("award"), "text_3": "  Name:", "text_4": "A"}
+        show_instance = self.machine.shows["hs_initial_entry"].play(show_tokens=show_tokens)
 

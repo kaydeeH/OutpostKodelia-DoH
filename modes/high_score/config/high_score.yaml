@@ -30,9 +30,9 @@ high_score:
 segment_display_player:
   high_score_enter_initials:
     display1:
-      text: "PLAYER(player_num)"
+      text: "PLAYER{player_num}"
     display2:
-      text: "(award)"
+      text: "{award}"
     display3:
       text: "  Name:"
     display4:
@@ -70,9 +70,9 @@ slides:
       max_chars: 3
       x: 105
       y: 20
-      shift_left_event: sw_lower_left_flipper
-      shift_right_event: sw_lower_right_flipper
-      select_event: sw_start
+      shift_left_event: s_flipper_left
+      shift_right_event: s_flipper_right
+      select_event: s_credit_button
       color: ff0000
     - type: text
       style: big

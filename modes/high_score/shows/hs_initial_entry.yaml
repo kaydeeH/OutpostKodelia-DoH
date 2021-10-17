@@ -1,0 +1,20 @@
+#show_version=5
+
+- time: 0
+  segment_displays:
+    display1:
+      flashing: off
+      text: (text_1)
+      priority: 1000
+    display2:
+      flashing: off
+      text: (text_2)
+      priority: 1000
+    display3:
+      flashing: off
+      text: (text_3)
+      priority: 1000
+    display4:
+      flashing: off
+      text: (text_4)
+      priority: 1000
