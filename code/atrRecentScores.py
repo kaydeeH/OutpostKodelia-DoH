@@ -19,16 +19,16 @@ class atrRecentScores(CustomCode):
         self.machine.events.add_handler('attract_show_last_game_scores', self._show_recent_scores)
 
     def _show_recent_scores(self, **kwargs):
-        sc1 = str(self.machine.variables.get_machine_var("player_1_score"))
+        sc1 = str(self.machine.variables.get_machine_var("player1_score"))
         if sc1 == "None":
             sc1 = "0"
-        sc2 = str(self.machine.variables.get_machine_var("player_2_score"))
+        sc2 = str(self.machine.variables.get_machine_var("player2_score"))
         if sc2 == "None":
             sc2 = ""
-        sc3 = str(self.machine.variables.get_machine_var("player_3_score"))
+        sc3 = str(self.machine.variables.get_machine_var("player3_score"))
         if sc3 == "None":
             sc3 = ""
-        sc4 = str(self.machine.variables.get_machine_var("player_4_score"))
+        sc4 = str(self.machine.variables.get_machine_var("player4_score"))
         if sc4 == "None":
             sc4 = ""
 
