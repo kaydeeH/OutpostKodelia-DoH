@@ -133,11 +133,13 @@ ball_devices:
   bd_river_saucer:
     ball_switches: s_saucer_golden_cliffs
     eject_coil: c_saucer_golden_cliffs
+    eject_all_events: boars_nest_early_creek_entry
     eject_timeouts: 500ms, 1s, 2s, 4s
   bd_hazzard_saucer:
     ball_switches: s_saucer_paragon
     eject_coil: c_saucer_paragon
     eject_timeouts: 500ms, 1s, 2s, 4s
+    eject_all_events: boars_nest_early_hazzard_entry
 
 
 
