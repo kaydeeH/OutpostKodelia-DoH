@@ -2,7 +2,9 @@
 - time: 0
   lights:
     (lights): (color)
+    (lightsbb): (colorbb)
 - time: +.25
   lights:
     (lights): off
+    (lightsbb): off
 - time: +.25
