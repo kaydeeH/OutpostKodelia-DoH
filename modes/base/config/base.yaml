@@ -13,6 +13,7 @@ event_player:
   mode_base_started:
     - start_base_shows
     - next_song
+    - start_car_sounds
 
 ball_saves:
   ball_save_validate:
@@ -35,10 +36,6 @@ show_player:
     coin_lights_show:
       key: coin_lights_show_key
       priority: 1
-    ball_in_play_show:
-      key: ball_in_play_show_key
-      priority: 1
-      loops: -1
   ball_save_ball_save_main_timer_start:
     ball_save_flash:
       key: ball_save
@@ -69,3 +66,19 @@ sound_player:
       loops: 0
       about_to_finish_time: 250ms
       events_when_about_to_finish: next_song
+  start_car_sounds:
+    rev_up:
+      action: play
+      loops: 0
+      about_to_finish_time: 500ms
+      events_when_about_to_finish: start_car_idle
+  start_car_idle:
+    idle:
+      action: play
+      loops: -1
+  balldevice_bd_plunger_ball_eject_success:
+    idle:
+      action: stop
+    launch_car:
+      action: play
+      loops: 0

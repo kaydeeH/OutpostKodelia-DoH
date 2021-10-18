@@ -71,6 +71,18 @@ sounds:
   police_siren:
     file: police_siren.wav
     track: sfx
+  idle:
+    file: idle.wav
+    track: sfx
+    volume: 0.3
+  rev_up:
+    file: rev_up.wav
+    track: sfx
+    volume: 0.3
+  launch_car:
+    file: launch_car.wav
+    track: sfx
+    volume: 0.3
 
   #Voice Clips
   ##Player Add Clips
