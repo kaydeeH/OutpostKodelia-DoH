@@ -41,7 +41,6 @@ show_player:
       key: ball_save
       speed: 2
       show_tokens:
-        lights: l_bonus_shoot_again, l_bonus_shoot_again2, l_bonus_shoot_again3
         color: ff7500
         lightsbb: l_backbox_09_shootagain_1, l_backbox_10_shootagain_2
         colorbb: white
@@ -50,7 +49,6 @@ show_player:
       key: ball_save
       speed: 4
       show_tokens:
-        lights: l_bonus_shoot_again, l_bonus_shoot_again2, l_bonus_shoot_again3
         color: ff7500
         lightsbb: l_backbox_09_shootagain_1, l_backbox_10_shootagain_2
         colorbb: white

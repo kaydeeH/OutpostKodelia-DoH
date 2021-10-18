@@ -1,10 +1,25 @@
 #show_version=5
-- time: 0
+- duration: 250ms
   lights:
-    (lights): (color)
+    l_bonus_shoot_again: (color)
+    l_bonus_shoot_again2: off
+    l_bonus_shoot_again3: off
     (lightsbb): (colorbb)
-- time: +.25
+- duration: 250ms
   lights:
-    (lights): off
+    l_bonus_shoot_again: off
+    l_bonus_shoot_again2: (color)
+    l_bonus_shoot_again3: off
     (lightsbb): off
-- time: +.25
+- duration: 250ms
+  lights:
+    l_bonus_shoot_again: off
+    l_bonus_shoot_again2: off
+    l_bonus_shoot_again3: (color)
+    (lightsbb): (colorbb)
+- duration: 250ms
+  lights:
+    l_bonus_shoot_again: off
+    l_bonus_shoot_again2: off
+    l_bonus_shoot_again3: off
+    (lightsbb): off
