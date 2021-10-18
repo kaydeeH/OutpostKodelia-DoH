@@ -128,6 +128,7 @@ switches:
     number: 1-0-42
   s_shooter_lane: #auto-plunge
     number: 1-0-34
+    events_when_deactivated: shooter_lane_empty
 
   # Slingshots, Pops and Flippers
 

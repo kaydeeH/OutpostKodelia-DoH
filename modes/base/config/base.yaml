@@ -76,7 +76,7 @@ sound_player:
     idle:
       action: play
       loops: -1
-  balldevice_bd_plunger_ball_eject_success:
+  shooter_lane_empty:
     idle:
       action: stop
     launch_car:
