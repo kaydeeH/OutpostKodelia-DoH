@@ -1,0 +1,8 @@
+#show_version=5
+
+- time: 0
+  segment_displays:
+    display4:
+      flashing: off
+      text: (text_4)
+      priority: 1100

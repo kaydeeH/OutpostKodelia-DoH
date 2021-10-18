@@ -6,9 +6,10 @@ mode:
   priority: 500
   start_events: game_ending, start_high_score
   use_wait_queue: true
+  code: high_score.HighScore
 high_score:
   _overwrite: true
-  enter_initials_timeout: 60
+  enter_initials_timeout: 300
   award_slide_display_time: 4s
   # define your high score categories and the awards
   categories: !!omap
@@ -27,6 +28,7 @@ high_score:
       - QUI: 20000
       - MAR: 10000
 
+
 #segment_display_player:
 #  high_score_enter_initials:
 #    display1:
@@ -38,12 +40,20 @@ high_score:
 #    display4:
 #      text: "A"
 
+event_player:
+  s_flipper_left_active:
+    - segment_high_score_left
+  s_flipper_right_active:
+    - segment_high_score_right
+  s_credit_button_active:
+    - segment_high_score_next
+
 # LEAVE THIS HERE FOR DEBUG, REMOVE
 # optional: change the slides (you can omit all the following)
 slide_player:
   _overwrite: true
-  high_score_enter_initials: high_score_enter_initials
-  high_score_award_display: high_score_award_display
+#  high_score_enter_initials: high_score_enter_initials
+#  high_score_award_display: high_score_award_display
 slides:
   _overwrite: true
   high_score_enter_initials:

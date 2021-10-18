@@ -16,5 +16,5 @@
       priority: 1000
     display4:
       flashing: off
-      text: (text_4)
+      text: "{machine.doh_hs_entry}"
       priority: 1000
