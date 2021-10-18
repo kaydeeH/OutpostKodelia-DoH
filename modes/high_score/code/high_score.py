@@ -8,8 +8,10 @@ from mpf.core.player import Player
 
 class HighScore(HighScore):
 
-    charList = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U",
+    charListInit = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U",
                 "V", "W", "X", "Y", "Z", "<", "*"]
+    charListEnd = ["*", "<"]
+    charListCurrent = charListInit
     charEntry = "A"
     charPos = 0     # position in the charList
     charChoice = 0  # position in the overall input
@@ -48,39 +50,48 @@ class HighScore(HighScore):
 
     def _handle_high_score_left(self, **kwargs):
         if self.charPos == 0:
-            self.charPos = len(self.charList) - 1
+            self.charPos = len(self.charListCurrent) - 1
         else:
             self.charPos = self.charPos - 1
 
         if self.charChoice == 0:
-            self.charEntry = self.charList[self.charPos]
+            self.charEntry = self.charListCurrent[self.charPos]
         else:
-            self.charEntry = self.charEntry[0:self.charChoice] + self.charList[self.charPos]
+            self.charEntry = self.charEntry[0:self.charChoice] + self.charListCurrent[self.charPos]
         self.machine.variables.set_machine_var("doh_hs_entry", self.charEntry)
 
     def _handle_high_score_right(self, **kwargs):
-        if self.charPos == len(self.charList) - 1:
+        if self.charPos == len(self.charListCurrent) - 1:
             self.charPos = 0
         else:
             self.charPos = self.charPos + 1
 
-        self.charEntry = self.charEntry[0:self.charChoice] + self.charList[self.charPos]
+        self.charEntry = self.charEntry[0:self.charChoice] + self.charListCurrent[self.charPos]
         self.machine.variables.set_machine_var("doh_hs_entry", self.charEntry)
 
     def _handle_high_score_enter(self, **kwargs):
-        if self.charChoice == 5 or self.charList[self.charPos] == "*":
+        if self.charListCurrent[self.charPos] == "*":
             if self.charEntry[len(self.charEntry)-1] == "*":
                 self.charEntry = self.charEntry[0:len(self.charEntry)-1]
             self.machine.events.post('text_input_high_score_complete',
                                      text=self.charEntry)
         else:
-            if self.charList[self.charPos] == "<":
+            if self.charListCurrent[self.charPos] == "<":
                 if self.charChoice != 0:
-                    self.charEntry = self.charEntry[0:self.charChoice]
+                    self.charEntry = self.charEntry[0:self.charChoice-1]
                     self.charChoice = self.charChoice - 1
+                    self.charListCurrent = self.charListInit
+                    self.charPos = len(self.charListCurrent) - 2
+                    self.charEntry = self.charEntry[0:self.charChoice] + self.charListCurrent[self.charPos]
             else:
-                self.charEntry = self.charEntry[0:self.charChoice] + self.charList[self.charPos] + self.charList[self.charPos]
+                self.charEntry = self.charEntry[0:self.charChoice] + self.charListCurrent[self.charPos]
+                if self.charChoice == 5:
+                    self.charListCurrent = self.charListEnd
+                    self.charPos = 0
+                else:
+                    self.charListCurrent = self.charListInit
                 self.charChoice = self.charChoice + 1
+                self.charEntry = self.charEntry[0:self.charChoice] + self.charListCurrent[self.charPos]
         self.machine.variables.set_machine_var("doh_hs_entry", self.charEntry)
 
     async def _ask_player_for_initials(self, player: Player, award_label: str, value: int) -> str:
