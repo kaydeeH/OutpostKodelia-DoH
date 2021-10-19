@@ -99,6 +99,11 @@ class HighScore(HighScore):
         self.info_log("New high score. Player: %s, award_label: %s"
                       ", Value: %s", player, award_label, value)
 
+        # reset in case not the first time today
+        self.charEntry = "A"
+        self.charPos = 0  # position in the charList
+        self.charChoice = 0  # position in the overall input
+
         self.machine.events.post('segment_high_score_enter_initials',
                                  #award=award_label,
                                  award=award_label,
