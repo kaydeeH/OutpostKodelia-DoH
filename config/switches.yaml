@@ -215,6 +215,7 @@ switches:
   s_spinner:
     number: 1-0-74
     tags: playfield_active, kpf, c_jack, h_jack, not_skill
+    debounce: quick
   s_right_drop_standing:
     number: 1-0-39
     tags: playfield_active, kpf, c_jack, h_jack, not_skill
