@@ -1,7 +1,7 @@
 #config_version=5
 
 sound_system:
-  buffer: 1024
+  buffer: 16384
   channels: 1
   enabled: True
   frequency: 44100
@@ -10,7 +10,7 @@ sound_system:
     music:
       type: standard
       simultaneous_sounds: 1
-      volume: .5
+      volume: .6
     voice:
       type: standard
       simultaneous_sounds: 10
@@ -23,7 +23,7 @@ sound_system:
 sounds:
   # Music
   bonuscountdownmusic:
-    file: bonus_countdown.ogg
+    file: bonus_countdown.wav
     track: music
   doh_track0:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Menu Theme.wav"
