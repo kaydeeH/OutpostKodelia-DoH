@@ -64,7 +64,7 @@ coils:
 
   c_drop_target_inline:
     number: 0-0-5
-    default_pulse_ms: 50
+    default_pulse_ms: 100
   c_drop_target_right:
     number: 0-0-14
     default_pulse_ms: 45
