@@ -2,7 +2,7 @@
 
 mode:
   start_events: start_chase_multiball
-  stop_events: boars_nest_ended_complete
+  stop_events: boars_nest_ended_complete, boars_nest_ended_failed
   events_when_started: boars_nest_started
   priority: 500
 
@@ -26,14 +26,15 @@ show_player:
         colorbb: white
   ball_save_ball_save_boars_nest_hurry_up:
     ball_save_flash:
-      key: ball_save_boar
+      key: ball_save_boar_hurry
       speed: 4
       show_tokens:
         color: ff7500
         lightsbb: l_backbox_09_shootagain_1, l_backbox_10_shootagain_2
         colorbb: white
-  ball_save_ball_save_main_disabled:
     ball_save_boar: stop
+  ball_save_ball_save_main_disabled:
+    ball_save_boar_hurry: stop
 
 achievements:
   boar_1_complete:
@@ -102,6 +103,8 @@ event_player:
   boars_nest_ended:
     - enable_two_ball_multiball_progress
     - drops_inline_reset
+  s_drop_inline_a_active|250ms:
+    - drops_inline_reset
 
 # spins and pops dropped to 1 for testing
 #  player_boars_nest_spins{current_player.boars_nest_spins==20}:
@@ -130,6 +133,10 @@ event_player:
     - disable_playfield_coils # drain all balls except ball hold
     - boars_nest_big_collect
 #    - zzz_big_awards_show
+  ball_will_end:
+    - boars_nest_failed
+  boars_nest_failed:   # we need to do something here
+    - boars_nest_ended_failed
 
 variable_player:
   boars_nest_started:
@@ -197,16 +204,16 @@ variable_player:
     score: 1000
     boars_nest_hazzards: 1
 # In Line Drops
-  s_drop_inline_a_active: # add requirement for achiv group NOT complete
+  s_drop_inline_a_active{current_player.suspend_spot==0}:
     score: 1000
     boars_nest_inlines: 1
-  s_drop_inline_b_active: # add requirement for achiv group NOT complete
+  s_drop_inline_b_active{current_player.suspend_spot==0}:
     score: 1000
     boars_nest_inlines: 1
-  s_drop_inline_c_active: # add requirement for achiv group NOT complete
+  s_drop_inline_c_active{current_player.suspend_spot==0}:
     score: 1000
     boars_nest_inlines: 1
-  s_drop_inline_d_active: # add requirement for achiv group NOT complete
+  s_drop_inline_d_active{current_player.suspend_spot==0}:
     score: 1000
     boars_nest_inlines: 1
   ball_hold_boar_hold_held_ball:

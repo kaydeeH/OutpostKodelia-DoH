@@ -9,7 +9,7 @@
 
 mode:
   start_events: start_mode_chase_multiball
-  stop_events: boars_nest_ended, end_chase_mode
+  stop_events: boars_nest_ended, end_chase_mode, boars_nest_ended_failed
   events_when_started: chase_notify
   priority: 200
 
