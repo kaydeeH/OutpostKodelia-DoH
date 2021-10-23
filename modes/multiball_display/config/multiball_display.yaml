@@ -87,7 +87,7 @@ event_player:
     - multiball_display_end
   boars_nest_ended{device.multiballs.hazzard_multiball.balls_live_target==0 and device.multiballs.pre_chase_multiball.balls_live_target==0 and device.multiballs.pre_chase_multiball.balls_live_target==0}:
     - multiball_display_end
-    -
+    
 # Display current player score on display two
 
 # Display various messages on displays 3 & 4, and "match" window of display 5
