@@ -1,0 +1,14 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we still need to hit HAZZARD
+- time: 0
+  lights:
+    l_paragon_saucer_01p: red
+    l_paragon_saucer_02a: red
+    l_paragon_saucer_03r: red
+    l_paragon_saucer_04a: red
+    l_paragon_saucer_05g: red
+    l_paragon_saucer_06o: red
+    l_paragon_saucer_07n: red
+    l_paragon_saucer_special: red
+    (leds): off

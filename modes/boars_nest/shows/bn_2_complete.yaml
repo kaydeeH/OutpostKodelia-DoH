@@ -1,0 +1,24 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we still need to hit POPS
+- time: 0
+  lights:
+    pop1_0: green
+    pop1_1: green
+    pop1_2: green
+    pop1_3: green
+    pop1_4: green
+    pop1_5: green
+    pop2_0: green
+    pop2_1: green
+    pop2_2: green
+    pop2_3: green
+    pop2_4: green
+    pop2_5: green
+    pop3_0: green
+    pop3_1: green
+    pop3_2: green
+    pop3_3: green
+    pop3_4: green
+    pop3_5: green
+    (leds): white

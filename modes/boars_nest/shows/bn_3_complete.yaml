@@ -1,0 +1,11 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we have enough RIGHT DROPS
+- time: 0
+  lights:
+    l_droptarget_10k: green
+    l_droptarget_15k: green
+    l_droptarget_20k: green
+    l_droptarget_25k: green
+    l_droptarget_special: green
+    (leds): white

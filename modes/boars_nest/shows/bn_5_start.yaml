@@ -1,0 +1,12 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we still need to hit CREEK
+- time: 0
+  lights:
+    l_goldencliffs_2k: red
+    l_goldencliffs_4k: red
+    l_goldencliffs_6k: red
+    l_goldencliffs_8k: red
+    l_goldencliffs_10k: red
+    l_goldencliffs_20k: red
+    (leds): off

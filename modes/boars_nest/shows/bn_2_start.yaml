@@ -1,0 +1,24 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we still need to hit POPS
+- time: 0
+  lights:
+    pop1_0: red
+    pop1_1: red
+    pop1_2: red
+    pop1_3: red
+    pop1_4: red
+    pop1_5: red
+    pop2_0: red
+    pop2_1: red
+    pop2_2: red
+    pop2_3: red
+    pop2_4: red
+    pop2_5: red
+    pop3_0: red
+    pop3_1: red
+    pop3_2: red
+    pop3_3: red
+    pop3_4: red
+    pop3_5: red
+    (leds): off

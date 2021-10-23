@@ -1,0 +1,11 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we still have enough SPINS
+- time: 0
+  lights:
+    l_spinner_1: green
+    l_spinner_2: green
+    l_spinner_3: green
+    l_spinner_4: green
+    l_spinner_5: green
+    (leds): white

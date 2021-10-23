@@ -1,0 +1,12 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we've hit CREEK
+- time: 0
+  lights:
+    l_goldencliffs_2k: green
+    l_goldencliffs_4k: green
+    l_goldencliffs_6k: green
+    l_goldencliffs_8k: green
+    l_goldencliffs_10k: green
+    l_goldencliffs_20k: green
+    (leds): white

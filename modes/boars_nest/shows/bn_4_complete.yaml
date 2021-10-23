@@ -1,0 +1,9 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we've hit OIL SLICK
+- time: 0
+  lights:
+    l_waterlane_5k: green
+    l_waterlane_10k: green
+    l_waterlane_special: green
+    (leds): white

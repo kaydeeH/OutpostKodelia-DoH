@@ -1,0 +1,14 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we hit HAZZARD
+- time: 0
+  lights:
+    l_paragon_saucer_01p: green
+    l_paragon_saucer_02a: green
+    l_paragon_saucer_03r: green
+    l_paragon_saucer_04a: green
+    l_paragon_saucer_05g: green
+    l_paragon_saucer_06o: green
+    l_paragon_saucer_07n: green
+    l_paragon_saucer_special: green
+    (leds): white

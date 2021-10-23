@@ -1,0 +1,11 @@
+#show_version=5
+
+# Placeholder -- Show to indicate we still need to hit SPINS
+- time: 0
+  lights:
+    l_spinner_1: red
+    l_spinner_2: red
+    l_spinner_3: red
+    l_spinner_4: red
+    l_spinner_5: red
+    (leds): off
