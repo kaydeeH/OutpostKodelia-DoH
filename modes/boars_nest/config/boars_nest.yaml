@@ -43,7 +43,7 @@ achievements:
       leds: l_paragon_center_01p, l_paragon_center_01p2
     show_when_started: bn_1_start
     show_when_completed: bn_1_complete
-    start_events: boars_nest_started
+    start_events: start_boars_ach
     reset_events: boars_nest_started
     complete_events: boar_collect_1
   boar_2_complete:
@@ -51,7 +51,7 @@ achievements:
       leds: l_paragon_center_02a, l_paragon_center_02a2
     show_when_started: bn_2_start
     show_when_completed: bn_2_complete
-    start_events: boars_nest_started
+    start_events: start_boars_ach
     reset_events: boars_nest_started
     complete_events: boar_collect_2
   boar_3_complete:
@@ -59,7 +59,7 @@ achievements:
       leds: l_paragon_center_03r, l_paragon_center_03r2
     show_when_started: bn_3_start
     show_when_completed: bn_3_complete
-    start_events: boars_nest_started
+    start_events: start_boars_ach
     reset_events: boars_nest_started
     complete_events: boar_collect_3
   boar_4_complete:
@@ -67,7 +67,7 @@ achievements:
       leds: l_paragon_center_04a, l_paragon_center_04a2
     show_when_started: bn_4_start
     show_when_completed: bn_4_complete
-    start_events: boars_nest_started
+    start_events: start_boars_ach
     reset_events: boars_nest_started
     complete_events: boar_collect_4
   boar_5_complete:
@@ -75,7 +75,7 @@ achievements:
       leds: l_paragon_center_05g, l_paragon_center_05g2
     show_when_started: bn_5_start
     show_when_completed: bn_5_complete
-    start_events: boars_nest_started
+    start_events: start_boars_ach
     reset_events: boars_nest_started
     complete_events: boar_collect_5
   boar_6_complete:
@@ -83,7 +83,7 @@ achievements:
       leds: l_paragon_center_06o, l_paragon_center_06o2
     show_when_started: bn_6_start
     show_when_completed: bn_6_complete
-    start_events: boars_nest_started
+    start_events: start_boars_ach
     reset_events: boars_nest_started
     complete_events: boar_collect_6
 
@@ -108,6 +108,7 @@ event_player:
 #   Others handled in modes
     - start_dukes_theme
     - stop_siren
+    - start_boars_ach
   boars_nest_ended:
     - enable_two_ball_multiball_progress
     - drops_inline_reset
