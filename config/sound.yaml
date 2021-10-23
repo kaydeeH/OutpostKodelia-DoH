@@ -89,12 +89,15 @@ sounds:
   gunfire1:
     file: gunfire1.wav
     track: sfx
+    volume: 0.6
   gunfire2:
     file: gunfire2.wav
     track: sfx
+    volume: 0.6
   gunfire3:
     file: gunfire3.wav
     track: sfx
+    volume: 0.6
   oil:
     file: oil.wav
     track: sfx
