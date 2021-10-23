@@ -67,14 +67,14 @@ event_player:
 #   Right drops handled in right drop mode
 #   Oil slick handled in mode
 #   Hazzard handled in mode
-    - disable_base_creek_shot
-    - drops_inline_reset
-#  boars_nest_ended:
-    - enable_base_creek_shot
+    - disable_two_ball_multiball_progress
     - drops_inline_reset
 #   Others handled in modes
     - start_dukes_theme
     - stop_siren
+  boars_nest_ended:
+    - enable_two_ball_multiball_progress
+    - drops_inline_reset
 
 # spins and pops dropped to 1 for testing
 #  player_boars_nest_spins{current_player.boars_nest_spins==20}:

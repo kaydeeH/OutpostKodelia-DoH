@@ -2,7 +2,6 @@ from mpf.core.custom_code import CustomCode
 
 
 # Responds to the event "attract_show_last_game_scores"
-
 # This code exists because who knows how many players were in the last game
 
 # Setting for how many loops to execute

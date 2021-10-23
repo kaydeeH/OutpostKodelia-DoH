@@ -18,6 +18,7 @@ event_player:
 ball_saves:
   ball_save_validate:
     balls_to_save: -1
+    enable_events: finish_inline_knockdown
     disable_events: sw_kpf
     auto_launch: false
     early_ball_save_events: sw_early_ball_save
