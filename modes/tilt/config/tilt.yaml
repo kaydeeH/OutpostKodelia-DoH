@@ -7,7 +7,7 @@ tilt:
 
 slide_player:
   _overwrite: true
-  
+
 slides:
   _overwrite: true
 

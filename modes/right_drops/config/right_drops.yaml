@@ -28,7 +28,7 @@ counters:
     count_complete_value: 6
     persist_state: true
     disable_events: boars_nest_started
-    enable_events: init_right_drops, boars_nest_ended
+    enable_events: init_right_drops, boars_nest_ended_complete, boars_nest_ended_failed
 
 show_player:
   logicblock_counter_drop_right_complete_updated{value==0}:

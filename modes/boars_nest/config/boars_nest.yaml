@@ -44,6 +44,7 @@ achievements:
     show_when_started: bn_1_start
     show_when_completed: bn_1_complete
     start_events: boars_nest_started
+    reset_events: boars_nest_started
     complete_events: boar_collect_1
   boar_2_complete:
     show_tokens:
@@ -51,6 +52,7 @@ achievements:
     show_when_started: bn_2_start
     show_when_completed: bn_2_complete
     start_events: boars_nest_started
+    reset_events: boars_nest_started
     complete_events: boar_collect_2
   boar_3_complete:
     show_tokens:
@@ -58,6 +60,7 @@ achievements:
     show_when_started: bn_3_start
     show_when_completed: bn_3_complete
     start_events: boars_nest_started
+    reset_events: boars_nest_started
     complete_events: boar_collect_3
   boar_4_complete:
     show_tokens:
@@ -65,6 +68,7 @@ achievements:
     show_when_started: bn_4_start
     show_when_completed: bn_4_complete
     start_events: boars_nest_started
+    reset_events: boars_nest_started
     complete_events: boar_collect_4
   boar_5_complete:
     show_tokens:
@@ -72,6 +76,7 @@ achievements:
     show_when_started: bn_5_start
     show_when_completed: bn_5_complete
     start_events: boars_nest_started
+    reset_events: boars_nest_started
     complete_events: boar_collect_5
   boar_6_complete:
     show_tokens:
@@ -79,6 +84,7 @@ achievements:
     show_when_started: bn_6_start
     show_when_completed: bn_6_complete
     start_events: boars_nest_started
+    reset_events: boars_nest_started
     complete_events: boar_collect_6
 
 
