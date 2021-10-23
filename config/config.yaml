@@ -124,7 +124,7 @@ player_vars:
     initial_value: 0
   boars_nest_active:
     initial_value: 0
-  boar_six_pack_complete:
+  boars_nest_six_pack_complete:
     initial_value: 0
 ## Normal Game Settings
 

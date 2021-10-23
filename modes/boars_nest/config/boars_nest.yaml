@@ -93,7 +93,7 @@ achievement_groups:
   boar_six_pack:
     achievements: boar_1_complete, boar_2_complete, boar_3_complete, boar_4_complete, boar_5_complete, boar_6_complete
     enable_events: boars_nest_started
-    events_when_all_completed: boar_six_pack_complete
+    events_when_all_completed: boar_six_pack_is_complete
 
 event_player:
   boars_nest_started:
@@ -112,7 +112,7 @@ event_player:
   boars_nest_ended:
     - enable_two_ball_multiball_progress
     - drops_inline_reset
-  s_drop_inline_a_active{current_player.boars_nest_six_pack_complete!=1}:
+  s_drop_inline_a_active{current_player.boars_nest_six_pack_complete==0 and current_player.boars_nest_active==1}:
     - drops_inline_reset|250ms
 
 # spins and pops dropped to 1 for testing
@@ -131,7 +131,6 @@ event_player:
   player_boars_nest_hazzards{current_player.boars_nest_hazzards==1}:
     - boar_collect_6
   player_boars_nest_six_pack_complete{current_player.boars_nest_six_pack_complete==1}:
-#  boar_six_pack_complete:
     - inline_drop_all
 #  ball_hold_boar_hold_held_ball:
   ball_hold_chase_hold_held_ball:
@@ -231,7 +230,7 @@ variable_player:
     boars_nest_complete_balls_in_play:
       action: set
       int: device.playfields.playfield.balls
-  boar_six_pack_complete:
+  boar_six_pack_is_complete:
     boars_nest_six_pack_complete:
       action: set
       int: 1
@@ -272,7 +271,7 @@ variable_player:
 #  boar_hold:
 #    balls_to_hold: 1
 #    hold_devices: bd_escape_saucer
-#    enable_events: boar_six_pack_complete
+#    enable_events: boar_six_pack_is_complete
 #    release_one_events: zzz_boar_final_display
 
 # Mode finished w/ success scoring --
