@@ -80,3 +80,30 @@ sound_player:
     launch_car:
       action: play
       loops: 0
+  drop_target_R0_down:
+    car_door:
+      action: play
+      loops: 0
+      volume: .8
+  drop_target_R1_down:
+    car_door:
+      action: play
+      loops: 0
+      volume: .8
+  drop_target_R2_down:
+    car_door:
+      action: play
+      loops: 0
+      volume: .8
+  s_thumper_center_active:
+    ricochet:
+      action: play
+      loops: 0
+  s_thumper_left_active:
+    ricochet:
+      action: play
+      loops: 0
+  s_thumper_right_active:
+    ricochet:
+      action: play
+      loops: 0
