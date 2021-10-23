@@ -122,7 +122,7 @@ event_player:
 #  player_boars_nest_pops{current_player.boars_nest_pops==8}:
   player_boars_nest_pops{current_player.boars_nest_pops==1}:
     - boar_collect_2
-  shot_group_drop_right_complete:
+  drop_target_bank_dtbank_right_down:
     - boar_collect_3
   player_boars_nest_oil_slicks{current_player.boars_nest_oil_slicks==1}:
     - boar_collect_4
