@@ -37,6 +37,7 @@ event_player:
     - boars_nest_end_collect
   boars_nest_end_collect:
     - enable_playfield_coils
+    - drops_inline_reset
     - escape_saucer_eject
     - next_song
     - boars_nest_big_collect_complete|100ms
@@ -58,7 +59,7 @@ variable_player:
     boars_nest_right_drops:
       action: set
       int: 0
-    boars_next_oil_slicks:
+    boars_nest_oil_slicks:
       action: set
       int: 0
     boars_nest_creeks:
@@ -67,7 +68,7 @@ variable_player:
     boars_nest_hazzards:
       action: set
       int: 0
-    boars_next_inlines:
+    boars_nest_inlines:
       action: set
       int: 0
   boars_nest_big_collect_start:

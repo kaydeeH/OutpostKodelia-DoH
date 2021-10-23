@@ -42,7 +42,7 @@ event_player:
 #  This is now thrown from the escape saucer mode
 #  ball_hold_chase_hold_held_ball{current_player.boars_nest_active==0}:
 #    - start_chase_sequence
-  balls_in_play{balls==1}:
+  balls_in_play{balls==1 and current_player.boars_nest_active==0}:
     - release_chase_hold
     - end_chase_mode|100ms
   gc_start_mball_hit{current_player.general_lee_speed>=120}:
@@ -54,9 +54,6 @@ event_player:
 
   chase_multiball_qualified:
     - start_chase_multiball
-#TODO - make more various switches add speed values
-  sw_kpf:
-    - general_lee_speed_add_1
   gc_start_mball_hit{current_player.general_lee_speed<120}:
     - general_lee_speed_add_5
     - boars_nest_early_creek_entry
@@ -70,6 +67,9 @@ event_player:
     - next_song
   start_chase_multiball:
     - escape_saucer_eject
+#TODO - make more various switches add speed values
+  sw_kpf:
+    - general_lee_speed_add_1
 
 shots:
   gc_start_mball:
@@ -135,10 +135,14 @@ variable_player:
         int: 0
       general_lee_speed:
         action: set
-        int: 40
+        int: 0
       boars_nest_active:
         action: set
         int: 0
+  multiball_pre_chase_multiball_started:
+      general_lee_speed:
+        action: set
+        int: 40
   general_lee_speed_add_1{current_player.boars_nest_active!=1}:
       general_lee_speed:
         # temp change to 10 to make testing easier

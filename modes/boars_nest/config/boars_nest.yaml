@@ -112,8 +112,8 @@ event_player:
   boars_nest_ended:
     - enable_two_ball_multiball_progress
     - drops_inline_reset
-  s_drop_inline_a_active|250ms:
-    - drops_inline_reset
+  s_drop_inline_a_active:
+    - drops_inline_reset|250ms
 
 # spins and pops dropped to 1 for testing
 #  player_boars_nest_spins{current_player.boars_nest_spins==20}:
@@ -165,7 +165,7 @@ variable_player:
     boars_nest_right_drops:
       action: set
       int: 0
-    boars_next_oil_slicks:
+    boars_nest_oil_slicks:
       action: set
       int: 0
     boars_nest_creeks:
@@ -174,7 +174,7 @@ variable_player:
     boars_nest_hazzards:
       action: set
       int: 0
-    boars_next_inlines:
+    boars_nest_inlines:
       action: set
       int: 0
 # Spins
@@ -227,7 +227,7 @@ variable_player:
     score: 1000
     boars_nest_inlines: 1
   ball_hold_boar_hold_held_ball:
-    boars_next_complete_balls_in_play:
+    boars_nest_complete_balls_in_play:
       action: set
       int: device.playfields.playfield.balls
   boar_six_pack_complete:
