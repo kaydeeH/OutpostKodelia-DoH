@@ -75,6 +75,10 @@ sound_player:
     idle:
       action: play
       loops: -1
+  sw_kpf:
+    idle:
+      action: stop
+      fade_out: 250ms
   shooter_lane_empty:
     idle:
       action: stop
@@ -114,5 +118,9 @@ sound_player:
       loops: 0
   s_saucer_golden_cliffs_active:
     creek:
+      action: play
+      loops: 0
+  s_thumper_bottom_active:
+    jail_door:
       action: play
       loops: 0
