@@ -235,7 +235,7 @@ sound_pools:
     simultaneous_limit: 5
     stealing_method: skip
   drain_clips:
-    type: random
+    type: random_force_all
     track: voice
     sounds:
       - howl
