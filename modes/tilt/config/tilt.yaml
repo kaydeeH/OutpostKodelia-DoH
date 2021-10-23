@@ -1,0 +1,46 @@
+#config_version=5
+
+tilt:
+  multiple_hit_window: settings.multiple_hit_window
+  settle_time: settings.settle_time
+  warnings_to_tilt: settings.warnings_to_tilt
+
+slide_player:
+  _overwrite: true
+  
+slides:
+  _overwrite: true
+
+event_player:
+  tilt_warning_1:
+    kodelia_tilt_warn:
+      count: 1
+  tilt_warning_2:
+    kodelia_tilt_warn:
+      count: 2
+  tilt_warning_3:
+    kodelia_tilt_warn:
+      count: 3
+  tilt_warning_4:
+    kodelia_tilt_warn:
+      count: 4
+  tilt_warning_5:
+    kodelia_tilt_warn:
+      count: 5
+  tilt_warning_6:
+    kodelia_tilt_warn:
+      count: 6
+  tilt_warning_7:
+    kodelia_tilt_warn:
+      count: 7
+  tilt_warning_8:
+    kodelia_tilt_warn:
+      count: 8
+  tilt_warning_9:
+    kodelia_tilt_warn:
+      count: 9
+  tilt_warning_10:
+    kodelia_tilt_warn:
+      count: 10
+  tilt:
+    - kodelia_tilt

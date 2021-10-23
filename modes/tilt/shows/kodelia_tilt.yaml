@@ -1,0 +1,38 @@
+#show_version=5
+
+- duration: .125
+  segment_displays:
+    display1:
+      flashing: off
+      text: "TILT"
+      priority: 10000
+    display2:
+      flashing: off
+      text: "   TILT"
+      priority: 10000
+    display3:
+      flashing: off
+      text: "TILT"
+      priority: 10000
+    display4:
+      flashing: off
+      text: "   TILT"
+      priority: 10000
+- duration: .125
+  segment_displays:
+    display1:
+      flashing: off
+      text: ""
+      priority: 10000
+    display2:
+      flashing: off
+      text: ""
+      priority: 10000
+    display3:
+      flashing: off
+      text: ""
+      priority: 10000
+    display4:
+      flashing: off
+      text: ""
+      priority: 10000

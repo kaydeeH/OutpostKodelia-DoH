@@ -16,6 +16,8 @@ class scoreFlash(CustomCode):
         self.machine.events.add_handler('show_notify_flash_text', self._show_notify_text)
         self.machine.events.add_handler('segment_high_score_enter_initials', self._show_enter_initials)
         self.machine.events.add_handler('high_score_award_display', self._handle_segment_award_display)
+        self.machine.events.add_handler('kodelia_tilt_warn', self._handle_tilt_warning)
+        self.machine.events.add_handler('kodelia_tilt', self._handle_tilt)
 
     def _show_flash_text(self, **kwargs):
         show_tokens = {"text_1": kwargs.get("text_1"), "text_2": kwargs.get("text_2"), "text_3": kwargs.get("text_3"),
@@ -37,3 +39,10 @@ class scoreFlash(CustomCode):
 
     def _handle_segment_award_display(self, **kwargs):
         self.hs_show_instance.stop()
+
+    def _handle_tilt_warning(self, **kwargs):
+        show_tokens = {"danger_count": str(kwargs.get("count"))}
+        show_instance = self.machine.shows["kodelia_tilt_warn"].play(loops=scoreFlashLoops, show_tokens=show_tokens)
+
+    def _handle_tilt(self, **kwargs):
+        show_instance = self.machine.shows["kodelia_tilt"].play(loops=scoreFlashLoops)

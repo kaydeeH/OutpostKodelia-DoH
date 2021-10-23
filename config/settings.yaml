@@ -72,6 +72,41 @@ settings:
       30: "30 seconds"
     settingType: standard
 
+  warnings_to_tilt:
+    label: Number of Tilt Warnings
+    sort: 130
+    values:
+      0: "no warnings"
+      1: "1"
+      2: "2"
+      3: "3"
+      5: "5"
+      10: "10"
+    default: 3
+    key_type: int
+    settingType: standard
+
+  settle_time:
+    label: Time to wait on tilt settle
+    sort: 140
+    values:
+      3000: "3s"
+      5000: "5s"
+      10000: "10s"
+    default: 5000
+    key_type: int
+
+  multiple_hit_window:
+    label: Tilt sensitivity
+    sort: 150
+    values:
+      150: "sensitive"
+      300: "normal"
+      500: "insensitive"
+      1000: "very insensitive"
+    default: 300
+    key_type: int
+
 # GAME SETTINGS
   hazzard_scoring:
     label: Hazzard Saucer Scoring
