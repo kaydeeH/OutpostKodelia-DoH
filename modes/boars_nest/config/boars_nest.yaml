@@ -36,49 +36,51 @@ show_player:
   ball_save_ball_save_main_disabled:
     ball_save_boar_hurry: stop
 
+
 achievements:
   boar_1_complete:
     show_tokens:
-      leds: l_paragon_center_01p, l_paragon_center_01p2, l_paragon_saucer_01p
+      leds: l_paragon_center_01p, l_paragon_center_01p2
     show_when_started: bn_1_start
     show_when_completed: bn_1_complete
     start_events: boars_nest_started
     complete_events: boar_collect_1
   boar_2_complete:
     show_tokens:
-      leds: l_paragon_center_02a, l_paragon_center_02a2, l_paragon_saucer_02a
+      leds: l_paragon_center_02a, l_paragon_center_02a2
     show_when_started: bn_2_start
     show_when_completed: bn_2_complete
     start_events: boars_nest_started
     complete_events: boar_collect_2
   boar_3_complete:
     show_tokens:
-      leds: l_paragon_center_03r, l_paragon_center_03r2, l_paragon_saucer_03r
+      leds: l_paragon_center_03r, l_paragon_center_03r2
     show_when_started: bn_3_start
     show_when_completed: bn_3_complete
     start_events: boars_nest_started
     complete_events: boar_collect_3
   boar_4_complete:
     show_tokens:
-      leds: l_paragon_center_04a, l_paragon_center_04a2, l_paragon_saucer_04a
+      leds: l_paragon_center_04a, l_paragon_center_04a2
     show_when_started: bn_4_start
     show_when_completed: bn_4_complete
     start_events: boars_nest_started
     complete_events: boar_collect_4
   boar_5_complete:
     show_tokens:
-      leds: l_paragon_center_05g, l_paragon_center_05g2, l_paragon_saucer_05g
+      leds: l_paragon_center_05g, l_paragon_center_05g2
     show_when_started: bn_5_start
     show_when_completed: bn_5_complete
     start_events: boars_nest_started
     complete_events: boar_collect_5
   boar_6_complete:
     show_tokens:
-      leds: l_paragon_center_06o, l_paragon_center_06o2, l_paragon_saucer_06o
+      leds: l_paragon_center_06o, l_paragon_center_06o2
     show_when_started: bn_6_start
     show_when_completed: bn_6_complete
     start_events: boars_nest_started
     complete_events: boar_collect_6
+
 
 
 achievement_groups:
@@ -135,6 +137,7 @@ event_player:
 #    - zzz_big_awards_show
   ball_will_end:
     - boars_nest_failed
+    - multiball_display_end
   boars_nest_failed:   # we need to do something here
     - boars_nest_ended_failed
 
