@@ -108,3 +108,11 @@ sound_player:
     gunfire:
       action: play
       loops: 0
+  s_waterfall_rollover_active:
+    oil:
+      action: play
+      loops: 0
+  s_saucer_golden_cliffs_active:
+    creek:
+      action: play
+      loops: 0

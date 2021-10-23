@@ -61,13 +61,13 @@ sounds:
   dirt_peel:
     file: dirt_peel.wav
     track: sfx
-#    simultaneous_limit: 1
-#    stealing_method: skip
+    simultaneous_limit: 1
+    stealing_method: skip
   dixie_horn:
     file: dixie_horn.wav
     track: sfx
-#    simultaneous_limit: 1
-#    stealing_method: skip
+    simultaneous_limit: 1
+    stealing_method: skip
   police_siren:
     file: police_siren.wav
     track: sfx
@@ -95,6 +95,18 @@ sounds:
   gunfire3:
     file: gunfire3.wav
     track: sfx
+  oil:
+    file: oil.wav
+    track: sfx
+    volume: 0.8
+    simultaneous_limit: 1
+    stealing_method: skip
+  creek:
+    file: creek.wav
+    track: sfx
+    volume: 0.8
+    simultaneous_limit: 1
+    stealing_method: skip
 
   #Voice Clips
   ##Player Add Clips
