@@ -39,10 +39,10 @@ show_player:
       key: drain_show
       speed: 30
       loops: 0
-      events_when_completed: start_bonus_countdown
+#      events_when_completed: start_bonus_countdown
 
 sound_player:
-  mode_end_of_ball_started:
+  start_drain_show:
     #TODO Stopping the doh_theme here temporarily. Later it will be stopped by boar's nest mode end.
     doh_theme:
       action: stop
@@ -50,6 +50,12 @@ sound_player:
     gameplay_music:
       action: stop
       fade_out: 500ms
+    drain_clips:
+      action: play
+      loops: 0
+      events_when_about_to_finish: start_bonus_countdown
+      about_to_finish_time: 50ms
+  start_bonus_countdown:
     bonuscountdownmusic:
       action: play
       loops: -1

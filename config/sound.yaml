@@ -120,34 +120,63 @@ sounds:
   #Voice Clips
   ##Player Add Clips
   hi_fellas:
-      file: hi_fellas.wav
-      track: voice
+    file: hi_fellas.wav
+    track: voice
   i_love_it:
-      file: i_love_it.wav
-      track: voice
+    file: i_love_it.wav
+    track: voice
   public_enemy_number_one:
-      file: public_enemy_number_one.wav
-      track: voice
+    file: public_enemy_number_one.wav
+    track: voice
   yall_got_your_ears_on:
-      file: yall_got_your_ears_on.wav
-      track: voice
+    file: yall_got_your_ears_on.wav
+    track: voice
   get_them_duke_boys:
-      file: get_them_duke_boys.wav
-      track: voice
+    file: get_them_duke_boys.wav
+    track: voice
   hello_sugar_plum:
-      file: hello_sugar_plum.wav
-      track: voice
+    file: hello_sugar_plum.wav
+    track: voice
 
   ##Multiplayer Add Clips
   gonna_kick_my_butt_is_he:
-      file: gonna_kick_my_butt_is_he.wav
-      track: voice
+    file: gonna_kick_my_butt_is_he.wav
+    track: voice
   its_them_again:
-      file: its_them_again.wav
-      track: voice
+    file: its_them_again.wav
+    track: voice
   join_us_pit_stop:
-      file: join_us_pit_stop.wav
-      track: voice
+    file: join_us_pit_stop.wav
+    track: voice
+
+  ##Drain Clips
+  howl:
+    file: basset_howl.wav
+    track: voice
+  aint_our_day:
+    file: aint_our_day.wav
+    track: voice
+  gonna_miss_sometime:
+    file: gonna_miss_sometime.wav
+    track: voice
+  aint_doing_too_great:
+    file: aint_doing_too_great.wav
+    track: voice
+  numbskull:
+    file: numbskull.wav
+    track: voice
+  out_of_bed:
+    file: out_of_bed.wav
+    track: voice
+  behind_bars_entertainment:
+    file: behind_bars_entertainment.wav
+    track: voice
+  things_look_bad:
+    file: things_look_bad.wav
+    track: voice
+  that_is_terrible:
+    file: that_is_terrible.wav
+    track: voice
 
 ## Ducking example
 #  player_one_up:
@@ -205,3 +234,16 @@ sound_pools:
       - gunfire3
     simultaneous_limit: 5
     stealing_method: skip
+  drain_clips:
+    type: random
+    track: voice
+    sounds:
+      - howl
+      - aint_our_day
+      - gonna_miss_sometime
+      - aint_doing_too_great
+      - numbskull
+      - out_of_bed
+      - behind_bars_entertainment
+      - things_look_bad
+      - that_is_terrible
