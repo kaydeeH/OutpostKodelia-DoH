@@ -33,7 +33,7 @@ show_player:
         lightsbb: l_backbox_09_shootagain_1, l_backbox_10_shootagain_2
         colorbb: white
     ball_save_boar: stop
-  ball_save_ball_save_main_disabled:
+  ball_save_ball_save_boars_nest_disabled:
     ball_save_boar_hurry: stop
 
 
