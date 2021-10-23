@@ -86,13 +86,15 @@ sounds:
   car_door:
     file: car_door.wav
     track: sfx
-  ricochet:
-    file: ricochet.wav
+  gunfire1:
+    file: gunfire1.wav
     track: sfx
-    volume: 0.5
-    simultaneous_limit: 10
-    stealing_method: skip
-
+  gunfire2:
+    file: gunfire2.wav
+    track: sfx
+  gunfire3:
+    file: gunfire3.wav
+    track: sfx
 
   #Voice Clips
   ##Player Add Clips
@@ -173,3 +175,12 @@ sound_pools:
       - doh_track5
       - doh_track6
       - doh_track7
+  gunfire:
+    type: random
+    track: sfx
+    sounds:
+      - gunfire1
+      - gunfire2
+      - gunfire3
+    simultaneous_limit: 5
+    stealing_method: skip

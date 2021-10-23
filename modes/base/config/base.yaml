@@ -97,14 +97,14 @@ sound_player:
       loops: 0
       volume: .8
   s_thumper_center_active:
-    ricochet:
+    gunfire:
       action: play
       loops: 0
   s_thumper_left_active:
-    ricochet:
+    gunfire:
       action: play
       loops: 0
   s_thumper_right_active:
-    ricochet:
+    gunfire:
       action: play
       loops: 0
