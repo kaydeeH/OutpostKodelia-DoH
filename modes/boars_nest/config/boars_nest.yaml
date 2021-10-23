@@ -112,7 +112,7 @@ event_player:
   boars_nest_ended:
     - enable_two_ball_multiball_progress
     - drops_inline_reset
-  s_drop_inline_a_active:
+  s_drop_inline_a_active{current_player.boars_nest_six_pack_complete!=1}:
     - drops_inline_reset|250ms
 
 # spins and pops dropped to 1 for testing
@@ -130,7 +130,8 @@ event_player:
     - boar_collect_5
   player_boars_nest_hazzards{current_player.boars_nest_hazzards==1}:
     - boar_collect_6
-  boar_six_pack_complete:
+  player_boars_nest_six_pack_complete{current_player.boars_nest_six_pack_complete==1}:
+#  boar_six_pack_complete:
     - inline_drop_all
 #  ball_hold_boar_hold_held_ball:
   ball_hold_chase_hold_held_ball:
