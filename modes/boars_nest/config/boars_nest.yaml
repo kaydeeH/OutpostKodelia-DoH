@@ -14,6 +14,7 @@ ball_saves:
     auto_launch: true
     balls_to_save: -1
     early_ball_save_events: sw_early_ball_save
+    disable_events: escape_saucer_boars_nest_collect
 
 show_player:
   ball_save_ball_save_boars_nest_timer_start:

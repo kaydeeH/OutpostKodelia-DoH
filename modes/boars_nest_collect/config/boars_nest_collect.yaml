@@ -38,6 +38,10 @@ event_player:
   boars_nest_end_collect:
     - enable_playfield_coils
     - drops_inline_reset
+    - boars_nest_escape_saucer_eject
+  boars_nest_escape_saucer_eject{device.playfields.playfield.balls>1}:
+    - boars_nest_escape_saucer_eject|500ms
+  boars_nest_escape_saucer_eject{device.playfields.playfield.balls==1}:
     - escape_saucer_eject
     - next_song
     - boars_nest_big_collect_complete|100ms

@@ -102,6 +102,7 @@ multiballs:
     ball_count: 1
     ball_count_type: add
     start_events: start_chase_sequence
+    stop_events: escape_saucer_boars_nest_collect
 
 #multiballs:
 #  pre_chase_multiball:
