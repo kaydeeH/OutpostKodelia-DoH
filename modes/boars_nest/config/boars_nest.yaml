@@ -343,12 +343,12 @@ segment_display_player:
       action: add
       key: boar_3
       priority: 400
-      text: "BOAR'S"
+      text: "BOARS"
     display4:
       action: add
       key: boar_4
       priority: 400
-      text: "NEST"
+      text: "   NEST"
 
 sound_player:
   start_dukes_theme:
