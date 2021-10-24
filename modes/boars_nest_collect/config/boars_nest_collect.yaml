@@ -29,7 +29,6 @@ event_player:
       text_4: "For Fun"
       events_when_completed: bnbc_3
   bnbc_3:
-    - enable_playfield_coils
     - boars_nest_ended
     - boars_nest_ended_complete
     - boars_nest_ended_reset_vars
