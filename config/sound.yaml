@@ -13,7 +13,7 @@ sound_system:
       volume: .6
     voice:
       type: standard
-      simultaneous_sounds: 10
+      simultaneous_sounds: 1
       volume: 0.8
     sfx:
       type: standard
@@ -148,6 +148,9 @@ sounds:
   join_us_pit_stop:
     file: join_us_pit_stop.wav
     track: voice
+  hazzard_competing:
+    file: hazzard_competing.wav
+    track: voice
 
   ##Drain Clips
   howl:
@@ -177,6 +180,62 @@ sounds:
   that_is_terrible:
     file: that_is_terrible.wav
     track: voice
+
+  ##Hazzard MB Clips
+  derby_time:
+    file: derby_time.wav
+    track: voice
+
+  ##Creek MB Clips
+  nitrous_oxide:
+    file: nitrous_oxide.wav
+    track: voice
+
+  ##Tilt CLips
+  arrest_that_man:
+    file: arrest_that_man.wav
+    track: voice
+  dishwater:
+    file: dishwater.wav
+    track: voice
+  messed_up:
+    file: messed_up.wav
+    track: voice
+  pea_pickin:
+    file: pea_pickin.wav
+    track: voice
+  pompous:
+    file: pompous.wav
+    track: voice
+  sensitivity:
+    file: sensitivity.wav
+    track: voice
+  strike1_2_3:
+    file: strike1_2_3.wav
+    track: voice
+  take_your_badge:
+    file: take_your_badge.wav
+    track: voice
+
+  ##Tilt Warning Clips
+  billy_blue_heck:
+    file: billy_blue_heck.wav
+    track: voice
+  bodily_injury:
+    file: bodily_injury.wav
+    track: voice
+  careful_with_that:
+    file: careful_with_that.wav
+    track: voice
+  enough_of_that:
+    file: enough_of_that.wav
+    track: voice
+  freeze:
+    file: freeze.wav
+    track: voice
+
+
+
 
 ## Ducking example
 #  player_one_up:
@@ -211,6 +270,7 @@ sound_pools:
       - gonna_kick_my_butt_is_he
       - its_them_again
       - join_us_pit_stop
+      - hazzard_competing
     simultaneous_limit: 1
     stealing_method: skip
   gameplay_music:
@@ -247,3 +307,29 @@ sound_pools:
       - behind_bars_entertainment
       - things_look_bad
       - that_is_terrible
+  hazzard_mb_start:
+    type: random_force_all
+    track: voice
+    sounds:
+      - nitrous_oxide
+  tilt_sounds:
+    type: random_force_all
+    track: voice
+    sounds:
+      - arrest_that_man
+      - dishwater
+      - messed_up
+      - pea_pickin
+      - pompous
+      - sensitivity
+      - strike1_2_3
+      - take_your_badge
+  tilt_warning_sounds:
+    type: random_force_all
+    track: voice
+    sounds:
+      - billy_blue_heck
+      - bodily_injury
+      - careful_with_that
+      - enough_of_that
+      - freeze

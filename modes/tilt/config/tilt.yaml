@@ -44,3 +44,31 @@ event_player:
       count: 10
   tilt:
     - kodelia_tilt
+
+sound_player:
+  tilt_warning:
+    tilt_warning_sounds:
+      action: play
+      loops: 0
+  tilt:
+    tilt_sounds:
+      action: play
+      loops: 0
+      events_when_about_to_finish: start_bonus_countdown
+      about_to_finish_time: 500ms
+
+show_player:
+  tilt_warning:
+    tilt_warn_show:
+      speed: 1
+      loops: 2
+      priority: 10000
+      show_tokens:
+        color: red
+  tilt:
+    tilt_show:
+      speed: 1
+      loops: 0
+      priority: 11000
+      show_tokens:
+        color: red

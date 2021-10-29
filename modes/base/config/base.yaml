@@ -4,16 +4,27 @@ mode:
   start_events: ball_starting
   priority: 100
   file_log: full
+  events_when_started: base_startup
 
 #The first ball save is the "playfield validation" save and will save unlimited balls until
 #a switch with the "kpf" tag is registered.  Once this happens, the real ball save starts
 #which is time limited and will save at most one ball.
 
 event_player:
-  mode_base_started:
+  base_startup:
     - start_base_shows
     - next_song
     - start_car_sounds
+
+variable_player:
+  base_startup:
+    tilted:
+      int: 0
+      action: set
+  tilt:
+    tilted:
+      int: 1
+      action: set
 
 ball_saves:
   ball_save_validate:

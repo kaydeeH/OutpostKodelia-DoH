@@ -301,4 +301,3 @@ segment_display_player:
       key: creek_4
       priority: 400
       text: "{current_player.creek_superjackpot:d}"
-

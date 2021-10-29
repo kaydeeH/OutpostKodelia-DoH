@@ -34,12 +34,11 @@ show_player:
   player_bonuscount{value==19}:
     disable_20k:
       key: bonus_countdown
-  start_drain_show:
+  start_drain_show{current_player.tilted == 0}:
     drain_show:
       key: drain_show
       speed: 30
       loops: 0
-#      events_when_completed: start_bonus_countdown
 
 sound_player:
   start_drain_show:
@@ -50,11 +49,11 @@ sound_player:
     gameplay_music:
       action: stop
       fade_out: 500ms
-    drain_clips:
+    drain_clips{current_player.tilted == 0}:
       action: play
       loops: 0
       events_when_about_to_finish: start_bonus_countdown
-      about_to_finish_time: 50ms
+      about_to_finish_time: 500ms
   start_bonus_countdown:
     bonuscountdownmusic:
       action: play
