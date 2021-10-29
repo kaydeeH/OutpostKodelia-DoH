@@ -66,6 +66,10 @@ show_player:
         colorbb: white
   ball_save_ball_save_main_disabled:
     ball_save: stop
+  s_thumper_bottom_active:
+    jail_light_show:
+      speed: 1
+      loops: 0
 
 sound_player:
   spinner_default_hit: dirt_peel
