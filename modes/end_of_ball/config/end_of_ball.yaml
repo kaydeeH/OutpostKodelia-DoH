@@ -49,7 +49,8 @@ sound_player:
     gameplay_music:
       action: stop
       fade_out: 500ms
-    drain_clips{current_player.tilted == 0}:
+  start_drain_show{current_player.tilted == 0}:
+    drain_clips:
       action: play
       loops: 0
       events_when_about_to_finish: start_bonus_countdown
