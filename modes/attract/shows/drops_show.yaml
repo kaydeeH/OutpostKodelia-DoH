@@ -19,22 +19,27 @@
     l_droptarget_25k:
       color: orangered
       fade: 250ms
-- duration: 1000ms
+- duration: 500ms
   lights:
     l_droptarget_special:
       color: orangered
       fade: 500ms
-- duration: 1000ms
+- duration: 500ms
   lights:
     l_droptarget_special:
       color: off
       fade: 500ms
-- duration: 1000ms
+- duration: 500ms
   lights:
     l_droptarget_special:
       color: orangered
       fade: 500ms
-- duration: 1000ms
+#- duration: 500ms
+#  lights:
+#    l_droptarget_special:
+#      color: off
+#      fade: 500ms
+- duration: 500ms
   lights:
     l_droptarget_special:
       color: off
