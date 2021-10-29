@@ -1,6 +1,72 @@
 #show_version=5
-- time: 0
+- duration: 50ms
   lights:
     l_bonus_2x: off
-    l_bonus_3x: white
+    l_bonus_2x2: off
+    l_bonus_2x3: off
+    l_bonus_3x: off
+    l_bonus_3x2: off
+    l_bonus_3x3: off
     l_bonus_5x: off
+    l_bonus_5x2: off
+    l_bonus_5x3: off
+- duration: 100ms
+  lights:
+    l_bonus_3x: lightsalmon
+    l_bonus_3x2: off
+    l_bonus_3x3: off
+- duration: 100ms
+  lights:
+    l_bonus_3x: off
+    l_bonus_3x2: lightsalmon
+    l_bonus_3x3: off
+- duration: 100ms
+  lights:
+    l_bonus_3x: off
+    l_bonus_3x2: off
+    l_bonus_3x3: lightsalmon
+- duration: 100ms
+  lights:
+    l_bonus_3x: lightsalmon
+    l_bonus_3x2: off
+    l_bonus_3x3: off
+- duration: 100ms
+  lights:
+    l_bonus_3x: off
+    l_bonus_3x2: lightsalmon
+    l_bonus_3x3: off
+- duration: 100ms
+  lights:
+    l_bonus_3x: off
+    l_bonus_3x2: off
+    l_bonus_3x3: lightsalmon
+- duration: 100ms
+  lights:
+    l_bonus_3x: lightsalmon
+    l_bonus_3x2: off
+    l_bonus_3x3: off
+- duration: 100ms
+  lights:
+    l_bonus_3x: off
+    l_bonus_3x2: lightsalmon
+    l_bonus_3x3: off
+- duration: 100ms
+  lights:
+    l_bonus_3x: off
+    l_bonus_3x2: off
+    l_bonus_3x3: lightsalmon
+- duration: 150ms
+  lights:
+    l_bonus_3x: lightsalmon
+    l_bonus_3x2: lightsalmon
+    l_bonus_3x3: lightsalmon
+- duration: 150ms
+  lights:
+    l_bonus_3x: off
+    l_bonus_3x2: off
+    l_bonus_3x3: off
+- duration: 150ms
+  lights:
+    l_bonus_3x: lightsalmon
+    l_bonus_3x2: lightsalmon
+    l_bonus_3x3: lightsalmon

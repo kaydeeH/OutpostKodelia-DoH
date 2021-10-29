@@ -1,10 +1,9 @@
 #show_version=5
-- time: 0
+- duration: 500ms
   lights:
-    l_bonus_super_20k: white
+    l_bonus_super_20k: FF3333
     l_bonus_super_30k: off
     l_bonus_super_40k: off
-- time: +1
+- duration: 500ms
   lights:
     l_bonus_super_20k: off
-- time: +1

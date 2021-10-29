@@ -86,18 +86,19 @@ sounds:
   car_door:
     file: car_door.wav
     track: sfx
+    volume: 0.7
   gunfire1:
     file: gunfire1.wav
     track: sfx
-    volume: 0.6
+    volume: 0.7
   gunfire2:
     file: gunfire2.wav
     track: sfx
-    volume: 0.6
+    volume: 0.7
   gunfire3:
     file: gunfire3.wav
     track: sfx
-    volume: 0.6
+    volume: 0.7
   oil:
     file: oil.wav
     track: sfx
@@ -107,14 +108,20 @@ sounds:
   creek:
     file: creek.wav
     track: sfx
-    volume: 0.6
+    volume: 0.5
     simultaneous_limit: 1
     stealing_method: skip
   jail_door:
     file: jail_door.wav
     track: sfx
-    volume: 0.6
+    volume: 0.7
     simultaneous_limit: 1
+    stealing_method: oldest
+  ratchet:
+    file: ratchet.wav
+    track: sfx
+    volume: 0.7
+    simultaneous_limit: 3
     stealing_method: oldest
 
   #Voice Clips

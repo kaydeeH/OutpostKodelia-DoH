@@ -135,3 +135,7 @@ sound_player:
     jail_door:
       action: play
       loops: 0
+  sling_sound:
+    ratchet:
+      action: play
+      loops: 0

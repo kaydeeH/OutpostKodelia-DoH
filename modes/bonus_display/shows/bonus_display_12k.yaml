@@ -1,5 +1,5 @@
 #show_version=5
-- time: 0
+- duration: 250ms
   lights:
     l_bonus_1k: off
     l_bonus_2k: white
@@ -11,3 +11,6 @@
     l_bonus_8k: off
     l_bonus_9k: off
     l_bonus_10k: white
+- duration: 250ms
+  lights:
+    l_bonus_10k: off

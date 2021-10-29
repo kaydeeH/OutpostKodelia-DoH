@@ -134,11 +134,15 @@ switches:
 
   s_slingshot_right:
     number: 1-0-51
-    events_when_activated: temp_sling_right
+    events_when_activated:
+      - temp_sling_right
+      - sling_sound
     tags: kpf, c_jack, h_jack, not_skill
   s_slingshot_left:
     number: 1-0-64
-    events_when_activated: temp_sling_left
+    events_when_activated:
+      - temp_sling_left
+      - sling_sound
     tags: kpf, c_jack, h_jack, not_skill
   s_thumper_bottom:
     number: 1-0-81
