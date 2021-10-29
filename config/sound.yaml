@@ -13,7 +13,7 @@ sound_system:
       volume: .6
     voice:
       type: standard
-      simultaneous_sounds: 1
+      simultaneous_sounds: 10
       volume: 0.8
     sfx:
       type: standard
@@ -327,6 +327,8 @@ sound_pools:
   tilt_warning_sounds:
     type: random_force_all
     track: voice
+    simultaneous_limit: 1
+    stealing_method: skip
     sounds:
       - billy_blue_heck
       - bodily_injury

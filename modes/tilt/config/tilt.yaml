@@ -51,6 +51,9 @@ sound_player:
       action: play
       loops: 0
   tilt:
+    tilt_warning_sounds:
+      action: stop
+  kodelia_tilt:
     tilt_sounds:
       action: play
       loops: 0
