@@ -281,3 +281,9 @@ show_player:
     blue_siren: stop
     mid_pop_dim: stop
     gi_dim: stop
+  play_horn:
+    dixie_horn_show:
+      action: play
+      speed: 1
+      loops: 12
+      priority: 10000

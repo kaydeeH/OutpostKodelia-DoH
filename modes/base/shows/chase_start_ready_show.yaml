@@ -1,0 +1,41 @@
+#show_version=5
+- duration: 250ms
+  lights:
+    l_treasure_5x: yellow
+    l_treasure_extra_ball: off
+    l_treasure_special: off
+- duration: 250ms
+  lights:
+    l_treasure_5x: yellow
+    l_treasure_extra_ball: darkorange
+    l_treasure_special: off
+- duration: 50ms
+  lights:
+    l_treasure_5x: yellow
+    l_treasure_extra_ball: darkorange
+    l_treasure_special: orangered
+- duration: 50ms
+  lights:
+    l_treasure_5x: yellow
+    l_treasure_extra_ball: darkorange
+    l_treasure_special: off
+- duration: 50ms
+  lights:
+    l_treasure_5x: yellow
+    l_treasure_extra_ball: darkorange
+    l_treasure_special: orangered
+- duration: 50ms
+  lights:
+    l_treasure_5x: yellow
+    l_treasure_extra_ball: darkorange
+    l_treasure_special: off
+- duration: 250ms
+  lights:
+    l_treasure_5x: yellow
+    l_treasure_extra_ball: darkorange
+    l_treasure_special: orangered
+- duration: 250ms
+  lights:
+    l_treasure_5x: off
+    l_treasure_extra_ball: off
+    l_treasure_special: off

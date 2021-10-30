@@ -60,6 +60,15 @@ show_player:
     jail_light_show:
       speed: 1
       loops: 0
+  shot_drop_inline_d_hit:
+    chase_start_ready_show:
+      key: chase_ready_show_key
+      speed: 2
+      loops: -1
+  start_chase_sequence:
+    chase_ready_show_key:
+      action: stop
+
 
 sound_player:
   spinner_default_hit: dirt_peel

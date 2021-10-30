@@ -1,0 +1,7 @@
+#show_version=5
+- duration: 100ms
+  lights:
+    gi: ff7500
+- duration: 100ms
+  lights:
+    gi: off
