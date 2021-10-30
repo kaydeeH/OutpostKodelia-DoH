@@ -18,6 +18,7 @@ class scoreFlash(CustomCode):
         self.machine.events.add_handler('high_score_award_display', self._handle_segment_award_display)
         self.machine.events.add_handler('kodelia_tilt_warn', self._handle_tilt_warning)
         self.machine.events.add_handler('kodelia_tilt', self._handle_tilt)
+        self.machine.events.add_handler('boars_nest_show_bonus_text', self._boars_bonus_text)
 
     def _show_flash_text(self, **kwargs):
         show_tokens = {"text_1": kwargs.get("text_1"), "text_2": kwargs.get("text_2"), "text_3": kwargs.get("text_3"),
@@ -46,3 +47,11 @@ class scoreFlash(CustomCode):
 
     def _handle_tilt(self, **kwargs):
         show_instance = self.machine.shows["kodelia_tilt"].play(loops=scoreFlashLoops)
+
+    def _boars_bonus_text(self, **kwargs):
+        show_tokens = {"boar_score_pre": str(kwargs.get("boar_score_pre")), "score_type": str(kwargs.get("score_type")),
+                       "score_value": str(kwargs.get("score_value")),
+                       "boar_score_post": str(kwargs.get("boar_score_post"))}
+        events_when_completed = {kwargs.get("events_when_completed")}
+        show_instance = self.machine.shows["boar_bonus_display"].play(show_tokens=show_tokens, loops=0,
+                                                                      events_when_completed=events_when_completed)

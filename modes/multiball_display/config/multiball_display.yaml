@@ -4,7 +4,7 @@
 
 mode:
   start_events: zzz_mball_display_placeholder, multiball_creek_multiball_started, multiball_hazzard_multiball_started, multiball_pre_chase_multiball_started, mutliball_chase_multiball_started
-  stop_events: zzz_mball_display_end_placeholder, multiball_display_end
+  stop_events: zzz_mball_display_end_placeholder, multiball_display_end, boars_nest_big_collect
   events_when_started: initialize_multiball_display
   priority: 300
 

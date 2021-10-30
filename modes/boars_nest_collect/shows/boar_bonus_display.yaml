@@ -1,0 +1,39 @@
+#show_version=5
+
+- duration: 2.5
+  segment_displays:
+    display1:
+      flashing: off
+      text: "JACKPOT"
+      priority: 1000
+    display2:
+      flashing: off
+      text: (boar_score_pre)
+      priority: 1000
+    display3:
+      flashing: off
+      text: (score_type)
+      priority: 1000
+    display4:
+      flashing: all
+      text: (score_value)
+      priority: 1000
+- duration: 2.5
+  segment_displays:
+    display1:
+      flashing: off
+      text: "JACKPOT"
+      priority: 1000
+    display2:
+      flashing: off
+      text: (boar_score_post)
+      priority: 1000
+    display3:
+      flashing: off
+      text: (score_type)
+      priority: 1000
+    display4:
+      flashing: off
+      text: (score_value)
+      priority: 1000
+
