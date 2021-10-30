@@ -45,6 +45,8 @@ event_player:
   balls_in_play{balls==1 and current_player.boars_nest_active==0}:
     - release_chase_hold
     - end_chase_mode|100ms
+  tilt{current_player.boars_nest_active==0}:
+    - end_chase_mode
   gc_start_mball_hit{current_player.general_lee_speed>=120}:
     - end_chase_sequence
     - chase_multiball_qualified
