@@ -59,6 +59,9 @@ sound_player:
       loops: 0
       events_when_about_to_finish: end_bonus
       about_to_finish_time: 500ms
+    doh_theme:
+      action: stop
+      fade_out: 500ms
 
 show_player:
   tilt_warning:
