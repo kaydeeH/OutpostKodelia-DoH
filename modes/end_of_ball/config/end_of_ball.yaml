@@ -34,7 +34,7 @@ show_player:
   player_bonuscount{value==19}:
     disable_20k:
       key: bonus_countdown
-  start_drain_show{current_player.tilted == 0}:
+  start_drain_show{mode.tilt.tilt_warnings_remaining == 0}:
     drain_show:
       key: drain_show
       speed: 30
@@ -49,7 +49,7 @@ sound_player:
     gameplay_music:
       action: stop
       fade_out: 500ms
-  start_drain_show{current_player.tilted == 0}:
+  start_drain_show{mode.tilt.tilt_warnings_remaining == 0}:
     drain_clips:
       action: play
       loops: 0

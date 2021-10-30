@@ -57,7 +57,7 @@ sound_player:
     tilt_sounds:
       action: play
       loops: 0
-      events_when_about_to_finish: start_bonus_countdown
+      events_when_about_to_finish: end_bonus
       about_to_finish_time: 500ms
 
 show_player:

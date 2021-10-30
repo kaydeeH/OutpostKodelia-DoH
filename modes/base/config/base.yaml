@@ -16,16 +16,6 @@ event_player:
     - next_song
     - start_car_sounds
 
-variable_player:
-  base_startup:
-    tilted:
-      int: 0
-      action: set
-  tilt:
-    tilted:
-      int: 1
-      action: set
-
 ball_saves:
   ball_save_validate:
     balls_to_save: -1
