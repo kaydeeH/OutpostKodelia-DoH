@@ -368,8 +368,8 @@ sound_pools:
       - freeze
 #TODO Select appropriate flipper sounds for attract mode
   attract_voice:
-    type: random
-    track: sfx
+    type: random_force_all
+    track: voice
     sounds:
       - gunfire1
       - gunfire2
