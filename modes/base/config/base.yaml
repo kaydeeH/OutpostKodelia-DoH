@@ -84,7 +84,7 @@ sound_player:
     idle:
       action: stop
       fade_out: 250ms
-  shooter_lane_empty:
+  shooter_lane_empty{device.ball_saves.ball_save_validate.state == "enabled"}:
     idle:
       action: stop
     launch_car:
@@ -121,16 +121,33 @@ sound_player:
     oil:
       action: play
       loops: 0
-  #s_saucer_golden_cliffs_active{modes.creek_multiball.active == True}:
-  player_shot_creek_saucer:
-    creek:
-      action: play
-      loops: 0
   s_thumper_bottom_active:
     jail_door:
       action: play
       loops: 0
   sling_sound:
     ratchet:
+      action: play
+      loops: 0
+  shot_drop_inline_a_hit{current_player.suspend_spot != 1}:
+    were_gonna_bust_em:
+      action: play
+      loops: 0
+  shot_drop_inline_b_hit{current_player.suspend_spot != 1}:
+    were_gonna_bust_em:
+      action: stop
+    rock_and_a_hard_place:
+      action: play
+      loops: 0
+  shot_drop_inline_c_hit{current_player.suspend_spot != 1}:
+    rock_and_a_hard_place:
+      action: stop
+    gonna_get_em:
+      action: play
+      loops: 0
+  shot_drop_inline_d_hit{current_player.suspend_spot != 1}:
+    gonna_get_em:
+      action: stop
+    duck_on_a_junebug:
       action: play
       loops: 0

@@ -331,3 +331,9 @@ segment_display_player:
       key: hazzard_4
       priority: 400
       text: "{current_player.hazzard_superjackpot:d}"
+
+sound_player:
+  start_hazzard_multiball:
+    derby_time:
+      action: play
+      loops: 0

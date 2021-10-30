@@ -99,3 +99,8 @@ ball_holds:
      enable_events: enable_base_creek_shot, multiball_creek_multiball_ended, enable_two_ball_multiball_progress
      disable_events: disable_base_creek_shot, disable_two_ball_multiball_progress
 
+sound_player:
+  player_shot_creek_saucer:
+    creek:
+      action: play
+      loops: 0

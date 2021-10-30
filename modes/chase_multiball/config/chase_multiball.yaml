@@ -36,8 +36,6 @@ event_player:
   start_chase_sequence:
     - drops_inline_reset
     - bonus_multiply_5x
-    - start_chase_theme
-    - start_siren
     - disable_two_ball_multiball_progress
 #  This is now thrown from the escape saucer mode
 #  ball_hold_chase_hold_held_ball{current_player.boars_nest_active==0}:
@@ -53,7 +51,6 @@ event_player:
   hz_start_mball_hit{current_player.general_lee_speed>=120}:
     - end_chase_sequence
     - chase_multiball_qualified
-
   chase_multiball_qualified:
     - start_chase_multiball
   gc_start_mball_hit{current_player.general_lee_speed<120}:
@@ -242,10 +239,25 @@ segment_display_player:
       text: "ROSCOE!"
 
 sound_player:
-  start_chase_theme:
+  start_chase_sequence_audio:
     gameplay_music:
       action: stop
       fade_out: 500ms
+    hot_pursuit:
+      action: play
+      loops: 0
+      events_when_about_to_finish: play_horn
+      about_to_finish_time: 50ms
+  play_horn:
+    dixie_horn:
+      action: play
+      loops: 0
+      events_when_about_to_finish:
+        - start_chase_theme
+        - start_siren
+        - start_chase_sequence
+      about_to_finish_time: 50ms
+  start_chase_theme:
     chase_theme:
       delay: 500ms
       action: play

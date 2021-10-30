@@ -197,6 +197,30 @@ sounds:
   nitrous_oxide:
     file: nitrous_oxide.wav
     track: voice
+  jumped_that_crick:
+    file: jumped_that_crick.wav
+    track: voice
+
+  ##Chase MB Clips
+  were_gonna_bust_em:
+    file: were_gonna_bust_em.wav
+    track: voice
+  rock_and_a_hard_place:
+    file: rock_and_a_hard_place.wav
+    track: voice
+  gonna_get_em:
+    file: gonna_get_em.wav
+    track: voice
+  duck_on_a_junebug:
+    file: duck_on_a_junebug.wav
+    track: voice
+  hot_pursuit:
+    file: hot_pursuit.wav
+    track: voice
+  never_could_catch_em:
+    file: never_could_catch_em.wav
+    track: voice
+
 
   ##Tilt CLips
   arrest_that_man:
