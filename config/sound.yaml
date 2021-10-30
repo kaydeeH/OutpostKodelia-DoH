@@ -366,3 +366,11 @@ sound_pools:
       - careful_with_that
       - enough_of_that
       - freeze
+#TODO Select appropriate flipper sounds for attract mode
+  attract_voice:
+    type: random_force_all
+    track: voice
+    sounds:
+      - gunfire1
+      - gunfire2
+      - gunfire3
