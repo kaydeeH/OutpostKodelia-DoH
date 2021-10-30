@@ -1,7 +1,7 @@
 #show_version=5
 - duration: 100ms
   lights:
-    gi: ff5500
+    gi: 'FF7500'
 - duration: 100ms
   lights:
     gi: off
