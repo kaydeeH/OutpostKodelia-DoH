@@ -11,9 +11,9 @@ event_player:
   start_bonus_countdown:
     - decrement_bonus|250ms
   player_bonuscount{value>0 and current_player.fast_bonus_countdown==0}:
-    - decrement_bonus|500ms
+    - decrement_bonus|333ms
   player_bonuscount{value>0 and current_player.fast_bonus_countdown==1}:
-    - decrement_bonus|50ms
+    - decrement_bonus|33ms
   player_bonuscount{value==0}:
     - end_bonus
 
