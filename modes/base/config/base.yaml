@@ -121,7 +121,8 @@ sound_player:
     oil:
       action: play
       loops: 0
-  s_saucer_golden_cliffs_active:
+  #s_saucer_golden_cliffs_active{modes.creek_multiball.active == True}:
+  player_shot_creek_saucer:
     creek:
       action: play
       loops: 0
