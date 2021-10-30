@@ -2,33 +2,23 @@
 
 event_player:
   mode_attract_started:
+    restart_loop:
+    disable_playfield_coils:
+  restart_loop:
     start_loop:
+    attract_lightshow_start:
+    title_card:
   start_loop{device.switches.s_saucer_treasure_chamber.state==1}:
     - escape_saucer_eject
-  start_loop:
-    - disable_playfield_coils
   flipper_cancel:
     - attract_show_last_game_scores
+  s_flipper_left_active:
+    - attract_single_flipper
+  s_flipper_right_active:
+    - attract_single_flipper
 
 segment_display_player:
-#  mode_attract_started:
-#    display1:
-#      action: set_color
-#      color: "FFA500"
-#    display2:
-#      action: set_color
-#      color: "FFA500"
-#    display3:
-#      action: set_color
-#      color: "FFA500"
-#    display4:
-#      action: set_color
-#      color: "FFA500"
-#  #    color: "776300"
-#    display5:
-#      action: set_color
-#      color: "FFA500"
-  start_loop:
+  title_card:
     display1:
       text: "THE    "
     display2:
@@ -39,17 +29,6 @@ segment_display_player:
       text: "HAZZARD"
   attract_show_1_complete:
     display1:
-      text: "Change"
-    display2:
-      text: "Text"
-    display3:
-      text: "*******"
-    display4:
-      text: "   TEST"
-    display5:
-      text: "__**_**"
-  attract_show_2_complete:
-    display1:
       text: "Theme"
     display2:
       text: "By"
@@ -58,8 +37,8 @@ segment_display_player:
     display4:
       text: "Danzig"
     display5:
-      text: "__**_**"
-  attract_show_3_complete:
+      text: "       "
+  attract_show_2_complete:
     display1:
       text: "CODE   "
     display2:
@@ -69,23 +48,99 @@ segment_display_player:
     display4:
       text: "KODELIA"
     display5:
-      text: "__**_**"
-#    dimDisplay4:
+      text: "       "
+  attract_show_3_complete:
+    display1:
+      text: "BUILT  "
+    display2:
+      text: "BY"
+    display3:
+      text: "OUTPOST"
+    display4:
+      text: "KODELIA"
+    display5:
+      text: "       "
   attract_show_4_complete:
     display1:
-      text: "This"
+      text: "ARTWORK"
     display2:
-      text: "Is"
+      text: "BY"
     display3:
-      text: "The"
+      text: "MAD"
     display4:
-      text: "End"
+      text: "VOODOO"
     display5:
-      text: "__**_**"
+      text: "       "
+  attract_previous_scores:
+    display1:
+      text: "{machine.player1_score:d}"
+  lastgame_player2:
+    display2:
+      text: "{machine.player2_score:d}"
+  lastgame_player3:
+    display3:
+      text: "{machine.player3_score:d}"
+  lastgame_player4:
+    display4:
+      text: "{machine.player4_score:d}"
+  lastgame_player2_blank:
+    display2:
+      text: "       "
+  lastgame_player3_blank:
+    display3:
+      text: "       "
+  lastgame_player4_blank:
+    display4:
+      text: "       "
+  attract_high_scores_1:
+    display1:
+      text: "GRAND"
+    display2:
+      text: "  CHAMP"
+    display3:
+      text: "{machine.score1_name}"
+    display4:
+      text: "{machine.score1_value}"
+  attract_high_scores_2:
+    display1:
+      text: "1ST"
+    display2:
+      text: "HiSCORE"
+    display3:
+      text: "{machine.score2_name}"
+    display4:
+      text: "{machine.score2_value}"
+  attract_high_scores_3:
+    display1:
+      text: "2ND"
+    display2:
+      text: "HiSCORE"
+    display3:
+      text: "{machine.score3_name}"
+    display4:
+      text: "{machine.score3_value}"
+  attract_high_scores_4:
+    display1:
+      text: "3RD"
+    display2:
+      text: "HiSCORE"
+    display3:
+      text: "{machine.score4_name}"
+    display4:
+      text: "{machine.score4_value}"
+  attract_high_scores_5:
+    display1:
+      text: "4TH"
+    display2:
+      text: "HiSCORE"
+    display3:
+      text: "{machine.score5_name}"
+    display4:
+      text: "{machine.score5_value}"
 
 
 show_player:
-  mode_attract_started:
+  attract_lightshow_start:
     gi:
       key: gi_show
       priority: 1
@@ -130,13 +185,14 @@ show_player:
     coin_lights_show:
       key: coin_lights_show_key
       priority: 1
-  start_loop:
     red_siren_show:
+      key: red_siren_show_key
       action: play
       speed: 60
       loops: 6
       priority: 10
     blue_siren_show:
+      key: blue_siren_show_key
       action: play
       speed: 60
       loops: 6
@@ -144,32 +200,81 @@ show_player:
     attract_show_1:
       action: play
       loops: 0
-      events_when_completed: attract_show_1_complete
+      events_when_stopped: attract_show_1_complete
   attract_show_1_complete:
     attract_show_2:
       action: play
       loops: 0
-      events_when_completed: attract_show_2_complete
+      events_when_stopped: attract_show_2_complete
   attract_show_2_complete:
     attract_show_3:
       action: play
       loops: 0
-      events_when_completed: attract_show_3_complete
+      events_when_stopped: attract_show_3_complete
   attract_show_3_complete:
     attract_show_4:
       action: play
       loops: 0
-      events_when_completed: attract_show_4_complete, start_loop
-#  attract_show_last_game_scores:
-#    attract_last_game_scores:
-#      action: play
-#      priority: 15
-#      loops: 6
-#      show_tokens:
-#        atr_score1: "test1"
-#        atr_score2: "test1"
-#        atr_score3: "test1"
-#        atr_score4: "test1"
+      events_when_stopped: attract_show_4_complete
+  attract_show_4_complete:
+    attract_show_5:
+      action: play
+      loops: 0
+      events_when_stopped: attract_show_5_complete, attract_previous_scores
+  attract_previous_scores:
+    prev_scores:
+      action: play
+      loops: 0
+      events_when_stopped: prev_scores_complete, attract_high_scores_1
+  prev_scores_complete:
+    attract_hs1:
+      action: play
+      loops: 0
+      events_when_stopped: attract_high_scores_2
+  attract_high_scores_2:
+    attract_hs2:
+      action: play
+      loops: 0
+      events_when_stopped: attract_high_scores_3
+  attract_high_scores_3:
+    attract_hs3:
+      action: play
+      loops: 0
+      events_when_stopped: attract_high_scores_4
+  attract_high_scores_4:
+    attract_hs4:
+      action: play
+      loops: 0
+      events_when_stopped: attract_high_scores_5
+  attract_high_scores_5:
+    attract_hs5:
+      action: play
+      loops: 0
+      events_when_stopped: high_scores_complete, restart_loop
+
+  attract_single_flipper:
+    attract_show_1:
+      action: stop
+    attract_show_2:
+      action: stop
+    attract_show_3:
+      action: stop
+    attract_show_4:
+      action: stop
+    attract_show_5:
+      action: stop
+    prev_scores:
+      action: stop
+    attract_hs1:
+      action: stop
+    attract_hs2:
+      action: stop
+    attract_hs3:
+      action: stop
+    attract_hs4:
+      action: stop
+    attract_hs5:
+      action: stop
 
 shows:
   attract_show_1:
@@ -180,84 +285,18 @@ shows:
     - duration: 5
   attract_show_4:
     - duration: 5
-
-#variable_player:
-#  mode_attract_started|5000ms:
-#    machine.display1: "test"
-
-
-#show_player:
-#   mode_attract_started:
-#      display_segment_displays:
-#        priority: 10
-#
-#widget_player:
-#   mode_attract_started: backglass
-#
-#shows:
-#   display_segment_displays:
-#     - time: 0
-#       slides:
-#          segment_displaysx:
-#            widgets:
-#              - type: text
-#                text: "DukesOf"
-#                number_grouping: false
-#                min_digits: 2
-#                font_name: DSEG14Classic-Italic
-#                color: orange
-#                x: 420
-#                y: 624
-#                font_size: 40
-#                anchor_x: right
-#                anchor_y: bottom
-#                z: 2
-#              - type: text
-#                text: "Hazzard"
-#                number_grouping: false
-#                min_digits: 2
-#                font_name: DSEG14Classic-Italic
-#                color: orange
-#                x: 820
-#                y: 624
-#                font_size: 40
-#                anchor_x: right
-#                anchor_y: bottom
-#                z: 2
-#              - type: text
-#                text: "Outpost"
-#                number_grouping: false
-#                min_digits: 2
-#                font_name: DSEG14Classic-Italic
-#                color: orange
-#                x: 420
-#                y: 224
-#                font_size: 40
-#                anchor_x: right
-#                anchor_y: bottom
-#                z: 2
-#              - type: text
-#                text: "Kodelia"
-#                number_grouping: false
-#                min_digits: 2
-#                font_name: DSEG14Classic-Italic
-#                color: orange
-#                x: 820
-#                y: 224
-#                font_size: 40
-#                anchor_x: right
-#                anchor_y: bottom
-#                z: 2
-#              - type: text
-#                text: "__00_00"
-#                number_grouping: false
-#                min_digits: 2
-#                font_name: DSEG14Classic-Italic
-#                color: orange
-#                x: 820
-#                y: 424
-#                font_size: 40
-#                anchor_x: right
-#                anchor_y: bottom
-#                z: 2
+  attract_show_5:
+    - duration: 5
+  prev_scores:
+    - duration: 5
+  attract_hs1:
+    - duration: 5
+  attract_hs2:
+    - duration: 5
+  attract_hs3:
+    - duration: 5
+  attract_hs4:
+    - duration: 5
+  attract_hs5:
+    - duration: 5
 

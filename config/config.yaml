@@ -21,6 +21,7 @@ custom_code:
   - code.scoreFlash.scoreFlash
   - code.SuperJackpotLights.SuperJackpotLights
   - code.atrRecentScores.atrRecentScores
+  - code.last_game_scores.LastGameScores
 
 # This is for the debug only segment display simulation
 slide_player:
