@@ -80,21 +80,6 @@ shots:
     enable_events: chase_notify
     disable_events: release_chase_hold, end_chase_sequence
 
-#ball_holds:
-#  chase_hold:
-#    balls_to_hold: 1
-#    hold_devices: bd_escape_saucer
-#    release_one_events: end_chase_sequence, release_chase_hold
-#    enable_events: chase_notify
-##    disable_events: boars_nest_started
-##    disable_events: multiball_chase_multiball_started
-
-ball_saves:
-  pre_chase_ballsave:
-    enable_events: start_chase_sequence
-    disable_events: start_chase_multiball
-    only_last_ball: true
-
 multiballs:
   pre_chase_multiball:
     add_a_ball_events: start_chase_multiball
@@ -102,22 +87,7 @@ multiballs:
     ball_count_type: add
     start_events: start_chase_sequence
     stop_events: escape_saucer_boars_nest_collect
-
-#multiballs:
-#  pre_chase_multiball:
-#    ball_count: 1
-#    ball_count_type: add
-#    start_events: start_chase_sequence
-#    stop_events: end_chase_sequence
-#  chase_multiball:
-#    ball_count: 2
-#    ball_count_type: add
-#    ball_locks: bd_escape_saucer
-#    start_events: start_chase_multiball
-#    stop_events: ball_save_ball_save_boars_nest_timer_start
-
-
-
+    shoot_again: 0s
 
 variable_player:
   start_chase_sequence:
@@ -243,6 +213,8 @@ sound_player:
     gameplay_music:
       action: stop
       fade_out: 500ms
+    duck_on_a_junebug:
+      action: stop
     hot_pursuit:
       action: play
       loops: 0
