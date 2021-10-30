@@ -11,7 +11,7 @@ event_player:
   start_loop{device.switches.s_saucer_treasure_chamber.state==1}:
     - escape_saucer_eject
   flipper_cancel:
-    - attract_show_last_game_scores
+    - attract_show_last_game_scores_override
   s_flipper_left_active:
     - attract_single_flipper
   s_flipper_right_active:
@@ -71,6 +71,62 @@ segment_display_player:
       text: "VOODOO"
     display5:
       text: "       "
+  attract_show_last_game_scores_override:
+    display1:
+      action: add
+      key: atr_ovr
+      priority: 10000
+      text: "{machine.player1_score:d}"
+  lastgame_player2_o:
+    display2:
+      action: add
+      key: atr_ovr
+      priority: 10000
+      text: "{machine.player2_score:d}"
+  lastgame_player3_o:
+    display3:
+      action: add
+      key: atr_ovr
+      priority: 10000
+      text: "{machine.player3_score:d}"
+  lastgame_player4_o:
+    display4:
+      action: add
+      key: atr_ovr
+      priority: 10000
+      text: "{machine.player4_score:d}"
+  lastgame_player2_blank_o:
+    display2:
+      action: add
+      key: atr_ovr
+      priority: 10000
+      text: "       "
+  lastgame_player3_blank_o:
+    display3:
+      action: add
+      key: atr_ovr
+      priority: 10000
+      text: "       "
+  lastgame_player4_blank_o:
+    display4:
+      action: add
+      key: atr_ovr
+      priority: 10000
+      text: "       "
+  attract_show_last_game_scores_override_complete:
+    display1:
+      key: atr_ovr
+      action: remove
+    display2:
+      key: atr_ovr
+      action: remove
+    display3:
+      key: atr_ovr
+      action: remove
+    display4:
+      key: atr_ovr
+      action: remove
+
   attract_previous_scores:
     display1:
       text: "{machine.player1_score:d}"
@@ -252,6 +308,13 @@ show_player:
       loops: 0
       events_when_stopped: high_scores_complete, restart_loop
 
+  attract_show_last_game_scores_override:
+    prev_scores_o:
+      action: play
+      loops: 0
+      priority: 1000
+      events_when_stopped: attract_show_last_game_scores_override_complete
+
   attract_single_flipper:
     attract_show_1:
       action: stop
@@ -276,6 +339,7 @@ show_player:
     attract_hs5:
       action: stop
 
+
 shows:
   attract_show_1:
     - duration: 5
@@ -288,6 +352,8 @@ shows:
   attract_show_5:
     - duration: 5
   prev_scores:
+    - duration: 5
+  prev_scores_o:
     - duration: 5
   attract_hs1:
     - duration: 5

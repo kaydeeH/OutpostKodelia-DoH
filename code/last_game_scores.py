@@ -9,6 +9,7 @@ class LastGameScores(CustomCode):
 
     def on_load(self):
         self.machine.events.add_handler('attract_previous_scores', self._generate_events, 10000)
+        self.machine.events.add_handler('attract_show_last_game_scores_override', self._generate_override_events, 20000)
 
     def _generate_events(self, **kwargs):
         del kwargs
@@ -31,3 +32,25 @@ class LastGameScores(CustomCode):
             self.machine.events.post('lastgame_player4', score=player4)
         else:
             self.machine.events.post('lastgame_player4_blank')
+
+    def _generate_override_events(self, **kwargs):
+        del kwargs
+
+        player2 = self.machine.variables.get_machine_var("player2_score")
+        player3 = self.machine.variables.get_machine_var("player3_score")
+        player4 = self.machine.variables.get_machine_var("player4_score")
+
+        if player2:
+            self.machine.events.post('lastgame_player2_o', score=player2)
+        else:
+            self.machine.events.post('lastgame_player2_blank_o')
+
+        if player3:
+            self.machine.events.post('lastgame_player3_o', score=player3)
+        else:
+            self.machine.events.post('lastgame_player3_blank_o')
+
+        if player4:
+            self.machine.events.post('lastgame_player4_o', score=player4)
+        else:
+            self.machine.events.post('lastgame_player4_blank_o')
