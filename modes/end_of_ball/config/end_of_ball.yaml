@@ -10,8 +10,10 @@ mode:
 event_player:
   start_bonus_countdown:
     - decrement_bonus|250ms
-  player_bonuscount{value>0}:
+  player_bonuscount{value>0 and current_player.fast_bonus_countdown==0}:
     - decrement_bonus|500ms
+  player_bonuscount{value>0 and current_player.fast_bonus_countdown==1}:
+    - decrement_bonus|50ms
   player_bonuscount{value==0}:
     - end_bonus
 
@@ -23,6 +25,14 @@ variable_player:
     score:
       action: add
       int: 1000 * current_player.bonusmulti
+  start_drain_show:
+    fast_bonus_countdown:
+      action: set
+      int: 0
+  flipper_cancel:
+    fast_bonus_countdown:
+      action: set
+      int: 1
 
 show_player:
   player_bonuscount{value==39}:

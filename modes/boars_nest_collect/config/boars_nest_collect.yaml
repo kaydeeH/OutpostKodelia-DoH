@@ -19,92 +19,106 @@ event_player:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "Bo"
+      score_type: "BO     "
       score_value:
         value: current_player.boars_nest_spins * 1000
         type: int
       boar_score_post:
         value: current_player.boars_nest_jackpot + (current_player.boars_nest_spins * 1000)
         type: int
-      events_when_completed: bnbc_2
+      events_when_completed: bnbc_1_set
+  bnbc_1_set:
+    - bnbc_2
   bnbc_2:
     boars_nest_show_bonus_text:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "Luke"
+      score_type: "LUKE   "
       score_value:
         value: current_player.boars_nest_pops * 1000
         type: int
       boar_score_post:
         value: current_player.boars_nest_jackpot + (current_player.boars_nest_pops * 1000)
         type: int
-      events_when_completed: bnbc_3
+      events_when_completed: bnbc_2_set
+  bnbc_2_set:
+    - bnbc_3
   bnbc_3:
     boars_nest_show_bonus_text:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "Daisy"
+      score_type: "DAISY  "
       score_value:
         value: current_player.boars_nest_right_drops * 1000
         type: int
       boar_score_post:
         value: current_player.boars_nest_jackpot + (current_player.boars_nest_right_drops * 1000)
         type: int
-      events_when_completed: bnbc_4
+      events_when_completed: bnbc_3_set
+  bnbc_3_set:
+    - bnbc_4
   bnbc_4:
     boars_nest_show_bonus_text:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "Jesse"
+      score_type: "JESSE  "
       score_value:
         value: current_player.boars_nest_oil_slicks * 1000
         type: int
       boar_score_post:
         value: current_player.boars_nest_jackpot + (current_player.boars_nest_oil_slicks * 1000)
         type: int
-      events_when_completed: bnbc_5
+      events_when_completed: bnbc_4_set
+  bnbc_4_set:
+    - bnbc_5
   bnbc_5:
     boars_nest_show_bonus_text:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "Cooter"
+      score_type: "COOTER "
       score_value:
         value: current_player.boars_nest_creeks * 1000
         type: int
       boar_score_post:
         value: current_player.boars_nest_jackpot + (current_player.boars_nest_creeks * 1000)
         type: int
-      events_when_completed: bnbc_6
+      events_when_completed: bnbc_5_set
+  bnbc_5_set:
+    - bnbc_6
   bnbc_6:
     boars_nest_show_bonus_text:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "Roscoe"
+      score_type: "ROSCOE "
       score_value:
         value: current_player.boars_nest_hazzards * 1000
         type: int
       boar_score_post:
         value: current_player.boars_nest_jackpot + (current_player.boars_nest_hazzards * 1000)
         type: int
-      events_when_completed: bnbc_7
+      events_when_completed: bnbc_6_set
+  bnbc_6_set:
+    - bnbc_7
   bnbc_7{current_player.total_super_jackpots_scored>0}:
     boars_nest_show_bonus_text:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "Supers"
+      score_type: "SUPERS "
       score_value:
         value: current_player.total_super_jackpots_scored
         type: int
       boar_score_post:
         value: current_player.boars_nest_jackpot + (current_player.total_super_jackpots_scored)
         type: int
-      events_when_completed: bnbc_8
+      events_when_completed: bnbc_7_set
+  bnbc_7_seT:
+    - bnbc_8
   bnbc_7{current_player.total_super_jackpots_scored==0}:
     - bnbc_8
   bnbc_8{current_player.boars_nest_inlines > 3}:
@@ -112,8 +126,8 @@ event_player:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "Hogg"
-      score_value: "Doubled"
+      score_type: "HOGG   "
+      score_value: "DOUBLED"
       boar_score_post:
         value: current_player.boars_nest_jackpot + current_player.boars_nest_jackpot
         type: int
@@ -127,7 +141,7 @@ event_player:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "Final"
+      score_type: "FINAL  "
       score_value:
         value: current_player.boars_nest_jackpot
         type: int
@@ -190,31 +204,31 @@ variable_player:
     boars_nest_jackpot:
       action: set
       int: 100000
-  bnbc_2:
+  bnbc_1_set:
     boars_nest_jackpot:
       action: add
       int: current_player.boars_nest_spins * 1000
-  bnbc_3:
+  bnbc_2_set:
     boars_nest_jackpot:
       action: add
       int: current_player.boars_nest_pops * 1000
-  bnbc_4:
+  bnbc_3_set:
     boars_nest_jackpot:
       action: add
       int: current_player.boars_nest_right_drops * 1000
-  bnbc_5:
+  bnbc_4_set:
     boars_nest_jackpot:
       action: add
       int: current_player.boars_nest_oil_slicks * 1000
-  bnbc_6:
+  bnbc_5_set:
     boars_nest_jackpot:
       action: add
       int: current_player.boars_nest_creeks * 1000
-  bnbc_7:
+  bnbc_6_set:
     boars_nest_jackpot:
       action: add
       int: current_player.boars_nest_hazzards * 1000
-  bnbc_8:
+  bnbc_7_set:
     boars_nest_jackpot:
       action: add
       int: current_player.total_super_jackpots_scored

@@ -20,6 +20,8 @@ event_player:
     - escape_saucer_unexpected
   escape_saucer_unexpected:
     - escape_saucer_eject
+  kodelia_tilt{device.switches.s_saucer_treasure_chamber.state==1}:
+    - escape_saucer_eject
 
 sound_player:
   start_chase_sequence: dixie_horn
