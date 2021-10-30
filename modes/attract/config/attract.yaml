@@ -16,6 +16,23 @@ event_player:
     - attract_single_flipper
   s_flipper_right_active:
     - attract_single_flipper
+  attract_single_flipper:
+    - attract_sound_check
+  attract_sound_check{settings.attract_flipper_sound_permitted==1 and device.timers.attract_sound_cooldown.running==False}:
+    - attract_cooldown_start
+
+timers:
+   attract_sound_cooldown:
+      start_value: 0
+      end_value: 30
+      direction: up
+      control_events:
+          - event: attract_cooldown_start
+            action: restart
+      start_running: false
+
+sound_player:
+   timer_attract_sound_cooldown_started: attract_voice
 
 segment_display_player:
   title_card:

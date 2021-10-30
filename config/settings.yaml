@@ -107,6 +107,15 @@ settings:
     default: 300
     key_type: int
 
+  attract_flipper_sound_permitted:
+    label: Attract Flipper Sound
+    sort: 160
+    values:
+      0: "disabled"
+      1: "enabled"
+    default: 1
+    key_type: int
+
 # GAME SETTINGS
   hazzard_scoring:
     label: Hazzard Saucer Scoring
