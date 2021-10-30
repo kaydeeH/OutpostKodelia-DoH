@@ -1,0 +1,61 @@
+#config_version=5
+
+mode:
+  priority: 10000
+  game_mode: false
+  start_events: game_will_end
+  stop_events: eog_finished
+
+queue_relay_player:
+    game_ending:
+      post: eog_display_final_scores
+      wait_for: eog_display_final_scores_ended
+
+segment_display_player:
+  eog_display_final_scores.1{players[0].score>0}:
+    display1:
+      key: eog_final_1
+      text: "{players[0].score:d}"
+  eog_display_final_scores.2{players[1].score>0}:
+    display2:
+      key: eog_final_2
+      text: "{players[1].score:d}"
+  eog_display_final_scores.3{players[2].score>0}:
+    display3:
+      key: eog_final_3
+      text: "{players[2].score:d}"
+  eog_display_final_scores.4{players[3].score>0}:
+    display4:
+      key: eog_final_4
+      text: "{players[3].score:d}"
+  eog_display_final_scores.5:
+    display5:
+      key: eog_final_5
+      text: "       "
+
+  eog_display_final_scores_ended:
+    display1:
+      key: eog_final_1
+      action: remove
+    display2:
+      key: eog_final_2
+      action: remove
+    display3:
+      key: eog_final_3
+      action: remove
+    display4:
+      key: eog_final_4
+      action: remove
+    display5:
+      key: eog_final_5
+      action: remove
+
+show_player:
+  eog_display_final_scores:
+    eog:
+      key: end_of_game_scores
+      speed: 1
+      loops: 0
+      events_when_completed: eog_display_final_scores_ended
+
+

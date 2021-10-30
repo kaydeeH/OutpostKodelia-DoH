@@ -1,0 +1,10 @@
+#show_version=5
+
+- duration: 5
+  lights:
+    l_backbox_11: white
+    l_backbox_12: white
+
+
+
+

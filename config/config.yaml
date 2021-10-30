@@ -71,6 +71,7 @@ modes:
   - escape_saucer      # escape saucer controller
   - boars_nest_collect # big show at the end
   - high_score         # high score saving/entering
+  - end_of_game        # show scores at end of game
 
 credits:
   max_credits: settings.maximum_credits
