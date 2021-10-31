@@ -2,10 +2,10 @@
 - duration: 1000ms
   lights:
     l_backbox_01_highscore_1:
-      color: 'FFFFFF'
+      color: 'FF7500'
       fade: 1000ms
     l_backbox_02_highscore_2:
-      color: 'FFFFFF'
+      color: 'FF7500'
       fade: 1000ms
 - duration: 1000ms
   lights:
@@ -18,10 +18,10 @@
 - duration: 1000ms
   lights:
     l_backbox_01_highscore_1:
-      color: 'FFFFFF'
+      color: '0075FF'
       fade: 1000ms
     l_backbox_02_highscore_2:
-      color: 'FFFFFF'
+      color: '0075FF'
       fade: 1000ms
 - duration: 1000ms
   lights:
