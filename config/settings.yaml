@@ -428,3 +428,110 @@ settings:
     default: 18
     key_type: int
     settingType: coilpower
+
+  escape_eject_power:
+    label: Escape Saucer Eject Power
+    sort: 115
+    values:
+      26: "26ms"
+      28: "28ms"
+      30: "30ms"
+      32: "32ms"
+      34: "34ms"
+      36: "36ms"
+    default: 30
+    key_type: int
+    settingType: coilpower
+
+  trough_eject_power:
+    label: Trough Eject Power
+    sort: 120
+    values:
+      15: "15ms"
+      16: "16ms"
+      17: "17ms"
+      18: "18ms"
+      19: "19ms"
+      20: "20ms"
+    default: 16
+    key_type: int
+    settingType: coilpower
+
+  main_flipper_power:
+    label: Main Flipper Power
+    sort: 130
+    values:
+      22: "22ms"
+      24: "24ms"
+      26: "26ms"
+      28: "28ms"
+      30: "30ms"
+    default: 24
+    key_type: int
+    settingType: coilpower
+
+  small_flipper_power:
+    label: Small Flipper Power
+    sort: 140
+    values:
+      12: "12ms"
+      14: "14ms"
+      16: "16ms"
+      18: "18ms"
+      20: "20ms"
+      22: "22ms"
+      24: "24ms"
+    default: 16
+    key_type: int
+    settingType: coilpower
+
+  sling_power:
+    label: Sling Power
+    sort: 150
+    values:
+      12: "12ms"
+      14: "14ms"
+      16: "16ms"
+      18: "18ms"
+      20: "20ms"
+      22: "22ms"
+      24: "24ms"
+    default: 16
+    key_type: int
+    settingType: coilpower
+
+  main_pop_power:
+    label: Main Pop Power
+    sort: 160
+    values:
+      12: "12ms"
+      14: "14ms"
+      16: "16ms"
+      18: "18ms"
+      20: "20ms"
+      22: "22ms"
+      24: "24ms"
+      26: "26ms"
+      28: "28ms"
+      30: "30ms"
+    default: 20
+    key_type: int
+    settingType: coilpower
+
+  jail_pop_power:
+    label: Jail Pop Power
+    sort: 170
+    values:
+      12: "12ms"
+      14: "14ms"
+      16: "16ms"
+      18: "18ms"
+      20: "20ms"
+      22: "22ms"
+      24: "24ms"
+      26: "26ms"
+      28: "28ms"
+      30: "30ms"
+    default: 20
+    key_type: int
+    settingType: coilpower

@@ -28,7 +28,7 @@ coils:
   c_saucer_trasure_chamber:
     debug: true
     number: 0-0-15
-    default_pulse_ms: 30
+    default_pulse_ms: settings.escape_eject_power
     pulse_events: escape_saucer_eject
   c_saucer_paragon:
     number: 1-0-5
@@ -38,28 +38,28 @@ coils:
     default_pulse_ms: settings.creek_eject_power
   c_left_slingshot:
     number: 1-0-3
-    default_pulse_ms: 15
+    default_pulse_ms: settings.sling_power
     #pulse_events: temp_sling_left
   c_right_slingshot:
     number: 1-0-1
-    default_pulse_ms: 15
+    default_pulse_ms: settings.sling_power
     #pulse_events: temp_sling_right
 
   c_left_thumper:
     number: 1-0-7
-    default_pulse_ms: 20
+    default_pulse_ms: settings.main_pop_power
     #pulse_events: temp_thumper_left
   c_right_thumper:
     number: 1-0-6
-    default_pulse_ms: 20
+    default_pulse_ms: settings.main_pop_power
     #pulse_events: temp_thumper_right
   c_bottom_thumper:
     number: 1-0-2
-    default_pulse_ms: 20
+    default_pulse_ms: settings.jail_pop_power
     #pulse_events: temp_thumper_bottom
   c_center_thumper:
     number: 1-0-0
-    default_pulse_ms: 20
+    default_pulse_ms: settings.main_pop_power
     #pulse_events: temp_thumper_center
 
   c_drop_target_inline:
@@ -70,25 +70,25 @@ coils:
     default_pulse_ms: 45
   c_flipper_right_main:
     number: 0-0-10
-    default_pulse_ms: 25
+    default_pulse_ms: settings.main_flipper_power
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
   c_flipper_left_main:
     number: 0-0-8
-    default_pulse_ms: 25
+    default_pulse_ms: settings.main_flipper_power
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
   c_flipper_right_upper:
     number: 0-0-11
-    default_pulse_ms: 25
+    default_pulse_ms: settings.main_flipper_power
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
   c_flipper_left_upper:
     number: 0-0-6
-    default_pulse_ms: 17
+    default_pulse_ms: settings.small_flipper_power
     #debug: true
     #allow_enable: true
     default_hold_power: 0.125
@@ -101,7 +101,7 @@ coils:
     allow_enable: true
   c_ball_trough:
     number: 0-0-0
-    default_pulse_ms: 17
+    default_pulse_ms: settings.trough_eject_power
     debug: true
     allow_enable: true
   c_inline_knockdown_a:
