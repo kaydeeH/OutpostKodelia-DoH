@@ -15,6 +15,8 @@ event_player:
     - start_base_shows
     - next_song
     - start_car_sounds
+  s_right_outlane_active{device.ball_saves.ball_save_validate.enabled==False and device.ball_saves.ball_save_main.enabled==False and device.ball_saves.ball_save_boars_nest.enabled==False}:
+    - play_outlane_drain_sound
 
 ball_saves:
   ball_save_validate:
