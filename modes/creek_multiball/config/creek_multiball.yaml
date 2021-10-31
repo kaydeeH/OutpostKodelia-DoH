@@ -10,7 +10,7 @@
 # multiball_creek_multiball_ended
 
 mode:
-  start_events: start_mode_creek_multiball
+  start_events: start_mode_creek_multiball, start_mode_creek_multiball_at_ball_start
   stop_events: multiball_creek_multiball_ended, tilt
   events_when_started: disable_base_creek_shot, enable_creek_multiball_start
   events_when_stopped: enable_base_creek_shot
@@ -214,7 +214,11 @@ variable_player:
     creek_jackpot_count:
       action: set
       int: 0
-
+  jumped_that_crick_played:
+    creek_mball_sound_played:
+      action: set
+      int: 1
+      
 # it would seem that a single segment display player within a mode cannot "stack"
 # they need to be in different modes for this to work?  Below does not return
 # when in the multiball_display.yaml mode file.
@@ -303,10 +307,11 @@ segment_display_player:
       text: "{current_player.creek_superjackpot:d}"
 
 sound_player:
-  enable_creek_multiball_start:
+  enable_creek_multiball_start{current_player.creek_mball_sound_played==0}:
     jumped_that_crick:
       action: play
       loops: 0
+      events_when_played: jumped_that_crick_played
   start_creek_multiball:
     nitrous_oxide:
       action: play

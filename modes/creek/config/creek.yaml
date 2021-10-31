@@ -71,10 +71,31 @@ variable_player:
      creek_jackpot_count:
        action: set
        int: 0
+   start_mode_creek_multiball:
+     creek_mball_ready:
+       action: set
+       int: 1
+   multiball_creek_multiball_started:
+     creek_mball_ready:
+       action: set
+       int: 0
+     creek_mball_sound_played:
+       action: set
+       int: 0
+   disable_two_ball_multiball_progress:
+     creek_mball_ready:
+       action: set
+       int: 0
+     creek_mball_sound_played:
+       action: set
+       int: 0
 
 event_player:
   creek_saucer_20k_hit{settings.creek_multiball_feature==1}:
     - start_mode_creek_multiball
+# Make creek multiball ready on ball start if last ball ended with multiball ready
+  enable_base_creek_shot{settings.creek_multiball_feature==1 and current_player.creek_mball_ready==1}:
+    - start_mode_creek_multiball_at_ball_start
   creek_saucer_20k_hit{current_player.last_creek_value==20000}:
     player_last_creek_value:
       value: 20000
