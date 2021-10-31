@@ -10,7 +10,7 @@
 mode:
   start_events: start_mode_chase_multiball
   stop_events: boars_nest_ended, end_chase_mode, boars_nest_ended_failed
-  events_when_started: chase_notify
+  events_when_started: chase_notify, chase_reset_general_lee_speed
   priority: 200
 
 state_machines:
@@ -90,6 +90,13 @@ multiballs:
     shoot_again: 0s
 
 variable_player:
+  chase_reset_general_lee_speed:
+      general_lee_speed:
+        action: set
+        int: 0
+      boars_nest_active:
+        action: set
+        int: 0
   start_chase_sequence:
       in_line_a_down:
         action: set
@@ -101,12 +108,6 @@ variable_player:
         action: set
         int: 0
       in_line_d_down:
-        action: set
-        int: 0
-      general_lee_speed:
-        action: set
-        int: 0
-      boars_nest_active:
         action: set
         int: 0
   multiball_pre_chase_multiball_started:
