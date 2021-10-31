@@ -31,10 +31,10 @@ coils:
     default_pulse_ms: 30
     pulse_events: escape_saucer_eject
 # Tried 12, 16, both were not reliable
-# 18 seems to be the minimum that makes this work
+# 18 seems to be the minimum that makes this work, but was only about 90%
   c_saucer_paragon:
     number: 1-0-5
-    default_pulse_ms: 18
+    default_pulse_ms: 19
 # This seems like a slightly lower value works
 # as compared to the paragon saucer
   c_saucer_golden_cliffs:
