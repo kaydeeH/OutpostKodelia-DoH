@@ -1364,63 +1364,63 @@ lights:
 #    tags: j10
 
 
-# Misc Informational Lights
-  l_info_ball_in_play:
-    number: 1-0-126
-    subtype: led
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-    tags: superjack
-  l_info_credit_indicator:
-    number: 1-0-127
-    subtype: led
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-    tags: superjack
-  l_info_game_over:
-    number: 1-0-128
-    subtype: led
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-    tags: superjack
-  l_info_high_score_to_date:
-    number: 1-0-129
-    subtype: led
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-    tags: superjack
-  l_info_match:
-    number: 1-0-130
-    subtype: led
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-    tags: superjack
-  l_info_same_player_sa:
-    number: 1-0-131
-    subtype: led
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-    tags: superjack
-  l_info_tilt:
-    number: 1-0-132
-    subtype: led
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-    tags: superjack
+## Misc Informational Lights
+#  l_info_ball_in_play:
+#    number: 1-0-126
+#    subtype: led
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#    tags: superjack
+#  l_info_credit_indicator:
+#    number: 1-0-127
+#    subtype: led
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#    tags: superjack
+#  l_info_game_over:
+#    number: 1-0-128
+#    subtype: led
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#    tags: superjack
+#  l_info_high_score_to_date:
+#    number: 1-0-129
+#    subtype: led
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#    tags: superjack
+#  l_info_match:
+#    number: 1-0-130
+#    subtype: led
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#    tags: superjack
+#  l_info_same_player_sa:
+#    number: 1-0-131
+#    subtype: led
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#    tags: superjack
+#  l_info_tilt:
+#    number: 1-0-132
+#    subtype: led
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#    tags: superjack
 
 
   #Backbox Driver Board (comes after P1/P3 Displays)
