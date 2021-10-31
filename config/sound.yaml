@@ -14,7 +14,7 @@ sound_system:
     voice:
       type: standard
       simultaneous_sounds: 10
-      volume: 0.8
+      volume: 0.85
     sfx:
       type: standard
       simultaneous_sounds: 32
@@ -78,11 +78,11 @@ sounds:
   rev_up:
     file: rev_up.wav
     track: sfx
-    volume: 0.3
+    volume: 0.25
   launch_car:
     file: launch_car.wav
     track: sfx
-    volume: 0.3
+    volume: 0.25
   car_door:
     file: car_door.wav
     track: sfx
@@ -108,7 +108,7 @@ sounds:
   creek:
     file: creek.wav
     track: sfx
-    volume: 0.5
+    volume: 0.45
     simultaneous_limit: 1
     stealing_method: skip
   jail_door:
@@ -129,35 +129,125 @@ sounds:
   hi_fellas:
     file: hi_fellas.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   i_love_it:
     file: i_love_it.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   public_enemy_number_one:
     file: public_enemy_number_one.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   yall_got_your_ears_on:
     file: yall_got_your_ears_on.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   get_them_duke_boys:
     file: get_them_duke_boys.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   hello_sugar_plum:
     file: hello_sugar_plum.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   ##Multiplayer Add Clips
   gonna_kick_my_butt_is_he:
     file: gonna_kick_my_butt_is_he.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   its_them_again:
     file: its_them_again.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   join_us_pit_stop:
     file: join_us_pit_stop.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   hazzard_competing:
     file: hazzard_competing.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   ##Drain Clips
   howl:
@@ -192,78 +282,267 @@ sounds:
   derby_time:
     file: derby_time.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   ##Creek MB Clips
   nitrous_oxide:
     file: nitrous_oxide.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   jumped_that_crick:
     file: jumped_that_crick.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   ##Chase MB Clips
   were_gonna_bust_em:
     file: were_gonna_bust_em.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   rock_and_a_hard_place:
     file: rock_and_a_hard_place.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   gonna_get_em:
     file: gonna_get_em.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   duck_on_a_junebug:
     file: duck_on_a_junebug.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   hot_pursuit:
     file: hot_pursuit.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   never_could_catch_em:
     file: never_could_catch_em.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
 
   ##Tilt CLips
   arrest_that_man:
     file: arrest_that_man.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   dishwater:
     file: dishwater.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   messed_up:
     file: messed_up.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   pea_pickin:
     file: pea_pickin.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   pompous:
     file: pompous.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   sensitivity:
     file: sensitivity.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   strike1_2_3:
     file: strike1_2_3.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   take_your_badge:
     file: take_your_badge.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   ##Tilt Warning Clips
   billy_blue_heck:
     file: billy_blue_heck.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   bodily_injury:
     file: bodily_injury.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   careful_with_that:
     file: careful_with_that.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   enough_of_that:
     file: enough_of_that.wav
     track: voice
   freeze:
     file: freeze.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
 
 
