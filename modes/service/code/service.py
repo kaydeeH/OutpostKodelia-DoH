@@ -177,3 +177,14 @@ class Service(Service):
 
         self.machine.events.post("service_light_channel_test_stop")
 
+    # Adjustments
+    def _load_adjustments_menu_entries(self) -> List[ServiceMenuEntry]:
+        """Return the adjustments menu items with label and callback."""
+        return [
+            ServiceMenuEntry("Standard Adjustments", partial(self._settings_menu, "standard")),
+            ServiceMenuEntry("Feature Adjustments", partial(self._settings_menu, "feature")),
+            ServiceMenuEntry("Game Adjustments", partial(self._settings_menu, "game")),
+            ServiceMenuEntry("Coin Adjustments", partial(self._settings_menu, "coin")),
+            ServiceMenuEntry("Coil Power Adjustments", partial(self._settings_menu, "coilpower"))
+        ]
+

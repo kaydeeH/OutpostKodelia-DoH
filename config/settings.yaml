@@ -116,17 +116,6 @@ settings:
     default: 1
     key_type: int
 
-  hazzard_eject_power:
-    label: Hazzard Saucer Eject Power
-    sort: 170
-    values:
-      17: "17ms"
-      18: "18ms"
-      19: "19ms"
-      20: "20ms"
-    default: 18
-    key_type: int
-
 # GAME SETTINGS
   hazzard_scoring:
     label: Hazzard Saucer Scoring
@@ -378,3 +367,50 @@ settings:
       29: "29 seconds"
       30: "30 seconds"
     settingType: feature
+
+# COIL POWER
+  creek_eject_power:
+    label: Creek Saucer Eject Power
+    sort: 100
+    values:
+      16: "16ms"
+      17: "17ms"
+      18: "18ms"
+      19: "19ms"
+      20: "20ms"
+      21: "21ms"
+      22: "22ms"
+      23: "23ms"
+      24: "24ms"
+      25: "25ms"
+      26: "26ms"
+      27: "27ms"
+      28: "28ms"
+      29: "29ms"
+      30: "30ms"
+    default: 16
+    key_type: int
+    settingType: coilpower
+
+  hazzard_eject_power:
+    label: Hazzard Saucer Eject Power
+    sort: 110
+    values:
+      16: "16ms"
+      17: "17ms"
+      18: "18ms"
+      19: "19ms"
+      20: "20ms"
+      21: "21ms"
+      22: "22ms"
+      23: "23ms"
+      24: "24ms"
+      25: "25ms"
+      26: "26ms"
+      27: "27ms"
+      28: "28ms"
+      29: "29ms"
+      30: "30ms"
+    default: 18
+    key_type: int
+    settingType: coilpower
