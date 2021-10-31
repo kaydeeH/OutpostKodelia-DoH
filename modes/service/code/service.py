@@ -149,9 +149,12 @@ class Service(Service):
         position = 0
         color_position = 0
         colors = ["white", "red", "green", "blue", "yellow"]
-        fchan = ["j3", "j4", "j5", "j7", "j8", "j9", "j10", "disp1led", "disp2led", "disp3led", "disp4led", "disp5led", ]
+        fchan = ["j3", "j4", "j5", "j7", "j8", "j9", "j10", "disp1led", "disp2led", "disp3led", "disp4led", "disp5led", "backbox"]
 
-        self.machine.events.post("kodelia_service_menu_flash_channel", test_color=colors[color_position], test_channel=fchan[position])
+        if fchan[position] != "backbox":
+            self.machine.events.post("kodelia_service_menu_flash_channel", test_color=colors[color_position], test_channel=fchan[position])
+        else:
+            self.machine.events.post("kodelia_service_menu_flash_channel_backbox", test_color=colors[color_position])
         self.machine.events.post("service_light_channel_test_start", test_color=colors[color_position], test_channel=fchan[position])
 
         while True:
@@ -172,7 +175,13 @@ class Service(Service):
                 color_position += 1
                 if color_position >= len(colors):
                     color_position = 0
-            self.machine.events.post("kodelia_service_menu_flash_channel", test_color=colors[color_position], test_channel=fchan[position])
+            if fchan[position] != "backbox":
+                self.machine.events.post("kodelia_service_menu_flash_channel", test_color=colors[color_position],
+                                         test_channel=fchan[position])
+            else:
+                self.machine.events.post("kodelia_service_menu_flash_channel_backbox",
+                                         test_color=colors[color_position])
+
             self.machine.events.post("service_light_channel_test_start", test_color=colors[color_position], test_channel=fchan[position])
 
         self.machine.events.post("service_light_channel_test_stop")

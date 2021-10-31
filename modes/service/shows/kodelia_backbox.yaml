@@ -1,0 +1,17 @@
+#show_version=5
+- time: 0
+  lights:
+    disp1led: (color)
+    disp2led: (color)
+    disp3led: (color)
+    disp4led: (color)
+    disp5led: (color)
+    backbox: (color)
+- time: 1
+  lights:
+    disp1led: off
+    disp2led: off
+    disp3led: off
+    disp4led: off
+    disp5led: off
+    backbox: off

@@ -36,10 +36,15 @@ show_player:
       show_tokens:
         tag1: (test_channel)
         color: (test_color)
+  kodelia_service_menu_flash_channel_backbox:
+    kodelia_backbox:
+      show_tokens:
+        color: (test_color)
   kodelia_service_menu_flash_channel_lights_stop:
     kodelia_all_lights:
       action: stop
-
+    kodelia_backbox:
+      action: stop
 
 slide_player:
   # light test:
