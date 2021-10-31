@@ -1768,7 +1768,7 @@ lights:
     color_correction_profile: NeoSeg_white
 
   l_kodseg_2_1_k:
-    start_channel: 0-0-252
+    start_channel: 1-0-0
     type: w
     subtype: led
     tags: disp2led
@@ -2651,7 +2651,7 @@ lights:
     color_correction_profile: NeoSeg_white
 
   l_kodseg_5_1_k:
-    start_channel: 0-0-378
+    start_channel: 1-0-126
     type: w
     subtype: led
     tags: disp5led
@@ -3534,7 +3534,7 @@ lights:
     color_correction_profile: NeoSeg_white
 
   l_kodseg_4_1_k:
-    start_channel: 0-0-504
+    start_channel: 1-0-252
     type: w
     subtype: led
     tags: disp4led
@@ -4416,4 +4416,5 @@ lights:
     platform: opp
     color_correction_profile: NeoSeg_white
 
-#final channel 0 offset:630(210.0)
+#final channel 0 offset:252(84.0)
+#final channel 1 offset:378(126.0)

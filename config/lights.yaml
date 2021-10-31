@@ -1425,7 +1425,8 @@ lights:
 
   #Backbox Driver Board (comes after P1/P3 Displays)
   l_backbox_01_highscore_1:
-    start_channel: 0-0-252
+#    start_channel: 0-0-252
+    start_channel: 0-0-630
     type: rgb
     subtype: led
     tags: backbox
@@ -1434,7 +1435,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_02_highscore_2:
-    start_channel: 0-0-255
+#    start_channel: 0-0-255
+    start_channel: 0-0-633
     type: rgb
     subtype: led
     tags: backbox
@@ -1443,7 +1445,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_03_ballinplay_1:
-    start_channel: 0-0-258
+#    start_channel: 0-0-258
+    start_channel: 0-0-636
     type: rgb
     subtype: led
     tags: backbox
@@ -1452,7 +1455,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_04_ballinplay_2:
-    start_channel: 0-0-261
+#    start_channel: 0-0-261
+    start_channel: 0-0-639
     type: rgb
     subtype: led
     tags: backbox
@@ -1461,7 +1465,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_05_match:
-    start_channel: 0-0-264
+#    start_channel: 0-0-264
+    start_channel: 0-0-642
     type: rgb
     subtype: led
     tags: backbox
@@ -1470,7 +1475,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_06:
-    start_channel: 0-0-267
+#    start_channel: 0-0-267
+    start_channel: 0-0-645
     type: rgb
     subtype: led
     tags: backbox
@@ -1479,7 +1485,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_07:
-    start_channel: 0-0-270
+#    start_channel: 0-0-270
+    start_channel: 0-0-648
     type: rgb
     subtype: led
     tags: backbox
@@ -1488,7 +1495,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_08:
-    start_channel: 0-0-273
+#    start_channel: 0-0-273
+    start_channel: 0-0-651
     type: rgb
     subtype: led
     tags: backbox
@@ -1498,7 +1506,8 @@ lights:
       polarity: true
   l_backbox_09_shootagain_1:
     #Physicall implemented as 3 white LEDs
-    start_channel: 0-0-276
+#    start_channel: 0-0-276
+    start_channel: 0-0-654
     type: rgb
     subtype: led
     tags: backbox, shootagain
@@ -1508,7 +1517,8 @@ lights:
       polarity: true
   l_backbox_10_shootagain_2:
     #Physicall implemented as 3 white LEDs
-    start_channel: 0-0-279
+#    start_channel: 0-0-279
+    start_channel: 0-0-657
     type: rgb
     subtype: led
     tags: backbox, shootagain
@@ -1517,7 +1527,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_11:
-    start_channel: 0-0-282
+#    start_channel: 0-0-282
+    start_channel: 0-0-660
     type: rgb
     subtype: led
     tags: backbox
@@ -1526,7 +1537,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_12:
-    start_channel: 0-0-285
+#    start_channel: 0-0-285
+    start_channel: 0-0-663
     type: rgb
     subtype: led
     tags: backbox
@@ -1535,7 +1547,8 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_13:
-    start_channel: 0-0-288
+#    start_channel: 0-0-288
+    start_channel: 0-0-666
     type: rgb
     subtype: led
     tags: backbox
@@ -1546,7 +1559,8 @@ lights:
 
   #Cabinet Lights - but hooked up to backbox board.
   l_coin_lights: #One RGB driver driving 3 discrete white LEDs
-    start_channel: 0-0-291
+#    start_channel: 0-0-291
+    start_channel: 0-0-669
     type: rgb
     subtype: led
     tags: backbox

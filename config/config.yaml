@@ -8,6 +8,7 @@ config:
   - assets.yaml
   - lights.yaml
   - neoseglights.yaml
+#  - neoseglights-old.yaml
   - scriptlets.yaml
   - settings.yaml
   - widgetstyles.yaml
