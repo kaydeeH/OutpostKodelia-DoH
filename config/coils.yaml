@@ -32,10 +32,10 @@ coils:
     pulse_events: escape_saucer_eject
   c_saucer_paragon:
     number: 1-0-5
-    default_pulse_ms: 12
+    default_pulse_ms: 16
   c_saucer_golden_cliffs:
     number: 1-0-4
-    default_pulse_ms: 12
+    default_pulse_ms: 16
   c_left_slingshot:
     number: 1-0-3
     default_pulse_ms: 15
