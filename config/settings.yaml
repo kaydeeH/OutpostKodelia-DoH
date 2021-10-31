@@ -411,6 +411,7 @@ settings:
       28: "28ms"
       29: "29ms"
       30: "30ms"
+      40: "40ms"
     default: 18
     key_type: int
     settingType: coilpower
