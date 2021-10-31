@@ -116,6 +116,17 @@ settings:
     default: 1
     key_type: int
 
+  hazzard_eject_power:
+    label: Hazzard Saucer Eject Power
+    sort: 170
+    values:
+      17: "17ms"
+      18: "18ms"
+      19: "19ms"
+      20: "20ms"
+    default: 18
+    key_type: int
+
 # GAME SETTINGS
   hazzard_scoring:
     label: Hazzard Saucer Scoring
