@@ -4,6 +4,7 @@ event_player:
   mode_attract_started:
     restart_loop:
     disable_playfield_coils:
+    attract_sound_restart:
   restart_loop:
     start_loop:
     attract_lightshow_start:
@@ -20,6 +21,9 @@ event_player:
     - attract_sound_check
   attract_sound_check{settings.attract_flipper_sound_permitted==1 and device.timers.attract_sound_cooldown.running==False}:
     - attract_cooldown_start
+  timer_attract_sound_player_complete:
+    - attract_cooldown_start
+    - attract_sound_restart
 
 timers:
    attract_sound_cooldown:
@@ -30,6 +34,15 @@ timers:
           - event: attract_cooldown_start
             action: restart
       start_running: false
+   attract_sound_player:
+      start_value: 0
+      end_value: settings.attract_sound_freq
+      direction: up
+      control_events:
+          - event: attract_cooldown_start
+            action: restart
+          - event: attract_sound_restart
+            action: restart
 
 sound_player:
    timer_attract_sound_cooldown_started: attract_voice

@@ -116,6 +116,20 @@ settings:
     default: 1
     key_type: int
 
+  attract_sound_freq:
+    label: Attract Sound Automated
+    sort: 170
+    values:
+      30: "30 seconds"
+      60: "60 seconds"
+      120: "2 minutes"
+      180: "3 minutes"
+      300: "5 minutes"
+      600: "10 minutes"
+      900: "15 minutes"
+    default: 300
+    key_type: int
+
 # GAME SETTINGS
   hazzard_scoring:
     label: Hazzard Saucer Scoring
