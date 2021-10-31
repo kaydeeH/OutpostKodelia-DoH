@@ -243,6 +243,8 @@ random_event_player:
 
 show_player:
   attract_lightshow_start:
+    gi_dim_show_key:
+      action: stop
     gi:
       key: gi_show
       priority: 1
@@ -400,8 +402,6 @@ show_player:
       action: stop
 
   kill_full_light_show:
-    gi_dim_show:
-      action: play
     gi_show:
       action: stop
     characters_show:
@@ -430,6 +430,10 @@ show_player:
       action: stop
     blue_siren_show_key:
       action: stop
+    gi_dim_show:
+      key: gi_dim_show_key
+      action: play
+      priority: 5000
 
 
 
