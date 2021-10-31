@@ -301,6 +301,10 @@ show_player:
       speed: 60
       loops: 6
       priority: 10
+    high_score_show:
+      key: high_score_show_key
+      action: play
+      loops: -1
     attract_show_1:
       action: play
       loops: 0
