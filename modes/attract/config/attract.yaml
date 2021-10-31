@@ -402,8 +402,6 @@ show_player:
       action: stop
 
   kill_full_light_show:
-    gi_show:
-      action: stop
     characters_show:
       action: stop
     multipliers_show:
