@@ -113,14 +113,14 @@ variable_player:
       general_lee_speed:
         action: set
         int: 40
-  general_lee_speed_add_1{current_player.boars_nest_active!=1}:
+  general_lee_speed_add_1{current_player.boars_nest_active!=1 and current_player.general_lee_speed>0}:
       general_lee_speed:
         # temp change to 10 to make testing easier
         int: 10
-  general_lee_speed_add_3{current_player.boars_nest_active!=1}:
+  general_lee_speed_add_3{current_player.boars_nest_active!=1 and current_player.general_lee_speed>0}:
       general_lee_speed:
         int: 3
-  general_lee_speed_add_5{current_player.boars_nest_active!=1}:
+  general_lee_speed_add_5{current_player.boars_nest_active!=1 and current_player.general_lee_speed>0}:
       general_lee_speed:
         int: 5
 
