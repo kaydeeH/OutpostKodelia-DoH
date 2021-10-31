@@ -117,7 +117,7 @@ event_player:
         value: current_player.boars_nest_jackpot + (current_player.total_super_jackpots_scored)
         type: int
       events_when_completed: bnbc_7_set
-  bnbc_7_seT:
+  bnbc_7_set:
     - bnbc_8
   bnbc_7{current_player.total_super_jackpots_scored==0}:
     - bnbc_8
