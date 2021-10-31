@@ -123,3 +123,17 @@ event_player:
         value: current_player.skill_shot_points
         type: int
       events_when_completed: end_skill_shot
+
+sound_player:
+  skill_shot_level_1_success:
+    good_start:
+      action: play
+      loops: 0
+  skill_shot_level_2_success:
+    good_start:
+      action: play
+      loops: 0
+  skill_shot_level_3_success:
+    good_start:
+      action: play
+      loops: 0

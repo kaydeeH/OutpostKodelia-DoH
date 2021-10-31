@@ -13,7 +13,7 @@ sound_system:
       volume: .6
     voice:
       type: standard
-      simultaneous_sounds: 10
+      simultaneous_sounds: 1
       volume: 0.85
     sfx:
       type: standard
@@ -282,6 +282,20 @@ sounds:
   derby_time:
     file: derby_time.wav
     track: voice
+    stealing_method: oldest
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  air_force:
+    file: air_force.wav
+    track: voice
+    stealing_method: oldest
     ducking:
       target:
         - music
@@ -296,6 +310,7 @@ sounds:
   nitrous_oxide:
     file: nitrous_oxide.wav
     track: voice
+    stealing_method: oldest
     ducking:
       target:
         - music
@@ -308,6 +323,7 @@ sounds:
   jumped_that_crick:
     file: jumped_that_crick.wav
     track: voice
+    stealing_method: oldest
     ducking:
       target:
         - music
@@ -544,21 +560,103 @@ sounds:
       release_point: 100ms
       release: 100ms
 
+  ##Attract Quips
+  flapjacks:
+    file: flapjacks.wav
+    track: voice
+  possum_gumbush:
+    file: possum_gumbush.wav
+    track: voice
+  reflexes:
+    file: reflexes.wav
+    track: voice
+  zinger:
+    file: zinger.wav
+    track: voice
+  free_games:
+    file: free_games.wav
+    track: voice
+  how_to_drive:
+    file: how_to_drive.wav
+    track: voice
+  miss_you:
+    file: miss_you.wav
+    track: voice
+  join_us:
+    file: join_us.wav
+    track: voice
+  normal_day:
+    file: normal_day.wav
+    track: voice
+  fit_right_in:
+    file: fit_right_in.wav
+    track: voice
+  roscoes_dog_manners:
+    file: roscoes_dog_manners.wav
+    track: voice
+  grits_from_gumdrops:
+    file: grits_from_gumdrops.wav
+    track: voice
+  crazy_cooter:
+    file: crazy_cooter.wav
+    track: voice
+  roscoe_p_coltrane:
+    file: roscoe_p_coltrane.wav
+    track: voice
+  dunce:
+    file: dunce.wav
+    track: voice
 
-
-
-## Ducking example
-#  player_one_up:
-#      file: first_player_up.wav
-#      track: voice
-#      ducking:
-#        target: music
-#        delay: 0ms
-#        attack: 100ms
-#        attenuation: .1
-#        release_point: 1.7s
-#        release: 500ms
-#
+  ##General Voice Clips
+  jackpot:
+    file: jackpot.wav
+    track: voice
+    stealing_method: oldest
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  wrong_road:
+    file: wrong_road.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  yee_haw:
+    file: yee_haw.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  good_start:
+    file: good_start.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
 sound_pools:
   player_1_add:
@@ -617,11 +715,6 @@ sound_pools:
       - behind_bars_entertainment
       - things_look_bad
       - that_is_terrible
-  hazzard_mb_start:
-    type: random_force_all
-    track: voice
-    sounds:
-      - nitrous_oxide
   tilt_sounds:
     type: random_force_all
     track: voice
@@ -650,6 +743,23 @@ sound_pools:
     type: random_force_all
     track: voice
     sounds:
-      - gunfire1
-      - gunfire2
-      - gunfire3
+      - flapjacks
+      - possum_gumbush
+      - reflexes
+      - zinger
+      - free_games
+      - how_to_drive
+      - miss_you
+      - join_us
+      - normal_day
+      - fit_right_in
+      - roscoes_dog_manners
+      - grits_from_gumdrops
+      - crazy_cooter
+      - roscoe_p_coltrane
+      - dunce
+  jackpot_clips:
+    type: random_force_all
+    track: voice
+    sounds:
+      - jackpot

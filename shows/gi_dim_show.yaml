@@ -79,21 +79,21 @@
     l_gi_29_leftsling_2:
       color: '333333'
       fade: 1000ms
-    l_goldencliffs_10k:
-      color: off
-      fade: 1000ms
-    l_goldencliffs_20k:
-      color: off
-      fade: 1000ms
-    l_goldencliffs_2k:
-      color: off
-      fade: 1000ms
-    l_goldencliffs_4k:
-      color: off
-      fade: 1000ms
-    l_goldencliffs_6k:
-      color: off
-      fade: 1000ms
-    l_goldencliffs_8k:
-      color: off
-      fade: 1000ms
+#    l_goldencliffs_10k:
+#      color: off
+#      fade: 1000ms
+#    l_goldencliffs_20k:
+#      color: off
+#      fade: 1000ms
+#    l_goldencliffs_2k:
+#      color: off
+#      fade: 1000ms
+#    l_goldencliffs_4k:
+#      color: off
+#      fade: 1000ms
+#    l_goldencliffs_6k:
+#      color: off
+#      fade: 1000ms
+#    l_goldencliffs_8k:
+#      color: off
+#      fade: 1000ms

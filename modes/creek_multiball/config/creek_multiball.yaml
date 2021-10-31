@@ -313,6 +313,14 @@ sound_player:
       loops: 0
       events_when_played: jumped_that_crick_played
   start_creek_multiball:
+    jumped_that_crick:
+      action: stop
     nitrous_oxide:
+      action: play
+      loops: 0
+  creek_jackpot_collected:
+    nitrous_oxide:
+      action: stop
+    jackpot_clips:
       action: play
       loops: 0

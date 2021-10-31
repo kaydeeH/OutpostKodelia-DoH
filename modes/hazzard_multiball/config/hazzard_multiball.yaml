@@ -338,7 +338,19 @@ segment_display_player:
       text: "{current_player.hazzard_superjackpot:d}"
 
 sound_player:
+  enable_hazzard_multiball_start:
+    air_force:
+      action: play
+      loops: 0
   start_hazzard_multiball:
+    air_force:
+      action: stop
     derby_time:
+      action: play
+      loops: 0
+  hazzard_jackpot_collected:
+    derby_time:
+      action: stop
+    jackpot_clips:
       action: play
       loops: 0

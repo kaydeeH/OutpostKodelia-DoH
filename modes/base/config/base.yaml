@@ -162,3 +162,7 @@ sound_player:
     duck_on_a_junebug:
       action: play
       loops: 0
+  play_outlane_drain_sound:
+    wrong_road:
+      action: play
+      loops: 0

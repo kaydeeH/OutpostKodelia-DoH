@@ -26,3 +26,9 @@ variable_player:
     spinner_increase_points:
       action: set
       int: 0
+
+sound_player:
+  yee_haw_hit:
+    yee_haw:
+      action: play
+      loops: 0
