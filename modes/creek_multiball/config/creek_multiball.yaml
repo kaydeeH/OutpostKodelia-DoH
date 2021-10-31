@@ -218,7 +218,7 @@ variable_player:
     creek_mball_sound_played:
       action: set
       int: 1
-      
+
 # it would seem that a single segment display player within a mode cannot "stack"
 # they need to be in different modes for this to work?  Below does not return
 # when in the multiball_display.yaml mode file.

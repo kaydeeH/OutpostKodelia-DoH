@@ -8,6 +8,14 @@ mode:
   stop_events: shutdown
   stop_on_ball_end: False
 
+# Enable Software Update
+# software_update_script must be a file that exists for this to show up on the menu
+# Probably won't use this if we are going to have a looping type script that updates
+# software on shutdown and restarts.
+mode_settings:
+  software_update: True
+  software_update_script: update.sh
+
 show_player:
   kodelia_service_menu_flash_all_lights:
     kodelia_all_lights:

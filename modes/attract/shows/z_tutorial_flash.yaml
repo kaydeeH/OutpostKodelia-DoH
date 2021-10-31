@@ -1,0 +1,7 @@
+#show_version=5
+- duration: 100ms
+  lights:
+    (leds): (color)
+- duration: 100ms
+  lights:
+    (leds): off

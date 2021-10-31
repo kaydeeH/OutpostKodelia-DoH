@@ -1,0 +1,249 @@
+#show_version=5
+- time: 0
+  coils:
+    c_drop_target_inline: pulse
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_paragon_saucer_01p
+  segment_displays:
+    display1:
+      text: "Collect"
+      priority: 100
+      key: z_tut_haz
+    display2:
+      text: "HAZZARD"
+      priority: 100
+      key: z_tut_haz
+    display3:
+      text: "Letters"
+      priority: 100
+      key: z_tut_haz
+    display4:
+      text: "@Saucer"
+      priority: 100
+      key: z_tut_haz
+- time: +3
+  lights:
+    l_paragon_saucer_01p: white
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_paragon_saucer_02a
+- time: +3
+  lights:
+    l_paragon_saucer_01p: white
+    l_paragon_saucer_02a: white
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_paragon_saucer_03r
+- time: +3
+  lights:
+    l_paragon_saucer_01p: white
+    l_paragon_saucer_02a: white
+    l_paragon_saucer_03r: white
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_paragon_saucer_04a
+- time: +3
+  lights:
+    l_paragon_saucer_01p: white
+    l_paragon_saucer_02a: white
+    l_paragon_saucer_03r: white
+    l_paragon_saucer_04a: white
+  segment_displays:
+    display1:
+      text: "Collect"
+      priority: 100
+      key: z_tut_haz
+    display2:
+      text: "HAZZARD"
+      priority: 100
+      key: z_tut_haz
+    display3:
+      text: "In-Line"
+      priority: 100
+      key: z_tut_haz
+    display4:
+      text: "Drops"
+      priority: 100
+      key: z_tut_haz
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_paragon_saucer_05g
+  coils:
+    c_inline_knockdown_a: pulse
+- time: +3
+  lights:
+    l_paragon_saucer_01p: white
+    l_paragon_saucer_02a: white
+    l_paragon_saucer_03r: white
+    l_paragon_saucer_04a: white
+    l_paragon_saucer_05g: white
+  coils:
+    c_inline_knockdown_b: pulse
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_paragon_saucer_06o
+- time: +3
+  lights:
+    l_paragon_saucer_01p: white
+    l_paragon_saucer_02a: white
+    l_paragon_saucer_03r: white
+    l_paragon_saucer_04a: white
+    l_paragon_saucer_05g: white
+    l_paragon_saucer_06o: white
+  coils:
+    c_inline_knockdown_c: pulse
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_paragon_saucer_07n
+- time: +3
+  lights:
+    l_paragon_saucer_01p: white
+    l_paragon_saucer_02a: white
+    l_paragon_saucer_03r: white
+    l_paragon_saucer_04a: white
+    l_paragon_saucer_05g: white
+    l_paragon_saucer_06o: white
+    l_paragon_saucer_07n: white
+  coils:
+    c_inline_knockdown_d: pulse
+- time: +3
+  segment_displays:
+    display1:
+      text: "HAZZARD"
+      priority: 100
+      key: z_tut_haz
+    display2:
+      text: "M-Ball"
+      priority: 100
+      key: z_tut_haz
+    display3:
+      text: "Is Now"
+      priority: 100
+      key: z_tut_haz
+    display4:
+      text: "Ready"
+      priority: 100
+      key: z_tut_haz
+  shows:
+    hazzard_saucer_post_focus_show:
+      loops: -1
+- time: +2
+  segment_displays:
+    display1:
+      text: "HAZZARD"
+      priority: 100
+      key: z_tut_haz
+    display2:
+      text: " M-Ball"
+      priority: 100
+      key: z_tut_haz
+    display3:
+      text: "JACKPOT"
+      priority: 100
+      key: z_tut_haz
+    display4:
+      text: " Get 3x"
+      priority: 100
+      key: z_tut_haz
+  shows:
+    hazzard_saucer_jackpot_ready_show:
+      loops: -1
+- time: +3
+  segment_displays:
+    display1:
+      text: "HAZZARD"
+      priority: 100
+      key: z_tut_haz
+    display2:
+      text: " M-Ball"
+      priority: 100
+      key: z_tut_haz
+    display3:
+      text: "SUPER"
+      priority: 100
+      key: z_tut_haz
+    display4:
+      text: "isReady"
+      priority: 100
+      key: z_tut_haz
+  shows:
+    hazzard_super_jackpot_focus_show:
+      loops: -1
+- time: +3
+  segment_displays:
+    display1:
+      text: "Double "
+      priority: 100
+      key: z_tut_haz
+    display2:
+      text: "SUPERat"
+      priority: 100
+      key: z_tut_haz
+    display3:
+      text: ""
+      priority: 100
+      key: z_tut_haz
+    display4:
+      text: "SPINNER"
+      priority: 100
+      key: z_tut_haz
+  shows:
+    hazzard_super_jackpot_focus_show:
+      loops: -1
+- time: +3
+  segment_displays:
+    display1:
+      text: "Collect"
+      priority: 100
+      key: z_tut_haz
+    display2:
+      text: "SUPERat"
+      priority: 100
+      key: z_tut_haz
+    display3:
+      text: "Oil"
+      priority: 100
+      key: z_tut_haz
+    display4:
+      text: "  Slick"
+      priority: 100
+      key: z_tut_haz
+  shows:
+    hazzard_super_jackpot_focus_show:
+      loops: -1
+- time: +3
+  segment_displays:
+    display1:
+      action: remove
+      key: z_tut_haz
+    display2:
+      action: remove
+      key: z_tut_haz
+    display3:
+      action: remove
+      key: z_tut_haz
+    display4:
+      action: remove
+      key: z_tut_haz

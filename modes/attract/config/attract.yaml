@@ -210,7 +210,23 @@ segment_display_player:
       text: "{machine.score5_name}"
     display4:
       text: "{machine.score5_value}"
+  kill_full_light_show:
+    display1:
+      text: ""
+    display2:
+      text: ""
+    display3:
+      text: ""
+    display4:
+      text: ""
 
+random_event_player:
+  tutorial_start:
+    scope: machine
+    events:
+      - tutorial_creek
+      - tutorial_hazzard
+    force_all: true
 
 show_player:
   attract_lightshow_start:
@@ -323,7 +339,17 @@ show_player:
     attract_hs5:
       action: play
       loops: 0
-      events_when_stopped: high_scores_complete, restart_loop
+      events_when_stopped: tutorial_start, kill_full_light_show, high_scores_complete #, restart_loop
+  tutorial_creek:
+    z_tutorial_creek_multiball:
+      action: play
+      loops: 0
+      events_when_stopped: restart_loop
+  tutorial_hazzard:
+    z_tutorial_hazzard_multiball:
+      action: play
+      loops: 0
+      events_when_stopped: restart_loop
 
   attract_show_last_game_scores_override:
     prev_scores_o:
@@ -355,6 +381,43 @@ show_player:
       action: stop
     attract_hs5:
       action: stop
+    z_tutorial_creek_multiball:
+      action: stop
+    z_tutorial_hazzard_multiball:
+      action: stop
+
+  kill_full_light_show:
+    gi_dim_show:
+      action: play
+    gi_show:
+      action: stop
+    characters_show:
+      action: stop
+    multipliers_show:
+      action: stop
+    super_bonus_show:
+      action: stop
+    bonus_show:
+      action: stop
+    spinner_show:
+      action: stop
+    escape_show:
+      action: stop
+    drops_show:
+      action: stop
+    oil_slick_show:
+      action: stop
+    creek_show:
+      action: stop
+    hazzard_show:
+      action: stop
+    hazzard_special_show:
+      action: stop
+    red_siren_show_key:
+      action: stop
+    blue_siren_show_key:
+      action: stop
+
 
 
 shows:

@@ -1,0 +1,204 @@
+#show_version=5
+- time: 0
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_goldencliffs_2k
+  segment_displays:
+    display1:
+      text: "Creek  "
+      priority: 100
+      key: z_tut_creek
+    display2:
+      text: " Saucer"
+      priority: 100
+      key: z_tut_creek
+    display3:
+      text: "Scores "
+      priority: 100
+      key: z_tut_creek
+    display4:
+      text: "   2000"
+      priority: 100
+      key: z_tut_creek
+- time: +1
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_goldencliffs_4k
+  segment_displays:
+    display4:
+      text: "   4000"
+      key: z_tut_creek
+      priority: 100
+- time: +1
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_goldencliffs_6k
+  segment_displays:
+    display4:
+      text: "   6000"
+      key: z_tut_creek
+      priority: 100
+- time: +1
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_goldencliffs_8k
+  segment_displays:
+    display4:
+      text: "   8000"
+      key: z_tut_creek
+      priority: 100
+- time: +1
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_goldencliffs_10k
+  segment_displays:
+    display4:
+      text: "  10000"
+      key: z_tut_creek
+      priority: 100
+- time: +1
+  shows:
+    z_tutorial_flash:
+      loops: -1
+      show_tokens:
+        color: white
+        leds: l_goldencliffs_20k
+  segment_displays:
+    display4:
+      text: "  20000"
+      key: z_tut_creek
+      priority: 100
+- time: +1
+  segment_displays:
+    display1:
+      text: "Creek  "
+      priority: 100
+      key: z_tut_creek
+    display2:
+      text: " M-Ball"
+      priority: 100
+      key: z_tut_creek
+    display3:
+      text: "Is Now"
+      priority: 100
+      key: z_tut_creek
+    display4:
+      text: "  Ready"
+      priority: 100
+      key: z_tut_creek
+  shows:
+    creek_saucer_post_focus_show:
+      loops: -1
+- time: +2
+  segment_displays:
+    display1:
+      text: "Creek  "
+      priority: 100
+      key: z_tut_creek
+    display2:
+      text: " M-Ball"
+      priority: 100
+      key: z_tut_creek
+    display3:
+      text: "JACKPOT"
+      priority: 100
+      key: z_tut_creek
+    display4:
+      text: " Get 3x"
+      priority: 100
+      key: z_tut_creek
+  shows:
+    creek_saucer_jackpot_ready_show:
+      loops: -1
+- time: +3
+  segment_displays:
+    display1:
+      text: "Creek  "
+      priority: 100
+      key: z_tut_creek
+    display2:
+      text: " M-Ball"
+      priority: 100
+      key: z_tut_creek
+    display3:
+      text: "SUPER"
+      priority: 100
+      key: z_tut_creek
+    display4:
+      text: "isReady"
+      priority: 100
+      key: z_tut_creek
+  shows:
+    creek_super_jackpot_focus_show:
+      loops: -1
+- time: +3
+  segment_displays:
+    display1:
+      text: "Double "
+      priority: 100
+      key: z_tut_creek
+    display2:
+      text: "SUPERat"
+      priority: 100
+      key: z_tut_creek
+    display3:
+      text: "COOTER"
+      priority: 100
+      key: z_tut_creek
+    display4:
+      text: "  DROPS"
+      priority: 100
+      key: z_tut_creek
+  shows:
+    creek_super_jackpot_focus_show:
+      loops: -1
+- time: +3
+  segment_displays:
+    display1:
+      text: "Collect"
+      priority: 100
+      key: z_tut_creek
+    display2:
+      text: "SUPERat"
+      priority: 100
+      key: z_tut_creek
+    display3:
+      text: "Oil"
+      priority: 100
+      key: z_tut_creek
+    display4:
+      text: "  Slick"
+      priority: 100
+      key: z_tut_creek
+  shows:
+    creek_super_jackpot_focus_show:
+      loops: -1
+- time: +3
+  segment_displays:
+    display1:
+      action: remove
+      key: z_tut_creek
+    display2:
+      action: remove
+      key: z_tut_creek
+    display3:
+      action: remove
+      key: z_tut_creek
+    display4:
+      action: remove
+      key: z_tut_creek
