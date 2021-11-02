@@ -1228,204 +1228,9 @@ lights:
     platform_settings:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
-#Not implemented on pop3
-#  pop3_6:
-#    number: 7-6
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_7:
-#    number: 7-7
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_8:
-#    number: 7-8
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_9:
-#    number: 7-9
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_10:
-#    number: 7-10
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_11:
-#    number: 7-11
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_12:
-#    number: 7-12
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_13:
-#    number: 7-13
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_14:
-#    number: 7-14
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_15:
-#    number: 7-15
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_16:
-#    number: 7-16
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_17:
-#    number: 7-17
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_18:
-#    number: 7-18
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_19:
-#    number: 7-19
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_20:
-#    number: 7-20
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_21:
-#    number: 7-21
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_22:
-#    number: 7-22
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_23:
-#    number: 7-23
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10, p3o
-#  pop3_24:
-#    number: 7-24
-#    subtype: led
-#    fade_ms: 50ms
-#    platform_settings:
-#      polarity: true
-#    tags: j10
 
-
-## Misc Informational Lights
-#  l_info_ball_in_play:
-#    number: 1-0-126
-#    subtype: led
-#    fade_ms: 50ms
-#    platform: opp
-#    platform_settings:
-#      polarity: true
-#    tags: superjack
-#  l_info_credit_indicator:
-#    number: 1-0-127
-#    subtype: led
-#    fade_ms: 50ms
-#    platform: opp
-#    platform_settings:
-#      polarity: true
-#    tags: superjack
-#  l_info_game_over:
-#    number: 1-0-128
-#    subtype: led
-#    fade_ms: 50ms
-#    platform: opp
-#    platform_settings:
-#      polarity: true
-#    tags: superjack
-#  l_info_high_score_to_date:
-#    number: 1-0-129
-#    subtype: led
-#    fade_ms: 50ms
-#    platform: opp
-#    platform_settings:
-#      polarity: true
-#    tags: superjack
-#  l_info_match:
-#    number: 1-0-130
-#    subtype: led
-#    fade_ms: 50ms
-#    platform: opp
-#    platform_settings:
-#      polarity: true
-#    tags: superjack
-#  l_info_same_player_sa:
-#    number: 1-0-131
-#    subtype: led
-#    fade_ms: 50ms
-#    platform: opp
-#    platform_settings:
-#      polarity: true
-#    tags: superjack
-#  l_info_tilt:
-#    number: 1-0-132
-#    subtype: led
-#    fade_ms: 50ms
-#    platform: opp
-#    platform_settings:
-#      polarity: true
-#    tags: superjack
-
-
-  #Backbox Driver Board (comes after P1/P3 Displays)
+  #Backbox Driver Board (comes after P1/2/3/4 Displays)
   l_backbox_01_highscore_1:
-#    start_channel: 0-0-252
     start_channel: 0-0-630
     type: rgb
     subtype: led
@@ -1435,7 +1240,6 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_02_highscore_2:
-#    start_channel: 0-0-255
     start_channel: 0-0-633
     type: rgb
     subtype: led
@@ -1445,7 +1249,6 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_03_ballinplay_1:
-#    start_channel: 0-0-258
     start_channel: 0-0-636
     type: rgb
     subtype: led
@@ -1455,7 +1258,6 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_04_ballinplay_2:
-#    start_channel: 0-0-261
     start_channel: 0-0-639
     type: rgb
     subtype: led
@@ -1465,7 +1267,6 @@ lights:
     platform_settings:
       polarity: true
   l_backbox_05_match:
-#    start_channel: 0-0-264
     start_channel: 0-0-642
     type: rgb
     subtype: led
@@ -1474,8 +1275,8 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_06:
-#    start_channel: 0-0-267
+  l_backbox_06_tilt:
+    #Physically implemented as 3 white LEDs
     start_channel: 0-0-645
     type: rgb
     subtype: led
@@ -1484,40 +1285,35 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_07:
-#    start_channel: 0-0-270
-    start_channel: 0-0-648
-    type: rgb
-    subtype: led
-    tags: backbox
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-  l_backbox_08:
-#    start_channel: 0-0-273
-    start_channel: 0-0-651
-    type: rgb
-    subtype: led
-    tags: backbox
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-  l_backbox_09_shootagain_1:
-    #Physicall implemented as 3 white LEDs
-#    start_channel: 0-0-276
-    start_channel: 0-0-654
-    type: rgb
-    subtype: led
-    tags: backbox, shootagain
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-  l_backbox_10_shootagain_2:
-    #Physicall implemented as 3 white LEDs
-#    start_channel: 0-0-279
+#  l_backbox_07:
+#    start_channel: 0-0-648
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_08:
+#    start_channel: 0-0-651
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_09:
+#    start_channel: 0-0-654
+#    type: rgb
+#    subtype: led
+#    tags: backbox, shootagain
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+  l_backbox_10_shootagain_1:
+    #Physically implemented as 3 white LEDs
     start_channel: 0-0-657
     type: rgb
     subtype: led
@@ -1526,8 +1322,8 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_11:
-#    start_channel: 0-0-282
+  l_backbox_11_gameover_1:
+    #Physically implemented as 3 white LEDs
     start_channel: 0-0-660
     type: rgb
     subtype: led
@@ -1536,8 +1332,8 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_12:
-#    start_channel: 0-0-285
+  l_backbox_12_gameover_2:
+    #Physically implemented as 3 white LEDs
     start_channel: 0-0-663
     type: rgb
     subtype: led
@@ -1546,20 +1342,18 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
-  l_backbox_13:
-#    start_channel: 0-0-288
-    start_channel: 0-0-666
-    type: rgb
-    subtype: led
-    tags: backbox
-    fade_ms: 50ms
-    platform: opp
-    platform_settings:
-      polarity: true
-
-  #Cabinet Lights - but hooked up to backbox board.
-  l_coin_lights: #One RGB driver driving 3 discrete white LEDs
-#    start_channel: 0-0-291
+#  l_backbox_13:
+#    start_channel: 0-0-666
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+  #Backbox light 14 - Cabinet Lights, but hooked up to backbox board.
+  l_coin_lights:
+    #Physically implemented as 3 white LEDs
     start_channel: 0-0-669
     type: rgb
     subtype: led
@@ -1568,3 +1362,148 @@ lights:
     platform: opp
     platform_settings:
       polarity: true
+#  l_backbox_15:
+#    start_channel: 0-0-672
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_16:
+#    start_channel: 0-0-675
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_17:
+#    start_channel: 0-0-678
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_18:
+#    start_channel: 0-0-681
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_19:
+#    start_channel: 0-0-684
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_20:
+#    start_channel: 0-0-687
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_21:
+#    start_channel: 0-0-690
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_22:
+#    start_channel: 0-0-693
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_23:
+#    start_channel: 0-0-696
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_24:
+#    start_channel: 0-0-699
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_25:
+#    start_channel: 0-0-702
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_26:
+#    start_channel: 0-0-705
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+  l_backbox_27_shootagain_2:
+    #Physically implemented as 3 white LEDs
+    start_channel: 0-0-708
+    type: rgb
+    subtype: led
+    tags: backbox
+    fade_ms: 50ms
+    platform: opp
+    platform_settings:
+      polarity: true
+#  l_backbox_28:
+#    start_channel: 0-0-711
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_29:
+#    start_channel: 0-0-714
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true
+#  l_backbox_30:
+#    start_channel: 0-0-717
+#    type: rgb
+#    subtype: led
+#    tags: backbox
+#    fade_ms: 50ms
+#    platform: opp
+#    platform_settings:
+#      polarity: true

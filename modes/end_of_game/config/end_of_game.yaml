@@ -4,7 +4,7 @@ mode:
   priority: 10000
   game_mode: false
   start_events: game_will_end
-  stop_events: eog_finished
+  stop_events: eog_display_final_scores_ended
 
 queue_relay_player:
     game_ending:
@@ -52,7 +52,7 @@ segment_display_player:
 
 show_player:
   eog_display_final_scores:
-    eog:
+    game_over_show:
       key: end_of_game_scores
       speed: 1
       loops: 0

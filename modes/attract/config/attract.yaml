@@ -301,10 +301,12 @@ show_player:
       speed: 60
       loops: 6
       priority: 10
-    high_score_show:
-      key: high_score_show_key
+    game_over_show:
+      key: game_over_show_key
       action: play
+      speed: 1
       loops: -1
+      priority: 10
     attract_show_1:
       action: play
       loops: 0
@@ -456,6 +458,9 @@ shows:
     - duration: 5
   attract_hs1:
     - duration: 5
+      lights:
+        l_backbox_01_highscore_1: white
+        l_backbox_02_highscore_2: white
   attract_hs2:
     - duration: 5
   attract_hs3:

@@ -1,0 +1,10 @@
+#show_version=5
+
+- duration: 5
+  lights:
+    l_backbox_11_gameover_1: white
+    l_backbox_12_gameover_2: white
+
+
+
+

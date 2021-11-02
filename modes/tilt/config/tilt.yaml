@@ -78,3 +78,12 @@ show_player:
       priority: 11000
       show_tokens:
         color: red
+    tilt_bb_show:
+      key: tilt_bb_show_key
+      speed: 1
+      loops: -1
+      priority: 11000
+  ball_will_start:
+    tilt_bb_show_key:
+      action: stop
+
