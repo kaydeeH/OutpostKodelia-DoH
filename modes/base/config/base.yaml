@@ -166,3 +166,14 @@ sound_player:
     wrong_road:
       action: play
       loops: 0
+
+# This is used for the good ball / bad ball judgement call
+variable_player:
+  base_startup:
+    current_player_score:
+      action: set
+      value: current_player.score
+  ball_will_end:
+    player_ball_score:
+      action: set
+      value: current_player.score - current_player.current_player_score

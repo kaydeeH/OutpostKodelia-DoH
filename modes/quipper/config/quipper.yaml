@@ -3,6 +3,18 @@
 # Interesting Events
 # player_will_add (number==1)
 
+# Quipper Code Thrown Events
+#
+# Only first on the list happens - change order in quipper_date_time.py to change precedence
+# quipper_quick_start - 3rd start in a row with less than 20s after game end after 1st and 2nd games
+# quipper_late_night_game_start - start at 10pm or 11pm
+# quipper_midnight_hour_start - midnight hour start
+# quipper_early_morning_game_start - 1am - 5:59am start
+# quipper_friday_game_start - start on Friday
+# quipper_christmas_game_start - start on Christmas
+# quipper_april_fools_game_start - start on April Fools Day
+# quipper_no_time_day_game_start - no time/day condition met
+
 mode:
   priority: 100000
   game_mode: False
@@ -10,3 +22,38 @@ mode:
   stop_events: shutdown
   stop_on_ball_end: False
 
+event_player:
+  game_started:
+    - quipper_initial_dttm_check
+
+# Throws events on 15, 30, 60, 120 second delays in the shooter lane, upon delay start and eventual launch
+timed_switches:
+  ball_wait_in_shooter:
+    switches: s_shooter_lane
+    time: 15s
+    events_when_active: quipper_waiting_for_ball_launch_1
+    events_when_released: quipper_ball_finally_launched_1
+  ball_wait_in_shooter_long:
+    switches: s_shooter_lane
+    time: 30s
+    events_when_active: quipper_waiting_for_ball_launch_2
+    events_when_released: quipper_ball_finally_launched_2
+  ball_wait_in_shooter_longer:
+    switches: s_shooter_lane
+    time: 60s
+    events_when_active: quipper_waiting_for_ball_launch_3
+    events_when_released: quipper_ball_finally_launched_3
+  ball_wait_in_shooter_longest:
+    switches: s_shooter_lane
+    time: 120s
+    events_when_active: quipper_waiting_for_ball_launch_4
+    events_when_released: quipper_ball_finally_launched_4
+
+timers:
+  quipper_time_since_end:
+    start_value: 0
+    control_events:
+      - action: restart
+        event: game_ended
+      - action: stop
+        event: quipper_timer_stop

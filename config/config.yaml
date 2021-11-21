@@ -23,6 +23,7 @@ custom_code:
   - code.SuperJackpotLights.SuperJackpotLights
   - code.atrRecentScores.atrRecentScores
   - code.last_game_scores.LastGameScores
+  - code.quipper_date_time.quipperDT
 
 # This is for the debug only segment display simulation
 slide_player:

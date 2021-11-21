@@ -1,5 +1,9 @@
 #config_version=5
 
+# BY THE TIME THIS MODE STARTS --
+# current_player.player_ball_score will have been set to the score for this ball, exclusive of bonus
+# this can be used to play bad / good ball quips
+
 mode:
   start_events: ball_ending
   stop_events: end_bonus
