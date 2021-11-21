@@ -71,6 +71,7 @@ event_player:
     - general_lee_speed_add_1
   kodelia_tilt:
     - end_chase_mode
+    - end_chase_shows_fail
     
 shots:
   gc_start_mball:
