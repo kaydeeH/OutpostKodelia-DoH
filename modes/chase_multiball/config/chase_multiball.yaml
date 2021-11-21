@@ -69,7 +69,9 @@ event_player:
 #TODO - make more various switches add speed values
   sw_kpf:
     - general_lee_speed_add_1
-
+  kodelia_tilt:
+    - end_chase_mode
+    
 shots:
   gc_start_mball:
     switch: s_saucer_golden_cliffs

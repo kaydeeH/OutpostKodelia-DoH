@@ -146,7 +146,7 @@ event_player:
   ball_will_end:
     - boars_nest_failed
     - multiball_display_end
-  tilt:
+  kodelia_tilt:
     - boars_nest_failed
   boars_nest_failed:   # we need to do something here
     - boars_nest_ended_failed
