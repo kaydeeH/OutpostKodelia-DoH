@@ -62,6 +62,7 @@ show_player:
     jail_light_show:
       speed: 1
       loops: 0
+      priority: 10000
   shot_drop_inline_d_hit:
     chase_start_ready_show:
       key: chase_ready_show_key
