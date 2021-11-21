@@ -40,7 +40,8 @@ event_player:
 #  This is now thrown from the escape saucer mode
 #  ball_hold_chase_hold_held_ball{current_player.boars_nest_active==0}:
 #    - start_chase_sequence
-  balls_in_play{balls==1 and current_player.boars_nest_active==0}:
+#  balls_in_play{balls==1 and current_player.boars_nest_active==0}:
+  multiball_pre_chase_multiball_ended{current_player.boars_nest_active==0}:
     - release_chase_hold
     - end_chase_mode|100ms
   tilt{current_player.boars_nest_active==0}:
@@ -70,7 +71,7 @@ event_player:
   sw_kpf:
     - general_lee_speed_add_1
   kodelia_tilt:
-    - end_chase_shows_fail  
+    - end_chase_shows_fail
     - end_chase_mode
 
 shots:
