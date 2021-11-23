@@ -1094,18 +1094,18 @@ lights:
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
-  pop1_24_na:
-    start_channel: 1-0-369
-    subtype: led
-    type: grb
-    fade_ms: 50ms
-    platform_settings:
-      polarity: true
-    tags: j5
+#  pop1_24_na:
+#    start_channel: 1-0-369
+#    subtype: led
+#    type: grb
+#    fade_ms: 50ms
+#    platform_settings:
+#      polarity: true
+#    tags: j5
 
   # Pop 2 - Upper Left
   pop2_0:
-    start_channel: 1-0-372
+    start_channel: 1-0-369
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1113,7 +1113,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_1:
-    start_channel: 1-0-375
+    start_channel: 1-0-372
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1121,7 +1121,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_2:
-    start_channel: 1-0-378
+    start_channel: 1-0-375
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1129,7 +1129,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_3:
-    start_channel: 1-0-381
+    start_channel: 1-0-378
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1137,7 +1137,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_4:
-    start_channel: 1-0-384
+    start_channel: 1-0-381
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1145,7 +1145,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_5:
-    start_channel: 1-0-387
+    start_channel: 1-0-384
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1153,7 +1153,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_6:
-    start_channel: 1-0-390
+    start_channel: 1-0-387
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1161,7 +1161,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_7:
-    start_channel: 1-0-393
+    start_channel: 1-0-390
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1169,7 +1169,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_8:
-    start_channel: 1-0-396
+    start_channel: 1-0-393
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1177,7 +1177,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_9:
-    start_channel: 1-0-399
+    start_channel: 1-0-396
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1185,7 +1185,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_10:
-    start_channel: 1-0-402
+    start_channel: 1-0-399
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1193,7 +1193,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_11:
-    start_channel: 1-0-405
+    start_channel: 1-0-402
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1201,7 +1201,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_12:
-    start_channel: 1-0-408
+    start_channel: 1-0-405
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1209,7 +1209,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_13:
-    start_channel: 1-0-411
+    start_channel: 1-0-408
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1217,7 +1217,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_14:
-    start_channel: 1-0-414
+    start_channel: 1-0-411
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1225,7 +1225,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_15:
-    start_channel: 1-0-417
+    start_channel: 1-0-414
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1233,7 +1233,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_16:
-    start_channel: 1-0-420
+    start_channel: 1-0-417
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1241,7 +1241,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_17:
-    start_channel: 1-0-423
+    start_channel: 1-0-420
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1249,7 +1249,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_18:
-    start_channel: 1-0-426
+    start_channel: 1-0-423
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1257,7 +1257,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_19:
-    start_channel: 1-0-429
+    start_channel: 1-0-426
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1265,7 +1265,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_20:
-    start_channel: 1-0-432
+    start_channel: 1-0-429
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1273,7 +1273,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_21:
-    start_channel: 1-0-435
+    start_channel: 1-0-432
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1281,7 +1281,7 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_22:
-    start_channel: 1-0-438
+    start_channel: 1-0-435
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1289,25 +1289,25 @@ lights:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_23:
-    start_channel: 1-0-441
+    start_channel: 1-0-438
     subtype: led
     type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
-  pop2_24_na:
-    start_channel: 1-0-444
-    subtype: led
-    type: grb
-    fade_ms: 50ms
-    platform_settings:
-      polarity: true
-    tags: j8
+#  pop2_24_na:
+#    start_channel: 1-0-444
+#    subtype: led
+#    type: grb
+#    fade_ms: 50ms
+#    platform_settings:
+#      polarity: true
+#    tags: j8
 
   # Pop 3 - Center
   pop3_0:
-    start_channel: 1-0-447
+    start_channel: 1-0-441
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1315,7 +1315,7 @@ lights:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_1:
-    start_channel: 1-0-450
+    start_channel: 1-0-444
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1323,7 +1323,7 @@ lights:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_2:
-    start_channel: 1-0-453
+    start_channel: 1-0-447
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1331,7 +1331,7 @@ lights:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_3:
-    start_channel: 1-0-456
+    start_channel: 1-0-450
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1339,7 +1339,7 @@ lights:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_4:
-    start_channel: 1-0-459
+    start_channel: 1-0-453
     subtype: led
     type: grb
     fade_ms: 50ms
@@ -1347,7 +1347,7 @@ lights:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_5:
-    start_channel: 1-0-462
+    start_channel: 1-0-456
     subtype: led
     type: grb
     fade_ms: 50ms
