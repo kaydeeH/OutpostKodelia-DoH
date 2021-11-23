@@ -97,14 +97,6 @@ lights:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_6k:
-    start_channel: 1-0-6
-    subtype: led
-    type: grb
-    fade_ms: 50ms
-    platform_settings:
-      polarity: true
-    tags: j7, superjack
-  l_goldencliffs_8k:
     start_channel: 1-0-9
     subtype: led
     type: grb
@@ -112,8 +104,16 @@ lights:
     platform_settings:
       polarity: true
     tags: j7, superjack
-  l_goldencliffs_10k:
+  l_goldencliffs_8k:
     start_channel: 1-0-12
+    subtype: led
+    type: grb
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+    tags: j7, superjack
+  l_goldencliffs_10k:
+    start_channel: 1-0-6
     subtype: led
     type: grb
     fade_ms: 50ms
