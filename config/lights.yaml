@@ -88,35 +88,35 @@ lights:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_4k:
-    number: 1-0-3
+    number: 1-0-1
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_6k:
-    number: 1-0-6
+    number: 1-0-3
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_8k:
-    number: 1-0-9
+    number: 1-0-4
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_10k:
-    number: 1-0-12
+    number: 1-0-2
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_20k:
-    number: 1-0-15
+    number: 1-0-5
     subtype: led
     fade_ms: 50ms
     platform_settings:
@@ -124,56 +124,56 @@ lights:
     tags: j7, superjack
 
   l_paragon_saucer_01p:
-    number: 1-0-18
+    number: 1-0-6
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_02a:
-    number: 1-0-21
+    number: 1-0-7
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_03r:
-    number: 1-0-24
+    number: 1-0-8
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_04a:
-    number: 1-0-27
+    number: 1-0-9
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_05g:
-    number: 1-0-30
+    number: 1-0-10
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_06o:
-    number: 1-0-33
+    number: 1-0-11
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_07n:
-    number: 1-0-36
+    number: 1-0-12
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_special:
-    number: 1-0-39
+    number: 1-0-13
     subtype: led
     fade_ms: 50ms
     platform_settings:
@@ -182,35 +182,35 @@ lights:
 
   # Drop Targets (Not In-Line)
   l_droptarget_10k:
-    number: 1-0-42
+    number: 1-0-14
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_droptarget_15k:
-    number: 1-0-45
+    number: 1-0-15
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_droptarget_20k:
-    number: 1-0-48
+    number: 1-0-16
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_droptarget_25k:
-    number: 1-0-51
+    number: 1-0-17
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_droptarget_special:
-    number: 1-0-54
+    number: 1-0-18
     subtype: led
     fade_ms: 50ms
     platform_settings:
@@ -219,21 +219,21 @@ lights:
 
   # Water Lane
   l_waterlane_5k:
-    number: 1-0-57
+    number: 1-0-19
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j4
   l_waterlane_10k:
-    number: 1-0-60
+    number: 1-0-20
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j4
   l_waterlane_special:
-    number: 1-0-63
+    number: 1-0-21
     subtype: led
     fade_ms: 50ms
     platform_settings:
