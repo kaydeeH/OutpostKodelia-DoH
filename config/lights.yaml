@@ -71,12 +71,16 @@
 # 14 8K golden cliff
 
 light_settings:
-  #  default_fade_ms: 1000
-   color_correction_profiles:
-      NeoSeg_white:
-         #whitepoint: [0.2, 0.2, 0.2]
-         gamma: 1.5
-         whitepoint: [.8, .8, .8]
+  default_color_correction_profile: general
+  color_correction_profiles:
+    NeoSeg_white:
+      gamma: 1.5
+      whitepoint: [.8, .8, .8]
+    general:
+      gamma: 2.5
+      whitepoint: [1.0, 1.0, 1.0]
+      linear_slope: 1.0
+      linear_cutoff: 0.004
 
 lights:
   # Golden Cliffs
