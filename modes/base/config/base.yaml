@@ -167,6 +167,10 @@ sound_player:
     wrong_road:
       action: play
       loops: 0
+  ball_save_ball_save_main_saving_ball:
+    ball_saves:
+      action: play
+      loops: 0
 
 # This is used for the good ball / bad ball judgement call
 variable_player:

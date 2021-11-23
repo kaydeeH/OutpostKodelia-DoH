@@ -658,6 +658,56 @@ sounds:
       release_point: 100ms
       release: 100ms
 
+  #Ball save voice clips
+  they_gave_it_back:
+    file: they_gave_it_back.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  no_arrest:
+    file: no_arrest.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  thats_handy:
+    file: thats_handy.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  killing_me:
+    file: killing_me.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+
 sound_pools:
   player_1_add:
     type: random_force_all
@@ -738,7 +788,6 @@ sound_pools:
       - careful_with_that
       - enough_of_that
       - freeze
-#TODO Select appropriate flipper sounds for attract mode
   attract_voice:
     type: random_force_all
     track: voice
@@ -763,3 +812,11 @@ sound_pools:
     track: voice
     sounds:
       - jackpot
+  ball_saves:
+    type: random_force_all
+    track: voice
+    sounds:
+      - they_gave_it_back
+      - no_arrest
+      - thats_handy
+      - killing_me
