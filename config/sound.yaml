@@ -612,6 +612,7 @@ sounds:
     file: jackpot.wav
     track: voice
     stealing_method: oldest
+    volume: 0.9
     ducking:
       target:
         - music
@@ -697,6 +698,152 @@ sounds:
       release: 100ms
   killing_me:
     file: killing_me.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+
+  #Delay of launch voice clips
+  move_it:
+    file: move_it.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  long_time:
+    file: long_time.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  get_outta_here:
+    file: get_outta_here.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  where_are_you:
+    file: where_are_you.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  wheres_enos:
+    file: wheres_enos.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  hurry_up:
+    file: hurry_up.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  dont_leave_me_hanging:
+    file: dont_leave_me_hanging.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  quit_stallin:
+    file: quit_stallin.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  do_something:
+    file: do_something.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  dangit_where_are_you:
+    file: dangit_where_are_you.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  get_on_with_it:
+    file: get_on_with_it.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  dang_that_cooter:
+    file: dang_that_cooter.wav
     track: voice
     ducking:
       target:
@@ -820,3 +967,21 @@ sound_pools:
       - no_arrest
       - thats_handy
       - killing_me
+  launch_delay:
+    type: random_force_all
+    track: voice
+    sounds:
+      - move_it
+      - get_outta_here
+      - where_are_you
+      - wheres_enos
+      - hurry_up
+      - quit_stallin
+      - do_something
+      - get_on_with_it
+  big_launch_delay:
+    type: random_force_all
+    track: voice
+    sounds:
+      - long_time
+      - dang_that_cooter

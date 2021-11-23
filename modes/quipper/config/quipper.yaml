@@ -57,3 +57,27 @@ timers:
         event: game_ended
       - action: stop
         event: quipper_timer_stop
+
+sound_player:
+  quipper_waiting_for_ball_launch_1:
+    launch_delay:
+      action: play
+      loops: 0
+  quipper_waiting_for_ball_launch_2:
+    launch_delay:
+      action: play
+      loops: 0
+  quipper_waiting_for_ball_launch_3:
+    launch_delay:
+      action: play
+      loops: 0
+  quipper_waiting_for_ball_launch_4:
+    big_launch_delay:
+      action: play
+      loops: 0
+  quipper_ball_finally_launched_4:
+    big_launch_delay:
+      action: stop
+    dont_leave_me_hanging:
+      action: play
+      loops: 0
