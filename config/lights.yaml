@@ -81,100 +81,114 @@ light_settings:
 lights:
   # Golden Cliffs
   l_goldencliffs_2k:
-    number: 1-0-0
+    start_channel: 1-0-0
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_4k:
-    number: 1-0-3
+    start_channel: 1-0-3
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_6k:
-    number: 1-0-6
+    start_channel: 1-0-6
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_8k:
-    number: 1-0-9
+    start_channel: 1-0-9
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_10k:
-    number: 1-0-12
+    start_channel: 1-0-12
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_goldencliffs_20k:
-    number: 1-0-15
+    start_channel: 1-0-15
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
 
   l_paragon_saucer_01p:
-    number: 1-0-18
+    start_channel: 1-0-18
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_02a:
-    number: 1-0-21
+    start_channel: 1-0-21
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_03r:
-    number: 1-0-24
+    start_channel: 1-0-24
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_04a:
-    number: 1-0-27
+    start_channel: 1-0-27
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_05g:
-    number: 1-0-30
+    start_channel: 1-0-30
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_06o:
-    number: 1-0-33
+    start_channel: 1-0-33
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_07n:
-    number: 1-0-36
+    start_channel: 1-0-36
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_paragon_saucer_special:
-    number: 1-0-39
+    start_channel: 1-0-39
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -182,36 +196,41 @@ lights:
 
   # Drop Targets (Not In-Line)
   l_droptarget_10k:
-    number: 1-0-42
+    start_channel: 1-0-42
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_droptarget_15k:
-    number: 1-0-45
+    start_channel: 1-0-45
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_droptarget_20k:
-    number: 1-0-48
+    start_channel: 1-0-48
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_droptarget_25k:
-    number: 1-0-51
+    start_channel: 1-0-51
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j7, superjack
   l_droptarget_special:
-    number: 1-0-54
+    start_channel: 1-0-54
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -219,22 +238,25 @@ lights:
 
   # Water Lane
   l_waterlane_5k:
-    number: 1-0-57
+    start_channel: 1-0-57
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j4
   l_waterlane_10k:
-    number: 1-0-60
+    start_channel: 1-0-60
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j4
   l_waterlane_special:
-    number: 1-0-63
+    start_channel: 1-0-63
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -242,7 +264,7 @@ lights:
 
   #GI
   l_gi_01_midright_4:
-    number: 1-0-66
+    start_channel: 1-0-66
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -250,7 +272,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_02_upperstanding_left:
-    number: 1-0-69
+    start_channel: 1-0-69
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -258,7 +280,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_03_upperstanding_right:
-    number: 1-0-72
+    start_channel: 1-0-72
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -266,7 +288,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_04_topcenter_rollover:
-    number: 1-0-75
+    start_channel: 1-0-75
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -274,7 +296,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_05_river_rollover:
-    number: 1-0-78
+    start_channel: 1-0-78
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -282,7 +304,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_06_upperleft_1:
-    number: 1-0-81
+    start_channel: 1-0-81
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -290,7 +312,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_07_upperleft_2:
-    number: 1-0-84
+    start_channel: 1-0-84
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -298,7 +320,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_08_upperleft_3:
-    number: 1-0-87
+    start_channel: 1-0-87
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -306,7 +328,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_09_upperleft_4:
-    number: 1-0-90
+    start_channel: 1-0-90
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -314,7 +336,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_10_upperleft_5:
-    number: 1-0-93
+    start_channel: 1-0-93
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -322,7 +344,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_11_midright_3:
-    number: 1-0-96
+    start_channel: 1-0-96
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -330,7 +352,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_12_rightsling_1:
-    number: 1-0-99
+    start_channel: 1-0-99
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -338,7 +360,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_13_upperright_1:
-    number: 1-0-102
+    start_channel: 1-0-102
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -346,7 +368,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_14_oilslick_rollover:
-    number: 1-0-105
+    start_channel: 1-0-105
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -354,7 +376,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_15_na:
-    number: 1-0-108
+    start_channel: 1-0-108
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -362,7 +384,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_16_na:
-    number: 1-0-111
+    start_channel: 1-0-111
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -370,7 +392,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_17_na:
-    number: 1-0-114
+    start_channel: 1-0-114
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -378,7 +400,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_18_midleft_1:
-    number: 1-0-117
+    start_channel: 1-0-117
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -386,7 +408,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_19_midleft_2:
-    number: 1-0-120
+    start_channel: 1-0-120
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -394,7 +416,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_20_midleft_3:
-    number: 1-0-123
+    start_channel: 1-0-123
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -402,7 +424,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_21_upperright_3:
-    number: 1-0-126
+    start_channel: 1-0-126
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -410,7 +432,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_22_upperright_2:
-    number: 1-0-129
+    start_channel: 1-0-129
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -418,7 +440,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_23_upperright_rollover:
-    number: 1-0-132
+    start_channel: 1-0-132
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -426,7 +448,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_24_rightsling_2:
-    number: 1-0-135
+    start_channel: 1-0-135
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -434,7 +456,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_25_midright_1:
-    number: 1-0-138
+    start_channel: 1-0-138
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -442,7 +464,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_26_midright_2:
-    number: 1-0-141
+    start_channel: 1-0-141
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -450,7 +472,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_27_lowerpop:
-    number: 1-0-144
+    start_channel: 1-0-144
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -458,7 +480,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_28_leftsling_1:
-    number: 1-0-147
+    start_channel: 1-0-147
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -466,7 +488,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_29_leftsling_2:
-    number: 1-0-150
+    start_channel: 1-0-150
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -474,7 +496,7 @@ lights:
       polarity: true
     tags: j4, gi, superjack
   l_gi_30_credit:
-    number: 1-0-153
+    start_channel: 1-0-153
     subtype: led
     type: rgb
     fade_ms: 50ms
@@ -484,99 +506,113 @@ lights:
 
   # Paragon Center
   l_paragon_center_01p:
-    number: 1-0-156
+    start_channel: 1-0-156
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_01p2:
-    number: 1-0-159
+    start_channel: 1-0-159
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_02a:
-    number: 1-0-162
+    start_channel: 1-0-162
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_02a2:
-    number: 1-0-165
+    start_channel: 1-0-165
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_03r:
-    number: 1-0-168
+    start_channel: 1-0-168
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_03r2:
-    number: 1-0-171
+    start_channel: 1-0-171
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_04a:
-    number: 1-0-174
+    start_channel: 1-0-174
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_04a2:
-    number: 1-0-177
+    start_channel: 1-0-177
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_05g:
-    number: 1-0-180
+    start_channel: 1-0-180
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_05g2:
-    number: 1-0-183
+    start_channel: 1-0-183
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_06o:
-    number: 1-0-186
+    start_channel: 1-0-186
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_06o2:
-    number: 1-0-189
+    start_channel: 1-0-189
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_07n:
-    number: 1-0-192
+    start_channel: 1-0-192
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3
   l_paragon_center_07n2:
-    number: 1-0-195
+    start_channel: 1-0-195
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -584,85 +620,97 @@ lights:
 
 # Multiplier Section
   l_bonus_2x:
-    number: 1-0-198
+    start_channel: 1-0-198
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_2x2:
-    number: 1-0-201
+    start_channel: 1-0-201
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_2x3:
-    number: 1-0-204
+    start_channel: 1-0-204
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_3x:
-    number: 1-0-207
+    start_channel: 1-0-207
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_3x2:
-    number: 1-0-210
+    start_channel: 1-0-210
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_3x3:
-    number: 1-0-213
+    start_channel: 1-0-213
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_5x:
-    number: 1-0-225
+    start_channel: 1-0-225
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_5x2:
-    number: 1-0-228
+    start_channel: 1-0-228
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_5x3:
-    number: 1-0-231
+    start_channel: 1-0-231
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_shoot_again:
-    number: 1-0-234
+    start_channel: 1-0-234
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_shoot_again2:
-    number: 1-0-237
+    start_channel: 1-0-237
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_shoot_again3:
-    number: 1-0-240
+    start_channel: 1-0-240
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -670,22 +718,25 @@ lights:
 
 # Super Bonus Section
   l_bonus_super_20k:
-    number: 1-0-216
+    start_channel: 1-0-216
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_super_30k:
-    number: 1-0-219
+    start_channel: 1-0-219
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_super_40k:
-    number: 1-0-222
+    start_channel: 1-0-222
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -693,71 +744,81 @@ lights:
 
 # Bonus Section
   l_bonus_1k:
-    number: 1-0-243
+    start_channel: 1-0-243
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_2k:
-    number: 1-0-246
+    start_channel: 1-0-246
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_3k:
-    number: 1-0-249
+    start_channel: 1-0-249
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_4k:
-    number: 1-0-252
+    start_channel: 1-0-252
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_5k:
-    number: 1-0-255
+    start_channel: 1-0-255
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_6k:
-    number: 1-0-258
+    start_channel: 1-0-258
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_7k:
-    number: 1-0-261
+    start_channel: 1-0-261
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_8k:
-    number: 1-0-264
+    start_channel: 1-0-264
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_9k:
-    number: 1-0-267
+    start_channel: 1-0-267
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j3, superjack
   l_bonus_10k:
-    number: 1-0-270
+    start_channel: 1-0-270
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -765,22 +826,25 @@ lights:
 
   # Treasure/Escape Saucer
   l_treasure_5x:
-    number: 1-0-279
+    start_channel: 1-0-279
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j9, superjack
   l_treasure_extra_ball:
-    number: 1-0-276
+    start_channel: 1-0-276
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j9, superjack
   l_treasure_special:
-    number: 1-0-273
+    start_channel: 1-0-273
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -788,38 +852,43 @@ lights:
 
   # Spinner Section
   # Manual shows 4 controled lights but playfield appears to have 5
-  # Numbered from bottom up
+  # start_channeled from bottom up
   l_spinner_1:
-    number: 1-0-294
+    start_channel: 1-0-294
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j9, superjack
   l_spinner_2:
-    number: 1-0-291
+    start_channel: 1-0-291
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j9, superjack
   l_spinner_3:
-    number: 1-0-288
+    start_channel: 1-0-288
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j9, superjack
   l_spinner_4:
-    number: 1-0-285
+    start_channel: 1-0-285
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j9, superjack
   l_spinner_5:
-    number: 1-0-282
+    start_channel: 1-0-282
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -830,176 +899,201 @@ lights:
 # PopBumper 1 - Upper Right
 
   pop1_0:
-    number: 1-0-297
+    start_channel: 1-0-297
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_core, pop_cores
   pop1_1:
-    number: 1-0-300
+    start_channel: 1-0-300
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_core,  pop_cores
   pop1_2:
-    number: 1-0-303
+    start_channel: 1-0-303
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_core,  pop_cores
   pop1_3:
-    number: 1-0-306
+    start_channel: 1-0-306
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_core,  pop_cores
   pop1_4:
-    number: 1-0-309
+    start_channel: 1-0-309
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_core,  pop_cores
   pop1_5:
-    number: 1-0-312
+    start_channel: 1-0-312
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_core,  pop_cores
   pop1_6:
-    number: 1-0-315
+    start_channel: 1-0-315
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_7:
-    number: 1-0-318
+    start_channel: 1-0-318
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_8:
-    number: 1-0-321
+    start_channel: 1-0-321
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_9:
-    number: 1-0-324
+    start_channel: 1-0-324
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_10:
-    number: 1-0-327
+    start_channel: 1-0-327
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_11:
-    number: 1-0-330
+    start_channel: 1-0-330
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_12:
-    number: 1-0-333
+    start_channel: 1-0-333
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_13:
-    number: 1-0-336
+    start_channel: 1-0-336
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_14:
-    number: 1-0-339
+    start_channel: 1-0-339
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_15:
-    number: 1-0-342
+    start_channel: 1-0-342
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_16:
-    number: 1-0-345
+    start_channel: 1-0-345
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_17:
-    number: 1-0-348
+    start_channel: 1-0-348
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_18:
-    number: 1-0-351
+    start_channel: 1-0-351
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_19:
-    number: 1-0-354
+    start_channel: 1-0-354
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_20:
-    number: 1-0-357
+    start_channel: 1-0-357
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_21:
-    number: 1-0-360
+    start_channel: 1-0-360
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_22:
-    number: 1-0-363
+    start_channel: 1-0-363
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_23:
-    number: 1-0-369
+    start_channel: 1-0-366
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j5, pop1, pop1_ring
   pop1_24_na:
-    number: 1-0-372
+    start_channel: 1-0-369
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -1007,176 +1101,201 @@ lights:
 
   # Pop 2 - Upper Left
   pop2_0:
-    number: 1-0-375
+    start_channel: 1-0-372
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_1:
-    number: 1-0-378
+    start_channel: 1-0-375
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_2:
-    number: 1-0-381
+    start_channel: 1-0-378
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_3:
-    number: 1-0-384
+    start_channel: 1-0-381
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_4:
-    number: 1-0-387
+    start_channel: 1-0-384
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_5:
-    number: 1-0-390
+    start_channel: 1-0-387
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_core, pop_cores
   pop2_6:
-    number: 1-0-393
+    start_channel: 1-0-390
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_7:
-    number: 1-0-396
+    start_channel: 1-0-393
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_8:
-    number: 1-0-399
+    start_channel: 1-0-396
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_9:
-    number: 1-0-402
+    start_channel: 1-0-399
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_10:
-    number: 1-0-405
+    start_channel: 1-0-402
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_11:
-    number: 1-0-408
+    start_channel: 1-0-405
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_12:
-    number: 1-0-411
+    start_channel: 1-0-408
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_13:
-    number: 1-0-414
+    start_channel: 1-0-411
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_14:
-    number: 1-0-417
+    start_channel: 1-0-414
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_15:
-    number: 1-0-420
+    start_channel: 1-0-417
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_16:
-    number: 1-0-423
+    start_channel: 1-0-420
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_17:
-    number: 1-0-426
+    start_channel: 1-0-423
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_18:
-    number: 1-0-429
+    start_channel: 1-0-426
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_19:
-    number: 1-0-432
+    start_channel: 1-0-429
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_20:
-    number: 1-0-435
+    start_channel: 1-0-432
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_21:
-    number: 1-0-438
+    start_channel: 1-0-435
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_22:
-    number: 1-0-441
+    start_channel: 1-0-438
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_23:
-    number: 1-0-444
+    start_channel: 1-0-441
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j8, pop2, pop2_ring
   pop2_24_na:
-    number: 1-0-447
+    start_channel: 1-0-444
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
@@ -1184,43 +1303,49 @@ lights:
 
   # Pop 3 - Center
   pop3_0:
-    number: 1-0-450
+    start_channel: 1-0-447
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_1:
-    number: 1-0-453
+    start_channel: 1-0-450
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_2:
-    number: 1-0-456
+    start_channel: 1-0-453
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_3:
-    number: 1-0-459
+    start_channel: 1-0-456
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_4:
-    number: 1-0-552
+    start_channel: 1-0-459
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
     tags: j10, pop3, pop3_core, pop_cores
   pop3_5:
-    number: 1-0-555
+    start_channel: 1-0-462
     subtype: led
+    type: grb
     fade_ms: 50ms
     platform_settings:
       polarity: true
