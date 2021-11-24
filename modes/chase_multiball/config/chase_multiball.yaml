@@ -233,6 +233,7 @@ sound_player:
         - start_chase_theme
         - start_siren
         - start_chase_sequence
+        - start_yeehaw
       about_to_finish_time: 50ms
   start_chase_theme:
     chase_theme:
@@ -251,6 +252,10 @@ sound_player:
     police_siren:
       action: stop
       fade_out: 500ms
+  start_yeehaw:
+    yee_haw:
+      action: play
+      loops: 0
 
 show_player:
   start_chase_theme:
