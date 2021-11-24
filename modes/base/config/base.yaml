@@ -63,15 +63,6 @@ show_player:
       speed: 1
       loops: 0
       priority: 10000
-  shot_drop_inline_d_hit{current_player.suspend_chase_show==0}:
-    chase_start_ready_show:
-      key: chase_ready_show_key
-      speed: 2
-      loops: -1
-  start_chase_sequence:
-    chase_ready_show_key:
-      action: stop
-
 
 sound_player:
   spinner_default_hit: dirt_peel

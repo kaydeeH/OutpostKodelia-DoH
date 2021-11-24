@@ -297,3 +297,11 @@ show_player:
       speed: 1
       loops: 12
       priority: 10000
+  chase_notify:
+    chase_start_ready_show:
+      key: chase_ready_show_key
+      speed: 2
+      loops: -1
+  start_chase_sequence:
+    chase_ready_show_key:
+      action: stop

@@ -36,7 +36,15 @@ show_player:
     ball_save_boar: stop
   ball_save_ball_save_boars_nest_disabled:
     ball_save_boar_hurry: stop
-
+  boar_six_pack_is_complete:
+    boars_nest_ready_show:
+      key: boars_nest_ready_show_key
+  boars_nest_big_collect_start:
+    boars_nest_ready_show_key:
+      action: stop
+  ball_will_end:
+    boars_nest_ready_show_key:
+      action: stop
 
 achievements:
   boar_1_complete:
