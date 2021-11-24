@@ -214,6 +214,19 @@ event_player:
     - sau_7_result_(device.achievements.sau_7_complete.state)
   sau_7_result_started:
     - spot_sau_7
+# Attempt to prevent ball from not ejecting if entering saucer as multiball ends
+  special_scored_hazzard{device.switches.s_saucer_paragon.state==1}:
+    - force_paragon_eject
+  mode_hazzard_started{device.switches.s_saucer_paragon.state==1}:
+    - force_paragon_eject
+  multiball_hazzard_multiball_ended{device.switches.s_saucer_paragon.state==1}:
+    - force_paragon_eject
+  enable_base_hazzard_shot{device.switches.s_saucer_paragon.state==1}:
+    - force_paragon_eject
+  enable_two_ball_multiball_progress{device.switches.s_saucer_paragon.state==1}:
+    - force_paragon_eject
+
+
 
 timers:
   hazzard_rotate_timer:

@@ -112,6 +112,14 @@ event_player:
         type: int
       events_when_completed: show_creek_score_done
 
+# Attempt to fix bug, where when entering the scoop as entering multiball it will not eject
+  enable_base_creek_shot{device.switches.s_saucer_golden_cliffs.state==1}:
+    - force_creek_eject
+  multiball_creek_multiball_ended{device.switches.s_saucer_golden_cliffs.state==1}:
+    - force_creek_eject
+  enable_two_ball_multiball_progress{device.switches.s_saucer_golden_cliffs.state==1}:
+    - force_creek_eject
+
 ball_holds:
    bh_creek:
      balls_to_hold: 1

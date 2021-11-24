@@ -33,9 +33,11 @@ coils:
   c_saucer_paragon:
     number: 1-0-5
     default_pulse_ms: settings.hazzard_eject_power
+    pulse_events: force_paragon_eject
   c_saucer_golden_cliffs:
     number: 1-0-4
     default_pulse_ms: settings.creek_eject_power
+    pulse_events: force_creek_eject
   c_left_slingshot:
     number: 1-0-3
     default_pulse_ms: settings.sling_power
