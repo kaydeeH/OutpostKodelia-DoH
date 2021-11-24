@@ -137,6 +137,16 @@ sound_player:
     jail_door:
       action: play
       loops: 0
+  s_top_center_rollover_active:
+    car_door:
+      action: play
+      loops: 0
+      volume: .8
+  s_golden_cliffs_rollover_active:
+    car_door:
+      action: play
+      loops: 0
+      volume: .8
   s_rebound_500pt_active:
     explosion:
       action: play
