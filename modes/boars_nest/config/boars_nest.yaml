@@ -42,50 +42,62 @@ achievements:
   boar_1_complete:
     show_tokens:
       leds: l_paragon_center_01p, l_paragon_center_01p2
+    start_enabled: true
     show_when_started: bn_1_start
     show_when_completed: bn_1_complete
+    stop_events: boars_nest_ended, boars_nest_failed
     start_events: start_boars_ach
-    reset_events: boars_nest_started
+    reset_events: boars_nest_started, boars_nest_ended, boars_nest_failed
     complete_events: boar_collect_1
   boar_2_complete:
     show_tokens:
       leds: l_paragon_center_02a, l_paragon_center_02a2
+    start_enabled: true
     show_when_started: bn_2_start
     show_when_completed: bn_2_complete
+    stop_events: boars_nest_ended, boars_nest_failed
     start_events: start_boars_ach
-    reset_events: boars_nest_started
+    reset_events: boars_nest_started, boars_nest_ended, boars_nest_failed
     complete_events: boar_collect_2
   boar_3_complete:
     show_tokens:
       leds: l_paragon_center_03r, l_paragon_center_03r2
+    start_enabled: true
     show_when_started: bn_3_start
     show_when_completed: bn_3_complete
+    stop_events: boars_nest_ended, boars_nest_failed
     start_events: start_boars_ach
-    reset_events: boars_nest_started
+    reset_events: boars_nest_started, boars_nest_ended, boars_nest_failed
     complete_events: boar_collect_3
   boar_4_complete:
     show_tokens:
       leds: l_paragon_center_04a, l_paragon_center_04a2
+    start_enabled: true
     show_when_started: bn_4_start
     show_when_completed: bn_4_complete
+    stop_events: boars_nest_ended, boars_nest_failed
     start_events: start_boars_ach
-    reset_events: boars_nest_started
+    reset_events: boars_nest_started, boars_nest_ended, boars_nest_failed
     complete_events: boar_collect_4
   boar_5_complete:
     show_tokens:
       leds: l_paragon_center_05g, l_paragon_center_05g2
+    start_enabled: true
     show_when_started: bn_5_start
     show_when_completed: bn_5_complete
+    stop_events: boars_nest_ended, boars_nest_failed
     start_events: start_boars_ach
-    reset_events: boars_nest_started
+    reset_events: boars_nest_started, boars_nest_ended, boars_nest_failed
     complete_events: boar_collect_5
   boar_6_complete:
     show_tokens:
       leds: l_paragon_center_06o, l_paragon_center_06o2
+    start_enabled: true
     show_when_started: bn_6_start
     show_when_completed: bn_6_complete
+    stop_events: boars_nest_ended, boars_nest_failed
     start_events: start_boars_ach
-    reset_events: boars_nest_started
+    reset_events: boars_nest_started, boars_nest_ended, boars_nest_failed
     complete_events: boar_collect_6
 
 
