@@ -97,13 +97,13 @@
       color: seagreen
       fade: 250ms
     l_waterlane_5k:
-      color: 8B2E57
+      color: seagreen
       fade: 250ms
     l_waterlane_10k:
-      color: 8B2E57
+      color: seagreen
       fade: 250ms
     l_waterlane_special:
-      color: 8B2E57
+      color: seagreen
       fade: 250ms
 - duration: 250ms
   lights:
@@ -149,13 +149,13 @@
       color: seagreen
       fade: 250ms
     l_waterlane_5k:
-      color: 8B2E57
+      color: seagreen
       fade: 250ms
     l_waterlane_10k:
-      color: 8B2E57
+      color: seagreen
       fade: 250ms
     l_waterlane_special:
-      color: 8B2E57
+      color: seagreen
       fade: 250ms
 - duration: 250ms
   lights:
@@ -201,13 +201,13 @@
       color: seagreen
       fade: 250ms
     l_waterlane_5k:
-      color: 8B2E57
+      color: seagreen
       fade: 250ms
     l_waterlane_10k:
-      color: 8B2E57
+      color: seagreen
       fade: 250ms
     l_waterlane_special:
-      color: 8B2E57
+      color: seagreen
       fade: 250ms
 - duration: 250ms
   lights:

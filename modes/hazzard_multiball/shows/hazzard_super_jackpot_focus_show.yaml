@@ -97,13 +97,13 @@
       color: FF7500
       fade: 250ms
     l_waterlane_5k:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
     l_waterlane_10k:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
     l_waterlane_special:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
 - duration: 250ms
   lights:
@@ -149,13 +149,13 @@
       color: FF7500
       fade: 250ms
     l_waterlane_5k:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
     l_waterlane_10k:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
     l_waterlane_special:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
 - duration: 250ms
   lights:
@@ -201,13 +201,13 @@
       color: FF7500
       fade: 250ms
     l_waterlane_5k:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
     l_waterlane_10k:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
     l_waterlane_special:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
 - duration: 250ms
   lights:

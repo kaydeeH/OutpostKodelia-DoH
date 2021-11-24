@@ -43,7 +43,7 @@
       color: off
       fade: 250ms
     l_waterlane_5k:
-      color: 8B2E57
+      color: 2E8B57
       fade: 250ms
     l_waterlane_10k:
       color: off
@@ -72,7 +72,7 @@
       color: off
       fade: 250ms
     l_waterlane_10k:
-      color: 8B2E57
+      color: 2E8B57
       fade: 250ms
     l_waterlane_special:
       color: off
@@ -101,24 +101,24 @@
       color: off
       fade: 250ms
     l_waterlane_special:
-      color: 8B2E57
+      color: 2E8B57
       fade: 250ms
 - duration: 250ms
   lights:
     l_gi_14_oilslick_rollover:
-      color: FF7250
+      color: FF7500
       fade: 250ms
     l_gi_01_midright_4:
-      color: FF7250
+      color: FF7500
       fade: 250ms
     l_gi_11_midright_3:
-      color: FF7250
+      color: FF7500
       fade: 250ms
     l_gi_25_midright_1:
-      color: FF7250
+      color: FF7500
       fade: 250ms
     l_gi_26_midright_2:
-      color: FF7250
+      color: FF7500
       fade: 250ms
     l_waterlane_5k:
       color: off
@@ -147,7 +147,7 @@
       color: off
       fade: 250ms
     l_waterlane_5k:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
     l_waterlane_10k:
       color: off
@@ -158,16 +158,16 @@
 - duration: 250ms
   lights:
     l_gi_14_oilslick_rollover:
-      color: FF7250
+      color: FF7500
       fade: 250ms
     l_gi_01_midright_4:
-      color: FF7250
+      color: FF7500
       fade: 250ms
     l_gi_11_midright_3:
-      color: FF7250
+      color: FF7500
       fade: 250ms
     l_gi_25_midright_1:
-      color: FF7250
+      color: FF7500
       fade: 250ms
     l_gi_26_midright_2:
       color: off
@@ -176,7 +176,7 @@
       color: off
       fade: 250ms
     l_waterlane_10k:
-      color: 75FF00
+      color: FF7500
       fade: 250ms
     l_waterlane_special:
       color: off
@@ -205,5 +205,5 @@
       color: off
       fade: 250ms
     l_waterlane_special:
-      color: 75FF00
+      color: FF7500
       fade: 250ms

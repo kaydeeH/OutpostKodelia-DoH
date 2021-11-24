@@ -43,7 +43,7 @@
       color: off
       fade: 500ms
     l_waterlane_5k:
-      color: 75FF00
+      color: FF7500
       fade: 500ms
     l_waterlane_10k:
       color: off
@@ -72,7 +72,7 @@
       color: off
       fade: 500ms
     l_waterlane_10k:
-      color: 75FF00
+      color: FF7500
       fade: 500ms
     l_waterlane_special:
       color: off
@@ -101,5 +101,5 @@
       color: off
       fade: 500ms
     l_waterlane_special:
-      color: 75FF00
+      color: FF7500
       fade: 500ms

@@ -117,7 +117,7 @@ show_player:
       priority: 2000
       show_tokens:
         color: seagreen
-        color2: 8B2E57
+        color2: seagreen
   creek_super_jackpot_collected:
     creek_saucer_jackpot_ready_show:
       key: creek_saucer_jackpot_ready_show_key
@@ -140,7 +140,7 @@ show_player:
       priority: 2000
       show_tokens:
         color: seagreen
-        color2: 8B2E57
+        color2: seagreen
 
 variable_player:
   multiball_creek_multiball_started:

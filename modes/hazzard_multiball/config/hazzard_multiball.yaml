@@ -143,7 +143,7 @@ show_player:
       priority: 2000
       show_tokens:
         color: FF7500
-        color2: 75FF00
+        color2: FF7500
   hazzard_super_jackpot_collected:
     hazzard_saucer_jackpot_ready_show:
       key: hazzard_saucer_jackpot_ready_show_key
@@ -166,7 +166,7 @@ show_player:
       priority: 2000
       show_tokens:
         color: FF7500
-        color2: 75FF00
+        color2: FF7500
 
 variable_player:
   multiball_hazzard_multiball_started:
