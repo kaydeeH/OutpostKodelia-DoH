@@ -37,6 +37,7 @@ variable_player:
       block: true
   trigger_knockdown_coils:
     suspend_spot: 1
+    suspend_chase_show: 1
   finish_inline_knockall:
     in_line_a_down:
       action: set
@@ -51,5 +52,8 @@ variable_player:
       action: set
       int: 0
     suspend_spot:
+      action: set
+      int: 0
+    suspend_chase_show:
       action: set
       int: 0
