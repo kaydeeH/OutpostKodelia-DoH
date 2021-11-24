@@ -129,7 +129,7 @@ sound_player:
     gunfire:
       action: play
       loops: 0
-  s_waterfall_rollover_active:
+  s_waterfall_rollover_active{device.shots.waterfall_rollover.state_name != "waterfall_special"}:
     oil:
       action: play
       loops: 0

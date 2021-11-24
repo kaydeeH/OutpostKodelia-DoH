@@ -1,8 +1,14 @@
 #show_version=5
 - time: 0
   lights:
-    l_spinner_1: white
+    l_spinner_1:
+      color: 331700
+      fade: 50ms
     l_spinner_2: off
     l_spinner_3: off
     l_spinner_4: off
     l_spinner_5: off
+- time: 50ms
+  shows:
+    sp0b:
+      loops: -1

@@ -683,6 +683,18 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+  get_to_the_boars_nest:
+    file: get_to_the_boars_nest.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   #Ball save voice clips
   they_gave_it_back:

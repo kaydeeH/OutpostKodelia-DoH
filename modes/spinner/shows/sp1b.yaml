@@ -1,0 +1,11 @@
+#show_version=5
+- duration: 250ms
+  lights:
+    l_spinner_2:
+      color: 662F00
+      fade: 250ms
+- duration: 250ms
+  lights:
+    l_spinner_2:
+      color: off
+      fade: 250ms

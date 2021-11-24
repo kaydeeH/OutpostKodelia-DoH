@@ -110,6 +110,7 @@ event_player:
     - start_dukes_theme
     - stop_siren
     - start_boars_ach
+    - boars_nest_quip
   boars_nest_ended:
     - enable_two_ball_multiball_progress
     - drops_inline_reset
@@ -365,6 +366,10 @@ sound_player:
     police_siren:
       action: stop
       fade_out: 1000ms
+  boars_nest_quip:
+    get_to_the_boars_nest:
+      action: play
+      loops: 0
 
 #TODO Catch and event (or two) for when the mode ends. Use that to stop the doh_theme and restart the gameplay_music
 #TODO sound pool. May need to do this part in another mode since this mode may die before it can happen.

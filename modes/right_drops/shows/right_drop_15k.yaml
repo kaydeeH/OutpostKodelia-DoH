@@ -1,8 +1,11 @@
 #show_version=5
-- time: 0
+- duration: 500ms
   lights:
-    l_droptarget_15k: white
-- time: +1
+    l_droptarget_15k:
+      color: orangered
+      fade: 500ms
+- duration: 500ms
   lights:
-    l_droptarget_15k: off
-- time: +1
+    l_droptarget_15k:
+      color: off
+      fade: 500ms

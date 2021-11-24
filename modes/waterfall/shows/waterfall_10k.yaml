@@ -1,6 +1,15 @@
 #show_version=5
-- time: 0
+- duration: 500ms
   lights:
     l_waterlane_5k: off
-    l_waterlane_10k: white
+    l_waterlane_10k:
+      color: 3D488B
+      fade: 500ms
+    l_waterlane_special: off
+- duration: 500ms
+  lights:
+    l_waterlane_5k: off
+    l_waterlane_10k:
+      color: off
+      fade: 500ms
     l_waterlane_special: off

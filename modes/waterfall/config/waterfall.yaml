@@ -19,19 +19,19 @@ shot_profiles:
     states:
       - name: 1k
         show: waterfall_off
-        manual_advance: true
+        #manual_advance: true
       - name: 5k
         show: waterfall_5k
-        manual_advance: true
+        #manual_advance: true
       - name: 10k
         show: waterfall_10k
-        manual_advance: true
+        #manual_advance: true
       - name: waterfall_special
         show: waterfall_special
-        manual_advance: true
+        #manual_advance: true
       - name: 10k2
         show: waterfall_10k
-        manual_advance: true
+        #manual_advance: true
 
 shots:
   waterfall_rollover:
@@ -60,3 +60,9 @@ variable_player:
 event_player:
    waterfall_rollover_waterfall_special_hit:
      - special_scored_waterfall
+
+sound_player:
+  special_scored_waterfall:
+    yee_haw:
+      action: play
+      loops: 0
