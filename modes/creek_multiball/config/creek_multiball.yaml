@@ -11,7 +11,7 @@
 
 mode:
   start_events: start_mode_creek_multiball, start_mode_creek_multiball_at_ball_start
-  stop_events: multiball_creek_multiball_ended, tilt
+  stop_events: multiball_creek_multiball_ended, force_creek_multiball_end, tilt
   events_when_started: disable_base_creek_shot, enable_creek_multiball_start
   events_when_stopped: enable_base_creek_shot
   priority: 200
@@ -69,6 +69,9 @@ event_player:
   creek_collect_super_jackpot_hit:
     - creek_super_jackpot_collected
     - multiball_display_creek
+# Attempt to fix bug where one shot starts multiball after boars nest collect
+  start_chase_multiball{device.multiballs.creek_multiball.balls_live_target==0}:
+    - force_creek_multiball_end
 
 multiballs:
   creek_multiball:

@@ -34,9 +34,9 @@ shots:
   creek_saucer:
     switch: s_saucer_golden_cliffs
     profile: creek
-    disable_events: disable_base_creek_shot, disable_two_ball_multiball_progress
+    disable_events: disable_base_creek_shot, force_creek_reset
     enable_events: enable_base_creek_shot, enable_two_ball_multiball_progress
-    reset_events: multiball_creek_multiball_ended
+    reset_events: multiball_creek_multiball_ended, disable_two_ball_multiball_progress
 
 variable_player:
    creek_saucer_2k_hit:
@@ -119,6 +119,10 @@ event_player:
     - force_creek_eject
   enable_two_ball_multiball_progress{device.switches.s_saucer_golden_cliffs.state==1}:
     - force_creek_eject
+
+# Attempt to fix the reset after boars nest bug
+  disable_two_ball_multiball_progress:
+    - force_creek_reset
 
 ball_holds:
    bh_creek:
