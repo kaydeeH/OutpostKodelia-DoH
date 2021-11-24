@@ -201,6 +201,10 @@ sound_player:
     ball_saves:
       action: play
       loops: 0
+  special_scored_drop_right:
+    cooter_righteous:
+      action: play
+      loops: 0
 
 # This is used for the good ball / bad ball judgement call
 variable_player:

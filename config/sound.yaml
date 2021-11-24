@@ -671,6 +671,18 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+  cooter_righteous:
+    file: cooter_righteous.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   #Ball save voice clips
   they_gave_it_back:
