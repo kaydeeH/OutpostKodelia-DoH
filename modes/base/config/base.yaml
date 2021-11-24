@@ -137,6 +137,26 @@ sound_player:
     jail_door:
       action: play
       loops: 0
+  s_rebound_500pt_active:
+    explosion:
+      action: play
+      loops: 0
+  s_right_drop_standing_active:
+    explosion:
+      action: play
+      loops: 0
+  s_left_mid_standup_active:
+    explosion:
+      action: play
+      loops: 0
+  s_top_center_target_active:
+    explosion:
+      action: play
+      loops: 0
+  s_center_target_active:
+    explosion:
+      action: play
+      loops: 0
   sling_sound:
     ratchet:
       action: play

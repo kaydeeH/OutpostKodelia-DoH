@@ -123,6 +123,19 @@ sounds:
     volume: 0.7
     simultaneous_limit: 3
     stealing_method: oldest
+  explosion1:
+    file: explosion1.wav
+    track: sfx
+    volume: 0.6
+  explosion2:
+    file: explosion2.wav
+    track: sfx
+    volume: 0.6
+  explosion3:
+    file: explosion3.wav
+    track: sfx
+    volume: 0.6
+
 
   #Voice Clips
   ##Player Add Clips
@@ -891,7 +904,7 @@ sound_pools:
       - doh_track6
       - doh_track7
   gunfire:
-    type: random
+    type: random_force_all
     track: sfx
     sounds:
       - gunfire1
@@ -899,6 +912,15 @@ sound_pools:
       - gunfire3
     simultaneous_limit: 5
     stealing_method: skip
+  explosion:
+    type: random_force_all
+    track: sfx
+    sounds:
+      - explosion1
+      - explosion2
+      - explosion3
+    simultaneous_limit: 3
+    stealing_method: oldest
   drain_clips:
     type: random_force_all
     track: voice
