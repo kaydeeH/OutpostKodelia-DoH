@@ -363,18 +363,6 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
-  give_me_a_bonus:
-    file: give_me_a_bonus.wav
-    track: voice
-    ducking:
-      target:
-        - music
-        - sfx
-      attenuation: 0.2
-      delay: 0ms
-      attack: 100ms
-      release_point: 100ms
-      release: 100ms
   pedal_to_the_metal:
     file: pedal_to_the_metal.wav
     track: voice
@@ -663,6 +651,115 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+  my_day:
+    file: my_day.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  under_arrest:
+    file: under_arrest.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  give_me_a_bonus:
+    file: give_me_a_bonus.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  apprehended_yet:
+    file: apprehended_yet.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  do_something_bo:
+    file: do_something_bo.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  go_go_go:
+    file: go_go_go.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  gonna_hit_him:
+    file: gonna_hit_him.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  step_on_it:
+    file: step_on_it.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  trying_to_lose_roscoe:
+    file: trying_to_lose_roscoe.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+
 
   ##Tilt CLips
   arrest_that_man:
@@ -1214,7 +1311,6 @@ sound_pools:
       - better_than_disneyland
       - cool_under_pressure
       - does_it_big
-      - give_me_a_bonus
       - pedal_to_the_metal
       - quite_a_piece_of_driving
       - youre_a_genius
@@ -1291,3 +1387,20 @@ sound_pools:
     sounds:
       - long_time
       - dang_that_cooter
+  chase_fail_clips:
+    type: random_force_all
+    track: voice
+    sounds:
+      - my_day
+      - give_me_a_bonus
+      - under_arrest
+  chase_mid_clips:
+    type: random_force_all
+    track: voice
+    sounds:
+      - apprehended_yet
+      - do_something_bo
+      - go_go_go
+      - gonna_hit_him
+      - step_on_it
+      - trying_to_lose_roscoe

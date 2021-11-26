@@ -44,6 +44,7 @@ event_player:
   multiball_pre_chase_multiball_ended{current_player.boars_nest_active==0}:
     - release_chase_hold
     - end_chase_mode|100ms
+    - chase_failed_quip
   tilt{current_player.boars_nest_active==0}:
     - end_chase_mode
   gc_start_mball_hit{current_player.general_lee_speed>=120}:
@@ -256,6 +257,14 @@ sound_player:
     yee_haw:
       action: play
       loops: 0
+  chase_failed_quip:
+    chase_fail_clips:
+      action: play
+      loops: 0
+  timer_mid_chase_quips_timer_complete:
+    chase_mid_clips:
+      action: play
+      loops: 0
 
 show_player:
   start_chase_theme:
@@ -305,3 +314,19 @@ show_player:
   start_chase_sequence:
     chase_ready_show_key:
       action: stop
+
+timers:
+  mid_chase_quips_timer:
+    start_value: 15
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    start_running: false
+    restart_on_complete: true
+    control_events:
+      - event: start_chase_sequence
+        action: start
+      - event: start_chase_multiball
+        action: stop
+      - event: chase_failed_quip
+        action: stop
