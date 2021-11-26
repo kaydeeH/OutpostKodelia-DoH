@@ -135,6 +135,10 @@ sounds:
     file: explosion3.wav
     track: sfx
     volume: 0.6
+  single_rev:
+    file: single_rev.wav
+    track: sfx
+    volume: 0.3
 
 
   #Voice Clips
@@ -261,35 +265,274 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+  plays_together:
+    file: plays_together.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  best_man_win:
+    file: best_man_win.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  calling_chicken:
+    file: calling_chicken.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
-  ##Drain Clips
+  ##Good Drain Clips
+  all_right_daisy:
+    file: all_right_daisy.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  beautiful_hank_williams_song:
+    file: beautiful_hank_williams_song.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  better_than_disneyland:
+    file: better_than_disneyland.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  cool_under_pressure:
+    file: cool_under_pressure.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  does_it_big:
+    file: does_it_big.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  give_me_a_bonus:
+    file: give_me_a_bonus.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  pedal_to_the_metal:
+    file: pedal_to_the_metal.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  youre_a_genius:
+    file: youre_a_genius.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  quite_a_piece_of_driving:
+    file: quite_a_piece_of_driving.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+
+  ##Bad Drain Clips
   howl:
     file: basset_howl.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   aint_our_day:
     file: aint_our_day.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   gonna_miss_sometime:
     file: gonna_miss_sometime.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   aint_doing_too_great:
     file: aint_doing_too_great.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   numbskull:
     file: numbskull.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   out_of_bed:
     file: out_of_bed.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   behind_bars_entertainment:
     file: behind_bars_entertainment.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   things_look_bad:
     file: things_look_bad.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   that_is_terrible:
     file: that_is_terrible.wav
     track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  sometimes_they_doesnt:
+    file: sometimes_they_doesnt.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   ##Hazzard MB Clips
   derby_time:
@@ -420,7 +663,6 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
-
 
   ##Tilt CLips
   arrest_that_man:
@@ -913,6 +1155,10 @@ sound_pools:
       - its_them_again
       - join_us_pit_stop
       - hazzard_competing
+      - plays_together
+      - best_man_win
+      - calling_chicken
+      - sometimes_they_doesnt
     simultaneous_limit: 1
     stealing_method: skip
   gameplay_music:
@@ -945,7 +1191,7 @@ sound_pools:
       - explosion3
     simultaneous_limit: 3
     stealing_method: oldest
-  drain_clips:
+  bad_drain_clips:
     type: random_force_all
     track: voice
     sounds:
@@ -958,6 +1204,20 @@ sound_pools:
       - behind_bars_entertainment
       - things_look_bad
       - that_is_terrible
+      - sometimes_they_doesnt
+  good_drain_clips:
+    type: random_force_all
+    track: voice
+    sounds:
+      - all_right_daisy
+      - beautiful_hank_williams_song
+      - better_than_disneyland
+      - cool_under_pressure
+      - does_it_big
+      - give_me_a_bonus
+      - pedal_to_the_metal
+      - quite_a_piece_of_driving
+      - youre_a_genius
   tilt_sounds:
     type: random_force_all
     track: voice

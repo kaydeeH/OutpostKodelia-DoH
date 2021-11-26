@@ -248,3 +248,9 @@ variable_player:
     hazzard_jackpot_count:
       action: set
       int: 0
+
+sound_player:
+  player_shot_hazzard_saucer:
+    single_rev:
+      action: play
+      loops: 0

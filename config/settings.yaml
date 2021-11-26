@@ -203,6 +203,18 @@ settings:
     sort: 107
     settingType: game
 
+  good_ball_threshold:
+    label: Good Ball Threshold
+    values:
+      50000: "50,000 pts"
+      100000: "100,000 pts"
+      200000: "200,000 pts"
+      500000: "500,000 pts"
+    default: 100000
+    key_type: int
+    sort: 108
+    settingType: game
+
 # COIN SETTINGS
 # Note that "Free Play/Coin Play" is a "default" setting provided by MPF and therefore not listed here
   maximum_credits:

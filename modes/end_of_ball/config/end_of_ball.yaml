@@ -63,12 +63,24 @@ sound_player:
     gameplay_music:
       action: stop
       fade_out: 500ms
-  start_drain_show{mode.game.tilted == False}:
-    drain_clips:
+  start_drain_show{mode.game.tilted == False and current_player.player_ball_score >= settings.good_ball_threshold}:
+    good_drain_clips:
       action: play
       loops: 0
       events_when_about_to_finish: start_bonus_countdown
-      about_to_finish_time: 500ms
+      about_to_finish_time: 50ms
+  start_drain_show{mode.game.tilted == False and current_player.player_ball_score < settings.good_ball_threshold}:
+    bad_drain_clips:
+      action: play
+      loops: 0
+      events_when_about_to_finish: start_bonus_countdown
+      about_to_finish_time: 50ms
+#  continue_drain_show:
+#    drain_clips:
+#      action: play
+#      loops: 0
+#      events_when_about_to_finish: start_bonus_countdown
+#      about_to_finish_time: 500ms
   start_bonus_countdown:
     bonuscountdownmusic:
       action: play
