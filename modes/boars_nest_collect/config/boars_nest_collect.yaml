@@ -132,7 +132,7 @@ event_player:
         value: current_player.boars_nest_jackpot + current_player.boars_nest_jackpot
         type: int
       events_when_completed: bnbc_2x
-  bnbc_8{current_player.boars_nest_inlines < 3}:
+  bnbc_8{current_player.boars_nest_inlines <= 3}:
     - bnbc_9
   bnbc_2x:
     - bnbc_9
