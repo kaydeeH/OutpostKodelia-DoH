@@ -10,7 +10,7 @@ ball_saves:
   ball_save_boars_nest:
     active_time: settings.chase_ball_save
     hurry_up_time: 4s
-    grace_period: 3s
+    grace_period: 5s
     auto_launch: true
     balls_to_save: -1
     early_ball_save_events: sw_early_ball_save
