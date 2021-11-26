@@ -70,6 +70,8 @@ event_player:
     - creek_super_jackpot_collected
     - multiball_display_creek
 # Attempt to fix bug where one shot starts multiball after boars nest collect
+  disable_two_ball_multiball_progress:
+    - force_creek_multiball_end
   start_chase_multiball{device.multiballs.creek_multiball.balls_live_target==0}:
     - force_creek_multiball_end
 

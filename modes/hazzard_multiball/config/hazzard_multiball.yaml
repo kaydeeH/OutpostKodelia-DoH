@@ -75,9 +75,11 @@ event_player:
   multiball_hazzard_multiball_started:
     - hazzard_ach_reset
   multiball_hazzard_multiball_ended:
-    - hazzard_ach_init
     - hazzard_mball_mode_stop
+    - hazzard_ach_init
 # Attempt to fix bug where one shot starts multiball after boars nest collect
+  disable_two_ball_multiball_progress:
+    - force_hazzard_multiball_end
   start_chase_multiball{device.multiballs.hazzard_multiball.balls_live_target==0}:
     - force_hazzard_multiball_end
 

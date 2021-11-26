@@ -32,8 +32,8 @@ achievements:
     start_events: mode_hazzard_started, enable_two_ball_multiball_progress, hazzard_ach_init
     complete_events: hazzard_saucer_sau_1_hit, spot_sau_1
     disable_events: force_hazzard_reset
-    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
-    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach, hazzard_ach_init
+    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset, hazzard_mball_mode_stop
   sau_2_complete:
     show_tokens:
       leds: l_paragon_center_02a, l_paragon_center_02a2, l_paragon_saucer_02a
@@ -41,8 +41,8 @@ achievements:
     start_events: mode_hazzard_started, enable_two_ball_multiball_progress, hazzard_ach_init
     complete_events: hazzard_saucer_sau_2_hit, spot_sau_2
     disable_events: force_hazzard_reset
-    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
-    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach, hazzard_ach_init
+    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset, hazzard_mball_mode_stop
   sau_3_complete:
     show_tokens:
       leds: l_paragon_center_03r, l_paragon_center_03r2, l_paragon_saucer_03r
@@ -50,44 +50,44 @@ achievements:
     start_events: mode_hazzard_started, enable_two_ball_multiball_progress, hazzard_ach_init
     complete_events: hazzard_saucer_sau_3_hit, spot_sau_3
     disable_events: force_hazzard_reset
-    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
-    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach, hazzard_ach_init
+    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset, hazzard_mball_mode_stop
   sau_4_complete:
     show_tokens:
       leds: l_paragon_center_04a, l_paragon_center_04a2, l_paragon_saucer_04a
     show_when_completed: on
     start_events: mode_hazzard_started, enable_two_ball_multiball_progress, hazzard_ach_init
     complete_events: hazzard_saucer_sau_4_hit, spot_sau_4
-    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach, hazzard_ach_init
     disable_events: force_hazzard_reset
-    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset
+    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset, hazzard_mball_mode_stop
   sau_5_complete:
     show_tokens:
       leds: l_paragon_center_05g, l_paragon_center_05g2, l_paragon_saucer_05g
     show_when_completed: on
     start_events: mode_hazzard_started, enable_two_ball_multiball_progress, hazzard_ach_init
     complete_events: hazzard_saucer_sau_5_hit, spot_sau_5
-    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach, hazzard_ach_init
     disable_events: force_hazzard_reset
-    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset
+    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset, hazzard_mball_mode_stop
   sau_6_complete:
     show_tokens:
       leds: l_paragon_center_06o, l_paragon_center_06o2, l_paragon_saucer_06o
     show_when_completed: on
     start_events: mode_hazzard_started, enable_two_ball_multiball_progress, hazzard_ach_init
     complete_events: hazzard_saucer_sau_6_hit, spot_sau_6
-    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach, hazzard_ach_init
     disable_events: force_hazzard_reset
-    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset
+    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset, hazzard_mball_mode_stop
   sau_7_complete:
     show_tokens:
       leds: l_paragon_center_07n, l_paragon_center_07n2, l_paragon_saucer_07n
     show_when_completed: on
     start_events: mode_hazzard_started, enable_two_ball_multiball_progress, hazzard_ach_init
     complete_events: hazzard_saucer_sau_7_hit, spot_sau_7
-    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach
+    enable_events: enable_two_ball_multiball_progress, hazzard_enable_ach, hazzard_ach_init
     disable_events: force_hazzard_reset
-    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset
+    reset_events: special_scored_hazzard, disable_two_ball_multiball_progress, hazzard_ach_reset, hazzard_mball_mode_stop
 
 achievement_groups:
   saucer_group:
@@ -160,7 +160,7 @@ shots:
       - hazzard_select_rotate
       - hazzard_saucer_hazzard_sweep_hit{settings.hazzard_scan==1}
       - spot_hazzard_letter{settings.hazzard_scan==1}
-    reset_events: special_scored_hazzard, boars_nest_ended, end_chase_mode, disable_two_ball_multiball_progress
+    reset_events: special_scored_hazzard, boars_nest_ended, disable_two_ball_multiball_progress, hazzard_mball_mode_stop
     enable_events: special_scored_hazzard, mode_hazzard_started, multiball_hazzard_multiball_ended, enable_base_hazzard_shot, enable_two_ball_multiball_progress
     disable_events: enable_saucer_special, disable_base_hazzard_shot, force_hazzard_reset
 
