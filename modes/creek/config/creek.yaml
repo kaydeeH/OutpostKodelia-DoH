@@ -89,6 +89,9 @@ variable_player:
      creek_mball_sound_played:
        action: set
        int: 0
+     last_creek_value:
+       action: set
+       int: 0
 
 event_player:
   creek_saucer_20k_hit{settings.creek_multiball_feature==1}:
@@ -102,7 +105,7 @@ event_player:
       player_num:
         value: game.player.number
         type: int
-  player_last_creek_value{player_num==game.player.number}:
+  player_last_creek_value{player_num==game.player.number and current_player.last_creek_value>0}:
     show_score_flash_text:
       text_1: "CREEK  "
       text_2: "VALUE"
