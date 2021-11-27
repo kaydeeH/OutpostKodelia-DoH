@@ -473,6 +473,7 @@ settings:
     label: Main Flipper Power
     sort: 130
     values:
+      1: "1ms - For Tapping"
       22: "22ms"
       24: "24ms"
       26: "26ms"
