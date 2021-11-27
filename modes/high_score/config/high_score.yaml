@@ -145,3 +145,9 @@ slides:
       font_size: 20
       number_grouping: true
       min_digits: 2
+
+sound_player:
+  segment_high_score_enter_initials:
+    high_score_clips:
+      action: play
+      loops: 0

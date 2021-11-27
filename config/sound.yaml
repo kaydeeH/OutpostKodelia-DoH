@@ -215,6 +215,30 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+  zinger:
+    file: zinger.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  carnival_of_thrills:
+    file: carnival_of_thrills.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   ##Multiplayer Add Clips
   gonna_kick_my_butt_is_he:
@@ -521,6 +545,18 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+  blew_it:
+    file: blew_it.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   ##Hazzard MB Clips
   derby_time:
@@ -760,7 +796,6 @@ sounds:
       release_point: 100ms
       release: 100ms
 
-
   ##Tilt CLips
   arrest_that_man:
     file: arrest_that_man.wav
@@ -922,9 +957,6 @@ sounds:
   reflexes:
     file: reflexes.wav
     track: voice
-  zinger:
-    file: zinger.wav
-    track: voice
   free_games:
     file: free_games.wav
     track: voice
@@ -958,10 +990,27 @@ sounds:
   dunce:
     file: dunce.wav
     track: voice
+  play_pinball:
+    file: play_pinball.wav
+    track: voice
 
   ##General Voice Clips
   jackpot:
     file: jackpot.wav
+    track: voice
+    stealing_method: oldest
+    volume: 0.9
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  bullseye:
+    file: bullseye.wav
     track: voice
     stealing_method: oldest
     volume: 0.9
@@ -1231,6 +1280,130 @@ sounds:
       release_point: 100ms
       release: 100ms
 
+  ##Game Over Clips
+  days_work:
+    file: days_work.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  dont_quit:
+    file: dont_quit.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  double_yehaw:
+    file: double_yehaw.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  next_time:
+    file: next_time.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  quittin_time:
+    file: quittin_time.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+
+  ##High Score Clips
+  calculator:
+    file: calculator.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  happy_ending:
+    file: happy_ending.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  historical_moment:
+    file: historical_moment.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  look_at_that:
+    file: look_at_that.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  instant_grits:
+    file: instant_grits.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+
 sound_pools:
   player_1_add:
     type: random_force_all
@@ -1242,6 +1415,8 @@ sound_pools:
       - yall_got_your_ears_on
       - get_them_duke_boys
       - hello_sugar_plum
+      - zinger
+      - carnival_of_thrills
     simultaneous_limit: 1
     stealing_method: skip
   player_multi_add:
@@ -1255,7 +1430,6 @@ sound_pools:
       - plays_together
       - best_man_win
       - calling_chicken
-      - sometimes_they_doesnt
     simultaneous_limit: 1
     stealing_method: skip
   gameplay_music:
@@ -1302,6 +1476,7 @@ sound_pools:
       - things_look_bad
       - that_is_terrible
       - sometimes_they_doesnt
+      - blew_it
   good_drain_clips:
     type: random_force_all
     track: voice
@@ -1344,7 +1519,6 @@ sound_pools:
       - flapjacks
       - possum_gumbush
       - reflexes
-      - zinger
       - free_games
       - how_to_drive
       - miss_you
@@ -1356,11 +1530,13 @@ sound_pools:
       - crazy_cooter
       - roscoe_p_coltrane
       - dunce
+      - play_pinball
   jackpot_clips:
     type: random_force_all
     track: voice
     sounds:
       - jackpot
+      - bullseye
   ball_saves:
     type: random_force_all
     track: voice
@@ -1404,3 +1580,21 @@ sound_pools:
       - gonna_hit_him
       - step_on_it
       - trying_to_lose_roscoe
+  game_over_clips:
+    type: random_force_all
+    track: voice
+    sounds:
+      - days_work
+      - dont_quit
+      - double_yehaw
+      - next_time
+      - quittin_time
+  high_score_clips:
+    type: random_force_all
+    track: voice
+    sounds:
+      - look_at_that
+      - calculator
+      - happy_ending
+      - historical_moment
+      - instant_grits

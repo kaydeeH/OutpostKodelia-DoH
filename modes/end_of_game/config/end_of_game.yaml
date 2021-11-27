@@ -58,4 +58,10 @@ show_player:
       loops: 0
       events_when_completed: eog_display_final_scores_ended
 
+sound_player:
+  eog_display_final_scores:
+    game_over_clips:
+      action: play
+      loops: 0
+
 
