@@ -469,34 +469,34 @@ settings:
     key_type: int
     settingType: coilpower
 
-  main_flipper_power:
-    label: Main Flipper Power
-    sort: 130
-    values:
-      1: "1ms - For Tapping"
-      22: "22ms"
-      24: "24ms"
-      26: "26ms"
-      28: "28ms"
-      30: "30ms"
-    default: 24
-    key_type: int
-    settingType: coilpower
-
-  small_flipper_power:
-    label: Small Flipper Power
-    sort: 140
-    values:
-      12: "12ms"
-      14: "14ms"
-      16: "16ms"
-      18: "18ms"
-      20: "20ms"
-      22: "22ms"
-      24: "24ms"
-    default: 16
-    key_type: int
-    settingType: coilpower
+#  main_flipper_power:
+#    label: Main Flipper Power
+#    sort: 130
+#    values:
+#      1: "1ms - For Tapping"
+#      22: "22ms"
+#      24: "24ms"
+#      26: "26ms"
+#      28: "28ms"
+#      30: "30ms"
+#    default: 24
+#    key_type: int
+#    settingType: coilpower
+#
+#  small_flipper_power:
+#    label: Small Flipper Power
+#    sort: 140
+#    values:
+#      12: "12ms"
+#      14: "14ms"
+#      16: "16ms"
+#      18: "18ms"
+#      20: "20ms"
+#      22: "22ms"
+#      24: "24ms"
+#    default: 16
+#    key_type: int
+#    settingType: coilpower
 
   sling_power:
     label: Sling Power
