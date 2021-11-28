@@ -74,8 +74,8 @@ coils:
     number: 0-0-10
     default_pulse_ms: settings.main_flipper_power
     #debug: true
-    #allow_enable: true
-    default_hold_power: 0.125
+    allow_enable: true
+    #default_hold_power: 0.125
   c_flipper_left_main:
     number: 0-0-8
     default_pulse_ms: settings.main_flipper_power
@@ -86,14 +86,14 @@ coils:
     number: 0-0-11
     default_pulse_ms: settings.main_flipper_power
     #debug: true
-    #allow_enable: true
-    default_hold_power: 0.125
+    allow_enable: true
+    #default_hold_power: 0.125
   c_flipper_left_upper:
     number: 0-0-6
     default_pulse_ms: settings.small_flipper_power
     #debug: true
-    #allow_enable: true
-    default_hold_power: 0.125
+    allow_enable: true
+    #default_hold_power: 0.125
 
 # Non-Paragon Coils
   c_auto_plunge:
