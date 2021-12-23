@@ -548,3 +548,16 @@ settings:
     default: 20
     key_type: int
     settingType: coilpower
+
+  inline_knockdown_power:
+    label: Inline Knockdown Power
+    sort: 171
+    values:
+      7: "7ms"
+      8: "8ms"
+      9: "9ms"
+      10: "10ms"
+      11: "11ms"
+    default: 9
+    key_type: int
+    settingType: coilpower

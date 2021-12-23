@@ -431,3 +431,7 @@ widget_player:
       action: add
       slide: service_options_slide
 
+sound_player:
+  service_mode_entered:
+    service_is_my_life:
+      action: play

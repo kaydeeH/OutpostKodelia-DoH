@@ -557,6 +557,18 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+  kiddin_me:
+    file: kiddin_me.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
 
   ##Hazzard MB Clips
   derby_time:
@@ -1009,6 +1021,20 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+  payin_off_like_a_jackpot:
+    file: payin_off_like_a_jackpot.wav
+    track: voice
+    stealing_method: oldest
+    volume: 0.9
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
   bullseye:
     file: bullseye.wav
     track: voice
@@ -1073,6 +1099,18 @@ sounds:
       release: 100ms
   get_to_the_boars_nest:
     file: get_to_the_boars_nest.wav
+    track: voice
+    ducking:
+      target:
+        - music
+        - sfx
+      attenuation: 0.2
+      delay: 0ms
+      attack: 100ms
+      release_point: 100ms
+      release: 100ms
+  service_is_my_life:
+    file: service_is_my_life.wav
     track: voice
     ducking:
       target:
@@ -1477,6 +1515,7 @@ sound_pools:
       - that_is_terrible
       - sometimes_they_doesnt
       - blew_it
+      - kiddin_me
   good_drain_clips:
     type: random_force_all
     track: voice
@@ -1537,6 +1576,7 @@ sound_pools:
     sounds:
       - jackpot
       - bullseye
+      - payin_off_like_a_jackpot
   ball_saves:
     type: random_force_all
     track: voice

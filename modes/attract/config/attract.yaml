@@ -28,7 +28,7 @@ event_player:
 timers:
    attract_sound_cooldown:
       start_value: 0
-      end_value: 30
+      end_value: 5
       direction: up
       control_events:
           - event: attract_cooldown_start
