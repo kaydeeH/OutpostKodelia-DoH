@@ -289,6 +289,9 @@ show_player:
     coin_lights_show:
       key: coin_lights_show_key
       priority: 1
+    flipper_show:
+      key: flipper_show_key
+      priority: 1
     red_siren_show:
       key: red_siren_show_key
       action: play

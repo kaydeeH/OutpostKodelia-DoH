@@ -1420,24 +1420,24 @@ lights:
 #    platform: opp
 #    platform_settings:
 #      polarity: true
-#  l_backbox_08:
-#    start_channel: 0-0-651
-#    type: rgb
-#    subtype: led
-#    tags: backbox
-#    fade_ms: 50ms
-#    platform: opp
-#    platform_settings:
-#      polarity: true
-#  l_backbox_09:
-#    start_channel: 0-0-654
-#    type: rgb
-#    subtype: led
-#    tags: backbox, shootagain
-#    fade_ms: 50ms
-#    platform: opp
-#    platform_settings:
-#      polarity: true
+  l_backbox_08_flipper_a:
+    start_channel: 0-0-651
+    type: rgb
+    subtype: led
+    tags: backbox, flippers
+    fade_ms: 50ms
+    platform: opp
+    platform_settings:
+      polarity: true
+  l_backbox_09_flipper_b:
+    start_channel: 0-0-654
+    type: rgb
+    subtype: led
+    tags: backbox, flippers
+    fade_ms: 50ms
+    platform: opp
+    platform_settings:
+      polarity: true
   l_backbox_10_shootagain_1:
     #Physically implemented as 3 white LEDs
     start_channel: 0-0-657

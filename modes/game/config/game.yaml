@@ -12,6 +12,10 @@ show_player:
         color1: white
         tag2: pop_cores
         color2: ff7500
+    flipper_game_show:
+      key: flipper_game_show_key
+      speed: 1
+      loops: -1
   ball_will_start:
     ball_in_play_show:
       key: ball_in_play_show_key

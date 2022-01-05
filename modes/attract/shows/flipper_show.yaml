@@ -1,0 +1,17 @@
+#show_version=5
+- duration: 1000ms
+  lights:
+    l_backbox_08_flipper_a:
+      color: FF7500
+      fade: 1000ms
+    l_backbox_09_flipper_b:
+      color: FF7500
+      fade: 1000ms
+- duration: 1000ms
+  lights:
+    l_backbox_08_flipper_a:
+      color: 803B00
+      fade: 1000ms
+    l_backbox_09_flipper_b:
+      color: 803B00
+      fade: 1000ms
