@@ -10,8 +10,8 @@
 - duration: 1000ms
   lights:
     l_backbox_08_flipper_a:
-      color: 803B00
+      color: 703B00
       fade: 1000ms
     l_backbox_09_flipper_b:
-      color: 803B00
+      color: 703B00
       fade: 1000ms
