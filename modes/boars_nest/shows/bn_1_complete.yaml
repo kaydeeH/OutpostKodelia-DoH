@@ -1,11 +1,37 @@
 #show_version=5
 
 # Placeholder -- Show to indicate we still have enough SPINS
-- time: 0
+#- time: 0
+#  lights:
+#    l_spinner_1: green
+#    l_spinner_2: green
+#    l_spinner_3: green
+#    l_spinner_4: green
+#    l_spinner_5: green
+#    (leds): white
+
+- duration: 100ms
   lights:
-    l_spinner_1: green
-    l_spinner_2: green
-    l_spinner_3: green
-    l_spinner_4: green
-    l_spinner_5: green
-    (leds): white
+    l_spinner_1: 331700
+    l_spinner_2: 662F00
+    l_spinner_3: 994600
+    l_spinner_4: CC5E00
+    l_spinner_5: FF7500
+    l_paragon_center_01p: white
+    l_paragon_center_01p2: off
+- duration: 100ms
+  lights:
+    l_paragon_center_01p: off
+    l_paragon_center_01p2: white
+- duration: 100ms
+  lights:
+    l_paragon_center_01p: white
+    l_paragon_center_01p2: off
+- duration: 100ms
+  lights:
+    l_paragon_center_01p: off
+    l_paragon_center_01p2: white
+- duration: 100ms
+  lights:
+    l_paragon_center_01p: white
+    l_paragon_center_01p2: white
