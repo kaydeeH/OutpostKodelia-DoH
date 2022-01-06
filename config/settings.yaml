@@ -553,11 +553,13 @@ settings:
     label: Inline Knockdown Power
     sort: 171
     values:
+      5: "5ms"
+      6: "6ms"
       7: "7ms"
       8: "8ms"
       9: "9ms"
       10: "10ms"
       11: "11ms"
-    default: 9
+    default: 7
     key_type: int
     settingType: coilpower

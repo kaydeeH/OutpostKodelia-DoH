@@ -1,24 +1,51 @@
 #show_version=5
 
 # Placeholder -- Show to indicate we still need to hit POPS
-- time: 0
+#- time: 0
+#  lights:
+#    pop1_0: green
+#    pop1_1: green
+#    pop1_2: green
+#    pop1_3: green
+#    pop1_4: green
+#    pop1_5: green
+#    pop2_0: green
+#    pop2_1: green
+#    pop2_2: green
+#    pop2_3: green
+#    pop2_4: green
+#    pop2_5: green
+#    pop3_0: green
+#    pop3_1: green
+#    pop3_2: green
+#    pop3_3: green
+#    pop3_4: green
+#    pop3_5: green
+#    (leds): white
+
+- duration: 100ms
   lights:
-    pop1_0: green
-    pop1_1: green
-    pop1_2: green
-    pop1_3: green
-    pop1_4: green
-    pop1_5: green
-    pop2_0: green
-    pop2_1: green
-    pop2_2: green
-    pop2_3: green
-    pop2_4: green
-    pop2_5: green
-    pop3_0: green
-    pop3_1: green
-    pop3_2: green
-    pop3_3: green
-    pop3_4: green
-    pop3_5: green
-    (leds): white
+    pop1_0: ff7500
+    pop1_1: ff7500
+    pop1_2: ff7500
+    pop1_3: ff7500
+    pop1_4: ff7500
+    pop1_5: ff7500
+    pop2_0: ff7500
+    pop2_1: ff7500
+    pop2_2: ff7500
+    pop2_3: ff7500
+    pop2_4: ff7500
+    pop2_5: ff7500
+    pop3_0: ff7500
+    pop3_1: ff7500
+    pop3_2: ff7500
+    pop3_3: ff7500
+    pop3_4: ff7500
+    pop3_5: ff7500
+    l_paragon_center_02a: white
+    l_paragon_center_02a2: off
+- duration: 100ms
+  lights:
+    l_paragon_center_02a: off
+    l_paragon_center_02a2: white

@@ -51,6 +51,11 @@ show_player:
       action: play
       priority: 50000
       loops: -1
+    bn_2_start:
+      key: bn_2_start_key
+      action: play
+      priority: 50000
+      loops: -1
   boar_collect_1:
     bn_1_start_key: stop
     bn_1_complete:
@@ -58,11 +63,18 @@ show_player:
       action: play
       priority: 50000
       loops: -1
+  boar_collect_2:
+    bn_2_start_key: stop
+    bn_2_complete:
+      key: bn_2_complete_key
+      action: play
+      priority: 50000
+      loops: -1
 
 achievements:
   boar_1_complete:
-    show_tokens:
-      leds: l_paragon_center_01p, l_paragon_center_01p2
+#    show_tokens:
+#      leds: l_paragon_center_01p, l_paragon_center_01p2
     start_enabled: true
 #    show_when_started: bn_1_start
 #    show_when_completed: bn_1_complete
@@ -71,11 +83,11 @@ achievements:
     reset_events: boars_nest_started, boars_nest_ended, boars_nest_failed
     complete_events: boar_collect_1
   boar_2_complete:
-    show_tokens:
-      leds: l_paragon_center_02a, l_paragon_center_02a2
+#    show_tokens:
+#      leds: l_paragon_center_02a, l_paragon_center_02a2
     start_enabled: true
-    show_when_started: bn_2_start
-    show_when_completed: bn_2_complete
+#    show_when_started: bn_2_start
+#    show_when_completed: bn_2_complete
     stop_events: boars_nest_ended, boars_nest_failed
     start_events: start_boars_ach
     reset_events: boars_nest_started, boars_nest_ended, boars_nest_failed

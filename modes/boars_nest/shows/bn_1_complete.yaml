@@ -1,6 +1,6 @@
 #show_version=5
 
-# Placeholder -- Show to indicate we still have enough SPINS
+# Placeholder -- Show to indicate we have enough SPINS
 #- time: 0
 #  lights:
 #    l_spinner_1: green
@@ -22,16 +22,4 @@
 - duration: 100ms
   lights:
     l_paragon_center_01p: off
-    l_paragon_center_01p2: white
-- duration: 100ms
-  lights:
-    l_paragon_center_01p: white
-    l_paragon_center_01p2: off
-- duration: 100ms
-  lights:
-    l_paragon_center_01p: off
-    l_paragon_center_01p2: white
-- duration: 100ms
-  lights:
-    l_paragon_center_01p: white
     l_paragon_center_01p2: white
