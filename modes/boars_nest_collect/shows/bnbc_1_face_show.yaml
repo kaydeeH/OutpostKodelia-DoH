@@ -1,0 +1,10 @@
+#show_version=5
+
+- duration: 100ms
+  lights:
+    l_paragon_center_01p: white
+    l_paragon_center_01p2: off
+- duration: 100ms
+  lights:
+    l_paragon_center_01p: off
+    l_paragon_center_01p2: white

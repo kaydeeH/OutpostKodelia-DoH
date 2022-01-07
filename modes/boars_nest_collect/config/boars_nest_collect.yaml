@@ -240,8 +240,45 @@ variable_player:
     score:
       action: add
       int: current_player.boars_nest_jackpot
+
 sound_player:
   boars_nest_audio_reset:
     doh_theme:
       action: stop
       fade_out: 500ms
+
+show_player:
+  boars_nest_big_collect_start:
+    gi_dim_show:
+      action: play
+      priority: 55000
+    suppress_collect_lights_show:
+      action: play
+      priority: 55000
+  bnbc_1:
+    bnbc_1_show:
+      key: bnbc_1_show_key
+      action: play
+      loops: 0
+      priority: 60000
+    bnbc_1_face_show:
+      key: bnbc_1_face_show_key
+      action: play
+      loops: -1
+      priority: 60000
+  bnbc_2:
+    bnbc_1_show_key: stop
+    bnbc_1_face_show_key: stop
+    bnbc_2_show:
+      key: bnbc_2_show_key
+      action: play
+      loops: 0
+      priority: 60000
+    bnbc_2_face_show:
+      key: bnbc_2_face_show_key
+      action: play
+      loops: -1
+      priority: 60000
+  bnbc_3:
+    bnbc_2_show_key: stop
+    bnbc_2_face_show_key: stop

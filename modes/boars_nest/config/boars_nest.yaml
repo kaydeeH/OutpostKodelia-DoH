@@ -39,9 +39,23 @@ show_player:
   boar_six_pack_is_complete:
     boars_nest_ready_show:
       key: boars_nest_ready_show_key
+      action: play
+      loops: -1
   boars_nest_big_collect_start:
     boars_nest_ready_show_key:
       action: stop
+#    bn_1_complete_key:
+#      action: stop
+#    bn_2_complete_key:
+#      action: stop
+#    bn_3_complete_key:
+#      action: stop
+#    bn_4_complete_key:
+#      action: stop
+#    bn_5_complete_key:
+#      action: stop
+#    bn_6_complete_key:
+#      action: stop
   ball_will_end:
     boars_nest_ready_show_key:
       action: stop
