@@ -70,7 +70,22 @@ event_player:
     - escape_saucer_eject
 #TODO - make more various switches add speed values
   sw_kpf:
+    - general_lee_speed_add_base
+  s_spinner_active:
     - general_lee_speed_add_1
+  s_thumper_center_active:
+    - general_lee_speed_add_1
+  s_thumper_left_active:
+    - general_lee_speed_add_1
+  s_thumper_right_active:
+    - general_lee_speed_add_1
+  s_waterfall_rollover_active:
+    - general_lee_speed_add_5
+  shot_group_drop_right_hit:
+    - general_lee_speed_add_5
+  drop_target_bank_dtbank_right_down:
+    - general_lee_speed_add_5
+
   kodelia_tilt:
     - end_chase_shows_fail
     - end_chase_mode
@@ -121,14 +136,16 @@ variable_player:
         int: 40
   general_lee_speed_add_1{current_player.boars_nest_active!=1 and current_player.general_lee_speed>0}:
       general_lee_speed:
-        # temp change to 10 to make testing easier
-        int: 10
+        int: 1
   general_lee_speed_add_3{current_player.boars_nest_active!=1 and current_player.general_lee_speed>0}:
       general_lee_speed:
         int: 3
   general_lee_speed_add_5{current_player.boars_nest_active!=1 and current_player.general_lee_speed>0}:
       general_lee_speed:
         int: 5
+  general_lee_speed_add_base{current_player.boars_nest_active!=1 and current_player.general_lee_speed>0}:
+      general_lee_speed:
+        int: settings.chase_qualify
 
 segment_display_player:
   multiball_display_creek{device.multiballs.creek_multiball.balls_live_target>0}:

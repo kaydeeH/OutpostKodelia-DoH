@@ -21,10 +21,10 @@ event_player:
         type: int
       score_type: "BO     "
       score_value:
-        value: current_player.boars_nest_spins * 1000
+        value: current_player.boars_nest_spins * 800
         type: int
       boar_score_post:
-        value: current_player.boars_nest_jackpot + (current_player.boars_nest_spins * 1000)
+        value: current_player.boars_nest_jackpot + (current_player.boars_nest_spins * 800)
         type: int
       events_when_completed: bnbc_1_set
   bnbc_1_set:
@@ -36,10 +36,10 @@ event_player:
         type: int
       score_type: "LUKE   "
       score_value:
-        value: current_player.boars_nest_pops * 1000
+        value: current_player.boars_nest_pops * 800
         type: int
       boar_score_post:
-        value: current_player.boars_nest_jackpot + (current_player.boars_nest_pops * 1000)
+        value: current_player.boars_nest_jackpot + (current_player.boars_nest_pops * 800)
         type: int
       events_when_completed: bnbc_2_set
   bnbc_2_set:
@@ -51,10 +51,10 @@ event_player:
         type: int
       score_type: "DAISY  "
       score_value:
-        value: current_player.boars_nest_right_drops * 1000
+        value: current_player.boars_nest_right_drops * 3000
         type: int
       boar_score_post:
-        value: current_player.boars_nest_jackpot + (current_player.boars_nest_right_drops * 1000)
+        value: current_player.boars_nest_jackpot + (current_player.boars_nest_right_drops * 3000)
         type: int
       events_when_completed: bnbc_3_set
   bnbc_3_set:
@@ -66,10 +66,10 @@ event_player:
         type: int
       score_type: "JESSE  "
       score_value:
-        value: current_player.boars_nest_oil_slicks * 1000
+        value: current_player.boars_nest_oil_slicks * 8000
         type: int
       boar_score_post:
-        value: current_player.boars_nest_jackpot + (current_player.boars_nest_oil_slicks * 1000)
+        value: current_player.boars_nest_jackpot + (current_player.boars_nest_oil_slicks * 8000)
         type: int
       events_when_completed: bnbc_4_set
   bnbc_4_set:
@@ -81,10 +81,10 @@ event_player:
         type: int
       score_type: "COOTER "
       score_value:
-        value: current_player.boars_nest_creeks * 1000
+        value: current_player.boars_nest_creeks * 4000
         type: int
       boar_score_post:
-        value: current_player.boars_nest_jackpot + (current_player.boars_nest_creeks * 1000)
+        value: current_player.boars_nest_jackpot + (current_player.boars_nest_creeks * 4000)
         type: int
       events_when_completed: bnbc_5_set
   bnbc_5_set:
@@ -96,10 +96,10 @@ event_player:
         type: int
       score_type: "ROSCOE "
       score_value:
-        value: current_player.boars_nest_hazzards * 1000
+        value: current_player.boars_nest_hazzards * 4000
         type: int
       boar_score_post:
-        value: current_player.boars_nest_jackpot + (current_player.boars_nest_hazzards * 1000)
+        value: current_player.boars_nest_jackpot + (current_player.boars_nest_hazzards * 4000)
         type: int
       events_when_completed: bnbc_6_set
   bnbc_6_set:

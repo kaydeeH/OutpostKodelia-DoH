@@ -394,6 +394,92 @@ settings:
       30: "30 seconds"
     settingType: feature
 
+  chase_qualify:
+    label: Chase - Qualify
+    key_type: int
+    default: 3
+    sort: 150
+    values:
+      3: "Easy (Default)"
+      2: "Medium"
+      1: "Hard"
+    settingType: feature
+
+  boars_nest_spins:
+    label: Boars Nest - Spins Needed
+    key_type: int
+    default: 12
+    sort: 200
+    values:
+      1: "Very Easy (1)"
+      6: "Easy (6)"
+      12: "Normal (12, Default)"
+      18: "Hard (18)"
+      24: "Very Hard (24)"
+    settingType: feature
+
+  boars_nest_pops:
+    label: Boars Nest - Pops Needed
+    key_type: int
+    default: 8
+    sort: 210
+    values:
+      1: "Very Easy (1)"
+      4: "Easy (4)"
+      8: "Normal (8, Default)"
+      12: "Hard (12)"
+      16: "Very Hard (16)"
+    settingType: feature
+
+  boars_nest_right_drops:
+    label: Boars Nest - Right Drops Needed
+    key_type: int
+    default: 3
+    sort: 220
+    values:
+      1: "Easy (1)"
+      3: "Normal (3)"
+      6: "Hard (6)"
+      9: "Mean (9)"
+      12: "Absurd (12)"
+    settingType: feature
+
+  boars_nest_oil_slicks:
+    label: Boars Nest - Oil Slicks Needed
+    key_type: int
+    default: 1
+    sort: 230
+    values:
+      1: "Easy (1, Default)"
+      2: "Normal (2)"
+      3: "Hard (3)"
+      4: "Very Hard (4)"
+    settingType: feature
+
+  boars_nest_creeks:
+    label: Boars Nest - Creeks Needed
+    key_type: int
+    default: 1
+    sort: 240
+    values:
+      1: "Easy (1, Default)"
+      2: "Normal (2)"
+      3: "Hard (3)"
+      4: "Very Hard (4)"
+    settingType: feature
+
+  boars_nest_hazzards:
+    label: Boars Nest - Hazzards Needed
+    key_type: int
+    default: 1
+    sort: 250
+    values:
+      1: "Easy (1, Default)"
+      2: "Normal (2)"
+      3: "Hard (3)"
+      4: "Very Hard (4)"
+    settingType: feature
+
 # COIL POWER
   creek_eject_power:
     label: Creek Saucer Eject Power

@@ -162,20 +162,20 @@ event_player:
   s_drop_inline_a_active{current_player.boars_nest_six_pack_complete==0 and current_player.boars_nest_active==1}:
     - drops_inline_reset|250ms
 
-# spins and pops dropped to 1 for testing
-#  player_boars_nest_spins{current_player.boars_nest_spins==20}:
-  player_boars_nest_spins{current_player.boars_nest_spins==1}:
+# use settings for how much you need for the nest
+  player_boars_nest_spins{current_player.boars_nest_spins==settings.boars_nest_spins}:
     - boar_collect_1
-#  player_boars_nest_pops{current_player.boars_nest_pops==8}:
-  player_boars_nest_pops{current_player.boars_nest_pops==1}:
+  player_boars_nest_pops{current_player.boars_nest_pops==settings.boars_nest_pops}:
     - boar_collect_2
-  drop_target_bank_dtbank_right_down:
+#  drop_target_bank_dtbank_right_down:
+#    - boar_collect_3
+  player_boars_nest_right_drops{current_player.boars_nest_right_drops==settings.boars_nest_right_drops}:
     - boar_collect_3
-  player_boars_nest_oil_slicks{current_player.boars_nest_oil_slicks==1}:
+  player_boars_nest_oil_slicks{current_player.boars_nest_oil_slicks==settings.boars_nest_oil_slicks}:
     - boar_collect_4
-  player_boars_nest_creeks{current_player.boars_nest_creeks==1}:
+  player_boars_nest_creeks{current_player.boars_nest_creeks==settings.boars_nest_creeks}:
     - boar_collect_5
-  player_boars_nest_hazzards{current_player.boars_nest_hazzards==1}:
+  player_boars_nest_hazzards{current_player.boars_nest_hazzards==settings.boars_nest_hazzards}:
     - boar_collect_6
   player_boars_nest_six_pack_complete{current_player.boars_nest_six_pack_complete==1}:
     - inline_drop_all
