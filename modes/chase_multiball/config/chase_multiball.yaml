@@ -86,6 +86,9 @@ event_player:
   drop_target_bank_dtbank_right_down:
     - general_lee_speed_add_5
 
+  s_drop_inline_a_active{current_player.boars_nest_active==0 and current_player.general_lee_speed>0}:
+    - drops_inline_reset|250ms
+
   kodelia_tilt:
     - end_chase_shows_fail
     - end_chase_mode

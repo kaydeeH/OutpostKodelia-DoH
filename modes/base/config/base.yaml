@@ -162,23 +162,23 @@ sound_player:
     ratchet:
       action: play
       loops: 0
-  shot_drop_inline_a_hit{current_player.suspend_spot != 1}:
+  shot_drop_inline_a_hit{current_player.suspend_spot != 1 and current_player.boars_nest_active != 1 and not device.multiballs.pre_chase_multiball.balls_live_target>0}:
     were_gonna_bust_em:
       action: play
       loops: 0
-  shot_drop_inline_b_hit{current_player.suspend_spot != 1}:
+  shot_drop_inline_b_hit{current_player.suspend_spot != 1 and current_player.boars_nest_active != 1 and not device.multiballs.pre_chase_multiball.balls_live_target>0}:
     were_gonna_bust_em:
       action: stop
     rock_and_a_hard_place:
       action: play
       loops: 0
-  shot_drop_inline_c_hit{current_player.suspend_spot != 1}:
+  shot_drop_inline_c_hit{current_player.suspend_spot != 1 and current_player.boars_nest_active != 1 and not device.multiballs.pre_chase_multiball.balls_live_target>0}:
     rock_and_a_hard_place:
       action: stop
     gonna_get_em:
       action: play
       loops: 0
-  shot_drop_inline_d_hit{current_player.suspend_spot != 1}:
+  shot_drop_inline_d_hit{current_player.suspend_spot != 1 and current_player.boars_nest_active != 1 and not device.multiballs.pre_chase_multiball.balls_live_target>0}:
     gonna_get_em:
       action: stop
     duck_on_a_junebug:
