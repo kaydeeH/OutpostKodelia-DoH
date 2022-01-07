@@ -1,14 +1,55 @@
 #show_version=5
 
 # Placeholder -- Show to indicate we still need to hit HAZZARD
-- time: 0
+#- time: 0
+#  lights:
+#    l_paragon_saucer_01p: red
+#    l_paragon_saucer_02a: red
+#    l_paragon_saucer_03r: red
+#    l_paragon_saucer_04a: red
+#    l_paragon_saucer_05g: red
+#    l_paragon_saucer_06o: red
+#    l_paragon_saucer_07n: red
+#    l_paragon_saucer_special: red
+#    (leds): off
+
+- duration: 500ms
   lights:
-    l_paragon_saucer_01p: red
-    l_paragon_saucer_02a: red
-    l_paragon_saucer_03r: red
-    l_paragon_saucer_04a: red
-    l_paragon_saucer_05g: red
-    l_paragon_saucer_06o: red
-    l_paragon_saucer_07n: red
-    l_paragon_saucer_special: red
-    (leds): off
+    l_paragon_saucer_01p: FF7500
+    l_paragon_saucer_02a: FF7500
+    l_paragon_saucer_03r: FF7500
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: off
+- duration: 500ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: FF7500
+    l_paragon_saucer_04a: FF7500
+    l_paragon_saucer_05g: FF7500
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: off
+- duration: 500ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: FF7500
+    l_paragon_saucer_06o: FF7500
+    l_paragon_saucer_07n: FF7500
+    l_paragon_saucer_special: off
+- duration: 500ms
+  lights:
+    l_paragon_saucer_01p: off
+    l_paragon_saucer_02a: off
+    l_paragon_saucer_03r: off
+    l_paragon_saucer_04a: off
+    l_paragon_saucer_05g: off
+    l_paragon_saucer_06o: off
+    l_paragon_saucer_07n: off
+    l_paragon_saucer_special: FF7500

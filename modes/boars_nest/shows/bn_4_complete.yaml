@@ -2,9 +2,21 @@
 
 # Placeholder -- Show to indicate we've hit OIL SLICK
 # *** swap red and green
-- time: 0
+#- time: 0
+#  lights:
+#    l_waterlane_5k: green
+#    l_waterlane_10k: green
+#    l_waterlane_special: green
+#    (leds): white
+
+- duration: 100ms
   lights:
-    l_waterlane_5k: green
-    l_waterlane_10k: green
-    l_waterlane_special: green
-    (leds): white
+    l_waterlane_5k: 3D488B
+    l_waterlane_10k: 3D488B
+    l_waterlane_special: 3D488B
+    l_paragon_center_04a: white
+    l_paragon_center_04a2: off
+- duration: 100ms
+  lights:
+    l_paragon_center_04a: off
+    l_paragon_center_04a2: white

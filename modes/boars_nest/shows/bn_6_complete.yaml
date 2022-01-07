@@ -1,14 +1,31 @@
 #show_version=5
 
 # Placeholder -- Show to indicate we hit HAZZARD
-- time: 0
+#- time: 0
+#  lights:
+#    l_paragon_saucer_01p: green
+#    l_paragon_saucer_02a: green
+#    l_paragon_saucer_03r: green
+#    l_paragon_saucer_04a: green
+#    l_paragon_saucer_05g: green
+#    l_paragon_saucer_06o: green
+#    l_paragon_saucer_07n: green
+#    l_paragon_saucer_special: green
+#    (leds): white
+
+- duration: 100ms
   lights:
-    l_paragon_saucer_01p: green
-    l_paragon_saucer_02a: green
-    l_paragon_saucer_03r: green
-    l_paragon_saucer_04a: green
-    l_paragon_saucer_05g: green
-    l_paragon_saucer_06o: green
-    l_paragon_saucer_07n: green
-    l_paragon_saucer_special: green
-    (leds): white
+    l_paragon_saucer_01p: FF7500
+    l_paragon_saucer_02a: FF7500
+    l_paragon_saucer_03r: FF7500
+    l_paragon_saucer_04a: FF7500
+    l_paragon_saucer_05g: FF7500
+    l_paragon_saucer_06o: FF7500
+    l_paragon_saucer_07n: FF7500
+    l_paragon_saucer_special: FF7500
+    l_paragon_center_06o: white
+    l_paragon_center_06o2: off
+- duration: 100ms
+  lights:
+    l_paragon_center_06o: off
+    l_paragon_center_06o2: white

@@ -1,11 +1,25 @@
 #show_version=5
 
 # Placeholder -- Show to indicate we have enough RIGHT DROPS
-- time: 0
+#- time: 0
+#  lights:
+#    l_droptarget_10k: green
+#    l_droptarget_15k: green
+#    l_droptarget_20k: green
+#    l_droptarget_25k: green
+#    l_droptarget_special: green
+#    (leds): white
+
+- duration: 100ms
   lights:
-    l_droptarget_10k: green
-    l_droptarget_15k: green
-    l_droptarget_20k: green
-    l_droptarget_25k: green
-    l_droptarget_special: green
-    (leds): white
+    l_droptarget_10k: orangered
+    l_droptarget_15k: orangered
+    l_droptarget_20k: orangered
+    l_droptarget_25k: orangered
+    l_droptarget_special: orangered
+    l_paragon_center_03r: white
+    l_paragon_center_03r2: off
+- duration: 100ms
+  lights:
+    l_paragon_center_03r: off
+    l_paragon_center_03r2: white

@@ -1,12 +1,28 @@
 #show_version=5
 
 # Placeholder -- Show to indicate we've hit CREEK
-- time: 0
+#- time: 0
+#  lights:
+#    l_goldencliffs_2k: green
+#    l_goldencliffs_4k: green
+#    l_goldencliffs_6k: green
+#    l_goldencliffs_8k: green
+#    l_goldencliffs_10k: green
+#    l_goldencliffs_20k: green
+#    (leds): white
+
+- duration: 100ms
   lights:
-    l_goldencliffs_2k: green
-    l_goldencliffs_4k: green
-    l_goldencliffs_6k: green
-    l_goldencliffs_8k: green
-    l_goldencliffs_10k: green
-    l_goldencliffs_20k: green
-    (leds): white
+    l_goldencliffs_2k: seagreen
+    l_goldencliffs_4k: seagreen
+    l_goldencliffs_6k: seagreen
+    l_goldencliffs_8k: seagreen
+    l_goldencliffs_10k: seagreen
+    l_goldencliffs_20k: seagreen
+    l_gi_05_river_rollover: white
+    l_paragon_center_05g: white
+    l_paragon_center_05g2: off
+- duration: 100ms
+  lights:
+    l_paragon_center_05g: off
+    l_paragon_center_05g2: white

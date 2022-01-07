@@ -1,11 +1,40 @@
 #show_version=5
 
 # Placeholder -- Show to indicate we still need to hit RIGHT DROPS
-- time: 0
+#- time: 0
+#  lights:
+#    l_droptarget_10k: red
+#    l_droptarget_15k: red
+#    l_droptarget_20k: red
+#    l_droptarget_25k: red
+#    l_droptarget_special: red
+#    (leds): off
+
+- duration: 500ms
   lights:
-    l_droptarget_10k: red
-    l_droptarget_15k: red
-    l_droptarget_20k: red
-    l_droptarget_25k: red
-    l_droptarget_special: red
-    (leds): off
+    l_droptarget_10k: orangered
+    l_droptarget_15k: off
+    l_droptarget_20k: off
+    l_droptarget_25k: off
+    l_droptarget_special: orangered
+- duration: 500ms
+  lights:
+    l_droptarget_10k: off
+    l_droptarget_15k: orangered
+    l_droptarget_20k: off
+    l_droptarget_25k: orangered
+    l_droptarget_special: off
+- duration: 500ms
+  lights:
+    l_droptarget_10k: off
+    l_droptarget_15k: off
+    l_droptarget_20k: orangered
+    l_droptarget_25k: off
+    l_droptarget_special: off
+- duration: 500ms
+  lights:
+    l_droptarget_10k: off
+    l_droptarget_15k: orangered
+    l_droptarget_20k: off
+    l_droptarget_25k: orangered
+    l_droptarget_special: off

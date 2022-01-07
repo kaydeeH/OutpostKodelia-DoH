@@ -2,9 +2,34 @@
 
 # Placeholder -- Show to indicate we still need to hit OIL SLICK
 # *** swap red and green
-- time: 0
+#- time: 0
+#  lights:
+#    l_waterlane_5k: red
+#    l_waterlane_10k: red
+#    l_waterlane_special: red
+#    (leds): off
+
+- duration: 500ms
   lights:
-    l_waterlane_5k: red
-    l_waterlane_10k: red
-    l_waterlane_special: red
-    (leds): off
+    l_gi_14_oilslick_rollover: white
+    l_waterlane_5k: off
+    l_waterlane_10k: off
+    l_waterlane_special: off
+- duration: 500ms
+  lights:
+    l_gi_14_oilslick_rollover: off
+    l_waterlane_5k: 3D488B
+    l_waterlane_10k: off
+    l_waterlane_special: off
+- duration: 500ms
+  lights:
+    l_gi_14_oilslick_rollover: off
+    l_waterlane_5k: off
+    l_waterlane_10k: 3D488B
+    l_waterlane_special: off
+- duration: 500ms
+  lights:
+    l_gi_14_oilslick_rollover: off
+    l_waterlane_5k: off
+    l_waterlane_10k: off
+    l_waterlane_special: 3D488B
