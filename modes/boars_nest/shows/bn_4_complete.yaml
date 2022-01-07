@@ -11,6 +11,7 @@
 
 - duration: 100ms
   lights:
+    l_gi_14_oilslick_rollover: 3D488B
     l_waterlane_5k: 3D488B
     l_waterlane_10k: 3D488B
     l_waterlane_special: 3D488B

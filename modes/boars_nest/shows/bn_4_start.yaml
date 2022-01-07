@@ -11,7 +11,7 @@
 
 - duration: 500ms
   lights:
-    l_gi_14_oilslick_rollover: white
+    l_gi_14_oilslick_rollover: 3D488B
     l_waterlane_5k: off
     l_waterlane_10k: off
     l_waterlane_special: off

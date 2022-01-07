@@ -1,0 +1,27 @@
+#show_version=5
+
+- duration: 250ms
+  lights:
+    l_gi_18_midleft_1: white
+    l_gi_19_midleft_2: white
+    l_gi_20_midleft_3: white
+- duration: 250ms
+  lights:
+    l_gi_18_midleft_1: off
+    l_gi_19_midleft_2: off
+    l_gi_20_midleft_3: off
+- duration: 250ms
+  lights:
+    l_gi_18_midleft_1: white
+    l_gi_19_midleft_2: white
+    l_gi_20_midleft_3: white
+- duration: 250ms
+  lights:
+    l_gi_18_midleft_1: off
+    l_gi_19_midleft_2: off
+    l_gi_20_midleft_3: off
+- duration: 4000ms
+  lights:
+    l_gi_18_midleft_1: white
+    l_gi_19_midleft_2: white
+    l_gi_20_midleft_3: white

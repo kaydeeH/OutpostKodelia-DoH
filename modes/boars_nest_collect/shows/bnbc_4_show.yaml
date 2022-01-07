@@ -1,0 +1,32 @@
+#show_version=5
+
+- duration: 250ms
+  lights:
+    l_gi_14_oilslick_rollover: 3D488B
+    l_waterlane_5k: 3D488B
+    l_waterlane_10k: 3D488B
+    l_waterlane_special: 3D488B
+- duration: 250ms
+  lights:
+    l_gi_14_oilslick_rollover: off
+    l_waterlane_5k: off
+    l_waterlane_10k: off
+    l_waterlane_special: off
+- duration: 250ms
+  lights:
+    l_gi_14_oilslick_rollover: 3D488B
+    l_waterlane_5k: 3D488B
+    l_waterlane_10k: 3D488B
+    l_waterlane_special: 3D488B
+- duration: 250ms
+  lights:
+    l_gi_14_oilslick_rollover: off
+    l_waterlane_5k: off
+    l_waterlane_10k: off
+    l_waterlane_special: off
+- duration: 4000ms
+  lights:
+    l_gi_14_oilslick_rollover: 3D488B
+    l_waterlane_5k: 3D488B
+    l_waterlane_10k: 3D488B
+    l_waterlane_special: 3D488B

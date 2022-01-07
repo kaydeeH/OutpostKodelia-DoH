@@ -19,7 +19,7 @@
     l_goldencliffs_8k: seagreen
     l_goldencliffs_10k: seagreen
     l_goldencliffs_20k: seagreen
-    l_gi_05_river_rollover: white
+    l_gi_05_river_rollover: seagreen
     l_paragon_center_05g: white
     l_paragon_center_05g2: off
 - duration: 100ms

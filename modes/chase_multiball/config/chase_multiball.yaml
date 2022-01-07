@@ -234,7 +234,7 @@ segment_display_player:
       action: add
       key: chase_4
       priority: 400
-      text: "ROSCOE!"
+      text: "ROSCO! "
 
 sound_player:
   start_chase_sequence_audio:

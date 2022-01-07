@@ -94,7 +94,7 @@ event_player:
       boar_score_pre:
         value: current_player.boars_nest_jackpot
         type: int
-      score_type: "ROSCOE "
+      score_type: "ROSCO  "
       score_value:
         value: current_player.boars_nest_hazzards * 4000
         type: int
@@ -117,6 +117,8 @@ event_player:
         value: current_player.boars_nest_jackpot + (current_player.total_super_jackpots_scored)
         type: int
       events_when_completed: bnbc_7_set
+    boars_nest_super_show:
+      value: dummy
   bnbc_7_set:
     - bnbc_8
   bnbc_7{current_player.total_super_jackpots_scored==0}:
@@ -242,8 +244,14 @@ variable_player:
       int: current_player.boars_nest_jackpot
 
 sound_player:
-  boars_nest_audio_reset:
+  boars_nest_big_collect_start:
     doh_theme:
+      action: stop
+      fade_out: 500ms
+    end_theme:
+      action: play
+  boars_nest_audio_reset:
+    end_theme:
       action: stop
       fade_out: 500ms
 
@@ -282,3 +290,75 @@ show_player:
   bnbc_3:
     bnbc_2_show_key: stop
     bnbc_2_face_show_key: stop
+    bnbc_3_show:
+      key: bnbc_3_show_key
+      action: play
+      loops: 0
+      priority: 60000
+    bnbc_3_face_show:
+      key: bnbc_3_face_show_key
+      action: play
+      loops: -1
+      priority: 60000
+  bnbc_4:
+    bnbc_3_show_key: stop
+    bnbc_3_face_show_key: stop
+    bnbc_4_show:
+      key: bnbc_4_show_key
+      action: play
+      loops: 0
+      priority: 60000
+    bnbc_4_face_show:
+      key: bnbc_4_face_show_key
+      action: play
+      loops: -1
+      priority: 60000
+  bnbc_5:
+    bnbc_4_show_key: stop
+    bnbc_4_face_show_key: stop
+    bnbc_5_show:
+      key: bnbc_5_show_key
+      action: play
+      loops: 0
+      priority: 60000
+    bnbc_5_face_show:
+      key: bnbc_5_face_show_key
+      action: play
+      loops: -1
+      priority: 60000
+  bnbc_6:
+    bnbc_5_show_key: stop
+    bnbc_5_face_show_key: stop
+    bnbc_6_show:
+      key: bnbc_6_show_key
+      action: play
+      loops: 0
+      priority: 60000
+    bnbc_6_face_show:
+      key: bnbc_6_face_show_key
+      action: play
+      loops: -1
+      priority: 60000
+  bnbc_7:
+    bnbc_6_show_key: stop
+    bnbc_6_face_show_key: stop
+  bnbc_8:
+    bnbc_8_show:
+      key: bnbc_8_show_key
+      action: play
+      loops: 0
+      priority: 60000
+    bnbc_8_face_show:
+      key: bnbc_8_face_show_key
+      action: play
+      loops: -1
+      priority: 60000
+  bnbc_9:
+    bnbc_8_show_key: stop
+    bnbc_8_face_show_key: stop
+    bnbc_9_show:
+      key: bnbc_9_show_key
+      action: play
+      speed: 40
+      loops: 4
+      priority: 60000
