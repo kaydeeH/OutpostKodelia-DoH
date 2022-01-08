@@ -475,6 +475,30 @@ sound_player:
     get_to_the_boars_nest:
       action: play
       loops: 0
+  boar_collect_1:
+    bo_under_control:
+      action: play
+      loops: 0
+  boar_collect_2:
+    luke_now_were_even:
+      action: play
+      loops: 0
+  boar_collect_3:
+    daisy_comin_right_up:
+      action: play
+      loops: 0
+  boar_collect_4:
+    jessie_race_on_the_road:
+      action: play
+      loops: 0
+  boar_collect_5:
+    cooter_burn_rubber:
+      action: play
+      loops: 0
+  boar_collect_6:
+    sheriff_pedal_to_the_metal:
+      action: play
+      loops: 0
 
 #TODO Catch and event (or two) for when the mode ends. Use that to stop the doh_theme and restart the gameplay_music
 #TODO sound pool. May need to do this part in another mode since this mode may die before it can happen.

@@ -248,12 +248,35 @@ sound_player:
     doh_theme:
       action: stop
       fade_out: 500ms
+    boss_hurry_up:
+      action: play
     end_theme:
       action: play
   boars_nest_audio_reset:
     end_theme:
       action: stop
       fade_out: 500ms
+  bnbc_1:
+    bo_yehaw:
+      action: play
+  bnbc_2:
+    luke_showed_him:
+      action: play
+  bnbc_3:
+    daisy_my_car:
+      action: play
+  bnbc_4:
+    jessie_one_of_the_best:
+      action: play
+  bnbc_5:
+    cooter_take_it_easy:
+      action: play
+  bnbc_6:
+    sheriff_never_seen:
+      action: play
+  bnbc_8:
+    boss_counting_money:
+      action: play
 
 show_player:
   boars_nest_big_collect_start:
