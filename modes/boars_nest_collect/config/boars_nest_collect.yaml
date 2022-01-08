@@ -274,7 +274,7 @@ sound_player:
   bnbc_6:
     sheriff_never_seen:
       action: play
-  bnbc_8:
+  bnbc_8{current_player.boars_nest_inlines > 3}:
     boss_counting_money:
       action: play
 
@@ -365,7 +365,7 @@ show_player:
   bnbc_7:
     bnbc_6_show_key: stop
     bnbc_6_face_show_key: stop
-  bnbc_8:
+  bnbc_8{current_player.boars_nest_inlines > 3}:
     bnbc_8_show:
       key: bnbc_8_show_key
       action: play
