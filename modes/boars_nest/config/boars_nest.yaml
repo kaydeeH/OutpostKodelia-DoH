@@ -132,6 +132,10 @@ show_player:
       action: play
       priority: 50000
       loops: -1
+    bn_boss_ready_show:
+      action: play
+      priority: 50000
+      loops: -1
 
 achievements:
   boar_1_complete:
