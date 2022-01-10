@@ -67,6 +67,7 @@ switches:
   s_tilt:
     number: 0-0-25
     tags: tilt_warning
+    ignore_window_ms: 750ms
   s_service_0:  # back
     number: 0-0-18
     tags: service_esc
