@@ -64,7 +64,7 @@ state_machines:
         events: skill_3_hit
       - source: level2
         target: level2end
-        events: sw_not_kill, skill_1_hit, skill_2_hit
+        events: sw_not_skill, skill_1_hit, skill_2_hit
 
 variable_player:
   skill_level_1_hit{current_player.skill_shot_points==0}:
