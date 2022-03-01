@@ -11,7 +11,8 @@ window:
   height: 480
   title: DoH
   resizable: false
+  #TODO when finally done with everything, set fullscreen to true.
   fullscreen: false
-  borderless: false
+  borderless: true
   exit_on_escape: true
   source_display: lcd
