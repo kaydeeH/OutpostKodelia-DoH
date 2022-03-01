@@ -248,6 +248,7 @@ sound_player:
     doh_theme:
       action: stop
       fade_out: 500ms
+#TODO Should this sound play here??
     boss_hurry_up:
       action: play
     end_theme:

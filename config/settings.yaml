@@ -87,7 +87,7 @@ settings:
     settingType: standard
 
   settle_time:
-    label: Time to wait on tilt settle
+    label: Next player delay after tilt
     sort: 140
     values:
       3000: "3s"
@@ -97,14 +97,15 @@ settings:
     key_type: int
 
   multiple_hit_window:
-    label: Tilt sensitivity
+    label: Tilt (multiple hit) sensitivity
     sort: 150
     values:
-      150: "sensitive"
-      300: "normal"
-      500: "insensitive"
-      1000: "very insensitive"
-    default: 300
+      150: "150ms - very tight"
+      300: "300ms - tight"
+      500: "500ms - normal"
+      1000: "1000ms - liberal"
+      1500: "1500ms - very liberal"
+    default: 500
     key_type: int
 
   attract_flipper_sound_permitted:
