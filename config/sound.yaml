@@ -257,6 +257,7 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+    max_queue_time: 50ms
   its_them_again:
     file: its_them_again.wav
     track: voice
@@ -269,6 +270,7 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+    max_queue_time: 50ms
   join_us_pit_stop:
     file: join_us_pit_stop.wav
     track: voice
@@ -281,6 +283,7 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+    max_queue_time: 50ms
   hazzard_competing:
     file: hazzard_competing.wav
     track: voice
@@ -293,6 +296,7 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+    max_queue_time: 50ms
   plays_together:
     file: plays_together.wav
     track: voice
@@ -305,6 +309,7 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+    max_queue_time: 50ms
   best_man_win:
     file: best_man_win.wav
     track: voice
@@ -317,6 +322,7 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+    max_queue_time: 50ms
   calling_chicken:
     file: calling_chicken.wav
     track: voice
@@ -329,6 +335,7 @@ sounds:
       attack: 100ms
       release_point: 100ms
       release: 100ms
+    max_queue_time: 50ms
 
   ##Good Drain Clips
   all_right_daisy:
