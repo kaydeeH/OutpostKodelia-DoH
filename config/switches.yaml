@@ -73,10 +73,10 @@ switches:
     tags: service_esc
   s_service_1:
     number: 0-0-17
-    tags: service_up
+    tags: service_down
   s_service_2:
     number: 0-0-16
-    tags: service_down
+    tags: service_up
   s_service_3: # select
     number: 0-0-19
     tags: service_enter
