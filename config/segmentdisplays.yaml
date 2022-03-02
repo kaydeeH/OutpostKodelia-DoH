@@ -664,7 +664,7 @@ segment_display_player:
     display4:
       text: ""
     display5:
-      text: "{current_player.ball:d}"
+      text: "P{current_player.number:d} B{current_player.ball:d}"
 
 # show score when adding players
   player_added.1{num==1}:
