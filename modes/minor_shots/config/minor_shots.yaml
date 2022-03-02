@@ -25,3 +25,7 @@ variable_player:
     score: 1000
   s_right_flip_feeder_lane_active:
     score: 1000
+  s_slingshot_right_active:
+    score: 100
+  s_slingshot_left_active:
+    score: 100
