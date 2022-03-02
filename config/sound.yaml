@@ -25,41 +25,53 @@ sounds:
   bonuscountdownmusic:
     file: bonus_countdown.wav
     track: music
+    streaming: true
   doh_track0:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Menu Theme.wav"
     track: music
+    streaming: true
   doh_track1:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 1.wav"
     track: music
+    streaming: true
   doh_track2:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 2.wav"
     track: music
+    streaming: true
   doh_track3:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 3.wav"
     track: music
+    streaming: true
   doh_track4:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 4.wav"
     track: music
+    streaming: true
   doh_track5:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 5.wav"
     track: music
+    streaming: true
   doh_track6:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Track 6.wav"
     track: music
+    streaming: true
   doh_track7:
     file: "Dukes Of Hazzard - Racing For Home (PSX) OST - Credits.wav"
     track: music
+    streaming: true
   doh_theme:
     file: "Waylon Jennings - Dukes Of Hazzard 'Good Ol' Boys' Theme Song.wav"
     track: music
+    streaming: true
   chase_theme:
     file: "The Dukes of Hazzard Season 01 Chase Theme.wav"
     track: music
     volume: 1.0
+    streaming: true
   end_theme:
     file: "The Dukes of Hazzard Closing Credits.wav"
     track: music
     volume: 1.0
+    streaming: true
 
   # SFX
   dirt_peel:
