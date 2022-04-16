@@ -647,6 +647,7 @@ settings:
       9: "9ms"
       10: "10ms"
       11: "11ms"
+      20: "20ms"
     default: 7
     key_type: int
     settingType: coilpower
