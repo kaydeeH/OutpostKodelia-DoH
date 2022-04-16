@@ -8,10 +8,15 @@ mode:
 
 event_player:
   trigger_knockdown_coils:
+    - escape_saucer_eject
     - knockdown_drop_a
     - knockdown_drop_b
     - knockdown_drop_c
     - knockdown_drop_d
+  ball_search_stopped:
+    - drops_inline_reset
+  ball_search_failed:
+    - drops_inline_reset
   player_suspend_spot{current_player.suspend_spot==0}:
     - init_inline_drops
 
