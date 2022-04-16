@@ -23,6 +23,6 @@ event_player:
     - knockdown_drop_a
   hop_targets_spot_b:
     - knockdown_drop_b
-  hop_targets_stop_c:
+  hop_targets_spot_c:
     - knockdown_drop_c
 

@@ -108,7 +108,7 @@ flippers:
     debug: true
     enable_events: ball_started, enable_playfield_coils
     disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
-    include_in_ball_search: true
+
 
 
 ball_devices:
@@ -142,11 +142,13 @@ ball_devices:
     eject_coil: c_saucer_golden_cliffs
     eject_all_events: boars_nest_early_creek_entry
     eject_timeouts: 500ms, 1s, 2s, 4s
+    ball_search_order: 1
   bd_hazzard_saucer:
     ball_switches: s_saucer_paragon
     eject_coil: c_saucer_paragon
     eject_timeouts: 500ms, 1s, 2s, 4s
     eject_all_events: boars_nest_early_hazzard_entry
+    ball_search_order: 2
 
 
 
