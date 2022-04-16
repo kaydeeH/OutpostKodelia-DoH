@@ -160,32 +160,25 @@ drop_targets:
      I0:
          switch: s_drop_inline_a
          knockdown_coil: c_inline_knockdown_a
-         ball_search_order: 0
 #         knockdown_events: knockdown_drop_a
      I1:
          switch: s_drop_inline_b
          knockdown_coil: c_inline_knockdown_b
-         ball_search_order: 0
 #         knockdown_events: knockdown_drop_b
      I2:
          switch: s_drop_inline_c
          knockdown_coil: c_inline_knockdown_c
-         ball_search_order: 0
 #         knockdown_events: knockdown_drop_c
      I3:
          switch: s_drop_inline_d
          knockdown_coil: c_inline_knockdown_d
-         ball_search_order: 0
 #         knockdown_events: knockdown_drop_d
      R0:
          switch: s_drop_right_a
-         ball_search_order: 0
      R1:
          switch: s_drop_right_b
-         ball_search_order: 0
      R2:
          switch: s_drop_right_c
-         ball_search_order: 0
 
 drop_target_banks:
      dtbank_inline:

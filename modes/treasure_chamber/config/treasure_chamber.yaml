@@ -4,7 +4,6 @@
 # Bank - "dtbank_inline"
 
 # Based on PARAGON Rules --
-#TODO fully implement rules here (just initial drops to 5x saucer implemented)
 
 mode:
   start_events: ball_started
@@ -44,15 +43,15 @@ shot_groups:
      disable_events: ball_ending, ball_search_started
 
 event_player:
-  shot_drop_inline_c_hit:
+  shot_drop_inline_c_hit{current_player.suspend_spot==0}:
     - bonus_multiply_2x
-  shot_drop_inline_d_hit:
+  shot_drop_inline_d_hit{current_player.suspend_spot==0}:
     - bonus_multiply_3x
-  treasure_saucer_5x_hit:
+  treasure_saucer_5x_hit{current_player.suspend_spot==0}:
     - bonus_multiply_5x
   shot_group_drop_inline_hit{settings.in_line_spotting==1 and current_player.suspend_spot==0}:
     - spot_hazzard_letter
-  shot_drop_inline_d_hit{settings.chase_multiball_feature==1 and current_player.boars_nest_active==0}:
+  shot_drop_inline_d_hit{settings.chase_multiball_feature==1 and current_player.boars_nest_active==0 and current_player.suspend_spot==0}:
     - start_mode_chase_multiball
 #  init_inline_drops{settings.chase_multiball_feature==1 and current_player.in_line_d_down>0}:
 #    - start_mode_chase_multiball
@@ -67,11 +66,11 @@ variable_player:
   shot_group_drop_inline_hit{settings.in_line_scoring==1}:
     score: 3000
     bonuscount: 2
-  shot_drop_inline_a_hit:
+  shot_drop_inline_a_hit{current_player.suspend_spot==0}:
     in_line_a_down: 1
-  shot_drop_inline_b_hit:
+  shot_drop_inline_b_hit{current_player.suspend_spot==0}:
     in_line_b_down: 1
-  shot_drop_inline_c_hit:
+  shot_drop_inline_c_hit{current_player.suspend_spot==0}:
     in_line_c_down: 1
-  shot_drop_inline_d_hit:
+  shot_drop_inline_d_hit{current_player.suspend_spot==0}:
     in_line_d_down: 1
