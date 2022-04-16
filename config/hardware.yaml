@@ -69,6 +69,10 @@ playfields:
   playfield:
     default_source_device: bd_plunger
     tags: default
+    enable_ball_search: true
+    ball_search_disable_events: boars_nest_big_collect_start
+    ball_search_enable_events: boars_nest_big_collect_complete  # Do we need to enable on ball start? I don't think so.
+
 
 #    enable_ball_search: true
 #    ball_search_timeout: 20s
@@ -91,6 +95,7 @@ flippers:
     debug: true
     enable_events: ball_started, enable_playfield_coils
     disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
+    include_in_ball_search: true
   right_flipper:
     main_coil: c_flipper_right_main
     activation_switch: s_flipper_right
@@ -103,6 +108,7 @@ flippers:
     debug: true
     enable_events: ball_started, enable_playfield_coils
     disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
+    include_in_ball_search: true
 
 
 ball_devices:
@@ -152,25 +158,32 @@ drop_targets:
      I0:
          switch: s_drop_inline_a
          knockdown_coil: c_inline_knockdown_a
+         ball_search_order: 0
 #         knockdown_events: knockdown_drop_a
      I1:
          switch: s_drop_inline_b
          knockdown_coil: c_inline_knockdown_b
+         ball_search_order: 0
 #         knockdown_events: knockdown_drop_b
      I2:
          switch: s_drop_inline_c
          knockdown_coil: c_inline_knockdown_c
+         ball_search_order: 0
 #         knockdown_events: knockdown_drop_c
      I3:
          switch: s_drop_inline_d
          knockdown_coil: c_inline_knockdown_d
+         ball_search_order: 0
 #         knockdown_events: knockdown_drop_d
      R0:
          switch: s_drop_right_a
+         ball_search_order: 0
      R1:
          switch: s_drop_right_b
+         ball_search_order: 0
      R2:
          switch: s_drop_right_c
+         ball_search_order: 0
 
 drop_target_banks:
      dtbank_inline:

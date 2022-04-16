@@ -46,6 +46,10 @@ class HighScore(HighScore):
         self.machine.events.add_handler('segment_high_score_left', self._handle_high_score_left)
         self.machine.events.add_handler('segment_high_score_right', self._handle_high_score_right)
         self.machine.events.add_handler('segment_high_score_next', self._handle_high_score_enter)
+        self.machine.events.add_handler('hs_entry_force_reset', self._reset_hs_entry)
+        self.machine.variables.set_machine_var("doh_hs_entry", "A")
+
+    def _reset_hs_entry(self, **kwargs):
         self.machine.variables.set_machine_var("doh_hs_entry", "A")
 
     def _handle_high_score_left(self, **kwargs):

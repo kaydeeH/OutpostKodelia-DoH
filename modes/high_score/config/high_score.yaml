@@ -5,6 +5,7 @@
 mode:
   priority: 500
   start_events: game_ending, start_high_score
+  events_when_started: hs_entry_force_reset
   use_wait_queue: true
   code: high_score.HighScore
 high_score:

@@ -1,0 +1,28 @@
+#config_version=5
+
+mode:
+  start_events: end_inline_knockdown
+  stop_events:
+
+  priority: 1000
+
+event_player:
+  player_in_line_b_down{current_player.in_line_b_down>0 and current_player.in_line_a_down==0}:
+    - hop_targets_spot_a
+  player_in_line_c_down{current_player.in_line_c_down>0 and current_player.in_line_a_down==0}:
+    - hop_targets_spot_a
+  player_in_line_c_down{current_player.in_line_c_down>0 and current_player.in_line_b_down==0}:
+    - hop_targets_spot_b
+  player_in_line_d_down{current_player.in_line_d_down>0 and current_player.in_line_a_down==0}:
+    - hop_targets_spot_a
+  player_in_line_d_down{current_player.in_line_d_down>0 and current_player.in_line_b_down==0}:
+    - hop_targets_spot_b
+  player_in_line_d_down{current_player.in_line_d_down>0 and current_player.in_line_c_down==0}:
+    - hop_targets_spot_c
+  hop_targets_spot_a:
+    - knockdown_drop_a
+  hop_targets_spot_b:
+    - knockdown_drop_b
+  hop_targets_stop_c:
+    - knockdown_drop_c
+
