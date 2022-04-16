@@ -69,7 +69,7 @@ playfields:
   playfield:
     default_source_device: bd_plunger
     tags: default
-    enable_ball_search: true
+    enable_ball_search: false
     ball_search_disable_events: boars_nest_big_collect_start
     ball_search_enable_events: boars_nest_big_collect_complete  # Do we need to enable on ball start? I don't think so.
 

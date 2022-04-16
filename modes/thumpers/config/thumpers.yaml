@@ -11,17 +11,34 @@
 
 mode:
   start_events: ball_started
+  events_when_started: reset_pop_count
   priority: 130
 
 variable_player:
-  s_thumper_bottom_active{current_player.score>9}:
+  s_thumper_bottom_active{current_player.score>current_player.pop_count*10}:
     score:
       action: add
-      int: -10
+      int: -10 * current_player.pop_count
+    pop_count:
+      action: add
+      int: 1
   s_thumper_center_active:
-    score: 10
+    score: 10 * current_player.pop_count
+    pop_count:
+      action: add
+      int: 1
   s_thumper_right_active:
-    score: 10
+    score: 10 * current_player.pop_count
+    pop_count:
+      action: add
+      int: 1
   s_thumper_left_active:
-    score: 10
+    score: 10 * current_player.pop_count
+    pop_count:
+      action: add
+      int: 1
+  reset_pop_count:
+    pop_count:
+      action: set
+      int: 1
 
