@@ -78,7 +78,7 @@ class SuperJackpotLights(CustomCode):
         # turn off the previous light, if there was one
         if 'last_light' in kwargs:
             last_light = kwargs.get('last_light')
-            last_light.remove_from_stack_by_key("jackpot", 75)
+            last_light.remove_from_stack_by_key("jackpot", 300)
 
         # process the remaining lights
         lights = kwargs.get('lights')
