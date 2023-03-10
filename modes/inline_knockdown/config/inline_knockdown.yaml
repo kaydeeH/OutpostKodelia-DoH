@@ -15,6 +15,10 @@ event_player:
     - knockdown_drop_c
   trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_d_down>0}:
     - knockdown_drop_d
+# attempt to resolve restart when ball starts
+  trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_d_down>0 and settings.chase_multiball_feature==1 and current_player.boars_nest_active==0 and current_player.suspend_spot==0}:
+    - start_mode_chase_multiball
+
   trigger_knockdown_coils:
     - finish_inline_knockdown|250ms
   player_suspend_spot{current_player.suspend_spot==0}:
