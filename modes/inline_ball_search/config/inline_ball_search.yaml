@@ -1,13 +1,13 @@
 #config_version=5
 
 mode:
-  start_events: ball_search_phase_1
+  start_events: ball_search_phase_1, ball_search_phase_2, ball_search_phase_3
   stop_events: end_inline_ball_search
-  events_when_started: trigger_knockdown_coils
+  events_when_started: kd_trigger_knockdown_coils
   priority: 1000
 
 event_player:
-  trigger_knockdown_coils:
+  kd_trigger_knockdown_coils:
     - escape_saucer_eject
     - do_the_drops_now
   do_the_drops_now:
@@ -15,11 +15,11 @@ event_player:
     - knockdown_drop_b
     - knockdown_drop_c
     - knockdown_drop_d
-    - kd_reset|1000ms
+    - kd_reset|1500ms
   kd_reset:
     - drops_inline_reset
-    - kd_trigger_knockdown_coils|250ms
-    - kd_reset_counting|500ms
+    - kd_trigger_knockdown_coils|500ms
+    - kd_reset_counting|1000ms
     - end_inline_ball_search|1750ms
   kd_trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_a_down>0}:
     - knockdown_drop_a
@@ -49,7 +49,7 @@ variable_player:
       int: 0
       action: add
       block: true
-  trigger_knockdown_coils:
+  kd_trigger_knockdown_coils:
     suspend_spot: 1
   kd_reset_counting:
     suspend_spot:
