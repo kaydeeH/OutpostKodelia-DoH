@@ -20,7 +20,7 @@ event_player:
     - drops_inline_reset
     - kd_trigger_knockdown_coils|250ms
     - kd_reset_counting|500ms
-    - end_inline_ball_search|750ms
+    - end_inline_ball_search|1750ms
   kd_trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_a_down>0}:
     - knockdown_drop_a
   kd_trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_b_down>0}:
