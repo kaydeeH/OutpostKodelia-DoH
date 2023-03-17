@@ -40,7 +40,7 @@ shot_groups:
      shots: shot_drop_inline_a, shot_drop_inline_b, shot_drop_inline_c, shot_drop_inline_d
      reset_events: zzz_placeholder_drop_inline_reset, end_chase_mode
      enable_events: init_inline_drops
-     disable_events: ball_ending, ball_search_started
+     disable_events: ball_ending #, ball_search_started
 
 event_player:
   shot_drop_inline_c_hit{current_player.suspend_spot==0}:
