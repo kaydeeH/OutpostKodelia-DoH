@@ -648,6 +648,10 @@ settings:
       10: "10ms"
       11: "11ms"
       20: "20ms"
+      30: "30ms"
+      40: "40ms"
+      50: "50ms"
+      100: "100ms"
     default: 7
     key_type: int
     settingType: coilpower

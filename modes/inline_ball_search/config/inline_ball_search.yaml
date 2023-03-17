@@ -1,10 +1,10 @@
 #config_version=5
 
 mode:
-  start_events: ball_search_phase_1, ball_search_phase_2, ball_search_phase_3
+  start_events: ball_search_phase_1 #, ball_search_phase_2, ball_search_phase_3
   stop_events: end_inline_ball_search
   events_when_started: kd_trigger_knockdown_coils
-  priority: 1000
+  priority: 2000
 
 event_player:
   kd_trigger_knockdown_coils:
