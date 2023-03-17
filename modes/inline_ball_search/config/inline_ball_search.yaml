@@ -3,11 +3,11 @@
 mode:
   start_events: ball_search_phase_1 #, ball_search_phase_2, ball_search_phase_3
   stop_events: end_inline_ball_search
-  events_when_started: kd_trigger_knockdown_coils
+  events_when_started: kd_trigger_start
   priority: 2000
 
 event_player:
-  kd_trigger_knockdown_coils:
+  kd_trigger_start:
     - escape_saucer_eject
     - do_the_drops_now
   do_the_drops_now:
@@ -49,7 +49,7 @@ variable_player:
       int: 0
       action: add
       block: true
-  kd_trigger_knockdown_coils:
+  kd_trigger_start:
     suspend_spot: 1
   kd_reset_counting:
     suspend_spot:
