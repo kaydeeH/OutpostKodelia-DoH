@@ -19,6 +19,7 @@ event_player:
   kd_reset:
     - drops_inline_reset
     - kd_trigger_knockdown_coils|250ms
+    - kd_reset_counting|500ms
     - end_inline_ball_search|750ms
   kd_trigger_knockdown_coils{settings.inline_memory_feature==1 and current_player.in_line_a_down>0}:
     - knockdown_drop_a
@@ -50,11 +51,8 @@ variable_player:
       block: true
   trigger_knockdown_coils:
     suspend_spot: 1
-  ball_search_stopped:
+  kd_reset_counting:
     suspend_spot:
       action: set
       int: 0
-  ball_search_failed:
-    suspend_spot:
-      action: set
-      int: 0
+
