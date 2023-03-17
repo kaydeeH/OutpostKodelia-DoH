@@ -23,7 +23,7 @@ coils:
     number: 0-0-9
     default_pulse_ms: 15
   c_knocker:
-    number: 0-0-7
+    number: 0-0-6
     default_pulse_ms: 18
   c_saucer_trasure_chamber:
     debug: true
@@ -86,7 +86,7 @@ coils:
     #debug: true
     allow_enable: true
   c_flipper_left_upper:
-    number: 0-0-6
+    number: 0-0-7
     default_pulse_ms: 1
     #debug: true
     allow_enable: true
