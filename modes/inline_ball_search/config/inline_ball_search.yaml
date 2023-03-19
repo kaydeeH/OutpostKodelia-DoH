@@ -7,7 +7,7 @@ mode:
   priority: 2000
 
 event_player:
-  check_for_run_this_mode{current_player.boars_announcement_mode_is_in<>1}:
+  check_for_run_this_mode{current_player.boars_announcement_mode_is_in!=1}:
     - kd_trigger_start
   check_for_run_this_mode{current_player.boars_announcement_mode_is_in==1}:
     - end_inline_ball_search
