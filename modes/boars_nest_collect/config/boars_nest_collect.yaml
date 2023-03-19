@@ -168,6 +168,7 @@ event_player:
     - enable_playfield_coils
     - escape_saucer_eject
     - next_song
+    - boars_nest_big_collect_pre_complete
     - boars_nest_big_collect_complete|100ms
 
 variable_player:
@@ -206,6 +207,13 @@ variable_player:
     boars_nest_jackpot:
       action: set
       int: 100000
+    boars_announcement_mode_is_in:
+      action: set
+      int: 1
+  boars_nest_big_collect_pre_complete:
+    boars_announcement_mode_is_in:
+      action: set
+      int: 0
   bnbc_1_set:
     boars_nest_jackpot:
       action: add

@@ -138,6 +138,8 @@ player_vars:
     initial_value: 0
   boars_nest_six_pack_complete:
     initial_value: 0
+  boars_announcement_mode_is_in:
+    initial_value: 0
 ## Normal Game Settings
 
 keyboard:
