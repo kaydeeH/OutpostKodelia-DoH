@@ -162,8 +162,8 @@ switches:
     events_when_activated: temp_thumper_left
     tags: kpf, c_jack, h_jack, not_skill
   #Temp switch to test mirror universe theory
-  #s_void:
-  #  number: 1-0-72
+  s_void:
+    number: 1-0-72
 
 
   # Saucers

@@ -238,7 +238,7 @@ settings:
     values:
       0: "Off"
       1: "On (default)"
-    default: 1
+    default: 0
     key_type: int
     sort: 210
     settingType: coin
@@ -501,7 +501,7 @@ settings:
       28: "28ms"
       29: "29ms"
       30: "30ms"
-    default: 16
+    default: 30
     key_type: int
     settingType: coilpower
 
@@ -524,7 +524,7 @@ settings:
       28: "28ms"
       29: "29ms"
       30: "30ms"
-    default: 18
+    default: 30
     key_type: int
     settingType: coilpower
 
@@ -552,7 +552,9 @@ settings:
       18: "18ms"
       19: "19ms"
       20: "20ms"
-    default: 16
+      30: "30ms"
+      40: "40ms"
+    default: 30
     key_type: int
     settingType: coilpower
 
@@ -652,6 +654,6 @@ settings:
       40: "40ms"
       50: "50ms"
       100: "100ms"
-    default: 7
+    default: 100
     key_type: int
     settingType: coilpower

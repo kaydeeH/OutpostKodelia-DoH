@@ -33,7 +33,7 @@ hardware:
 
 opp:
   #Use the USB ports defined by your OS for the two STM32 boards
-  ports: /dev/ttyACM0, /dev/ttyACM1
+  ports: COM5, COM6 #/dev/ttyACM0, /dev/ttyACM1
   #USING SERIAL NUMBERS INSTEAD OF CHAINS
   #  Board 0 has serial number 0, Board 1 has serial number 1.
   #  This is convenient if your OS tends to reassign the serial port.
@@ -119,16 +119,19 @@ ball_devices:
     jam_switch: s_trough_jam
     eject_targets: bd_plunger
     eject_timeouts: 3s
+    ball_search_order: 0
   bd_plunger:
     ball_switches: s_shooter_lane
     mechanical_eject: true
     eject_timeouts: 2s
     player_controlled_eject_event: s_shooter_lane_active{multiballs.creek_multiball == true}
     eject_coil: c_auto_plunge
+    ball_search_order: 0
   bd_drain:
     ball_switches: s_outhole
     eject_coil: c_outhole_kicker
     eject_timeouts: 1s
+    ball_search_order: 0
 #    eject_targets: bd_trough
 #  bd_escape_saucer:
 #    ball_switches: s_saucer_treasure_chamber
@@ -142,13 +145,13 @@ ball_devices:
     eject_coil: c_saucer_golden_cliffs
     eject_all_events: boars_nest_early_creek_entry
     eject_timeouts: 500ms, 1s, 2s, 4s
-    ball_search_order: 1
+    ball_search_order: 0
   bd_hazzard_saucer:
     ball_switches: s_saucer_paragon
     eject_coil: c_saucer_paragon
     eject_timeouts: 500ms, 1s, 2s, 4s
     eject_all_events: boars_nest_early_hazzard_entry
-    ball_search_order: 2
+    ball_search_order: 0
 
 
 
