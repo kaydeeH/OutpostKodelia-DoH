@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 # BY THE TIME THIS MODE STARTS --
 # current_player.player_ball_score will have been set to the score for this ball, exclusive of bonus

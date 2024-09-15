@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 mode:
   start_events: ball_search_phase_1 #, ball_search_phase_2, ball_search_phase_3

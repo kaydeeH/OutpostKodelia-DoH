@@ -1,8 +1,8 @@
-#show_version=5
-- time: 0
+#show_version=6
+- time: "0"
   shows:
     z_tutorial_flash:
-      loops: -1
+      loops: "-1"
       show_tokens:
         color: white
         leds: l_goldencliffs_2k
@@ -23,10 +23,10 @@
       text: "   2000"
       priority: 100
       key: z_tut_creek
-- time: +1
+- time: "+1"
   shows:
     z_tutorial_flash:
-      loops: -1
+      loops: "-1"
       show_tokens:
         color: white
         leds: l_goldencliffs_4k
@@ -35,10 +35,10 @@
       text: "   4000"
       key: z_tut_creek
       priority: 100
-- time: +1
+- time: "+1"
   shows:
     z_tutorial_flash:
-      loops: -1
+      loops: "-1"
       show_tokens:
         color: white
         leds: l_goldencliffs_6k
@@ -47,10 +47,10 @@
       text: "   6000"
       key: z_tut_creek
       priority: 100
-- time: +1
+- time: "+1"
   shows:
     z_tutorial_flash:
-      loops: -1
+      loops: "-1"
       show_tokens:
         color: white
         leds: l_goldencliffs_8k
@@ -59,10 +59,10 @@
       text: "   8000"
       key: z_tut_creek
       priority: 100
-- time: +1
+- time: "+1"
   shows:
     z_tutorial_flash:
-      loops: -1
+      loops: "-1"
       show_tokens:
         color: white
         leds: l_goldencliffs_10k
@@ -71,10 +71,10 @@
       text: "  10000"
       key: z_tut_creek
       priority: 100
-- time: +1
+- time: "+1"
   shows:
     z_tutorial_flash:
-      loops: -1
+      loops: "-1"
       show_tokens:
         color: white
         leds: l_goldencliffs_20k
@@ -83,7 +83,7 @@
       text: "  20000"
       key: z_tut_creek
       priority: 100
-- time: +1
+- time: "+1"
   segment_displays:
     display1:
       text: "Creek  "
@@ -103,8 +103,8 @@
       key: z_tut_creek
   shows:
     creek_saucer_post_focus_show:
-      loops: -1
-- time: +2
+      loops: "-1"
+- time: "+2"
   segment_displays:
     display1:
       text: "Creek  "
@@ -124,8 +124,8 @@
       key: z_tut_creek
   shows:
     creek_saucer_jackpot_ready_show:
-      loops: -1
-- time: +3
+      loops: "-1"
+- time: "+3"
   segment_displays:
     display1:
       text: "Creek  "
@@ -145,8 +145,8 @@
       key: z_tut_creek
   shows:
     creek_super_jackpot_focus_show:
-      loops: -1
-- time: +3
+      loops: "-1"
+- time: "+3"
   segment_displays:
     display1:
       text: "Double "
@@ -166,8 +166,8 @@
       key: z_tut_creek
   shows:
     creek_super_jackpot_focus_show:
-      loops: -1
-- time: +3
+      loops: "-1"
+- time: "+3"
   segment_displays:
     display1:
       text: "Collect"
@@ -187,8 +187,8 @@
       key: z_tut_creek
   shows:
     creek_super_jackpot_focus_show:
-      loops: -1
-- time: +3
+      loops: "-1"
+- time: "+3"
   segment_displays:
     display1:
       action: remove
@@ -201,4 +201,3 @@
       key: z_tut_creek
     display4:
       action: remove
-      key: z_tut_creek

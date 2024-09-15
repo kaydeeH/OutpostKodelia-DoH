@@ -1,11 +1,11 @@
-#config_version=5
+#config_version=6
 
 sound_system:
   buffer: 2048
   channels: 1
   enabled: True
   frequency: 44100
-  master_volume: 0.8
+  #master_volume: 0.8
   tracks:
     music:
       type: standard

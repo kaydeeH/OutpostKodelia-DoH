@@ -56,7 +56,7 @@ Pinlandia - LED.BMX
 
 - V1.8 - 2019/03/09
 	- add flushmouse and flushkeys to prevent false clicks after file loads
-	- remove space in #show_version=5
+	- remove space in #show_version=6
 
 - V1.7 - 2018/01/17
 	- for mpf version 0.50  change: config version 5, leds->lights 
@@ -127,7 +127,7 @@ Const cSTARTY = 50+300
 Const infodisplayx = 420
 
 
-Global SHOW_VERSION$ = "#show_version=5"
+Global SHOW_VERSION$ = "#show_version=6"
 
 Global pixColor:appColor = New appColor
 Global num_leds = 0

@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 #Machine level settings that will be available on the setup menu
 #Eventually should split this up into Kodelia Common and Game Specific sections

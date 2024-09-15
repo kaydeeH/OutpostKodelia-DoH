@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 event_player:
   mode_attract_started:
@@ -233,13 +233,13 @@ segment_display_player:
     display4:
       text: ""
 
-random_event_player:
-  tutorial_start:
-    scope: machine
-    events:
-      - tutorial_creek
-      - tutorial_hazzard
-    force_all: true
+#random_event_player:
+#  tutorial_start:
+#    scope: machine
+#    events:
+#      - tutorial_creek
+#      - tutorial_hazzard
+#    force_all: true
 
 show_player:
   attract_lightshow_start:
@@ -363,17 +363,17 @@ show_player:
     attract_hs5:
       action: play
       loops: 0
-      events_when_stopped: tutorial_start, kill_full_light_show, high_scores_complete #, restart_loop
-  tutorial_creek:
-    z_tutorial_creek_multiball:
-      action: play
-      loops: 0
-      events_when_stopped: restart_loop
-  tutorial_hazzard:
-    z_tutorial_hazzard_multiball:
-      action: play
-      loops: 0
-      events_when_stopped: restart_loop
+      events_when_stopped: tutorial_start, kill_full_light_show, high_scores_complete, restart_loop
+#  tutorial_creek:
+#    z_tutorial_creek_multiball:
+#      action: play
+#      loops: 0
+#      events_when_stopped: restart_loop
+#  tutorial_hazzard:
+#    z_tutorial_hazzard_multiball:
+#      action: play
+#      loops: 0
+#      events_when_stopped: restart_loop
 
   attract_show_last_game_scores_override:
     prev_scores_o:

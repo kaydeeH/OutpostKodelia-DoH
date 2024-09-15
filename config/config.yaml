@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 config:
   - hardware.yaml
   - switches.yaml
@@ -49,6 +49,7 @@ modes:
   - base
   - attract
   - service
+  - service_dmd
   - tilt
   - skill_shot         # handler for initial skill shot
   - right_drops        # handler for the right bank drop target feature
