@@ -94,7 +94,7 @@ coils:
 # Non-Paragon Coils
   c_auto_plunge:
     number: 0-0-12
-    default_pulse_ms: 17
+    default_pulse_ms: 20
     debug: true
     allow_enable: true
   c_ball_trough:
@@ -131,8 +131,8 @@ coils:
 autofire_coils:
   slingshot_left:
     coil: c_left_slingshot
-    #switch: s_slingshot_left
-    switch: s_center_target
+    switch: s_slingshot_left
+    #switch: s_center_target
     timeout_watch_time: 1s
     timeout_max_hits: 1
     timeout_disable_time: 300ms
@@ -141,8 +141,8 @@ autofire_coils:
     ball_search_order: 0
   slingshot_right:
     coil: c_right_slingshot
-    #switch: s_slingshot_right
-    switch: s_rebound_500pt
+    switch: s_slingshot_right
+    #switch: s_rebound_500pt
     timeout_watch_time: 1s
     timeout_max_hits: 1
     timeout_disable_time: 300ms
@@ -151,29 +151,29 @@ autofire_coils:
     ball_search_order: 0
   thumper_bottom:
     coil: c_bottom_thumper
-    #switch: s_thumper_bottom
-    switch: s_trough_3
+    switch: s_thumper_bottom
+    #switch: s_trough_3
     enable_events: ball_started, enable_playfield_coils
     disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
     ball_search_order: 0
   thumper_center:
     coil: c_center_thumper
-    #switch: s_thumper_center
-    switch: s_thumper_left
+    switch: s_thumper_center
+    #switch: s_thumper_left
     enable_events: ball_started, enable_playfield_coils
     disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
     ball_search_order: 0
   thumper_right:
     coil: c_right_thumper
-    #switch: s_thumper_right
-    switch: s_void
+    switch: s_thumper_right
+    #switch: s_void
     enable_events: ball_started, enable_playfield_coils
     disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
     ball_search_order: 0
   thumper_left:
     coil: c_left_thumper
-    #switch: s_thumper_left
-    switch: s_thumper_center
+    switch: s_thumper_left
+    #switch: s_thumper_center
     enable_events: ball_started, enable_playfield_coils
     disable_events: ball_will_end, service_mode_entered, disable_playfield_coils
     ball_search_order: 0

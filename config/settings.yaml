@@ -503,7 +503,7 @@ settings:
       30: "30ms"
     default: 30
     key_type: int
-    settingType: coilpower
+    settingType: feature
 
   hazzard_eject_power:
     label: Hazzard Saucer Eject Power
@@ -526,7 +526,7 @@ settings:
       30: "30ms"
     default: 30
     key_type: int
-    settingType: coilpower
+    settingType: feature
 
   escape_eject_power:
     label: Escape Saucer Eject Power
@@ -540,7 +540,7 @@ settings:
       36: "36ms"
     default: 30
     key_type: int
-    settingType: coilpower
+    settingType: feature
 
   trough_eject_power:
     label: Trough Eject Power
@@ -556,7 +556,7 @@ settings:
       40: "40ms"
     default: 30
     key_type: int
-    settingType: coilpower
+    settingType: feature
 
 #  main_flipper_power:
 #    label: Main Flipper Power
@@ -600,7 +600,7 @@ settings:
       24: "24ms"
     default: 16
     key_type: int
-    settingType: coilpower
+    settingType: feature
 
   main_pop_power:
     label: Main Pop Power
@@ -618,7 +618,7 @@ settings:
       30: "30ms"
     default: 20
     key_type: int
-    settingType: coilpower
+    settingType: feature
 
   jail_pop_power:
     label: Jail Pop Power
@@ -636,7 +636,7 @@ settings:
       30: "30ms"
     default: 20
     key_type: int
-    settingType: coilpower
+    settingType: feature
 
   inline_knockdown_power:
     label: Inline Knockdown Power
@@ -656,4 +656,4 @@ settings:
       100: "100ms"
     default: 100
     key_type: int
-    settingType: coilpower
+    settingType: feature
