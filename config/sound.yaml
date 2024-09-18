@@ -17,7 +17,7 @@ sound_system:
       volume: 0.85
     sfx:
       type: standard
-      simultaneous_sounds: 32
+      simultaneous_sounds: 8
       volume: 0.8
 
 sounds:
@@ -83,50 +83,67 @@ sounds:
     file: dixie_horn.wav
     track: sfx
     simultaneous_limit: 1
-    stealing_method: skip
+    stealing_method: oldest
   police_siren:
     file: police_siren.wav
     track: sfx
+    simultaneous_limit: 1
+    stealing_method: oldest
   idle:
     file: idle.wav
     track: sfx
     volume: 0.3
+    simultaneous_limit: 1
+    stealing_method: oldest
   rev_up:
     file: rev_up.wav
     track: sfx
     volume: 0.25
+    simultaneous_limit: 1
+    stealing_method: oldest
   launch_car:
     file: launch_car.wav
     track: sfx
     volume: 0.25
+    simultaneous_limit: 1
+    stealing_method: oldest
   car_door:
     file: car_door.wav
     track: sfx
     volume: 0.7
+    simultaneous_limit: 1
+    stealing_method: oldest
   gunfire1:
     file: gunfire1.wav
     track: sfx
     volume: 0.7
+    simultaneous_limit: 1
+    stealing_method: oldest
   gunfire2:
     file: gunfire2.wav
     track: sfx
     volume: 0.7
+    simultaneous_limit: 1
+    stealing_method: oldest
   gunfire3:
     file: gunfire3.wav
     track: sfx
     volume: 0.7
+    simultaneous_limit: 1
+    stealing_method: oldest
   oil:
     file: oil.wav
     track: sfx
     volume: 0.8
     simultaneous_limit: 1
-    stealing_method: skip
+    stealing_method: oldest
+
   creek:
     file: creek.wav
     track: sfx
     volume: 0.45
     simultaneous_limit: 1
-    stealing_method: skip
+    stealing_method: oldest
   jail_door:
     file: jail_door.wav
     track: sfx
@@ -143,18 +160,26 @@ sounds:
     file: explosion1.wav
     track: sfx
     volume: 0.6
+    simultaneous_limit: 1
+    stealing_method: oldest
   explosion2:
     file: explosion2.wav
     track: sfx
     volume: 0.6
+    simultaneous_limit: 1
+    stealing_method: oldest
   explosion3:
     file: explosion3.wav
     track: sfx
     volume: 0.6
+    simultaneous_limit: 1
+    stealing_method: oldest
   single_rev:
     file: single_rev.wav
     track: sfx
     volume: 0.3
+    simultaneous_limit: 1
+    stealing_method: oldest
 
 
   #Voice Clips
@@ -653,6 +678,7 @@ sounds:
   were_gonna_bust_em:
     file: were_gonna_bust_em.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -665,6 +691,7 @@ sounds:
   rock_and_a_hard_place:
     file: rock_and_a_hard_place.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -677,6 +704,7 @@ sounds:
   gonna_get_em:
     file: gonna_get_em.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -689,6 +717,7 @@ sounds:
   duck_on_a_junebug:
     file: duck_on_a_junebug.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -701,6 +730,7 @@ sounds:
   hot_pursuit:
     file: hot_pursuit.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -713,6 +743,7 @@ sounds:
   never_could_catch_em:
     file: never_could_catch_em.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -725,6 +756,7 @@ sounds:
   my_day:
     file: my_day.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -737,6 +769,7 @@ sounds:
   under_arrest:
     file: under_arrest.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -749,6 +782,7 @@ sounds:
   give_me_a_bonus:
     file: give_me_a_bonus.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -761,6 +795,7 @@ sounds:
   apprehended_yet:
     file: apprehended_yet.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -773,6 +808,7 @@ sounds:
   do_something_bo:
     file: do_something_bo.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -785,6 +821,7 @@ sounds:
   go_go_go:
     file: go_go_go.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -797,6 +834,7 @@ sounds:
   gonna_hit_him:
     file: gonna_hit_him.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -809,6 +847,7 @@ sounds:
   step_on_it:
     file: step_on_it.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -821,6 +860,7 @@ sounds:
   trying_to_lose_roscoe:
     file: trying_to_lose_roscoe.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1033,7 +1073,7 @@ sounds:
   jackpot:
     file: jackpot.wav
     track: voice
-    stealing_method: oldest
+    max_queue_time: 5s
     volume: 0.9
     ducking:
       target:
@@ -1047,7 +1087,7 @@ sounds:
   payin_off_like_a_jackpot:
     file: payin_off_like_a_jackpot.wav
     track: voice
-    stealing_method: oldest
+    max_queue_time: 5s
     volume: 0.9
     ducking:
       target:
@@ -1061,7 +1101,7 @@ sounds:
   bullseye:
     file: bullseye.wav
     track: voice
-    stealing_method: oldest
+    max_queue_time: 5s
     volume: 0.9
     ducking:
       target:
@@ -1075,6 +1115,7 @@ sounds:
   wrong_road:
     file: wrong_road.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1087,6 +1128,7 @@ sounds:
   yee_haw:
     file: yee_haw.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1099,6 +1141,7 @@ sounds:
   good_start:
     file: good_start.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1111,6 +1154,7 @@ sounds:
   cooter_righteous:
     file: cooter_righteous.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1123,6 +1167,7 @@ sounds:
   get_to_the_boars_nest:
     file: get_to_the_boars_nest.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1135,6 +1180,7 @@ sounds:
   service_is_my_life:
     file: service_is_my_life.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1149,6 +1195,7 @@ sounds:
   they_gave_it_back:
     file: they_gave_it_back.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1161,6 +1208,7 @@ sounds:
   no_arrest:
     file: no_arrest.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1173,6 +1221,7 @@ sounds:
   thats_handy:
     file: thats_handy.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1185,6 +1234,7 @@ sounds:
   killing_me:
     file: killing_me.wav
     track: voice
+    max_queue_time: 5s
     ducking:
       target:
         - music
@@ -1649,7 +1699,7 @@ sound_pools:
       - zinger
       - carnival_of_thrills
     simultaneous_limit: 1
-    stealing_method: skip
+    stealing_method: oldest
   player_multi_add:
     type: random_force_all
     track: voice
@@ -1662,7 +1712,7 @@ sound_pools:
       - best_man_win
       - calling_chicken
     simultaneous_limit: 1
-    stealing_method: skip
+    stealing_method: oldest
   gameplay_music:
     type: random_force_all
     track: music
@@ -1682,8 +1732,9 @@ sound_pools:
       - gunfire1
       - gunfire2
       - gunfire3
-    simultaneous_limit: 5
-    stealing_method: skip
+    simultaneous_limit: 3
+    stealing_method: oldest
+    max_queue_time: 5s
   explosion:
     type: random_force_all
     track: sfx
@@ -1693,6 +1744,7 @@ sound_pools:
       - explosion3
     simultaneous_limit: 3
     stealing_method: oldest
+    max_queue_time: 5s
   bad_drain_clips:
     type: random_force_all
     track: voice
@@ -1737,7 +1789,8 @@ sound_pools:
     type: random_force_all
     track: voice
     simultaneous_limit: 1
-    stealing_method: skip
+    stealing_method: oldest
+    max_queue_time: 5s
     sounds:
       - billy_blue_heck
       - bodily_injury
@@ -1766,6 +1819,7 @@ sound_pools:
   jackpot_clips:
     type: random_force_all
     track: voice
+    max_queue_time: 5s
     sounds:
       - jackpot
       - bullseye
@@ -1773,6 +1827,7 @@ sound_pools:
   ball_saves:
     type: random_force_all
     track: voice
+    max_queue_time: 5s
     sounds:
       - they_gave_it_back
       - no_arrest
@@ -1799,6 +1854,7 @@ sound_pools:
   chase_fail_clips:
     type: random_force_all
     track: voice
+    max_queue_time: 5s
     sounds:
       - my_day
       - give_me_a_bonus
@@ -1806,6 +1862,7 @@ sound_pools:
   chase_mid_clips:
     type: random_force_all
     track: voice
+    max_queue_time: 5s
     sounds:
       - apprehended_yet
       - do_something_bo

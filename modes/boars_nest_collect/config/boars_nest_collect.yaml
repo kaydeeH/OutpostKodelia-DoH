@@ -12,7 +12,7 @@ event_player:
       text_1: "All Got"
       text_2: "to the "
       text_3: "BOARS  "
-      text_4: "  NEST!"
+      text_4: "   NEST"
       events_when_completed: bnbc_1
   bnbc_1:
     boars_nest_show_bonus_text:
@@ -103,26 +103,26 @@ event_player:
         type: int
       events_when_completed: bnbc_6_set
   bnbc_6_set:
-    - bnbc_7
-  bnbc_7{current_player.total_super_jackpots_scored>0}:
-    boars_nest_show_bonus_text:
-      boar_score_pre:
-        value: current_player.boars_nest_jackpot
-        type: int
-      score_type: "SUPERS "
-      score_value:
-        value: current_player.total_super_jackpots_scored
-        type: int
-      boar_score_post:
-        value: current_player.boars_nest_jackpot + (current_player.total_super_jackpots_scored)
-        type: int
-      events_when_completed: bnbc_7_set
-    boars_nest_super_show:
-      value: dummy
-  bnbc_7_set:
     - bnbc_8
-  bnbc_7{current_player.total_super_jackpots_scored==0}:
-    - bnbc_8
+#  bnbc_7{current_player.total_super_jackpots_scored>0}:
+#    boars_nest_show_bonus_text:
+#      boar_score_pre:
+#        value: current_player.boars_nest_jackpot
+#        type: int
+#      score_type: "SUPERS "
+#      score_value:
+#        value: current_player.total_super_jackpots_scored
+#        type: int
+#      boar_score_post:
+#        value: current_player.boars_nest_jackpot + (current_player.total_super_jackpots_scored)
+#        type: int
+#      events_when_completed: bnbc_7_set
+#    boars_nest_super_show:
+#      value: dummy
+#  bnbc_7_set:
+#    - bnbc_8
+#  bnbc_7{current_player.total_super_jackpots_scored==0}:
+#    - bnbc_8
   bnbc_8{current_player.boars_nest_inlines > 3}:
     boars_nest_show_bonus_text:
       boar_score_pre:

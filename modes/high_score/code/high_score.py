@@ -98,7 +98,7 @@ class HighScore(HighScore):
                 self.charEntry = self.charEntry[0:self.charChoice] + self.charListCurrent[self.charPos]
         self.machine.variables.set_machine_var("doh_hs_entry", self.charEntry)
 
-    async def _ask_player_for_initials(self, player: Player, award_label: str, value: int) -> str:
+    async def _ask_player_for_initials(self, player: Player, award_label: str, value: int, category_name: str) -> str:
         """Show text widget to ask player for initials."""
         self.info_log("New high score. Player: %s, award_label: %s"
                       ", Value: %s", player, award_label, value)
@@ -120,5 +120,3 @@ class HighScore(HighScore):
         )   # type: dict
 
         return event_result["text"] if "text" in event_result else ''
-
-

@@ -29,7 +29,7 @@ ball_saves:
   ball_save_main:
     active_time: settings.initial_ball_save
     hurry_up_time: 4s
-    grace_period: 3s
+    grace_period: 2s
     enable_events: ball_save_ball_save_validate_disabled{settings.initial_ball_save>0}
     auto_launch: true
     balls_to_save: 1

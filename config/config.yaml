@@ -20,7 +20,7 @@ config:
 custom_code:
   - code.updateMachineVar.updateMachineVar
   - code.scoreFlash.scoreFlash
-  - code.SuperJackpotLights.SuperJackpotLights
+ # - code.SuperJackpotLights.SuperJackpotLights
   - code.atrRecentScores.atrRecentScores
   - code.last_game_scores.LastGameScores
   - code.quipper_date_time.quipperDT
@@ -68,7 +68,7 @@ modes:
   - hazzard_multiball  # HAZZARD multiball feature
   - credits            # credits/freeplay control
   - multiball_display  # control the display when multiball or chase is active
-  - super_jackpot      # control light shows in super jackpot situations
+#  - super_jackpot      # control light shows in super jackpot situations
   - boars_nest         # wizard mode
   - yee_haw            # inlane to spinner combo
   - inline_knockdown   # mode to override scoring when knocking down targets

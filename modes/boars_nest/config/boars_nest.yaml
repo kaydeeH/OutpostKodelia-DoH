@@ -10,7 +10,7 @@ ball_saves:
   ball_save_boars_nest:
     active_time: settings.chase_ball_save
     hurry_up_time: 4s
-    grace_period: 5s
+    grace_period: 2s
     auto_launch: true
     balls_to_save: -1
     early_ball_save_events: sw_early_ball_save
@@ -400,45 +400,45 @@ variable_player:
 # double if 4 inlines hit
 
 segment_display_player:
-  multiball_display_creek{device.multiballs.creek_multiball.balls_live_target>0}:
-    display1:
-      action: remove
-      key: boar_1
-    display2:
-      action: remove
-      key: boar_2
-    display3:
-      action: remove
-      key: boar_3
-    display4:
-      action: remove
-      key: boar_4
-  multiball_display_hazzard{device.multiballs.creek_multiball.balls_live_target>0}:
-    display1:
-      action: remove
-      key: boar_1
-    display2:
-      action: remove
-      key: boar_2
-    display3:
-      action: remove
-      key: boar_3
-    display4:
-      action: remove
-      key: boar_4
-  multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target>0}:
-    display1:
-      action: remove
-      key: boar_1
-    display2:
-      action: remove
-      key: boar_2
-    display3:
-      action: remove
-      key: boar_3
-    display4:
-      action: remove
-      key: boar_4
+#  multiball_display_creek{device.multiballs.creek_multiball.balls_live_target>0}:
+#    display1:
+#      action: remove
+#      key: boar_1
+#    display2:
+#      action: remove
+#      key: boar_2
+#    display3:
+#      action: remove
+#      key: boar_3
+#    display4:
+#      action: remove
+#      key: boar_4
+#  multiball_display_hazzard{device.multiballs.creek_multiball.balls_live_target>0}:
+#    display1:
+#      action: remove
+#      key: boar_1
+#    display2:
+#      action: remove
+#      key: boar_2
+#    display3:
+#      action: remove
+#      key: boar_3
+#    display4:
+#      action: remove
+#      key: boar_4
+#  multiball_display_chase{device.multiballs.pre_chase_multiball.balls_live_target>0}:
+#    display1:
+#      action: remove
+#      key: boar_1
+#    display2:
+#      action: remove
+#      key: boar_2
+#    display3:
+#      action: remove
+#      key: boar_3
+#    display4:
+#      action: remove
+#      key: boar_4
 
   multiball_display_boar{current_player.boars_nest_active==1}:
     display1:

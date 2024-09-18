@@ -55,6 +55,8 @@ event_player:
     - chase_multiball_qualified
   chase_multiball_qualified:
     - start_chase_multiball
+  start_chase_multiball{game.balls_in_play<4}:
+    - start_chase_multiball_add_one
   gc_start_mball_hit{current_player.general_lee_speed<120}:
     - general_lee_speed_add_5
     - boars_nest_early_creek_entry
@@ -107,7 +109,7 @@ shots:
 
 multiballs:
   pre_chase_multiball:
-    add_a_ball_events: start_chase_multiball
+    add_a_ball_events: start_chase_multiball_add_one
     ball_count: 1
     ball_count_type: add
     start_events: start_chase_sequence
@@ -153,32 +155,32 @@ variable_player:
         int: settings.chase_qualify
 
 segment_display_player:
-  multiball_display_creek{device.multiballs.creek_multiball.balls_live_target>0}:
-    display1:
-      action: remove
-      key: chase_1
-    display2:
-      action: remove
-      key: chase_2
-    display3:
-      action: remove
-      key: chase_3
-    display4:
-      action: remove
-      key: chase_4
-  multiball_display_hazzard{device.multiballs.creek_multiball.balls_live_target>0}:
-    display1:
-      action: remove
-      key: chase_1
-    display2:
-      action: remove
-      key: chase_2
-    display3:
-      action: remove
-      key: chase_3
-    display4:
-      action: remove
-      key: chase_4
+#  multiball_display_creek{device.multiballs.creek_multiball.balls_live_target>0}:
+#    display1:
+#      action: remove
+#      key: chase_1
+#    display2:
+#      action: remove
+#      key: chase_2
+#    display3:
+#      action: remove
+#      key: chase_3
+#    display4:
+#      action: remove
+#      key: chase_4
+#  multiball_display_hazzard{device.multiballs.creek_multiball.balls_live_target>0}:
+#    display1:
+#      action: remove
+#      key: chase_1
+#    display2:
+#      action: remove
+#      key: chase_2
+#    display3:
+#      action: remove
+#      key: chase_3
+#    display4:
+#      action: remove
+#      key: chase_4
   multiball_display_boar{current_player.boars_nest_active>0}:
     display1:
       action: remove
@@ -234,7 +236,7 @@ segment_display_player:
       action: add
       key: chase_4
       priority: 400
-      text: "ROSCO! "
+      text: "ROSCO  "
 
 sound_player:
   start_chase_sequence_audio:

@@ -76,7 +76,6 @@ playfields:
     ball_search_disable_events: boars_nest_big_collect_start
     ball_search_enable_events: boars_nest_big_collect_complete  # Do we need to enable on ball start? I don't think so.
 
-
 #    enable_ball_search: true
 #    ball_search_timeout: 20s
 #    ball_search_wait_after_iteration: 10s
@@ -123,6 +122,12 @@ ball_devices:
     eject_targets: bd_plunger
     eject_timeouts: 3s
     ball_search_order: 0
+  bd_drain:
+    ball_switches: s_outhole
+    eject_coil: c_outhole_kicker
+    eject_timeouts: 1s
+    ball_search_order: 0
+    captures_from: playfield
   bd_plunger:
     ball_switches: s_shooter_lane
     mechanical_eject: true
@@ -130,12 +135,8 @@ ball_devices:
     player_controlled_eject_event: s_shooter_lane_active{multiballs.creek_multiball == true}
     eject_coil: c_auto_plunge
     ball_search_order: 0
-  bd_drain:
-    ball_switches: s_outhole
-    eject_coil: c_outhole_kicker
-    eject_timeouts: 1s
-    ball_search_order: 0
-#    eject_targets: bd_trough
+    eject_targets: playfield
+
 #  bd_escape_saucer:
 #    ball_switches: s_saucer_treasure_chamber
 #    eject_coil: c_saucer_trasure_chamber

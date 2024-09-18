@@ -56,7 +56,7 @@ state_machines:
 timers:
   display_heartbeat:
     start_value: 0
-    tick_interval: 2.5s
+    tick_interval: 1s
     start_running: true
 
 event_player:
